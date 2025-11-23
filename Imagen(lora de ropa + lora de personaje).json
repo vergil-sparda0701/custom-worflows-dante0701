@@ -1,1 +1,712 @@
-{"id":"6393207a-c1f1-4639-8482-e66b47c40c88","revision":0,"last_node_id":26,"last_link_id":43,"nodes":[{"id":1,"type":"CheckpointLoaderSimple","pos":[-187.06157640176517,124.9115622552896],"size":[270,98],"flags":{},"order":0,"mode":0,"inputs":[{"localized_name":"nombre_ckpt","name":"ckpt_name","type":"COMBO","widget":{"name":"ckpt_name"},"link":null}],"outputs":[{"localized_name":"MODELO","name":"MODEL","type":"MODEL","links":[27]},{"localized_name":"CLIP","name":"CLIP","type":"CLIP","links":[28]},{"localized_name":"VAE","name":"VAE","type":"VAE","links":[12]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"CheckpointLoaderSimple"},"widgets_values":["animeScreenshotMerge_v40.safetensors"]},{"id":22,"type":"LoraLoader","pos":[97.18066362408817,125.18278956740319],"size":[270,126],"flags":{},"order":2,"mode":0,"inputs":[{"localized_name":"modelo","name":"model","type":"MODEL","link":27},{"localized_name":"clip","name":"clip","type":"CLIP","link":28},{"localized_name":"nombre_lora","name":"lora_name","type":"COMBO","widget":{"name":"lora_name"},"link":null},{"localized_name":"fuerza_modelo","name":"strength_model","type":"FLOAT","widget":{"name":"strength_model"},"link":null},{"localized_name":"fuerza_clip","name":"strength_clip","type":"FLOAT","widget":{"name":"strength_clip"},"link":null}],"outputs":[{"localized_name":"MODELO","name":"MODEL","type":"MODEL","links":[29]},{"localized_name":"CLIP","name":"CLIP","type":"CLIP","links":[30]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"LoraLoader"},"widgets_values":["Boruko_XL-20.safetensors",0.9,1]},{"id":24,"type":"workflow>Prompts","pos":[697.8513068493619,92.93416957090476],"size":[443.8189016693739,406.3139814303157],"flags":{},"order":4,"mode":0,"inputs":[{"localized_name":"clip","name":"clip","type":"CLIP","link":37},{"localized_name":"CLIPTextEncode clip","name":"CLIPTextEncode clip","type":"CLIP","link":38},{"localized_name":"text","name":"text","type":"STRING","widget":{"name":"text"},"link":null},{"localized_name":"CLIPTextEncode text","name":"CLIPTextEncode text","type":"STRING","widget":{"name":"CLIPTextEncode text"},"link":null}],"outputs":[{"localized_name":"ACONDICIONAMIENTO","name":"CONDITIONING","type":"CONDITIONING","links":[39]},{"localized_name":"CLIPTextEncode CONDITIONING","name":"CLIPTextEncode CONDITIONING","type":"CONDITIONING","links":[40]}],"properties":{"Node name for S&R":"workflow>Prompts"},"widgets_values":["anime coloring, highres, anime screenshot, dramatic lighting, intricate details, masterpiece, best quality, absurdres, depth, official style \nBREAK Boruko_XL, facial mark, whisker markings, hair between eyes \nBREAK 1girl, large breasts, thick thighs, toned, dot nose \nBREAK Morrigan_Leotard, Morrigan_Pantyhose, Morrigan_Gloves, cosplay, head wings, back wings\nBREAK crossed legs, sitting, hand on own knee, upper body, looking at viewer, smile, seductive smile, blush","(score_6,score_5,score_4), bad quality, blurry, text, watermark, (extra fingers:1.5), missing fingers, sidelocks, (extra hands:1.5)"]},{"id":2,"type":"LoraLoader","pos":[380.6690700748667,122.5051038198234],"size":[270,126],"flags":{},"order":3,"mode":0,"inputs":[{"localized_name":"modelo","name":"model","type":"MODEL","link":29},{"localized_name":"clip","name":"clip","type":"CLIP","link":30},{"localized_name":"nombre_lora","name":"lora_name","type":"COMBO","widget":{"name":"lora_name"},"link":null},{"localized_name":"fuerza_modelo","name":"strength_model","type":"FLOAT","widget":{"name":"strength_model"},"link":null},{"localized_name":"fuerza_clip","name":"strength_clip","type":"FLOAT","widget":{"name":"strength_clip"},"link":null}],"outputs":[{"localized_name":"MODELO","name":"MODEL","type":"MODEL","links":[41]},{"localized_name":"CLIP","name":"CLIP","type":"CLIP","links":[37,38]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"LoraLoader"},"widgets_values":["Morrigan_Outfit-20.safetensors",0.9,1]},{"id":26,"type":"EmptyLatentImage","pos":[1212.6138711378512,-56.44269256034055],"size":[270,106],"flags":{},"order":1,"mode":0,"inputs":[{"localized_name":"ancho","name":"width","type":"INT","widget":{"name":"width"},"link":null},{"localized_name":"altura","name":"height","type":"INT","widget":{"name":"height"},"link":null},{"localized_name":"tamaño_del_lote","name":"batch_size","type":"INT","widget":{"name":"batch_size"},"link":null}],"outputs":[{"localized_name":"LATENTE","name":"LATENT","type":"LATENT","links":[42]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"EmptyLatentImage"},"widgets_values":[1080,1920,1]},{"id":25,"type":"KSampler","pos":[1211.7008659158441,86.88165950921103],"size":[278.7265625,474],"flags":{},"order":5,"mode":0,"inputs":[{"localized_name":"modelo","name":"model","type":"MODEL","link":41},{"localized_name":"positivo","name":"positive","type":"CONDITIONING","link":39},{"localized_name":"negativo","name":"negative","type":"CONDITIONING","link":40},{"localized_name":"imagen_latente","name":"latent_image","type":"LATENT","link":42},{"localized_name":"semilla","name":"seed","type":"INT","widget":{"name":"seed"},"link":null},{"localized_name":"pasos","name":"steps","type":"INT","widget":{"name":"steps"},"link":null},{"localized_name":"cfg","name":"cfg","type":"FLOAT","widget":{"name":"cfg"},"link":null},{"localized_name":"nombre_muestreador","name":"sampler_name","type":"COMBO","widget":{"name":"sampler_name"},"link":null},{"localized_name":"programador","name":"scheduler","type":"COMBO","widget":{"name":"scheduler"},"link":null},{"localized_name":"deshacer_ruido","name":"denoise","type":"FLOAT","widget":{"name":"denoise"},"link":null}],"outputs":[{"localized_name":"LATENTE","name":"LATENT","type":"LATENT","links":[43]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"KSampler"},"widgets_values":[282499057567558,"randomize",20,4,"euler","simple",1]},{"id":9,"type":"VAEDecode","pos":[1507.8626618837623,-2.297806258351396],"size":[161.812109375,46],"flags":{},"order":6,"mode":0,"inputs":[{"localized_name":"muestras","name":"samples","type":"LATENT","link":43},{"localized_name":"vae","name":"vae","type":"VAE","link":12}],"outputs":[{"localized_name":"IMAGEN","name":"IMAGE","type":"IMAGE","links":[13]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"VAEDecode"},"widgets_values":[]},{"id":10,"type":"SaveImage","pos":[1710.3049312340656,1.4673837830792191],"size":[289.40234375,270],"flags":{},"order":7,"mode":0,"inputs":[{"localized_name":"imágenes","name":"images","type":"IMAGE","link":13},{"localized_name":"prefijo_nombre_archivo","name":"filename_prefix","type":"STRING","widget":{"name":"filename_prefix"},"link":null}],"outputs":[],"properties":{"cnr_id":"comfy-core","ver":"0.3.71"},"widgets_values":["ComfyUI"]}],"links":[[12,1,2,9,1,"VAE"],[13,9,0,10,0,"IMAGE"],[27,1,0,22,0,"MODEL"],[28,1,1,22,1,"CLIP"],[29,22,0,2,0,"MODEL"],[30,22,1,2,1,"CLIP"],[37,2,1,24,0,"CLIP"],[38,2,1,24,1,"CLIP"],[39,24,0,25,1,"CONDITIONING"],[40,24,1,25,2,"CONDITIONING"],[41,2,0,25,0,"MODEL"],[42,26,0,25,3,"LATENT"],[43,25,0,9,0,"LATENT"]],"groups":[],"config":{},"extra":{"ds":{"scale":0.730278459315321,"offset":[305.52857304451004,345.37353365381443]},"groupNodes":{"Sampler":{"nodes":[{"id":-1,"type":"EmptyLatentImage","pos":[746.9302792257017,474.43365797089467],"size":[270,106],"flags":{},"order":0,"mode":0,"inputs":[{"localized_name":"ancho","name":"width","type":"INT","widget":{"name":"width"},"link":null},{"localized_name":"altura","name":"height","type":"INT","widget":{"name":"height"},"link":null},{"localized_name":"tamaño_del_lote","name":"batch_size","type":"INT","widget":{"name":"batch_size"},"link":null}],"outputs":[{"localized_name":"LATENTE","name":"LATENT","type":"LATENT","links":[]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"EmptyLatentImage"},"widgets_values":[1080,1920,1],"index":0},{"id":-1,"type":"KSampler","pos":[1164.4029194778482,90.29034931962708],"size":[278.7265625,474],"flags":{},"order":6,"mode":0,"inputs":[{"localized_name":"modelo","name":"model","type":"MODEL","link":null},{"localized_name":"positivo","name":"positive","type":"CONDITIONING","link":null},{"localized_name":"negativo","name":"negative","type":"CONDITIONING","link":null},{"localized_name":"imagen_latente","name":"latent_image","type":"LATENT","link":null},{"localized_name":"semilla","name":"seed","type":"INT","widget":{"name":"seed"},"link":null},{"localized_name":"pasos","name":"steps","type":"INT","widget":{"name":"steps"},"link":null},{"localized_name":"cfg","name":"cfg","type":"FLOAT","widget":{"name":"cfg"},"link":null},{"localized_name":"nombre_muestreador","name":"sampler_name","type":"COMBO","widget":{"name":"sampler_name"},"link":null},{"localized_name":"programador","name":"scheduler","type":"COMBO","widget":{"name":"scheduler"},"link":null},{"localized_name":"deshacer_ruido","name":"denoise","type":"FLOAT","widget":{"name":"denoise"},"link":null}],"outputs":[{"localized_name":"LATENTE","name":"LATENT","type":"LATENT","links":[]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"KSampler"},"widgets_values":[305910667942736,"randomize",25,3,"euler_ancestral","simple",1],"index":1}],"links":[[null,0,1,0,2,"MODEL"],[null,0,1,1,6,"CONDITIONING"],[null,0,1,2,7,"CONDITIONING"],[0,0,1,3,4,"LATENT"]],"external":[[1,0,"LATENT"]]},"Prompts":{"nodes":[{"id":-1,"type":"CLIPTextEncode","pos":[714.2833949753774,-0.18099647651501827],"size":[400,200],"flags":{},"order":3,"mode":0,"inputs":[{"localized_name":"clip","name":"clip","type":"CLIP","link":null},{"localized_name":"texto","name":"text","type":"STRING","widget":{"name":"text"},"link":null}],"outputs":[{"localized_name":"ACONDICIONAMIENTO","name":"CONDITIONING","type":"CONDITIONING","links":[]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"CLIPTextEncode"},"widgets_values":["anime coloring, highres, anime screenshot, dramatic lighting, intricate details, masterpiece, best quality, absurdres, depth, official style \nBREAK Boruko_XL, facial mark, whisker markings, hair between eyes \nBREAK 1girl, large breasts, thick thighs, toned, dot nose \nBREAK Morrigan_Leotard, Morrigan_Pantyhose, Morrigan_Gloves, cosplay, head wings, back wings\nBREAK crossed legs, sitting, hand on own knee, upper body, looking at viewer, smile, seductive smile, blush"],"index":0},{"id":-1,"type":"CLIPTextEncode","pos":[730.9462029954503,233.87429574306586],"size":[400,200],"flags":{},"order":4,"mode":0,"inputs":[{"localized_name":"clip","name":"clip","type":"CLIP","link":null},{"localized_name":"texto","name":"text","type":"STRING","widget":{"name":"text"},"link":null}],"outputs":[{"localized_name":"ACONDICIONAMIENTO","name":"CONDITIONING","type":"CONDITIONING","links":[]}],"properties":{"cnr_id":"comfy-core","ver":"0.3.71","Node name for S&R":"CLIPTextEncode"},"widgets_values":["(score_6,score_5,score_4), bad quality, blurry, text, watermark, (extra fingers:1.5), missing fingers, sidelocks, (extra hands:1.5)"],"index":1}],"links":[[null,1,0,0,2,"CLIP"],[null,1,1,0,2,"CLIP"]],"external":[[0,0,"CONDITIONING"],[1,0,"CONDITIONING"]]}}},"version":0.4}
+{
+  "id": "6393207a-c1f1-4639-8482-e66b47c40c88",
+  "revision": 0,
+  "last_node_id": 38,
+  "last_link_id": 71,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -269.37906373218203,
+        117.42818156551336
+      ],
+      "size": [
+        270,
+        98
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            27
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            28
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "animeScreenshotMerge_v40.safetensors"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "VAELoader",
+      "pos": [
+        -271.45786884592553,
+        7.55273287381415
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            68
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl_vae.safetensors"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoraLoader",
+      "pos": [
+        344.4212092712608,
+        117.72486461827239
+      ],
+      "size": [
+        270,
+        126
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 29
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            41
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "Morrigan_Outfit-20.safetensors",
+        0.9,
+        1
+      ]
+    },
+    {
+      "id": 25,
+      "type": "KSampler",
+      "pos": [
+        1154.3431943751416,
+        102.11729742242635
+      ],
+      "size": [
+        278.7265625,
+        474
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 41
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 39
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 40
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            43
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        669868652177849,
+        "randomize",
+        40,
+        3,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "type": "EmptyLatentImage",
+      "pos": [
+        1160.633560790771,
+        -45.3500497319407
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            42
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1080,
+        1920,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "type": "VAEDecode",
+      "pos": [
+        1455.882351536683,
+        97.18185788445379
+      ],
+      "size": [
+        196.76442380355334,
+        46
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 43
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 68
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            69,
+            71
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 36,
+      "type": "SystemNotification|pysssss",
+      "pos": [
+        1464.5071358060584,
+        64.01424592455238
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any",
+          "type": "*",
+          "link": 71
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "shape": 6,
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "SystemNotification|pysssss"
+      },
+      "widgets_values": [
+        "Imagen generada",
+        "always"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "SaveImage",
+      "pos": [
+        1688.5661435721943,
+        93.94103780854384
+      ],
+      "size": [
+        289.40234375,
+        270
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 69
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "workflow>Prompts",
+      "pos": [
+        662.0027929054611,
+        118.92436576982863
+      ],
+      "size": [
+        443.8189016693739,
+        406.3139814303157
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 62
+        },
+        {
+          "name": "CLIPTextEncode clip",
+          "type": "CLIP",
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            39
+          ]
+        },
+        {
+          "name": "CLIPTextEncode CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            40
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "workflow>Prompts"
+      },
+      "widgets_values": [
+        "M1T0_XL, facial mark, forehead mark, hair bun, lips, double bun, hair ornament, hairclip\nBREAK 1girl, breasts, solo, looking_at_viewer, large_breasts, collarbone, huge hips, thick thighs\nBREAK shorts, cleavage,shirt, short_shorts, white_shorts, short_sleeves, indoors, midriff, crop_top, pink_shirt\nBREAK arms behind head, looking at viewer",
+        "(score_6,score_5,score_4), bad quality, blurry, text, watermark, (extra fingers:1.5), missing fingers, sidelocks, (extra hands:1.5)"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "LoraLoader",
+      "pos": [
+        36.23815299661101,
+        117.11687085312168
+      ],
+      "size": [
+        270,
+        126
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 27
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            30,
+            62,
+            63
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.71",
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "Mito_XL-v1.5.safetensors",
+        1,
+        1
+      ]
+    }
+  ],
+  "links": [
+    [
+      27,
+      1,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      28,
+      1,
+      1,
+      22,
+      1,
+      "CLIP"
+    ],
+    [
+      29,
+      22,
+      0,
+      2,
+      0,
+      "MODEL"
+    ],
+    [
+      30,
+      22,
+      1,
+      2,
+      1,
+      "CLIP"
+    ],
+    [
+      39,
+      24,
+      0,
+      25,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      40,
+      24,
+      1,
+      25,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      41,
+      2,
+      0,
+      25,
+      0,
+      "MODEL"
+    ],
+    [
+      42,
+      26,
+      0,
+      25,
+      3,
+      "LATENT"
+    ],
+    [
+      43,
+      25,
+      0,
+      9,
+      0,
+      "LATENT"
+    ],
+    [
+      62,
+      22,
+      1,
+      24,
+      0,
+      "CLIP"
+    ],
+    [
+      63,
+      22,
+      1,
+      24,
+      1,
+      "CLIP"
+    ],
+    [
+      68,
+      38,
+      0,
+      9,
+      1,
+      "VAE"
+    ],
+    [
+      69,
+      9,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      71,
+      9,
+      0,
+      36,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9322679976661293,
+      "offset": [
+        -584.745254071086,
+        47.79862901393038
+      ]
+    },
+    "groupNodes": {
+      "Prompts": {
+        "nodes": [
+          {
+            "id": -1,
+            "type": "CLIPTextEncode",
+            "pos": [
+              714.2833949753774,
+              -0.18099647651501827
+            ],
+            "size": [
+              400,
+              200
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": null
+              },
+              {
+                "localized_name": "texto",
+                "name": "text",
+                "type": "STRING",
+                "widget": {
+                  "name": "text"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "ACONDICIONAMIENTO",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.3.71",
+              "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+              "anime coloring, highres, anime screenshot, dramatic lighting, intricate details, masterpiece, best quality, absurdres, depth, official style \nBREAK Boruko_XL, facial mark, whisker markings, hair between eyes \nBREAK 1girl, large breasts, thick thighs, toned, dot nose \nBREAK Morrigan_Leotard, Morrigan_Pantyhose, Morrigan_Gloves, cosplay, head wings, back wings\nBREAK crossed legs, sitting, hand on own knee, upper body, looking at viewer, smile, seductive smile, blush"
+            ],
+            "index": 0
+          },
+          {
+            "id": -1,
+            "type": "CLIPTextEncode",
+            "pos": [
+              730.9462029954503,
+              233.87429574306586
+            ],
+            "size": [
+              400,
+              200
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": null
+              },
+              {
+                "localized_name": "texto",
+                "name": "text",
+                "type": "STRING",
+                "widget": {
+                  "name": "text"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "ACONDICIONAMIENTO",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "links": []
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.3.71",
+              "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+              "(score_6,score_5,score_4), bad quality, blurry, text, watermark, (extra fingers:1.5), missing fingers, sidelocks, (extra hands:1.5)"
+            ],
+            "index": 1
+          }
+        ],
+        "links": [
+          [
+            null,
+            1,
+            0,
+            0,
+            2,
+            "CLIP"
+          ],
+          [
+            null,
+            1,
+            1,
+            0,
+            2,
+            "CLIP"
+          ]
+        ],
+        "external": [
+          [
+            0,
+            0,
+            "CONDITIONING"
+          ],
+          [
+            1,
+            0,
+            "CONDITIONING"
+          ]
+        ]
+      }
+    },
+    "frontendVersion": "1.30.6"
+  },
+  "version": 0.4
+}
