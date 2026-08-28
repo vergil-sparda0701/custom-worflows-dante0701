@@ -1,8 +1,8 @@
 {
   "id": "6532d4fd-8fff-4bab-a497-dd0e41c94c15",
   "revision": 0,
-  "last_node_id": 193,
-  "last_link_id": 398,
+  "last_node_id": 195,
+  "last_link_id": 413,
   "nodes": [
     {
       "id": 105,
@@ -119,7 +119,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 226
+          "link": 410
         }
       ],
       "outputs": [
@@ -338,7 +338,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            236
+            408
           ]
         },
         {
@@ -436,7 +436,7 @@
         "aux_id": "alexopus/ComfyUI-Image-Saver"
       },
       "widgets_values": [
-        103359942154371,
+        786119808604963,
         "randomize",
         24,
         3,
@@ -445,7 +445,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 103359942154371,
+        "seed": 786119808604963,
         "control_after_generate": "randomize",
         "steps": 24,
         "cfg": 3,
@@ -472,7 +472,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 279
+          "link": 413
         }
       ],
       "outputs": [
@@ -491,10 +491,10 @@
         "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,"
+        "M31_NS, long hair, brown hair, hair over one eye, sidelocks, very long hair, crossed bangs, green eyes, pink lips, hair bun"
       ],
       "widgets_values_named": {
-        "text_0": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,"
+        "text_0": "M31_NS, long hair, brown hair, hair over one eye, sidelocks, very long hair, crossed bangs, green eyes, pink lips, hair bun"
       }
     },
     {
@@ -517,7 +517,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 233
+          "link": 412
         },
         {
           "name": "text",
@@ -572,7 +572,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 213
+          "link": 411
         },
         {
           "name": "text",
@@ -965,8 +965,8 @@
           "name": "CLIP",
           "type": "CLIP",
           "links": [
-            237,
-            370
+            407,
+            409
           ]
         }
       ],
@@ -1087,7 +1087,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 371
+          "link": 404
         },
         {
           "name": "text",
@@ -1142,7 +1142,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 372
+          "link": 403
         },
         {
           "name": "text",
@@ -1178,51 +1178,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 171,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        3144.537301482336,
-        7.023594488757721
-      ],
-      "size": [
-        303.57316031384573,
-        102
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            369
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            349
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "Civitai/BASBetterAnimeStylePlusAnima_baseV10.safetensors",
-        "default"
-      ],
-      "widgets_values_named": {
-        "unet_name": "Civitai/BASBetterAnimeStylePlusAnima_baseV10.safetensors",
-        "weight_dtype": "default"
-      }
-    },
-    {
       "id": 180,
       "type": "ShowText|pysssss",
       "pos": [
@@ -1240,7 +1195,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "link": 366
+          "link": 406
         }
       ],
       "outputs": [
@@ -1259,10 +1214,10 @@
         "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,"
+        "M31_NS, long hair, brown hair, hair over one eye, sidelocks, very long hair, crossed bangs, green eyes, pink lips, hair bun"
       ],
       "widgets_values_named": {
-        "text_0": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,"
+        "text_0": "M31_NS, long hair, brown hair, hair over one eye, sidelocks, very long hair, crossed bangs, green eyes, pink lips, hair bun"
       }
     },
     {
@@ -1342,7 +1297,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 368
+          "link": 405
         }
       ],
       "outputs": [
@@ -1386,7 +1341,7 @@
         295.13678496917066
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1413,254 +1368,6 @@
       },
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 124,
-      "type": "Lora Loader (LoraManager)",
-      "pos": [
-        1658.1816895510615,
-        112.64324853926749
-      ],
-      "size": [
-        372.71897354026055,
-        362
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 236
-        },
-        {
-          "name": "clip",
-          "shape": 7,
-          "type": "CLIP",
-          "link": 237
-        },
-        {
-          "name": "lora_stack",
-          "shape": 7,
-          "type": "LORA_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            226
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            213,
-            233
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            279
-          ]
-        },
-        {
-          "name": "loaded_loras",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-lora-manager",
-        "ver": "ad56cafd62e42e67f282a967627f26b8fa6ce00a",
-        "Node name for S&R": "Lora Loader (LoraManager)",
-        "__lm_widget_ids": [
-          "__lm_autocomplete_meta_text",
-          "text",
-          "loras"
-        ]
-      },
-      "widgets_values": [
-        {
-          "version": 1,
-          "textWidgetName": "text",
-          "lastAccepted": {
-            "start": 0,
-            "end": 22,
-            "insertedText": "<lora:Ami_SM_Anima:1>,",
-            "textSnapshot": "<lora:Ami_SM_Anima:1>,"
-          }
-        },
-        "<lora:Ami_SM_Anima:1.00>",
-        [
-          {
-            "name": "Ami_SM_Anima",
-            "strength": 1,
-            "active": true,
-            "expanded": false,
-            "clipStrength": 1,
-            "selected": false,
-            "locked": false
-          }
-        ]
-      ],
-      "widgets_values_named": {
-        "__lm_autocomplete_meta_text": {
-          "version": 1,
-          "textWidgetName": "text",
-          "lastAccepted": {
-            "start": 0,
-            "end": 22,
-            "insertedText": "<lora:Ami_SM_Anima:1>,",
-            "textSnapshot": "<lora:Ami_SM_Anima:1>,"
-          }
-        },
-        "text": "<lora:Ami_SM_Anima:1.00>",
-        "loras": [
-          {
-            "name": "Ami_SM_Anima",
-            "strength": 1,
-            "active": true,
-            "expanded": false,
-            "clipStrength": 1,
-            "selected": false,
-            "locked": false
-          }
-        ]
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": "default"
-    },
-    {
-      "id": 181,
-      "type": "Lora Loader (LoraManager)",
-      "pos": [
-        3481.7810699897677,
-        113.1178555644159
-      ],
-      "size": [
-        372.71897354026055,
-        362
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 369
-        },
-        {
-          "name": "clip",
-          "shape": 7,
-          "type": "CLIP",
-          "link": 370
-        },
-        {
-          "name": "lora_stack",
-          "shape": 7,
-          "type": "LORA_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            368
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            371,
-            372
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            366
-          ]
-        },
-        {
-          "name": "loaded_loras",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-lora-manager",
-        "ver": "ad56cafd62e42e67f282a967627f26b8fa6ce00a",
-        "Node name for S&R": "Lora Loader (LoraManager)",
-        "__lm_widget_ids": [
-          "__lm_autocomplete_meta_text",
-          "text",
-          "loras"
-        ]
-      },
-      "widgets_values": [
-        {
-          "version": 1,
-          "textWidgetName": "text",
-          "lastAccepted": {
-            "start": 0,
-            "end": 24,
-            "insertedText": "<lora:Rias_DxD_Anima:1>,",
-            "textSnapshot": "<lora:Rias_DxD_Anima:1>,"
-          }
-        },
-        "<lora:Ami_SM_Anima:1.00>",
-        [
-          {
-            "name": "Ami_SM_Anima",
-            "strength": 1,
-            "active": true,
-            "expanded": false,
-            "clipStrength": 1,
-            "selected": false,
-            "locked": false
-          }
-        ]
-      ],
-      "widgets_values_named": {
-        "__lm_autocomplete_meta_text": {
-          "version": 1,
-          "textWidgetName": "text",
-          "lastAccepted": {
-            "start": 0,
-            "end": 24,
-            "insertedText": "<lora:Rias_DxD_Anima:1>,",
-            "textSnapshot": "<lora:Rias_DxD_Anima:1>,"
-          }
-        },
-        "text": "<lora:Ami_SM_Anima:1.00>",
-        "loras": [
-          {
-            "name": "Ami_SM_Anima",
-            "strength": 1,
-            "active": true,
-            "expanded": false,
-            "clipStrength": 1,
-            "selected": false,
-            "locked": false
-          }
-        ]
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": "default"
     },
     {
       "id": 174,
@@ -1947,6 +1654,183 @@
       },
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 171,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        3144.537301482336,
+        7.023594488757721
+      ],
+      "size": [
+        303.57316031384573,
+        102
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            402
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            349
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "Civitai/BASBetterAnimeStylePlusAnima_baseV10.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "Civitai/BASBetterAnimeStylePlusAnima_baseV10.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 195,
+      "type": "LoraLoaderWithPreview",
+      "pos": [
+        1666.8489686515356,
+        119.78925587517051
+      ],
+      "size": [
+        353.53178531986384,
+        341.2406911063581
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 408
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 409
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            410
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            411,
+            412
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            413
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Mei_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Mei_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
+    },
+    {
+      "id": 194,
+      "type": "LoraLoaderWithPreview",
+      "pos": [
+        3488.533026132743,
+        123.02189819486844
+      ],
+      "size": [
+        353.53178531986384,
+        341.2406911063581
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 402
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 407
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            405
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            403,
+            404
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            406
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Mei_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Mei_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
     }
   ],
   "links": [
@@ -2031,28 +1915,12 @@
       "FLOAT"
     ],
     [
-      213,
-      124,
-      1,
-      107,
-      0,
-      "CLIP"
-    ],
-    [
       216,
       139,
       0,
       108,
       1,
       "VAE"
-    ],
-    [
-      226,
-      124,
-      0,
-      111,
-      0,
-      "MODEL"
     ],
     [
       230,
@@ -2079,14 +1947,6 @@
       "INT"
     ],
     [
-      233,
-      124,
-      1,
-      120,
-      0,
-      "CLIP"
-    ],
-    [
       234,
       136,
       0,
@@ -2101,30 +1961,6 @@
       122,
       0,
       "IMAGE"
-    ],
-    [
-      236,
-      113,
-      0,
-      124,
-      0,
-      "MODEL"
-    ],
-    [
-      237,
-      121,
-      0,
-      124,
-      1,
-      "CLIP"
-    ],
-    [
-      279,
-      124,
-      2,
-      150,
-      0,
-      "STRING"
     ],
     [
       281,
@@ -2279,60 +2115,12 @@
       "LATENT"
     ],
     [
-      366,
-      181,
-      2,
-      180,
-      0,
-      "STRING"
-    ],
-    [
       367,
       180,
       0,
       182,
       1,
       "STRING"
-    ],
-    [
-      368,
-      181,
-      0,
-      183,
-      0,
-      "MODEL"
-    ],
-    [
-      369,
-      171,
-      0,
-      181,
-      0,
-      "MODEL"
-    ],
-    [
-      370,
-      121,
-      0,
-      181,
-      1,
-      "CLIP"
-    ],
-    [
-      371,
-      181,
-      1,
-      178,
-      0,
-      "CLIP"
-    ],
-    [
-      372,
-      181,
-      1,
-      179,
-      0,
-      "CLIP"
     ],
     [
       379,
@@ -2389,6 +2177,102 @@
       159,
       0,
       "MODEL"
+    ],
+    [
+      402,
+      171,
+      0,
+      194,
+      0,
+      "MODEL"
+    ],
+    [
+      403,
+      194,
+      1,
+      179,
+      0,
+      "CLIP"
+    ],
+    [
+      404,
+      194,
+      1,
+      178,
+      0,
+      "CLIP"
+    ],
+    [
+      405,
+      194,
+      0,
+      183,
+      0,
+      "MODEL"
+    ],
+    [
+      406,
+      194,
+      2,
+      180,
+      0,
+      "STRING"
+    ],
+    [
+      407,
+      121,
+      0,
+      194,
+      1,
+      "CLIP"
+    ],
+    [
+      408,
+      113,
+      0,
+      195,
+      0,
+      "MODEL"
+    ],
+    [
+      409,
+      121,
+      0,
+      195,
+      1,
+      "CLIP"
+    ],
+    [
+      410,
+      195,
+      0,
+      111,
+      0,
+      "MODEL"
+    ],
+    [
+      411,
+      195,
+      1,
+      107,
+      0,
+      "CLIP"
+    ],
+    [
+      412,
+      195,
+      1,
+      120,
+      0,
+      "CLIP"
+    ],
+    [
+      413,
+      195,
+      2,
+      150,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
@@ -2542,8 +2426,8 @@
     "ds": {
       "scale": 0.5670305181239178,
       "offset": [
-        -2272.781319919134,
-        356.08865493742144
+        95.4423592524883,
+        287.1330015044144
       ]
     },
     "frontendVersion": "1.51.9"
