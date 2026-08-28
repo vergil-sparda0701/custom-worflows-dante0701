@@ -1,0 +1,1398 @@
+{
+  "id": "57d136a6-99da-4141-a03e-adb18d287262",
+  "revision": 0,
+  "last_node_id": 44,
+  "last_link_id": 83,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "VAEDecode",
+      "pos": [
+        1813.1776765312645,
+        10.05319666465474
+      ],
+      "size": [
+        225,
+        99.62680332284657
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 5
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            18
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "VAEDecode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      }
+    },
+    {
+      "id": 12,
+      "type": "ApplySignature",
+      "pos": [
+        2070.4714114050207,
+        10.116813358414223
+      ],
+      "size": [
+        289.78032239788035,
+        204.97910062766016
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "name": "signature",
+          "type": "IMAGE",
+          "link": 29
+        },
+        {
+          "name": "signature_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/comfyui-apply-signature",
+        "ver": "c23d6edc0b84032c83fa7865db96e499d6d6bf7b",
+        "Node name for S&R": "ApplySignature"
+      },
+      "widgets_values": [
+        true,
+        40.204573017665105,
+        "izquierda",
+        "abajo",
+        19
+      ],
+      "widgets_values_named": {
+        "enabled": true,
+        "size_pct": 40.204573017665105,
+        "h_align": "izquierda",
+        "v_align": "abajo",
+        "margin": 19
+      }
+    },
+    {
+      "id": 16,
+      "type": "CLIPLoader",
+      "pos": [
+        -310.4371842696333,
+        391.7109706310021
+      ],
+      "size": [
+        340,
+        169.3125
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1,
+            12,
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "CLIPLoader",
+        "models": [
+          {
+            "name": "qwen_3_4b.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "stable_diffusion",
+        "device": "default"
+      }
+    },
+    {
+      "id": 19,
+      "type": "LoadImage",
+      "pos": [
+        2075.1919791661107,
+        249.27678208986987
+      ],
+      "size": [
+        283.5196192472042,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "firma danielg20019.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "firma danielg20019.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 20,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        -308.3777434466733,
+        16.43320641068352
+      ],
+      "size": [
+        331.2747553210655,
+        140.64838121957234
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            31
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "RBDTAnima_b12.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "RBDTAnima_b12.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 43,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        -676.2673600496591,
+        -1.178494470868948
+      ],
+      "size": [
+        348.57512689970906,
+        462.32577816445223
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 17,
+      "type": "CLIPTextEncode",
+      "pos": [
+        61.100971420836544,
+        361.30304694210645
+      ],
+      "size": [
+        400,
+        203.76841989751802
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            2,
+            13
+          ]
+        }
+      ],
+      "title": "Negative prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.30.0",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face"
+      ],
+      "widgets_values_named": {
+        "text": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face"
+      }
+    },
+    {
+      "id": 3,
+      "type": "AnimaRegionalZone",
+      "pos": [
+        780.2673429909075,
+        9.872220722169914
+      ],
+      "size": [
+        336.4075559784917,
+        552.9507596324569
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1
+        },
+        {
+          "name": "negative_conditioning",
+          "type": "CONDITIONING",
+          "link": 2
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 3
+        },
+        {
+          "name": "previous_positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "previous_negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "previous_hooks",
+          "shape": 7,
+          "type": "HOOKS",
+          "link": null
+        },
+        {
+          "name": "base_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "base_prompt"
+          },
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            15
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            16
+          ]
+        },
+        {
+          "name": "hooks",
+          "type": "HOOKS",
+          "links": null
+        }
+      ],
+      "title": "Anima Regional Zone (chainable) 1",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+        "Node name for S&R": "AnimaRegionalZone"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "smile, male swimwear, orange shorts, white shirt, short sleeves, open shirt, collared shirt",
+        "K0KUN_DB, black hair, black eyes, spiked hair",
+        "kokun/Goku_Base_Anima_1.safetensors",
+        1,
+        1,
+        1,
+        "default"
+      ],
+      "widgets_values_named": {
+        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "zone_prompt": "smile, male swimwear, orange shorts, white shirt, short sleeves, open shirt, collared shirt",
+        "lora_trigger": "K0KUN_DB, black hair, black eyes, spiked hair",
+        "lora_name": "kokun/Goku_Base_Anima_1.safetensors",
+        "lora_strength_model": 1,
+        "lora_strength_clip": 1,
+        "strength": 1,
+        "set_cond_area": "default"
+      }
+    },
+    {
+      "id": 4,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        60.279600034330734,
+        15.080734926655685
+      ],
+      "size": [
+        400,
+        311.7966885636496
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            17,
+            28
+          ]
+        }
+      ],
+      "title": "Base prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.32.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "official style, masterpiece, best quality, amazing quality, highres, (shiny skin:1.5), dramatic lighting, \n1girl, 1boy, breasts, swimsuit, beach, looking at viewer, large breasts, outdoors, day,  smile, sky, hetero, abs, wet, parted lips, collarbone, lips, ocean, muscular, thighs, cleavage, sweat, cloud, cowboy shot, armpits, water, navel, standing, sand, blue sky, curvy, shiny, looking at viewer"
+      ],
+      "widgets_values_named": {
+        "value": "official style, masterpiece, best quality, amazing quality, highres, (shiny skin:1.5), dramatic lighting, \n1girl, 1boy, breasts, swimsuit, beach, looking at viewer, large breasts, outdoors, day,  smile, sky, hetero, abs, wet, parted lips, collarbone, lips, ocean, muscular, thighs, cleavage, sweat, cloud, cowboy shot, armpits, water, navel, standing, sand, blue sky, curvy, shiny, looking at viewer"
+      }
+    },
+    {
+      "id": 9,
+      "type": "KSampler",
+      "pos": [
+        1521.6698615323867,
+        185.92265353591088
+      ],
+      "size": [
+        258.0951366276511,
+        377.380401263483
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 8
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 9
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 10
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "KSampler",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        34830778774858,
+        "randomize",
+        16,
+        2,
+        "res_multistep",
+        "simple",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 34830778774858,
+        "control_after_generate": "randomize",
+        "steps": 16,
+        "cfg": 2,
+        "sampler_name": "res_multistep",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    {
+      "id": 15,
+      "type": "Image Save",
+      "pos": [
+        3202.36892021583,
+        -23.631759764751028
+      ],
+      "size": [
+        311.5,
+        753.953125
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 83
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "files",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "ltdrdata/was-node-suite-comfyui",
+        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
+        "Node name for S&R": "Image Save",
+        "cnr_id": "was-ns"
+      },
+      "widgets_values": [
+        "Reagional_Simple_[time(%Y-%m-%d)]",
+        "Regional_Simple",
+        "_",
+        4,
+        "false",
+        "png",
+        300,
+        100,
+        "true",
+        "false",
+        "false",
+        "false",
+        "true",
+        "true",
+        "true"
+      ],
+      "widgets_values_named": {
+        "output_path": "Reagional_Simple_[time(%Y-%m-%d)]",
+        "filename_prefix": "Regional_Simple",
+        "filename_delimiter": "_",
+        "filename_number_padding": 4,
+        "filename_number_start": "false",
+        "extension": "png",
+        "dpi": 300,
+        "quality": 100,
+        "optimize_image": "true",
+        "lossless_webp": "false",
+        "overwrite_mode": "false",
+        "show_history": "false",
+        "show_history_by_prefix": "true",
+        "embed_workflow": "true",
+        "show_previews": "true"
+      }
+    },
+    {
+      "id": 10,
+      "type": "AnimaRegionalZone",
+      "pos": [
+        1150.299116673441,
+        10.807601208613216
+      ],
+      "size": [
+        341.7940155225099,
+        551.1103495136255
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 12
+        },
+        {
+          "name": "negative_conditioning",
+          "type": "CONDITIONING",
+          "link": 13
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 33
+        },
+        {
+          "name": "previous_positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 15
+        },
+        {
+          "name": "previous_negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 16
+        },
+        {
+          "name": "previous_hooks",
+          "shape": 7,
+          "type": "HOOKS",
+          "link": null
+        },
+        {
+          "name": "base_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "base_prompt"
+          },
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "hooks",
+          "type": "HOOKS",
+          "links": null
+        }
+      ],
+      "title": "Anima Regional Zone (chainable) 2",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+        "Node name for S&R": "AnimaRegionalZone"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "official style, highleg swimsuit, bikini, white bikini, side-tied bikini bottom",
+        "S34K0_SM, (short hair:2.5), white pupils, blue eyes, red lips, lipstick, black hair,",
+        "drive/Sailor_Moon/Saeko_SM_Anima.safetensors",
+        1,
+        1,
+        1,
+        "default"
+      ],
+      "widgets_values_named": {
+        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "zone_prompt": "official style, highleg swimsuit, bikini, white bikini, side-tied bikini bottom",
+        "lora_trigger": "S34K0_SM, (short hair:2.5), white pupils, blue eyes, red lips, lipstick, black hair,",
+        "lora_name": "drive/Sailor_Moon/Saeko_SM_Anima.safetensors",
+        "lora_strength_model": 1,
+        "lora_strength_clip": 1,
+        "strength": 1,
+        "set_cond_area": "default"
+      }
+    },
+    {
+      "id": 6,
+      "type": "VAELoader",
+      "pos": [
+        1810.0255491858786,
+        151.2756722783994
+      ],
+      "size": [
+        230.04387022117953,
+        411.02536541269546
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            6,
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "ae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 8,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -309.02904580501416,
+        199.0241908495257
+      ],
+      "size": [
+        338.22130924024975,
+        149.82532522455722
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3
+      ],
+      "widgets_values_named": {
+        "shift": 3
+      }
+    },
+    {
+      "id": 14,
+      "type": "easy hiresFix",
+      "pos": [
+        2390.2085546608837,
+        10.031201172522207
+      ],
+      "size": [
+        271.8930080756393,
+        555.1860973014539
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "shape": 7,
+          "type": "PIPE_LINE",
+          "link": null
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            83
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "yolain/ComfyUI-Easy-Use",
+        "ver": "595e0738a9e3f8d0d9c4d875461b2d2c9e7559c7",
+        "Node name for S&R": "easy hiresFix",
+        "cnr_id": "comfyui-easy-use"
+      },
+      "widgets_values": [
+        "4x_foolhardy_Remacri.safetensors",
+        true,
+        "nearest-exact",
+        "by percentage",
+        50,
+        1024,
+        1024,
+        1024,
+        "disabled",
+        "Preview",
+        0,
+        "ComfyUI"
+      ],
+      "widgets_values_named": {
+        "model_name": "4x_foolhardy_Remacri.safetensors",
+        "rescale_after_model": true,
+        "rescale_method": "nearest-exact",
+        "rescale": "by percentage",
+        "percent": 50,
+        "width": 1024,
+        "height": 1024,
+        "longer_side": 1024,
+        "crop": "disabled",
+        "image_output": "Preview",
+        "link_id": 0,
+        "save_prefix": "ComfyUI"
+      }
+    },
+    {
+      "id": 1,
+      "type": "AnimaRectMask",
+      "pos": [
+        490.1252744593967,
+        9.768961207891264
+      ],
+      "size": [
+        260.3372123039071,
+        262.1153668927225
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "title": "Anima Rect Mask 1",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+        "Node name for S&R": "AnimaRectMask"
+      },
+      "widgets_values": [
+        1152,
+        896,
+        0,
+        0,
+        576,
+        896,
+        10
+      ],
+      "widgets_values_named": {
+        "width": 1152,
+        "height": 896,
+        "x": 0,
+        "y": 0,
+        "rect_width": 576,
+        "rect_height": 896,
+        "feather": 10
+      }
+    },
+    {
+      "id": 22,
+      "type": "AnimaRectMask",
+      "pos": [
+        490.6028968898605,
+        315.92957737637096
+      ],
+      "size": [
+        259.3306428652736,
+        246.59871476523733
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "title": "Anima Rect Mask 2",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+        "Node name for S&R": "AnimaRectMask"
+      },
+      "widgets_values": [
+        1152,
+        896,
+        576,
+        0,
+        576,
+        896,
+        10
+      ],
+      "widgets_values_named": {
+        "width": 1152,
+        "height": 896,
+        "x": 576,
+        "y": 0,
+        "rect_width": 576,
+        "rect_height": 896,
+        "feather": 10
+      }
+    },
+    {
+      "id": 7,
+      "type": "EmptySD3LatentImage",
+      "pos": [
+        1519.9799076017819,
+        9.871301322371632
+      ],
+      "size": [
+        263.53059118992405,
+        128.61059126219584
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "EmptySD3LatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1152,
+        896,
+        1
+      ],
+      "widgets_values_named": {
+        "width": 1152,
+        "height": 896,
+        "batch_size": 1
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      16,
+      0,
+      3,
+      0,
+      "CLIP"
+    ],
+    [
+      2,
+      17,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      3,
+      1,
+      0,
+      3,
+      2,
+      "MASK"
+    ],
+    [
+      5,
+      9,
+      0,
+      5,
+      0,
+      "LATENT"
+    ],
+    [
+      6,
+      6,
+      0,
+      5,
+      1,
+      "VAE"
+    ],
+    [
+      8,
+      8,
+      0,
+      9,
+      0,
+      "MODEL"
+    ],
+    [
+      9,
+      10,
+      0,
+      9,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      10,
+      10,
+      1,
+      9,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      11,
+      7,
+      0,
+      9,
+      3,
+      "LATENT"
+    ],
+    [
+      12,
+      16,
+      0,
+      10,
+      0,
+      "CLIP"
+    ],
+    [
+      13,
+      17,
+      0,
+      10,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      15,
+      3,
+      0,
+      10,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      16,
+      3,
+      1,
+      10,
+      4,
+      "CONDITIONING"
+    ],
+    [
+      17,
+      4,
+      0,
+      10,
+      6,
+      "STRING"
+    ],
+    [
+      18,
+      5,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      12,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      6,
+      0,
+      14,
+      2,
+      "VAE"
+    ],
+    [
+      24,
+      16,
+      0,
+      17,
+      0,
+      "CLIP"
+    ],
+    [
+      28,
+      4,
+      0,
+      3,
+      6,
+      "STRING"
+    ],
+    [
+      29,
+      19,
+      0,
+      12,
+      1,
+      "IMAGE"
+    ],
+    [
+      30,
+      19,
+      1,
+      12,
+      2,
+      "MASK"
+    ],
+    [
+      31,
+      20,
+      0,
+      8,
+      0,
+      "MODEL"
+    ],
+    [
+      33,
+      22,
+      0,
+      10,
+      2,
+      "MASK"
+    ],
+    [
+      83,
+      14,
+      1,
+      15,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 2,
+      "title": "1. Load Models",
+      "bounding": [
+        -320.43718426963324,
+        -59.671015778737036,
+        360,
+        629.6723688965177
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "2. Prompts",
+      "bounding": [
+        50.279600034330784,
+        -60.321545469476106,
+        419.390381913955,
+        630.1657393677579
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "3. Region config",
+      "bounding": [
+        480.1252744593967,
+        -60.23103879210874,
+        280.3372123039071,
+        630.1201352106903
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "4. Region 1",
+      "bounding": [
+        770.0958359817132,
+        -60.127779277830065,
+        359.8978882072456,
+        630.1165304899413
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "5. Region 2",
+      "bounding": [
+        1140.299116673441,
+        -60.15013664888324,
+        360.3400989405625,
+        630.0669630312301
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "6. Sampling",
+      "bounding": [
+        1509.9799076017819,
+        -60.128698677628385,
+        280.6652109837355,
+        630.4949080863347
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "8. VAE decode",
+      "bounding": [
+        1800.0255491858786,
+        -59.94680333534527,
+        250.04387022117976,
+        630.2567218392293
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "9. Apply signature",
+      "bounding": [
+        2060.4714114050207,
+        -59.88318664158578,
+        309.78032239788035,
+        630.2449098082815
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 10,
+      "title": "10. HiresFix",
+      "bounding": [
+        2380.2085546608837,
+        -59.96879882747778,
+        290.4660844199034,
+        629.775305079652
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.568182816674217,
+      "offset": [
+        457.2325792221872,
+        293.1131737133736
+      ]
+    },
+    "frontendVersion": "1.49.6"
+  },
+  "version": 0.4
+}
