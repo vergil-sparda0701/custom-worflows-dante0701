@@ -1391,66 +1391,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 151,
-      "type": "StringConcatenate",
-      "pos": [
-        1771.8492279540267,
-        650.6853763207193
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 24,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 281
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 283
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            284,
-            415
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.33.0",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        ","
-      ],
-      "widgets_values_named": {
-        "string_a": "",
-        "string_b": "",
-        "delimiter": ","
-      }
-    },
-    {
       "id": 136,
       "type": "PrimitiveStringMultiline",
       "pos": [
@@ -1490,65 +1430,6 @@
       },
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 182,
-      "type": "StringConcatenate",
-      "pos": [
-        3565.948892062272,
-        652.4426605444143
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 25,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 379
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 367
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            380
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.33.0",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        ","
-      ],
-      "widgets_values_named": {
-        "string_a": "",
-        "string_b": "",
-        "delimiter": ","
-      }
     },
     {
       "id": 171,
@@ -2165,6 +2046,125 @@
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 151,
+      "type": "StringConcatenate",
+      "pos": [
+        1771.8492279540267,
+        650.6853763207193
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 281
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 283
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            284,
+            415
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ", "
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": ", "
+      }
+    },
+    {
+      "id": 182,
+      "type": "StringConcatenate",
+      "pos": [
+        3565.948892062272,
+        652.4426605444143
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 379
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 367
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            380
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ", "
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": ", "
+      }
     }
   ],
   "links": [
@@ -3118,8 +3118,8 @@
     "ds": {
       "scale": 0.6779498932598604,
       "offset": [
-        -4108.781959118693,
-        328.9340373527594
+        -1170.511577550543,
+        -233.9393159782394
       ]
     },
     "frontendVersion": "1.51.9"

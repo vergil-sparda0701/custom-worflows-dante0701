@@ -247,10 +247,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-easy-use",
+        "aux_id": "yolain/ComfyUI-Easy-Use",
         "ver": "1.3.6",
         "Node name for S&R": "easy hiresFix",
-        "aux_id": "yolain/ComfyUI-Easy-Use"
+        "cnr_id": "comfyui-easy-use"
       },
       "widgets_values": [
         "remacri_original.safetensors",
@@ -451,10 +451,10 @@
       ],
       "title": "Width",
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
         "Node name for S&R": "Width/Height Literal (Image Saver)",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
         896
@@ -483,7 +483,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 296
+          "link": 297
         },
         {
           "name": "text",
@@ -627,13 +627,13 @@
       ],
       "title": "Parametros",
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
         "Node name for S&R": "Input Parameters (Image Saver)",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
-        1093577355747321,
+        678437414599846,
         "randomize",
         24,
         3,
@@ -642,7 +642,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 1093577355747321,
+        "seed": 678437414599846,
         "control_after_generate": "randomize",
         "steps": 24,
         "cfg": 3,
@@ -671,7 +671,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 297
+          "link": 299
         }
       ],
       "outputs": [
@@ -723,7 +723,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 299
+          "link": 298
         },
         {
           "name": "vae",
@@ -775,10 +775,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-impact-pack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
         "ver": "b3a815b43d987022542715b351ce3c2c02c902db",
         "Node name for S&R": "ToDetailerPipe",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+        "cnr_id": "comfyui-impact-pack"
       },
       "widgets_values": [
         "",
@@ -825,10 +825,10 @@
       ],
       "title": "Default DetectorProvider",
       "properties": {
-        "cnr_id": "comfyui-impact-subpack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack",
         "ver": "f5c9e24148d5c3b80a12a0edcaa6c4fb7327fff2",
         "Node name for S&R": "UltralyticsDetectorProvider",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack"
+        "cnr_id": "comfyui-impact-subpack"
       },
       "widgets_values": [
         "bbox/face_yolov8n_v2.pt"
@@ -860,7 +860,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 298
+          "link": 300
         }
       ],
       "outputs": [
@@ -920,10 +920,10 @@
       ],
       "title": "FaceDetectorProvider",
       "properties": {
-        "cnr_id": "comfyui-impact-subpack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack",
         "ver": "74db20c95eca152a6d686c914edc0ef4e4762cb8",
         "Node name for S&R": "UltralyticsDetectorProvider",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack"
+        "cnr_id": "comfyui-impact-subpack"
       },
       "widgets_values": [
         "bbox/face_yolov8n_v2.pt"
@@ -965,10 +965,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-impact-subpack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack",
         "ver": "f5c9e24148d5c3b80a12a0edcaa6c4fb7327fff2",
         "Node name for S&R": "UltralyticsDetectorProvider",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack"
+        "cnr_id": "comfyui-impact-subpack"
       },
       "widgets_values": [
         "bbox/hand_yolov8s.pt"
@@ -1067,10 +1067,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-impact-pack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
         "ver": "df330c1b06c094b2b7c4c606fb6f6dac48d39864",
         "Node name for S&R": "EditDetailerPipe",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+        "cnr_id": "comfyui-impact-pack"
       },
       "widgets_values": [
         "[CONCAT] hand, perfect hands",
@@ -1158,16 +1158,16 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-impact-pack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
         "ver": "df330c1b06c094b2b7c4c606fb6f6dac48d39864",
         "Node name for S&R": "FaceDetailerPipe",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+        "cnr_id": "comfyui-impact-pack"
       },
       "widgets_values": [
         512,
         true,
         4096,
-        187162906561947,
+        905006273331781,
         "randomize",
         16,
         6,
@@ -1198,7 +1198,7 @@
         "guide_size": 512,
         "guide_size_for": true,
         "max_size": 4096,
-        "seed": 187162906561947,
+        "seed": 905006273331781,
         "control_after_generate": "randomize",
         "steps": 16,
         "cfg": 6,
@@ -1317,10 +1317,10 @@
       ],
       "title": "Edit Face DetailerPipe",
       "properties": {
-        "cnr_id": "comfyui-impact-pack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
         "ver": "df330c1b06c094b2b7c4c606fb6f6dac48d39864",
         "Node name for S&R": "EditDetailerPipe",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+        "cnr_id": "comfyui-impact-pack"
       },
       "widgets_values": [
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}",
@@ -1363,10 +1363,10 @@
       ],
       "title": "Height",
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
         "Node name for S&R": "Width/Height Literal (Image Saver)",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
         1152
@@ -1487,16 +1487,16 @@
       ],
       "title": "HandDetailer (pipe)",
       "properties": {
-        "cnr_id": "comfyui-impact-pack",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
         "ver": "df330c1b06c094b2b7c4c606fb6f6dac48d39864",
         "Node name for S&R": "FaceDetailerPipe",
-        "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+        "cnr_id": "comfyui-impact-pack"
       },
       "widgets_values": [
         512,
         true,
         4096,
-        614698660866257,
+        945312986102901,
         "randomize",
         16,
         6,
@@ -1527,7 +1527,7 @@
         "guide_size": 512,
         "guide_size_for": true,
         "max_size": 4096,
-        "seed": 614698660866257,
+        "seed": 945312986102901,
         "control_after_generate": "randomize",
         "steps": 16,
         "cfg": 6,
@@ -1758,10 +1758,10 @@
       ],
       "title": "Post HiresFix",
       "properties": {
-        "cnr_id": "comfyui-easy-use",
+        "aux_id": "yolain/ComfyUI-Easy-Use",
         "ver": "595e0738a9e3f8d0d9c4d875461b2d2c9e7559c7",
         "Node name for S&R": "easy hiresFix",
-        "aux_id": "yolain/ComfyUI-Easy-Use"
+        "cnr_id": "comfyui-easy-use"
       },
       "widgets_values": [
         "remacri_original.safetensors",
@@ -1828,10 +1828,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-kjnodes",
+        "aux_id": "kijai/ComfyUI-KJNodes",
         "ver": "dcfcb5dc9bad14912272cedd351cbb377bd27a22",
         "Node name for S&R": "ColorMatch",
-        "aux_id": "kijai/ComfyUI-KJNodes"
+        "cnr_id": "comfyui-kjnodes"
       },
       "widgets_values": [
         "mkl",
@@ -1981,10 +1981,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
         "Node name for S&R": "Image Saver Metadata",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
         "",
@@ -2021,78 +2021,6 @@
         "download_civitai_data": true,
         "easy_remix": true,
         "custom": ""
-      }
-    },
-    {
-      "id": 147,
-      "type": "Image Saver Simple",
-      "pos": [
-        6849.927880525625,
-        8.36398064990135
-      ],
-      "size": [
-        296.80859375,
-        530
-      ],
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 275
-        },
-        {
-          "name": "metadata",
-          "shape": 7,
-          "type": "METADATA",
-          "link": 276
-        }
-      ],
-      "outputs": [
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
-        "Node name for S&R": "Image Saver Simple",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
-      },
-      "widgets_values": [
-        "Anima_Simple",
-        "Anima_Simple",
-        "png",
-        true,
-        100,
-        false,
-        true,
-        false,
-        0,
-        "%Y-%m-%d-%H%M%S",
-        true
-      ],
-      "widgets_values_named": {
-        "filename": "Anima_Simple",
-        "path": "Anima_Simple",
-        "extension": "png",
-        "lossless_webp": true,
-        "quality_jpeg_or_webp": 100,
-        "optimize_png": false,
-        "embed_workflow": true,
-        "save_workflow_as_json": false,
-        "counter": 0,
-        "time_format": "%Y-%m-%d-%H%M%S",
-        "show_preview": true
       }
     },
     {
@@ -2331,7 +2259,7 @@
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 295
+          "link": 296
         },
         {
           "name": "text",
@@ -2385,7 +2313,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 294
+          "link": 295
         }
       ],
       "outputs": [
@@ -2420,106 +2348,6 @@
       }
     },
     {
-      "id": 151,
-      "type": "StringConcatenate",
-      "pos": [
-        1771.8492279540267,
-        650.6853763207193
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 25,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 281
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 283
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            284,
-            285
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.33.0",
-        "Node name for S&R": "StringConcatenate"
-      },
-      "widgets_values": [
-        "",
-        "",
-        ","
-      ],
-      "widgets_values_named": {
-        "string_a": "",
-        "string_b": "",
-        "delimiter": ","
-      }
-    },
-    {
-      "id": 121,
-      "type": "CLIPLoader",
-      "pos": [
-        1312.7366960385975,
-        150.03382830567813
-      ],
-      "size": [
-        306.6290610803072,
-        111.43988844210298
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            292
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.28.0",
-        "Node name for S&R": "CLIPLoader"
-      },
-      "widgets_values": [
-        "qwen_3_06b_base.safetensors",
-        "stable_diffusion",
-        "default"
-      ],
-      "widgets_values_named": {
-        "clip_name": "qwen_3_06b_base.safetensors",
-        "type": "stable_diffusion",
-        "device": "default"
-      }
-    },
-    {
       "id": 150,
       "type": "ShowText|pysssss",
       "pos": [
@@ -2532,12 +2360,12 @@
       ],
       "flags": {},
       "order": 23,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 293
+          "link": 292
         }
       ],
       "outputs": [
@@ -2551,15 +2379,16 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-custom-scripts",
+        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
         "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss"
+        "Node name for S&R": "ShowText|pysssss",
+        "cnr_id": "comfyui-custom-scripts"
       },
       "widgets_values": [
-        "4S4M1_TL0K, long hair, black hair, red lips, wavy hair, green eyes, purple eyeshadow, eyeshadow, pruple lips,"
+        "P4N_DB, medium hair, black hair, short hair, bandana, black eyes"
       ],
       "widgets_values_named": {
-        "text_0": "4S4M1_TL0K, long hair, black hair, red lips, wavy hair, green eyes, purple eyeshadow, eyeshadow, pruple lips,"
+        "text_0": "P4N_DB, medium hair, black hair, short hair, bandana, black eyes"
       }
     },
     {
@@ -2577,7 +2406,7 @@
         "collapsed": true
       },
       "order": 28,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "string_a",
@@ -2614,6 +2443,178 @@
       }
     },
     {
+      "id": 147,
+      "type": "Image Saver Simple",
+      "pos": [
+        6849.927880525625,
+        8.36398064990135
+      ],
+      "size": [
+        296.80859375,
+        530
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 275
+        },
+        {
+          "name": "metadata",
+          "shape": 7,
+          "type": "METADATA",
+          "link": 276
+        }
+      ],
+      "outputs": [
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
+        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
+        "Node name for S&R": "Image Saver Simple",
+        "cnr_id": "comfyui-image-saver"
+      },
+      "widgets_values": [
+        "%basemodelname",
+        "Anima_Simple",
+        "png",
+        true,
+        100,
+        false,
+        true,
+        false,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        true
+      ],
+      "widgets_values_named": {
+        "filename": "%basemodelname",
+        "path": "Anima_Simple",
+        "extension": "png",
+        "lossless_webp": true,
+        "quality_jpeg_or_webp": 100,
+        "optimize_png": false,
+        "embed_workflow": true,
+        "save_workflow_as_json": false,
+        "counter": 0,
+        "time_format": "%Y-%m-%d-%H%M%S",
+        "show_preview": true
+      }
+    },
+    {
+      "id": 151,
+      "type": "StringConcatenate",
+      "pos": [
+        1771.8492279540267,
+        650.6853763207193
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 281
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 283
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            284,
+            285
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ", "
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": ", "
+      }
+    },
+    {
+      "id": 121,
+      "type": "CLIPLoader",
+      "pos": [
+        1312.7366960385975,
+        150.03382830567813
+      ],
+      "size": [
+        306.6290610803072,
+        111.43988844210298
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            293
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "stable_diffusion",
+        "device": "default"
+      }
+    },
+    {
       "id": 113,
       "type": "UNETLoaderWithName",
       "pos": [
@@ -2633,7 +2634,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            300
+            294
           ]
         },
         {
@@ -2650,11 +2651,11 @@
         "Node name for S&R": "UNETLoaderWithName"
       },
       "widgets_values": [
-        "Anima_Custom-v1.7.safetensors",
+        "Anima_Custom-v1.31.safetensors",
         "default"
       ],
       "widgets_values_named": {
-        "unet_name": "Anima_Custom-v1.7.safetensors",
+        "unet_name": "Anima_Custom-v1.31.safetensors",
         "weight_dtype": "default"
       }
     },
@@ -2662,12 +2663,12 @@
       "id": 152,
       "type": "LoraLoaderWithPreview",
       "pos": [
-        1672.032717882912,
-        120.97365269057809
+        1665.7376706180157,
+        122.45063095284685
       ],
       "size": [
-        343.07227053400163,
-        343.0802850628229
+        351.3840563444775,
+        345.8604595049492
       ],
       "flags": {},
       "order": 18,
@@ -2676,12 +2677,12 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 300
+          "link": 294
         },
         {
           "name": "clip",
           "type": "CLIP",
-          "link": 292
+          "link": 293
         }
       ],
       "outputs": [
@@ -2689,39 +2690,41 @@
           "name": "model",
           "type": "MODEL",
           "links": [
-            294
+            295
           ]
         },
         {
           "name": "clip",
           "type": "CLIP",
           "links": [
-            295,
             296,
             297,
             298,
-            299
+            299,
+            300
           ]
         },
         {
           "name": "trigger_words",
           "type": "STRING",
           "links": [
-            293
+            292
           ]
         }
       ],
       "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "cdbf7bffb074e5cb4aeb2c821a2acd168d106a42",
         "Node name for S&R": "LoraLoaderWithPreview"
       },
       "widgets_values": [
-        "pan/Pan_DB_Anima.safetensors",
+        "drive/Dragon_Ball/Pan_DB_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "pan/Pan_DB_Anima.safetensors",
+        "lora_name": "drive/Dragon_Ball/Pan_DB_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
@@ -2758,10 +2761,10 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, dark atmosphere, anime screenshot, (anime coloring:1.6), (official style:1.7),  \nP4N_DB, medium hair, black hair, short hair, bandana, black eyes,\nnaked, nude, nipples, pussy, holding, smile, outdoors, forest, day, sun, sunlight, looking at viewer, seductive, sign, (sign writing text \"Fuck me grandpa\"), (huge hips:1.55), (thick thighs:1.55), aged up "
+        "masterpiece, best quality, amazing quality, highres, dark atmosphere, anime screenshot, (anime coloring:1.6), (official style:1.7),  \n1girl, large breasts, shirt, black shirt, collared shirt, long sleeves, table, arm support, looking at viewer, red lips, glossy lipstick, perfect fingers, detailed face and eyes, seductive, parted lips, sign, holding sign wearing text \"Anima Custom\", cleavage, holding, glass, leaning foward, whiskey glass, window, cityscape, moon, full moon, night, moon light, glass reflexes, nails, nailpolish, black nails, seductive, seductive smile"
       ],
       "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, dark atmosphere, anime screenshot, (anime coloring:1.6), (official style:1.7),  \nP4N_DB, medium hair, black hair, short hair, bandana, black eyes,\nnaked, nude, nipples, pussy, holding, smile, outdoors, forest, day, sun, sunlight, looking at viewer, seductive, sign, (sign writing text \"Fuck me grandpa\"), (huge hips:1.55), (thick thighs:1.55), aged up "
+        "value": "masterpiece, best quality, amazing quality, highres, dark atmosphere, anime screenshot, (anime coloring:1.6), (official style:1.7),  \n1girl, large breasts, shirt, black shirt, collared shirt, long sleeves, table, arm support, looking at viewer, red lips, glossy lipstick, perfect fingers, detailed face and eyes, seductive, parted lips, sign, holding sign wearing text \"Anima Custom\", cleavage, holding, glass, leaning foward, whiskey glass, window, cityscape, moon, full moon, night, moon light, glass reflexes, nails, nailpolish, black nails, seductive, seductive smile"
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -3298,14 +3301,6 @@
     ],
     [
       292,
-      121,
-      0,
-      152,
-      1,
-      "CLIP"
-    ],
-    [
-      293,
       152,
       2,
       150,
@@ -3313,7 +3308,23 @@
       "STRING"
     ],
     [
+      293,
+      121,
+      0,
+      152,
+      1,
+      "CLIP"
+    ],
+    [
       294,
+      113,
+      0,
+      152,
+      0,
+      "MODEL"
+    ],
+    [
+      295,
       152,
       0,
       111,
@@ -3321,7 +3332,7 @@
       "MODEL"
     ],
     [
-      295,
+      296,
       152,
       1,
       107,
@@ -3329,7 +3340,7 @@
       "CLIP"
     ],
     [
-      296,
+      297,
       152,
       1,
       120,
@@ -3337,23 +3348,7 @@
       "CLIP"
     ],
     [
-      297,
-      152,
-      1,
-      125,
-      0,
-      "CLIP"
-    ],
-    [
       298,
-      152,
-      1,
-      128,
-      0,
-      "CLIP"
-    ],
-    [
-      299,
       152,
       1,
       126,
@@ -3361,12 +3356,20 @@
       "CLIP"
     ],
     [
-      300,
-      113,
-      0,
+      299,
       152,
+      1,
+      125,
       0,
-      "MODEL"
+      "CLIP"
+    ],
+    [
+      300,
+      152,
+      1,
+      128,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [
@@ -3686,10 +3689,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "comfyui-image-saver",
+              "aux_id": "alexopus/ComfyUI-Image-Saver",
               "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
               "Node name for S&R": "Any to String (Image Saver)",
-              "aux_id": "alexopus/ComfyUI-Image-Saver"
+              "cnr_id": "comfyui-image-saver"
             }
           },
           {
@@ -3725,10 +3728,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "comfyui-image-saver",
+              "aux_id": "alexopus/ComfyUI-Image-Saver",
               "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
               "Node name for S&R": "Any to String (Image Saver)",
-              "aux_id": "alexopus/ComfyUI-Image-Saver"
+              "cnr_id": "comfyui-image-saver"
             }
           }
         ],
@@ -3774,10 +3777,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9278755978294627,
+      "scale": 0.22984566561055556,
       "offset": [
-        -1352.4885703947534,
-        279.39008453605317
+        -158.3018532851903,
+        853.7575757389753
       ]
     },
     "frontendVersion": "1.51.9"
