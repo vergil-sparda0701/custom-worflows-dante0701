@@ -1,8 +1,8 @@
 {
   "id": "57d136a6-99da-4141-a03e-adb18d287262",
   "revision": 0,
-  "last_node_id": 44,
-  "last_link_id": 83,
+  "last_node_id": 48,
+  "last_link_id": 94,
   "nodes": [
     {
       "id": 5,
@@ -16,7 +16,7 @@
         99.62680332284657
       ],
       "flags": {},
-      "order": 14,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -65,8 +65,8 @@
         204.97910062766016
       ],
       "flags": {},
-      "order": 15,
-      "mode": 0,
+      "order": 17,
+      "mode": 4,
       "inputs": [
         {
           "name": "image",
@@ -183,7 +183,7 @@
       ],
       "flags": {},
       "order": 1,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -216,351 +216,6 @@
       }
     },
     {
-      "id": 20,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        -308.3777434466733,
-        16.43320641068352
-      ],
-      "size": [
-        331.2747553210655,
-        140.64838121957234
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            31
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "RBDTAnima_b12.safetensors",
-        "default"
-      ],
-      "widgets_values_named": {
-        "unet_name": "RBDTAnima_b12.safetensors",
-        "weight_dtype": "default"
-      }
-    },
-    {
-      "id": 43,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        -676.2673600496591,
-        -1.178494470868948
-      ],
-      "size": [
-        348.57512689970906,
-        462.32577816445223
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
-    },
-    {
-      "id": 17,
-      "type": "CLIPTextEncode",
-      "pos": [
-        61.100971420836544,
-        361.30304694210645
-      ],
-      "size": [
-        400,
-        203.76841989751802
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 24
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            2,
-            13
-          ]
-        }
-      ],
-      "title": "Negative prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.30.0",
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face"
-      ],
-      "widgets_values_named": {
-        "text": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face"
-      }
-    },
-    {
-      "id": 3,
-      "type": "AnimaRegionalZone",
-      "pos": [
-        780.2673429909075,
-        9.872220722169914
-      ],
-      "size": [
-        336.4075559784917,
-        552.9507596324569
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 1
-        },
-        {
-          "name": "negative_conditioning",
-          "type": "CONDITIONING",
-          "link": 2
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 3
-        },
-        {
-          "name": "previous_positive",
-          "shape": 7,
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "previous_negative",
-          "shape": 7,
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "previous_hooks",
-          "shape": 7,
-          "type": "HOOKS",
-          "link": null
-        },
-        {
-          "name": "base_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "base_prompt"
-          },
-          "link": 28
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            15
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            16
-          ]
-        },
-        {
-          "name": "hooks",
-          "type": "HOOKS",
-          "links": null
-        }
-      ],
-      "title": "Anima Regional Zone (chainable) 1",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
-        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
-        "Node name for S&R": "AnimaRegionalZone"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
-        "smile, male swimwear, orange shorts, white shirt, short sleeves, open shirt, collared shirt",
-        "K0KUN_DB, black hair, black eyes, spiked hair",
-        "kokun/Goku_Base_Anima_1.safetensors",
-        1,
-        1,
-        1,
-        "default"
-      ],
-      "widgets_values_named": {
-        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
-        "zone_prompt": "smile, male swimwear, orange shorts, white shirt, short sleeves, open shirt, collared shirt",
-        "lora_trigger": "K0KUN_DB, black hair, black eyes, spiked hair",
-        "lora_name": "kokun/Goku_Base_Anima_1.safetensors",
-        "lora_strength_model": 1,
-        "lora_strength_clip": 1,
-        "strength": 1,
-        "set_cond_area": "default"
-      }
-    },
-    {
-      "id": 4,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        60.279600034330734,
-        15.080734926655685
-      ],
-      "size": [
-        400,
-        311.7966885636496
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            17,
-            28
-          ]
-        }
-      ],
-      "title": "Base prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.32.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "official style, masterpiece, best quality, amazing quality, highres, (shiny skin:1.5), dramatic lighting, \n1girl, 1boy, breasts, swimsuit, beach, looking at viewer, large breasts, outdoors, day,  smile, sky, hetero, abs, wet, parted lips, collarbone, lips, ocean, muscular, thighs, cleavage, sweat, cloud, cowboy shot, armpits, water, navel, standing, sand, blue sky, curvy, shiny, looking at viewer"
-      ],
-      "widgets_values_named": {
-        "value": "official style, masterpiece, best quality, amazing quality, highres, (shiny skin:1.5), dramatic lighting, \n1girl, 1boy, breasts, swimsuit, beach, looking at viewer, large breasts, outdoors, day,  smile, sky, hetero, abs, wet, parted lips, collarbone, lips, ocean, muscular, thighs, cleavage, sweat, cloud, cowboy shot, armpits, water, navel, standing, sand, blue sky, curvy, shiny, looking at viewer"
-      }
-    },
-    {
-      "id": 9,
-      "type": "KSampler",
-      "pos": [
-        1521.6698615323867,
-        185.92265353591088
-      ],
-      "size": [
-        258.0951366276511,
-        377.380401263483
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 8
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 9
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 10
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 11
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "slot_index": 0,
-          "links": [
-            5
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.64",
-        "Node name for S&R": "KSampler",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        34830778774858,
-        "randomize",
-        16,
-        2,
-        "res_multistep",
-        "simple",
-        1
-      ],
-      "widgets_values_named": {
-        "seed": 34830778774858,
-        "control_after_generate": "randomize",
-        "steps": 16,
-        "cfg": 2,
-        "sampler_name": "res_multistep",
-        "scheduler": "simple",
-        "denoise": 1
-      }
-    },
-    {
       "id": 15,
       "type": "Image Save",
       "pos": [
@@ -572,7 +227,7 @@
         753.953125
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -635,113 +290,6 @@
       }
     },
     {
-      "id": 10,
-      "type": "AnimaRegionalZone",
-      "pos": [
-        1150.299116673441,
-        10.807601208613216
-      ],
-      "size": [
-        341.7940155225099,
-        551.1103495136255
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 12
-        },
-        {
-          "name": "negative_conditioning",
-          "type": "CONDITIONING",
-          "link": 13
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 33
-        },
-        {
-          "name": "previous_positive",
-          "shape": 7,
-          "type": "CONDITIONING",
-          "link": 15
-        },
-        {
-          "name": "previous_negative",
-          "shape": 7,
-          "type": "CONDITIONING",
-          "link": 16
-        },
-        {
-          "name": "previous_hooks",
-          "shape": 7,
-          "type": "HOOKS",
-          "link": null
-        },
-        {
-          "name": "base_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "base_prompt"
-          },
-          "link": 17
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            9
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            10
-          ]
-        },
-        {
-          "name": "hooks",
-          "type": "HOOKS",
-          "links": null
-        }
-      ],
-      "title": "Anima Regional Zone (chainable) 2",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
-        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
-        "Node name for S&R": "AnimaRegionalZone"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
-        "official style, highleg swimsuit, bikini, white bikini, side-tied bikini bottom",
-        "S34K0_SM, (short hair:2.5), white pupils, blue eyes, red lips, lipstick, black hair,",
-        "drive/Sailor_Moon/Saeko_SM_Anima.safetensors",
-        1,
-        1,
-        1,
-        "default"
-      ],
-      "widgets_values_named": {
-        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
-        "zone_prompt": "official style, highleg swimsuit, bikini, white bikini, side-tied bikini bottom",
-        "lora_trigger": "S34K0_SM, (short hair:2.5), white pupils, blue eyes, red lips, lipstick, black hair,",
-        "lora_name": "drive/Sailor_Moon/Saeko_SM_Anima.safetensors",
-        "lora_strength_model": 1,
-        "lora_strength_clip": 1,
-        "strength": 1,
-        "set_cond_area": "default"
-      }
-    },
-    {
       "id": 6,
       "type": "VAELoader",
       "pos": [
@@ -753,7 +301,7 @@
         411.02536541269546
       ],
       "flags": {},
-      "order": 5,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -804,7 +352,7 @@
         149.82532522455722
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -854,7 +402,7 @@
         555.1860973014539
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -942,9 +490,42 @@
         262.1153668927225
       ],
       "flags": {},
-      "order": 6,
+      "order": 11,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 85
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 86
+        },
+        {
+          "name": "rect_width",
+          "type": "INT",
+          "widget": {
+            "name": "rect_width"
+          },
+          "link": 92
+        },
+        {
+          "name": "rect_height",
+          "type": "INT",
+          "widget": {
+            "name": "rect_height"
+          },
+          "link": 89
+        }
+      ],
       "outputs": [
         {
           "name": "MASK",
@@ -991,9 +572,50 @@
         246.59871476523733
       ],
       "flags": {},
-      "order": 7,
+      "order": 12,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 87
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 88
+        },
+        {
+          "name": "x",
+          "type": "INT",
+          "widget": {
+            "name": "x"
+          },
+          "link": 93
+        },
+        {
+          "name": "rect_width",
+          "type": "INT",
+          "widget": {
+            "name": "rect_width"
+          },
+          "link": 91
+        },
+        {
+          "name": "rect_height",
+          "type": "INT",
+          "widget": {
+            "name": "rect_height"
+          },
+          "link": 90
+        }
+      ],
       "outputs": [
         {
           "name": "MASK",
@@ -1029,6 +651,130 @@
       }
     },
     {
+      "id": 20,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        -308.3777434466733,
+        16.43320641068352
+      ],
+      "size": [
+        331.2747553210655,
+        140.64838121957234
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            31
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "Anima_Custom-v1.72.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "widgets_values_named": {
+        "unet_name": "Anima_Custom-v1.72.safetensors",
+        "weight_dtype": "fp8_e4m3fn"
+      }
+    },
+    {
+      "id": 43,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        -676.2673600496591,
+        -1.178494470868948
+      ],
+      "size": [
+        348.57512689970906,
+        462.32577816445223
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 45,
+      "type": "LatentToWidthHeight",
+      "pos": [
+        1540.2938095615914,
+        19.009676861557267
+      ],
+      "size": [
+        200.9615234375,
+        46
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 84
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            85,
+            87
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            86,
+            88,
+            89,
+            90
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "pamparamm/ComfyUI-ppm",
+        "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
+        "Node name for S&R": "LatentToWidthHeight"
+      }
+    },
+    {
       "id": 7,
       "type": "EmptySD3LatentImage",
       "pos": [
@@ -1042,7 +788,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 8,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1051,7 +797,8 @@
           "type": "LATENT",
           "slot_index": 0,
           "links": [
-            11
+            11,
+            84
           ]
         }
       ],
@@ -1068,14 +815,429 @@
         "secondTabWidth": 65
       },
       "widgets_values": [
+        912,
         1152,
-        896,
         1
       ],
       "widgets_values_named": {
-        "width": 1152,
-        "height": 896,
+        "width": 912,
+        "height": 1152,
         "batch_size": 1
+      }
+    },
+    {
+      "id": 4,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        60.279600034330734,
+        15.080734926655685
+      ],
+      "size": [
+        400,
+        311.7966885636496
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            17,
+            28
+          ]
+        }
+      ],
+      "title": "Base prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.32.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, 2girls, upper body, naked, nude, completely nude, lesbian, yuri, looking at viewer, smile, seductive, seductive gaze, side-by-side, room, bedroom, bed, lips, pink lips, huge hips, curvy hips, thick thighs, speech bubble, \"Join us, daddy\" written on speech bubble,"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, 2girls, upper body, naked, nude, completely nude, lesbian, yuri, looking at viewer, smile, seductive, seductive gaze, side-by-side, room, bedroom, bed, lips, pink lips, huge hips, curvy hips, thick thighs, speech bubble, \"Join us, daddy\" written on speech bubble,"
+      }
+    },
+    {
+      "id": 17,
+      "type": "CLIPTextEncode",
+      "pos": [
+        61.100971420836544,
+        361.30304694210645
+      ],
+      "size": [
+        400,
+        203.76841989751802
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            2,
+            13
+          ]
+        }
+      ],
+      "title": "Negative prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.30.0",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, fused anatomy"
+      ],
+      "widgets_values_named": {
+        "text": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, fused anatomy"
+      }
+    },
+    {
+      "id": 3,
+      "type": "AnimaRegionalZone",
+      "pos": [
+        780.2673429909075,
+        9.872220722169914
+      ],
+      "size": [
+        336.4075559784917,
+        552.9507596324569
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1
+        },
+        {
+          "name": "negative_conditioning",
+          "type": "CONDITIONING",
+          "link": 2
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 3
+        },
+        {
+          "name": "previous_positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "previous_negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "previous_hooks",
+          "shape": 7,
+          "type": "HOOKS",
+          "link": null
+        },
+        {
+          "name": "base_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "base_prompt"
+          },
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            15
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            16
+          ]
+        },
+        {
+          "name": "hooks",
+          "type": "HOOKS",
+          "links": []
+        }
+      ],
+      "title": "Anima Regional Zone (chainable) 1",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+        "Node name for S&R": "AnimaRegionalZone"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "(official style:1.25), (official art:1.4), ",
+        "B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, ",
+        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        1,
+        1,
+        1,
+        "default"
+      ],
+      "widgets_values_named": {
+        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "zone_prompt": "(official style:1.25), (official art:1.4), ",
+        "lora_trigger": "B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, ",
+        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        "lora_strength_model": 1,
+        "lora_strength_clip": 1,
+        "strength": 1,
+        "set_cond_area": "default"
+      }
+    },
+    {
+      "id": 9,
+      "type": "KSampler",
+      "pos": [
+        1521.6698615323867,
+        301.30305479939386
+      ],
+      "size": [
+        255.11028658086184,
+        262
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 8
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 9
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 10
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "KSampler",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        831268045508022,
+        "randomize",
+        16,
+        2,
+        "res_multistep",
+        "simple",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 831268045508022,
+        "control_after_generate": "randomize",
+        "steps": 16,
+        "cfg": 2,
+        "sampler_name": "res_multistep",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    {
+      "id": 48,
+      "type": "Width/Height Literal (Image Saver)",
+      "pos": [
+        1517.8722200920217,
+        184.77106420180456
+      ],
+      "size": [
+        267.9263671875,
+        58
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "size",
+          "type": "INT",
+          "links": [
+            91,
+            92,
+            93
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Width/Height Literal (Image Saver)"
+      },
+      "widgets_values": [
+        448
+      ],
+      "widgets_values_named": {
+        "size": 448
+      }
+    },
+    {
+      "id": 10,
+      "type": "AnimaRegionalZone",
+      "pos": [
+        1150.299116673441,
+        10.807601208613216
+      ],
+      "size": [
+        341.7940155225099,
+        551.1103495136255
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 12
+        },
+        {
+          "name": "negative_conditioning",
+          "type": "CONDITIONING",
+          "link": 13
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 33
+        },
+        {
+          "name": "previous_positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 15
+        },
+        {
+          "name": "previous_negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 16
+        },
+        {
+          "name": "previous_hooks",
+          "shape": 7,
+          "type": "HOOKS",
+          "link": null
+        },
+        {
+          "name": "base_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "base_prompt"
+          },
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "hooks",
+          "type": "HOOKS",
+          "links": null
+        }
+      ],
+      "title": "Anima Regional Zone (chainable) 2",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+        "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+        "Node name for S&R": "AnimaRegionalZone"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "official style,",
+        "N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair,",
+        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        1,
+        1,
+        1,
+        "default"
+      ],
+      "widgets_values_named": {
+        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "zone_prompt": "official style,",
+        "lora_trigger": "N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair,",
+        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        "lora_strength_model": 1,
+        "lora_strength_clip": 1,
+        "strength": 1,
+        "set_cond_area": "default"
       }
     }
   ],
@@ -1271,6 +1433,86 @@
       15,
       0,
       "IMAGE"
+    ],
+    [
+      84,
+      7,
+      0,
+      45,
+      0,
+      "LATENT"
+    ],
+    [
+      85,
+      45,
+      0,
+      1,
+      0,
+      "INT"
+    ],
+    [
+      86,
+      45,
+      1,
+      1,
+      1,
+      "INT"
+    ],
+    [
+      87,
+      45,
+      0,
+      22,
+      0,
+      "INT"
+    ],
+    [
+      88,
+      45,
+      1,
+      22,
+      1,
+      "INT"
+    ],
+    [
+      89,
+      45,
+      1,
+      1,
+      3,
+      "INT"
+    ],
+    [
+      90,
+      45,
+      1,
+      22,
+      4,
+      "INT"
+    ],
+    [
+      91,
+      48,
+      0,
+      22,
+      3,
+      "INT"
+    ],
+    [
+      92,
+      48,
+      0,
+      1,
+      2,
+      "INT"
+    ],
+    [
+      93,
+      48,
+      0,
+      22,
+      2,
+      "INT"
     ]
   ],
   "groups": [
@@ -1386,13 +1628,13 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.568182816674217,
+      "scale": 0.5232880572124854,
       "offset": [
-        457.2325792221872,
-        293.1131737133736
+        -79.08125681261672,
+        228.5532327705073
       ]
     },
-    "frontendVersion": "1.49.6"
+    "frontendVersion": "1.51.9"
   },
   "version": 0.4
 }
