@@ -1,132 +1,19 @@
 {
   "id": "cfa727c2-7ec3-466f-99d4-1aa573c06299",
   "revision": 0,
-  "last_node_id": 106,
-  "last_link_id": 230,
+  "last_node_id": 107,
+  "last_link_id": 233,
   "nodes": [
     {
-      "id": 92,
-      "type": "Text Concatenate",
+      "id": 98,
+      "type": "UNETLoaderWithName",
       "pos": [
-        647.0245080364706,
-        496.87715839416666
+        -1040.2329174497268,
+        597.4796173664959
       ],
       "size": [
-        270,
-        142
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_a",
-          "shape": 7,
-          "type": "STRING",
-          "link": 158
-        },
-        {
-          "name": "text_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 159
-        },
-        {
-          "name": "text_c",
-          "shape": 7,
-          "type": "STRING",
-          "link": 160
-        },
-        {
-          "name": "text_d",
-          "shape": 7,
-          "type": "STRING",
-          "link": 161
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            162
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "was-ns",
-        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate"
-      },
-      "widgets_values": [
-        ", ",
-        "true"
-      ],
-      "widgets_values_named": {
-        "delimiter": ", ",
-        "clean_whitespace": "true"
-      }
-    },
-    {
-      "id": 69,
-      "type": "ModelSamplingAuraFlow",
-      "pos": [
-        -1040.3270992908572,
-        497.6360882094588
-      ],
-      "size": [
-        311.323599878148,
-        58
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 178
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            218
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.64",
-        "Node name for S&R": "ModelSamplingAuraFlow",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        3
-      ],
-      "widgets_values_named": {
-        "shift": 3
-      }
-    },
-    {
-      "id": 91,
-      "type": "Input Parameters (Image Saver)",
-      "pos": [
-        296.69595951810106,
-        497.0072084490061
-      ],
-      "size": [
-        322.6333921851143,
-        302
+        309.7873724203706,
+        103.11012948579582
       ],
       "flags": {},
       "order": 0,
@@ -134,128 +21,32 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "seed",
-          "type": "INT",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            169,
-            222
+            178
           ]
         },
         {
-          "name": "steps",
-          "type": "INT",
+          "name": "STRING",
+          "type": "STRING",
           "links": [
-            170,
-            223
-          ]
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "links": [
-            171,
-            224
-          ]
-        },
-        {
-          "name": "sampler",
-          "type": "COMBO",
-          "links": [
-            173,
-            225
-          ]
-        },
-        {
-          "name": "scheduler",
-          "type": "COMBO",
-          "links": [
-            175,
-            226
-          ]
-        },
-        {
-          "name": "denoise",
-          "type": "FLOAT",
-          "links": [
-            177,
-            227
+            179
           ]
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Input Parameters (Image Saver)"
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
       },
       "widgets_values": [
-        798569615723574,
-        "randomize",
-        16,
-        3.5,
-        "res_multistep",
-        "simple",
-        1
+        "An_Anima-v1.0.safetensors",
+        "fp8_e4m3fn"
       ],
       "widgets_values_named": {
-        "seed": 798569615723574,
-        "control_after_generate": "randomize",
-        "steps": 16,
-        "cfg": 3.5,
-        "sampler": "res_multistep",
-        "scheduler": "simple",
-        "denoise": 1
-      }
-    },
-    {
-      "id": 63,
-      "type": "VAELoader",
-      "pos": [
-        295.9014719109089,
-        1130.7177052498537
-      ],
-      "size": [
-        324.20746579207173,
-        58
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            228
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.73",
-        "Node name for S&R": "VAELoader",
-        "models": [
-          {
-            "name": "ae.safetensors",
-            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
-            "directory": "vae"
-          }
-        ],
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        "qwen_image_vae.safetensors"
-      ],
-      "widgets_values_named": {
-        "vae_name": "qwen_image_vae.safetensors"
+        "unet_name": "An_Anima-v1.0.safetensors",
+        "weight_dtype": "fp8_e4m3fn"
       }
     },
     {
@@ -272,7 +63,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -314,15 +105,338 @@
       "bgcolor": "#533"
     },
     {
+      "id": 84,
+      "type": "Width/Height Literal (Image Saver)",
+      "pos": [
+        -1041.3601960073745,
+        1133.0511686118396
+      ],
+      "size": [
+        310.3919574189955,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "size",
+          "type": "INT",
+          "links": [
+            140
+          ]
+        }
+      ],
+      "title": "Region split config",
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Width/Height Literal (Image Saver)"
+      },
+      "widgets_values": [
+        448
+      ],
+      "widgets_values_named": {
+        "size": 448
+      }
+    },
+    {
+      "id": 89,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.5811864983893,
+        531.3110671967993
+      ],
+      "size": [
+        400.19613024127455,
+        108.89180864580544
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            144,
+            166
+          ]
+        }
+      ],
+      "title": "Negative prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy"
+      ],
+      "widgets_values_named": {
+        "value": "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 99,
+      "type": "Image Saver Simple",
+      "pos": [
+        1580.7355329730583,
+        497.3252945844257
+      ],
+      "size": [
+        302.3589362821142,
+        695.4325068445669
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 233
+        },
+        {
+          "name": "metadata",
+          "shape": 7,
+          "type": "METADATA",
+          "link": 180
+        }
+      ],
+      "outputs": [
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": [
+            230
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Image Saver Simple"
+      },
+      "widgets_values": [
+        "Regional_%basemodelname",
+        "Regional_Prompt_%basemodelname",
+        "png",
+        true,
+        100,
+        false,
+        true,
+        false,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        true
+      ],
+      "widgets_values_named": {
+        "filename": "Regional_%basemodelname",
+        "path": "Regional_Prompt_%basemodelname",
+        "extension": "png",
+        "lossless_webp": true,
+        "quality_jpeg_or_webp": 100,
+        "optimize_png": false,
+        "embed_workflow": true,
+        "save_workflow_as_json": false,
+        "counter": 0,
+        "time_format": "%Y-%m-%d-%H%M%S",
+        "show_preview": true
+      }
+    },
+    {
+      "id": 79,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.6117254720165,
+        496.6813088641129
+      ],
+      "size": [
+        221.8981034938553,
+        343.0311235836426
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            136
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            130
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            131
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            129,
+            158
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 81,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.6100594046562,
+        886.050249680133
+      ],
+      "size": [
+        222.63713870302368,
+        308.1632084618418
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            137
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            134
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            135
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            133,
+            160
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 106,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2512.7400103186424,
+        520.9414308149027
+      ],
+      "size": [
+        502.5480289290474,
+        376.2771385219479
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 230
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, highres,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off shoulder kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5),\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 25937531692052, Size: 912x1152, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
+      ],
+      "widgets_values_named": {
+        "text_0": "masterpiece, best quality, amazing quality, highres,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off shoulder kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5),\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 25937531692052, Size: 912x1152, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
+      }
+    },
+    {
       "id": 94,
       "type": "Image Saver Metadata",
       "pos": [
         947.2462342084428,
-        497.70984570716996
+        496.91157868770716
       ],
       "size": [
         272.33900503786697,
-        694.5053372399714
+        698.9561309463033
       ],
       "flags": {},
       "order": 21,
@@ -490,386 +604,145 @@
       }
     },
     {
-      "id": 99,
-      "type": "Image Saver Simple",
+      "id": 107,
+      "type": "easy hiresFix",
       "pos": [
-        1247.7527184333883,
-        497.5711481232397
+        1248.599097977089,
+        497.12073758003544
       ],
       "size": [
-        302.3589362821142,
-        695.4325068445669
+        306.1647075571225,
+        699.8260321681237
       ],
       "flags": {},
       "order": 22,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 229
+          "name": "pipe",
+          "shape": 7,
+          "type": "PIPE_LINE",
+          "link": null
         },
         {
-          "name": "metadata",
+          "name": "image",
           "shape": 7,
-          "type": "METADATA",
-          "link": 180
+          "type": "IMAGE",
+          "link": 232
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 231
         }
       ],
       "outputs": [
         {
-          "name": "hashes",
-          "type": "STRING",
+          "name": "pipe",
+          "type": "PIPE_LINE",
           "links": null
         },
         {
-          "name": "a1111_params",
-          "type": "STRING",
+          "name": "image",
+          "type": "IMAGE",
           "links": [
-            230
+            233
           ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Image Saver Simple"
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.6",
+        "Node name for S&R": "easy hiresFix",
+        "aux_id": "yolain/ComfyUI-Easy-Use"
       },
       "widgets_values": [
-        "Regional_%basemodelname",
-        "Regional_Prompt_%basemodelname",
-        "png",
+        "remacri_original.safetensors",
         true,
-        100,
-        false,
-        true,
-        false,
+        "nearest-exact",
+        "by percentage",
+        50,
+        1024,
+        1024,
+        1024,
+        "disabled",
+        "Preview",
         0,
-        "%Y-%m-%d-%H%M%S",
-        true
+        "ComfyUI"
       ],
       "widgets_values_named": {
-        "filename": "Regional_%basemodelname",
-        "path": "Regional_Prompt_%basemodelname",
-        "extension": "png",
-        "lossless_webp": true,
-        "quality_jpeg_or_webp": 100,
-        "optimize_png": false,
-        "embed_workflow": true,
-        "save_workflow_as_json": false,
-        "counter": 0,
-        "time_format": "%Y-%m-%d-%H%M%S",
-        "show_preview": true
+        "model_name": "remacri_original.safetensors",
+        "rescale_after_model": true,
+        "rescale_method": "nearest-exact",
+        "rescale": "by percentage",
+        "percent": 50,
+        "width": 1024,
+        "height": 1024,
+        "longer_side": 1024,
+        "crop": "disabled",
+        "image_output": "Preview",
+        "link_id": 0,
+        "save_prefix": "ComfyUI"
       }
     },
     {
-      "id": 93,
-      "type": "Text Concatenate",
+      "id": 63,
+      "type": "VAELoader",
       "pos": [
-        648.813035032505,
-        676.4261838230275
+        295.9014719109089,
+        1136.5345748103807
       ],
       "size": [
-        272.0725667142791,
-        185.5239009998612
+        324.20746579207173,
+        58
       ],
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_a",
-          "shape": 7,
-          "type": "STRING",
-          "link": 163
-        },
-        {
-          "name": "text_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 162
-        },
-        {
-          "name": "text_c",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        },
-        {
-          "name": "text_d",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            165
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "was-ns",
-        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate"
+      "flags": {
+        "collapsed": false
       },
-      "widgets_values": [
-        ", ",
-        "true"
-      ],
-      "widgets_values_named": {
-        "delimiter": ", ",
-        "clean_whitespace": "true"
-      }
-    },
-    {
-      "id": 89,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.5811864983893,
-        531.3110671967993
-      ],
-      "size": [
-        400.19613024127455,
-        108.89180864580544
-      ],
-      "flags": {},
-      "order": 2,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "VAE",
+          "type": "VAE",
           "links": [
-            144,
-            166
+            228,
+            231
           ]
         }
       ],
-      "title": "Negative prompt",
       "properties": {
         "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "ver": "0.3.73",
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "ae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
+            "directory": "vae"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
       },
       "widgets_values": [
-        "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy"
+        "qwen_image_vae.safetensors"
       ],
       "widgets_values_named": {
-        "value": "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 96,
-      "type": "Any to String (Image Saver)",
-      "pos": [
-        649.993352819826,
-        912.6556625223132
-      ],
-      "size": [
-        269.006624695797,
-        109.97471345969313
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "value",
-          "type": "*",
-          "link": 173
-        }
-      ],
-      "outputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "links": [
-            174
-          ]
-        }
-      ],
-      "title": "Sample parse",
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Any to String (Image Saver)"
+        "vae_name": "qwen_image_vae.safetensors"
       }
-    },
-    {
-      "id": 97,
-      "type": "Any to String (Image Saver)",
-      "pos": [
-        649.8850702080854,
-        1075.2262554013444
-      ],
-      "size": [
-        269.0978108139417,
-        114.81389223620772
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "value",
-          "type": "*",
-          "link": 175
-        }
-      ],
-      "outputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "links": [
-            176
-          ]
-        }
-      ],
-      "title": "Scheduler parse",
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Any to String (Image Saver)"
-      }
-    },
-    {
-      "id": 79,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6117254720165,
-        496.6813088641129
-      ],
-      "size": [
-        221.8981034938553,
-        343.0311235836426
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            136
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            130
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            131
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            129,
-            158
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Dragon_Ball/Goku_Base_Anima_1.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Dragon_Ball/Goku_Base_Anima_1.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 81,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6100594046562,
-        886.050249680133
-      ],
-      "size": [
-        222.63713870302368,
-        308.1632084618418
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            137
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            134
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            135
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            133,
-            160
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/DxD/Rias_DxD_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/DxD/Rias_DxD_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 105,
@@ -965,7 +838,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            229
+            232
           ]
         }
       ],
@@ -995,232 +868,23 @@
         "sampler_name": "euler",
         "scheduler": "simple",
         "denoise": 1
-      }
-    },
-    {
-      "id": 106,
-      "type": "ShowText|pysssss",
-      "pos": [
-        1597.1581757920185,
-        517.9896773444334
-      ],
-      "size": [
-        502.5480289290474,
-        376.2771385219479
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 230
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss"
       },
-      "widgets_values": [
-        "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella, K0KUN_DB, black hair, spiked hair, black eyes, (official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich, R145_G, hair intakes, hair between eyes, huge ahoge, red hair, blue eyes, ahoge, long hair, aqua eyes, very long hair, (official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 1015551130468225, Size: 1152x896, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
-      ],
-      "widgets_values_named": {
-        "text_0": "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella, K0KUN_DB, black hair, spiked hair, black eyes, (official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich, R145_G, hair intakes, hair between eyes, huge ahoge, red hair, blue eyes, ahoge, long hair, aqua eyes, very long hair, (official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 1015551130468225, Size: 1152x896, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
-      }
-    },
-    {
-      "id": 83,
-      "type": "LatentToWidthHeight",
-      "pos": [
-        -1041.4119373039744,
-        1047.0427392801741
-      ],
-      "size": [
-        310.34345262213594,
-        50.49075778160295
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 112
-        }
-      ],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            138,
-            167
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            139,
-            168
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-ppm",
-        "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
-        "Node name for S&R": "LatentToWidthHeight"
-      }
-    },
-    {
-      "id": 77,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -701.0419804165576,
-        674.2287405889998
-      ],
-      "size": [
-        400,
-        134.92267854890463
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            127,
-            163
-          ]
-        }
-      ],
-      "title": "Positive prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 86,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.6493169545776,
-        1024.5932352253676
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            132,
-            161
-          ]
-        }
-      ],
-      "title": "Region 2 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 98,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        -1040.2329174497268,
-        603.2130925990148
-      ],
-      "size": [
-        309.7873724203706,
-        103.11012948579582
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            178
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            179
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "An_Anima-v1.0.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.0.safetensors",
-        "weight_dtype": "fp8_e4m3fn"
-      }
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
     },
     {
       "id": 62,
       "type": "CLIPLoader",
       "pos": [
         -1040.5787775979013,
-        743.0428554392074
+        740.2462781383973
       ],
       "size": [
         309.7201321050462,
         111.60520650293932
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1268,14 +932,14 @@
       "type": "EmptySD3LatentImage",
       "pos": [
         -1040.9617316257877,
-        893.8489514286326
+        889.4703130628963
       ],
       "size": [
         309.98670785492254,
         116.8409038458824
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1289,6 +953,7 @@
           ]
         }
       ],
+      "title": "Aspect ratio",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.64",
@@ -1302,15 +967,360 @@
         "secondTabWidth": 65
       },
       "widgets_values": [
+        912,
         1152,
-        896,
         1
       ],
       "widgets_values_named": {
-        "width": 1152,
-        "height": 896,
+        "width": 912,
+        "height": 1152,
         "batch_size": 1
       }
+    },
+    {
+      "id": 69,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -1040.3270992908572,
+        497.6360882094588
+      ],
+      "size": [
+        311.323599878148,
+        58
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 178
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            218
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3
+      ],
+      "widgets_values_named": {
+        "shift": 3
+      }
+    },
+    {
+      "id": 83,
+      "type": "LatentToWidthHeight",
+      "pos": [
+        -1040.5816544704558,
+        1042.061092955505
+      ],
+      "size": [
+        310.34345262213594,
+        50.49075778160295
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 112
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            138,
+            167
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            139,
+            168
+          ]
+        }
+      ],
+      "title": "Aspect ratio to string",
+      "properties": {
+        "cnr_id": "comfyui-ppm",
+        "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
+        "Node name for S&R": "LatentToWidthHeight"
+      }
+    },
+    {
+      "id": 96,
+      "type": "Any to String (Image Saver)",
+      "pos": [
+        649.993352819826,
+        912.6556625223132
+      ],
+      "size": [
+        269.006624695797,
+        109.97471345969313
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 173
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            174
+          ]
+        }
+      ],
+      "title": "Sample to string",
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Any to String (Image Saver)"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 97,
+      "type": "Any to String (Image Saver)",
+      "pos": [
+        649.8850702080854,
+        1075.2262554013444
+      ],
+      "size": [
+        269.0978108139417,
+        119.26468594253993
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 175
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            176
+          ]
+        }
+      ],
+      "title": "Scheduler to string",
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Any to String (Image Saver)"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 93,
+      "type": "Text Concatenate",
+      "pos": [
+        648.813035032505,
+        682.6893957037191
+      ],
+      "size": [
+        272.0725667142791,
+        185.5239009998612
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 163
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 162
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            165
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ],
+      "widgets_values_named": {
+        "delimiter": ", ",
+        "clean_whitespace": "true"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 92,
+      "type": "Text Concatenate",
+      "pos": [
+        647.0245080364706,
+        496.87715839416666
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 158
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 159
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": 160
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": 161
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            162
+          ]
+        }
+      ],
+      "title": "Concatenate regions and triggers",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ],
+      "widgets_values_named": {
+        "delimiter": ", ",
+        "clean_whitespace": "true"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 77,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.0419804165576,
+        674.2287405889998
+      ],
+      "size": [
+        400,
+        130.23113979205937
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            127,
+            163
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 85,
@@ -1324,7 +1334,7 @@
         142.02014373954012
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1344,13 +1354,53 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "(official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich"
+        "(official style:1.45), huge breasts"
       ],
       "widgets_values_named": {
-        "value": "(official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich"
+        "value": "(official style:1.45), huge breasts"
       },
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.6493169545776,
+        1024.5932352253676
+      ],
+      "size": [
+        400,
+        167.57425827323232
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            132,
+            161
+          ]
+        }
+      ],
+      "title": "Region 2 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (medium breasts:1.5)"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (medium breasts:1.5)"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 87,
@@ -1361,7 +1411,7 @@
       ],
       "size": [
         289.00984472409493,
-        696.6709637502971
+        698.9977115745079
       ],
       "flags": {
         "collapsed": false
@@ -1534,18 +1584,20 @@
         "width": 896,
         "height": 1152,
         "rect_width": 448
-      }
+      },
+      "color": "#432",
+      "bgcolor": "#653"
     },
     {
-      "id": 84,
-      "type": "Width/Height Literal (Image Saver)",
+      "id": 91,
+      "type": "Input Parameters (Image Saver)",
       "pos": [
-        -1041.3601960073745,
-        1133.0511686118396
+        296.69595951810106,
+        497.0072084490061
       ],
       "size": [
-        310.3919574189955,
-        58
+        322.6333921851143,
+        302
       ],
       "flags": {},
       "order": 11,
@@ -1553,25 +1605,79 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "size",
+          "name": "seed",
           "type": "INT",
           "links": [
-            140
+            169,
+            222
+          ]
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "links": [
+            170,
+            223
+          ]
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "links": [
+            171,
+            224
+          ]
+        },
+        {
+          "name": "sampler",
+          "type": "COMBO",
+          "links": [
+            173,
+            225
+          ]
+        },
+        {
+          "name": "scheduler",
+          "type": "COMBO",
+          "links": [
+            175,
+            226
+          ]
+        },
+        {
+          "name": "denoise",
+          "type": "FLOAT",
+          "links": [
+            177,
+            227
           ]
         }
       ],
-      "title": "Region split config",
       "properties": {
         "cnr_id": "comfyui-image-saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Width/Height Literal (Image Saver)"
+        "Node name for S&R": "Input Parameters (Image Saver)"
       },
       "widgets_values": [
-        584
+        1096700822926899,
+        "randomize",
+        16,
+        3.5,
+        "res_multistep",
+        "simple",
+        1
       ],
       "widgets_values_named": {
-        "size": 584
-      }
+        "seed": 1096700822926899,
+        "control_after_generate": "randomize",
+        "steps": 16,
+        "cfg": 3.5,
+        "sampler": "res_multistep",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
     }
   ],
   "links": [
@@ -1984,20 +2090,36 @@
       "VAE"
     ],
     [
-      229,
-      105,
-      0,
-      99,
-      0,
-      "IMAGE"
-    ],
-    [
       230,
       99,
       1,
       106,
       0,
       "STRING"
+    ],
+    [
+      231,
+      63,
+      0,
+      107,
+      2,
+      "VAE"
+    ],
+    [
+      232,
+      105,
+      0,
+      107,
+      1,
+      "IMAGE"
+    ],
+    [
+      233,
+      107,
+      1,
+      99,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -2078,9 +2200,9 @@
       "title": "7. Save metadata",
       "bounding": [
         937.2462342084428,
-        427.70984570716996,
+        426.91157868770716,
         292.33900503786697,
-        774.5053372399714
+        775.8405753518709
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2089,10 +2211,22 @@
       "id": 8,
       "title": "Save Image",
       "bounding": [
-        1237.7527184333883,
-        427.5711481232397,
+        1570.7355329730583,
+        427.3252945844257,
         322.3589362821142,
         775.4325068445669
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "8. HiresFix",
+      "bounding": [
+        1238.599097977089,
+        427.12073758003544,
+        324.38449873654554,
+        775.8203449979139
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2104,9 +2238,9 @@
         "id": "52b4727f-3bd7-49c0-91c0-c3d45777177f",
         "version": 1,
         "state": {
-          "lastGroupId": 8,
-          "lastNodeId": 106,
-          "lastLinkId": 230,
+          "lastGroupId": 9,
+          "lastNodeId": 107,
+          "lastLinkId": 233,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3306,9 +3440,9 @@
         "id": "01d6a9ac-3afa-4515-879d-ded4de85ed00",
         "version": 1,
         "state": {
-          "lastGroupId": 8,
-          "lastNodeId": 106,
-          "lastLinkId": 230,
+          "lastGroupId": 9,
+          "lastNodeId": 107,
+          "lastLinkId": 233,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3317,17 +3451,17 @@
         "inputNode": {
           "id": -10,
           "bounding": [
-            68.34189250565294,
-            815.2147269810325,
+            71.57175572453102,
+            783.7237762119586,
             169.4296875,
-            268
+            267.9999999999999
           ]
         },
         "outputNode": {
           "id": -20,
           "bounding": [
-            677.5272817730901,
-            915.2147269810325,
+            897.1562064534794,
+            790.8659540810252,
             128,
             68
           ]
@@ -3342,8 +3476,8 @@
             ],
             "localized_name": "modelo",
             "pos": [
-              213.77158000565294,
-              839.2147269810325
+              217.00144322453102,
+              807.7237762119586
             ]
           },
           {
@@ -3355,8 +3489,8 @@
             ],
             "localized_name": "positivo",
             "pos": [
-              213.77158000565294,
-              859.2147269810325
+              217.00144322453102,
+              827.7237762119586
             ]
           },
           {
@@ -3368,8 +3502,8 @@
             ],
             "localized_name": "negativo",
             "pos": [
-              213.77158000565294,
-              879.2147269810325
+              217.00144322453102,
+              847.7237762119586
             ]
           },
           {
@@ -3381,8 +3515,8 @@
             ],
             "localized_name": "imagen_latente",
             "pos": [
-              213.77158000565294,
-              899.2147269810325
+              217.00144322453102,
+              867.7237762119586
             ]
           },
           {
@@ -3394,8 +3528,8 @@
             ],
             "localized_name": "semilla",
             "pos": [
-              213.77158000565294,
-              919.2147269810325
+              217.00144322453102,
+              887.7237762119586
             ]
           },
           {
@@ -3407,8 +3541,8 @@
             ],
             "localized_name": "pasos",
             "pos": [
-              213.77158000565294,
-              939.2147269810325
+              217.00144322453102,
+              907.7237762119586
             ]
           },
           {
@@ -3420,8 +3554,8 @@
             ],
             "localized_name": "cfg",
             "pos": [
-              213.77158000565294,
-              959.2147269810325
+              217.00144322453102,
+              927.7237762119586
             ]
           },
           {
@@ -3433,8 +3567,8 @@
             ],
             "localized_name": "nombre_muestreador",
             "pos": [
-              213.77158000565294,
-              979.2147269810325
+              217.00144322453102,
+              947.7237762119586
             ]
           },
           {
@@ -3446,8 +3580,8 @@
             ],
             "localized_name": "programador",
             "pos": [
-              213.77158000565294,
-              999.2147269810325
+              217.00144322453102,
+              967.7237762119586
             ]
           },
           {
@@ -3459,8 +3593,8 @@
             ],
             "localized_name": "deshacer_ruido",
             "pos": [
-              213.77158000565294,
-              1019.2147269810325
+              217.00144322453102,
+              987.7237762119586
             ]
           },
           {
@@ -3472,8 +3606,8 @@
             ],
             "localized_name": "vae",
             "pos": [
-              213.77158000565294,
-              1039.2147269810325
+              217.00144322453102,
+              1007.7237762119586
             ]
           }
         ],
@@ -3487,8 +3621,8 @@
             ],
             "localized_name": "IMAGEN",
             "pos": [
-              701.5272817730901,
-              939.2147269810325
+              921.1562064534794,
+              814.8659540810252
             ]
           }
         ],
@@ -3626,8 +3760,8 @@
             "id": 104,
             "type": "VAEDecode",
             "pos": [
-              295.95759993636455,
-              1107.0580374789533
+              634.2831416110037,
+              799.4159130039596
             ],
             "size": [
               169.8580078125,
@@ -3781,13 +3915,17 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7428681689250948,
+      "scale": 0.9550043196409924,
       "offset": [
-        651.8054859400172,
-        -65.24934730926708
+        814.6033542473231,
+        -237.81395026115953
       ]
     },
     "frontendVersion": "1.51.9"
   },
-  "version": 0.4
+  "version": 0.4,
+  "seed_widgets": {
+    "91": 0,
+    "105": 0
+  }
 }
