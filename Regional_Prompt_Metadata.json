@@ -5,61 +5,6 @@
   "last_link_id": 230,
   "nodes": [
     {
-      "id": 62,
-      "type": "CLIPLoader",
-      "pos": [
-        -1040.5787775979013,
-        750.20967214062
-      ],
-      "size": [
-        309.7201321050462,
-        111.60520650293932
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            89,
-            125
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.73",
-        "Node name for S&R": "CLIPLoader",
-        "models": [
-          {
-            "name": "qwen_3_4b.safetensors",
-            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
-            "directory": "text_encoders"
-          }
-        ],
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        "qwen_3_06b_base.safetensors",
-        "lumina2",
-        "default"
-      ],
-      "widgets_values_named": {
-        "clip_name": "qwen_3_06b_base.safetensors",
-        "type": "lumina2",
-        "device": "default"
-      }
-    },
-    {
       "id": 92,
       "type": "Text Concatenate",
       "pos": [
@@ -120,51 +65,6 @@
       "widgets_values_named": {
         "delimiter": ", ",
         "clean_whitespace": "true"
-      }
-    },
-    {
-      "id": 83,
-      "type": "LatentToWidthHeight",
-      "pos": [
-        -1041.4119373039744,
-        1047.0427392801741
-      ],
-      "size": [
-        310.34345262213594,
-        50.49075778160295
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 112
-        }
-      ],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            138,
-            167
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            139,
-            168
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-ppm",
-        "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
-        "Node name for S&R": "LatentToWidthHeight"
       }
     },
     {
@@ -229,7 +129,7 @@
         302
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -288,7 +188,7 @@
         "Node name for S&R": "Input Parameters (Image Saver)"
       },
       "widgets_values": [
-        201035955790961,
+        798569615723574,
         "randomize",
         16,
         3.5,
@@ -297,58 +197,13 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 201035955790961,
+        "seed": 798569615723574,
         "control_after_generate": "randomize",
         "steps": 16,
         "cfg": 3.5,
         "sampler": "res_multistep",
         "scheduler": "simple",
         "denoise": 1
-      }
-    },
-    {
-      "id": 98,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        -1040.2329174497268,
-        597.4796173664959
-      ],
-      "size": [
-        309.7873724203706,
-        103.11012948579582
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            178
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            179
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "An_Anima-v1.0.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.0.safetensors",
-        "weight_dtype": "fp8_e4m3fn"
       }
     },
     {
@@ -365,7 +220,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -417,7 +272,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -635,89 +490,76 @@
       }
     },
     {
-      "id": 68,
-      "type": "EmptySD3LatentImage",
+      "id": 99,
+      "type": "Image Saver Simple",
       "pos": [
-        -1040.9617316257877,
-        895.2822928975263
+        1247.7527184333883,
+        497.5711481232397
       ],
       "size": [
-        309.98670785492254,
-        116.8409038458824
+        302.3589362821142,
+        695.4325068445669
       ],
       "flags": {},
-      "order": 4,
+      "order": 22,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 229
+        },
+        {
+          "name": "metadata",
+          "shape": 7,
+          "type": "METADATA",
+          "link": 180
+        }
+      ],
       "outputs": [
         {
-          "name": "LATENT",
-          "type": "LATENT",
-          "slot_index": 0,
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
           "links": [
-            112,
-            221
+            230
           ]
         }
       ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.64",
-        "Node name for S&R": "EmptySD3LatentImage",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        912,
-        1152,
-        1
-      ],
-      "widgets_values_named": {
-        "width": 912,
-        "height": 1152,
-        "batch_size": 1
-      }
-    },
-    {
-      "id": 84,
-      "type": "Width/Height Literal (Image Saver)",
-      "pos": [
-        -1041.3601960073745,
-        1133.0511686118396
-      ],
-      "size": [
-        310.3919574189955,
-        58
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "size",
-          "type": "INT",
-          "links": [
-            140
-          ]
-        }
-      ],
-      "title": "Region split config",
       "properties": {
         "cnr_id": "comfyui-image-saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Width/Height Literal (Image Saver)"
+        "Node name for S&R": "Image Saver Simple"
       },
       "widgets_values": [
-        448
+        "Regional_%basemodelname",
+        "Regional_Prompt_%basemodelname",
+        "png",
+        true,
+        100,
+        false,
+        true,
+        false,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        true
       ],
       "widgets_values_named": {
-        "size": 448
+        "filename": "Regional_%basemodelname",
+        "path": "Regional_Prompt_%basemodelname",
+        "extension": "png",
+        "lossless_webp": true,
+        "quality_jpeg_or_webp": 100,
+        "optimize_png": false,
+        "embed_workflow": true,
+        "save_workflow_as_json": false,
+        "counter": 0,
+        "time_format": "%Y-%m-%d-%H%M%S",
+        "show_preview": true
       }
     },
     {
@@ -795,7 +637,7 @@
         108.89180864580544
       ],
       "flags": {},
-      "order": 6,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -898,47 +740,6 @@
       }
     },
     {
-      "id": 106,
-      "type": "ShowText|pysssss",
-      "pos": [
-        1624.5224645479166,
-        515.9308613103493
-      ],
-      "size": [
-        502.5480289290474,
-        376.2771385219479
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 230
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, hug, K0KUN_DB, black hair, spiked hair, black eyes, (official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:1.55), grabbing other's ass, R145_G, hair intakes, hair between eyes, huge ahoge, red hair, blue eyes, ahoge, long hair, aqua eyes, very long hair, (official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 24441744917836, Size: 912x1152, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
-      ],
-      "widgets_values_named": {
-        "text_0": "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, hug, K0KUN_DB, black hair, spiked hair, black eyes, (official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:1.55), grabbing other's ass, R145_G, hair intakes, hair between eyes, huge ahoge, red hair, blue eyes, ahoge, long hair, aqua eyes, very long hair, (official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 24441744917836, Size: 912x1152, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
-      }
-    },
-    {
       "id": 79,
       "type": "LoraInfoWithPreview",
       "pos": [
@@ -950,7 +751,7 @@
         343.0311235836426
       ],
       "flags": {},
-      "order": 7,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1016,7 +817,7 @@
         308.1632084618418
       ],
       "flags": {},
-      "order": 8,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1197,157 +998,90 @@
       }
     },
     {
-      "id": 99,
-      "type": "Image Saver Simple",
+      "id": 106,
+      "type": "ShowText|pysssss",
       "pos": [
-        1247.7527184333883,
-        497.5711481232397
+        1597.1581757920185,
+        517.9896773444334
       ],
       "size": [
-        302.3589362821142,
-        695.4325068445669
+        502.5480289290474,
+        376.2771385219479
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 229
-        },
-        {
-          "name": "metadata",
-          "shape": 7,
-          "type": "METADATA",
-          "link": 180
+          "name": "text",
+          "type": "STRING",
+          "link": 230
         }
       ],
       "outputs": [
         {
-          "name": "hashes",
+          "name": "STRING",
+          "shape": 6,
           "type": "STRING",
           "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": [
-            230
-          ]
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Image Saver Simple"
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        "Regional_%basemodelname",
-        "Regional_Prompt_%basemodelname",
-        "png",
-        true,
-        100,
-        false,
-        true,
-        false,
-        0,
-        "%Y-%m-%d-%H%M%S",
-        true
+        "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella, K0KUN_DB, black hair, spiked hair, black eyes, (official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich, R145_G, hair intakes, hair between eyes, huge ahoge, red hair, blue eyes, ahoge, long hair, aqua eyes, very long hair, (official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 1015551130468225, Size: 1152x896, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
       ],
       "widgets_values_named": {
-        "filename": "Regional_%basemodelname",
-        "path": "Regional_Prompt_%basemodelname",
-        "extension": "png",
-        "lossless_webp": true,
-        "quality_jpeg_or_webp": 100,
-        "optimize_png": false,
-        "embed_workflow": true,
-        "save_workflow_as_json": false,
-        "counter": 0,
-        "time_format": "%Y-%m-%d-%H%M%S",
-        "show_preview": true
+        "text_0": "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella, K0KUN_DB, black hair, spiked hair, black eyes, (official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich, R145_G, hair intakes, hair between eyes, huge ahoge, red hair, blue eyes, ahoge, long hair, aqua eyes, very long hair, (official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 1015551130468225, Size: 1152x896, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
       }
     },
     {
-      "id": 85,
-      "type": "PrimitiveStringMultiline",
+      "id": 83,
+      "type": "LatentToWidthHeight",
       "pos": [
-        -701.6492409220378,
-        842.1794807717683
+        -1041.4119373039744,
+        1047.0427392801741
       ],
       "size": [
-        400,
-        142.02014373954012
+        310.34345262213594,
+        50.49075778160295
       ],
       "flags": {},
-      "order": 9,
+      "order": 16,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 112
+        }
+      ],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "width",
+          "type": "INT",
           "links": [
-            128,
-            159
+            138,
+            167
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            139,
+            168
           ]
         }
       ],
-      "title": "Region 1 prompt",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:1.55), tall male"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:1.55), tall male"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 86,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.6493169545776,
-        1024.5932352253676
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            132,
-            161
-          ]
-        }
-      ],
-      "title": "Region 2 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
+        "cnr_id": "comfyui-ppm",
+        "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
+        "Node name for S&R": "LatentToWidthHeight"
+      }
     },
     {
       "id": 77,
@@ -1358,10 +1092,10 @@
       ],
       "size": [
         400,
-        130.23113979205937
+        134.92267854890463
       ],
       "flags": {},
-      "order": 11,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1381,13 +1115,242 @@
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, hug"
+        "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella"
       ],
       "widgets_values_named": {
-        "value": "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, hug"
+        "value": "masterpiece, best quality, beach, outdoors, sand, ocean, clouds, day, blue sky, side-by-side, looking at viewer, smile, sitting, beach towel, beach umbrella"
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.6493169545776,
+        1024.5932352253676
+      ],
+      "size": [
+        400,
+        167.57425827323232
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            132,
+            161
+          ]
+        }
+      ],
+      "title": "Region 2 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (huge breasts:1.5), huge hips, thick thighs, swimsuit, highleg bikini, white bukini, covered nipples, holding, glass, juice glass, orange juice"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 98,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        -1040.2329174497268,
+        603.2130925990148
+      ],
+      "size": [
+        309.7873724203706,
+        103.11012948579582
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            178
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            179
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "An_Anima-v1.0.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_Anima-v1.0.safetensors",
+        "weight_dtype": "fp8_e4m3fn"
+      }
+    },
+    {
+      "id": 62,
+      "type": "CLIPLoader",
+      "pos": [
+        -1040.5787775979013,
+        743.0428554392074
+      ],
+      "size": [
+        309.7201321050462,
+        111.60520650293932
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            89,
+            125
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.73",
+        "Node name for S&R": "CLIPLoader",
+        "models": [
+          {
+            "name": "qwen_3_4b.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+            "directory": "text_encoders"
+          }
+        ],
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "qwen_3_06b_base.safetensors",
+        "lumina2",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "lumina2",
+        "device": "default"
+      }
+    },
+    {
+      "id": 68,
+      "type": "EmptySD3LatentImage",
+      "pos": [
+        -1040.9617316257877,
+        893.8489514286326
+      ],
+      "size": [
+        309.98670785492254,
+        116.8409038458824
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            112,
+            221
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "EmptySD3LatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1152,
+        896,
+        1
+      ],
+      "widgets_values_named": {
+        "width": 1152,
+        "height": 896,
+        "batch_size": 1
+      }
+    },
+    {
+      "id": 85,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.6492409220378,
+        842.1794807717683
+      ],
+      "size": [
+        400,
+        142.02014373954012
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            128,
+            159
+          ]
+        }
+      ],
+      "title": "Region 1 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), 1boy, muscular male, male swimwear, orange shorts, large pectorals, abs, navel, (aged up:1.5), (mature male:2.55), sandwich, eating sandwich"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 87,
@@ -1571,6 +1534,43 @@
         "width": 896,
         "height": 1152,
         "rect_width": 448
+      }
+    },
+    {
+      "id": 84,
+      "type": "Width/Height Literal (Image Saver)",
+      "pos": [
+        -1041.3601960073745,
+        1133.0511686118396
+      ],
+      "size": [
+        310.3919574189955,
+        58
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "size",
+          "type": "INT",
+          "links": [
+            140
+          ]
+        }
+      ],
+      "title": "Region split config",
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Width/Height Literal (Image Saver)"
+      },
+      "widgets_values": [
+        584
+      ],
+      "widgets_values_named": {
+        "size": 584
       }
     }
   ],
@@ -2075,7 +2075,7 @@
     },
     {
       "id": 7,
-      "title": "7.Save metadata",
+      "title": "7. Save metadata",
       "bounding": [
         937.2462342084428,
         427.70984570716996,
@@ -3781,10 +3781,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7983124465921605,
+      "scale": 0.7428681689250948,
       "offset": [
-        914.4738992711949,
-        -544.7992497210091
+        651.8054859400172,
+        -65.24934730926708
       ]
     },
     "frontendVersion": "1.51.9"
