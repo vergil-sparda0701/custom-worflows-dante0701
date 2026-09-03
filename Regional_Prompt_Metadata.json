@@ -5,51 +5,6 @@
   "last_link_id": 233,
   "nodes": [
     {
-      "id": 98,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        -1040.2329174497268,
-        597.4796173664959
-      ],
-      "size": [
-        309.7873724203706,
-        103.11012948579582
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            178
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            179
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "An_Anima-v1.0.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.0.safetensors",
-        "weight_dtype": "fp8_e4m3fn"
-      }
-    },
-    {
       "id": 75,
       "type": "CLIPTextEncode",
       "pos": [
@@ -63,7 +18,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -116,7 +71,7 @@
         58
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -140,46 +95,6 @@
       "widgets_values_named": {
         "size": 448
       }
-    },
-    {
-      "id": 89,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.5811864983893,
-        531.3110671967993
-      ],
-      "size": [
-        400.19613024127455,
-        108.89180864580544
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            144,
-            166
-          ]
-        }
-      ],
-      "title": "Negative prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy"
-      ],
-      "widgets_values_named": {
-        "value": "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
     },
     {
       "id": 99,
@@ -266,7 +181,7 @@
         343.0311235836426
       ],
       "flags": {},
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -332,7 +247,7 @@
         308.1632084618418
       ],
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -421,274 +336,10 @@
         "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off shoulder kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5),\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 25937531692052, Size: 912x1152, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
+        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, areola slip, big areola,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5), leaning foward, hands on own thighs, one eye closed\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 217180681072284, Size: 912x1152, Model hash: 26F308A9B7, Model: Anima_Custom-v1.7, Version: ComfyUI"
       ],
       "widgets_values_named": {
-        "text_0": "masterpiece, best quality, amazing quality, highres,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off shoulder kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5),\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, fused anatomy\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 25937531692052, Size: 912x1152, Model hash: D6BAF156F9, Model: An_Anima-v1.0, Version: ComfyUI"
-      }
-    },
-    {
-      "id": 94,
-      "type": "Image Saver Metadata",
-      "pos": [
-        947.2462342084428,
-        496.91157868770716
-      ],
-      "size": [
-        272.33900503786697,
-        698.9561309463033
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "modelname",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "modelname"
-          },
-          "link": 179
-        },
-        {
-          "name": "positive",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "positive"
-          },
-          "link": 165
-        },
-        {
-          "name": "negative",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "negative"
-          },
-          "link": 166
-        },
-        {
-          "name": "width",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 167
-        },
-        {
-          "name": "height",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 168
-        },
-        {
-          "name": "seed_value",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "seed_value"
-          },
-          "link": 169
-        },
-        {
-          "name": "steps",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "steps"
-          },
-          "link": 170
-        },
-        {
-          "name": "cfg",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "cfg"
-          },
-          "link": 171
-        },
-        {
-          "name": "sampler_name",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "sampler_name"
-          },
-          "link": 174
-        },
-        {
-          "name": "scheduler_name",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "scheduler_name"
-          },
-          "link": 176
-        },
-        {
-          "name": "denoise",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "denoise"
-          },
-          "link": 177
-        }
-      ],
-      "outputs": [
-        {
-          "name": "metadata",
-          "type": "METADATA",
-          "links": [
-            180
-          ]
-        },
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Image Saver Metadata"
-      },
-      "widgets_values": [
-        "",
-        "unknown",
-        "unknown",
-        512,
-        512,
-        0,
-        20,
-        7,
-        "",
-        "normal",
-        1,
-        0,
-        "",
-        true,
-        true,
-        ""
-      ],
-      "widgets_values_named": {
-        "modelname": "",
-        "positive": "unknown",
-        "negative": "unknown",
-        "width": 512,
-        "height": 512,
-        "seed_value": 0,
-        "steps": 20,
-        "cfg": 7,
-        "sampler_name": "",
-        "scheduler_name": "normal",
-        "denoise": 1,
-        "clip_skip": 0,
-        "additional_hashes": "",
-        "download_civitai_data": true,
-        "easy_remix": true,
-        "custom": ""
-      }
-    },
-    {
-      "id": 107,
-      "type": "easy hiresFix",
-      "pos": [
-        1248.599097977089,
-        497.12073758003544
-      ],
-      "size": [
-        306.1647075571225,
-        699.8260321681237
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pipe",
-          "shape": 7,
-          "type": "PIPE_LINE",
-          "link": null
-        },
-        {
-          "name": "image",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": 232
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": 231
-        }
-      ],
-      "outputs": [
-        {
-          "name": "pipe",
-          "type": "PIPE_LINE",
-          "links": null
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            233
-          ]
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "1.3.6",
-        "Node name for S&R": "easy hiresFix",
-        "aux_id": "yolain/ComfyUI-Easy-Use"
-      },
-      "widgets_values": [
-        "remacri_original.safetensors",
-        true,
-        "nearest-exact",
-        "by percentage",
-        50,
-        1024,
-        1024,
-        1024,
-        "disabled",
-        "Preview",
-        0,
-        "ComfyUI"
-      ],
-      "widgets_values_named": {
-        "model_name": "remacri_original.safetensors",
-        "rescale_after_model": true,
-        "rescale_method": "nearest-exact",
-        "rescale": "by percentage",
-        "percent": 50,
-        "width": 1024,
-        "height": 1024,
-        "longer_side": 1024,
-        "crop": "disabled",
-        "image_output": "Preview",
-        "link_id": 0,
-        "save_prefix": "ComfyUI"
+        "text_0": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, areola slip, big areola,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5), leaning foward, hands on own thighs, one eye closed\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 217180681072284, Size: 912x1152, Model hash: 26F308A9B7, Model: Anima_Custom-v1.7, Version: ComfyUI"
       }
     },
     {
@@ -705,7 +356,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -884,7 +535,7 @@
         111.60520650293932
       ],
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -939,7 +590,7 @@
         116.8409038458824
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -989,7 +640,7 @@
         58
       ],
       "flags": {},
-      "order": 12,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1039,7 +690,7 @@
         50.49075778160295
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1085,7 +736,7 @@
         109.97471345969313
       ],
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1124,7 +775,7 @@
         119.26468594253993
       ],
       "flags": {},
-      "order": 17,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1228,7 +879,7 @@
         142
       ],
       "flags": {},
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1281,126 +932,6 @@
       },
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 77,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -701.0419804165576,
-        674.2287405889998
-      ],
-      "size": [
-        400,
-        130.23113979205937
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            127,
-            163
-          ]
-        }
-      ],
-      "title": "Positive prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 85,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -701.6492409220378,
-        842.1794807717683
-      ],
-      "size": [
-        400,
-        142.02014373954012
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            128,
-            159
-          ]
-        }
-      ],
-      "title": "Region 1 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), huge breasts"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), huge breasts"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 86,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.6493169545776,
-        1024.5932352253676
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            132,
-            161
-          ]
-        }
-      ],
-      "title": "Region 2 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (medium breasts:1.5)"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (medium breasts:1.5)"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 87,
@@ -1600,7 +1131,7 @@
         302
       ],
       "flags": {},
-      "order": 11,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1659,7 +1190,7 @@
         "Node name for S&R": "Input Parameters (Image Saver)"
       },
       "widgets_values": [
-        1096700822926899,
+        193328973495197,
         "randomize",
         16,
         3.5,
@@ -1668,7 +1199,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 1096700822926899,
+        "seed": 193328973495197,
         "control_after_generate": "randomize",
         "steps": 16,
         "cfg": 3.5,
@@ -1678,6 +1209,479 @@
       },
       "color": "#2a363b",
       "bgcolor": "#3f5159"
+    },
+    {
+      "id": 94,
+      "type": "Image Saver Metadata",
+      "pos": [
+        947.2462342084428,
+        496.91157868770716
+      ],
+      "size": [
+        272.33900503786697,
+        698.9561309463033
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "modelname",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "modelname"
+          },
+          "link": 179
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 165
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": 166
+        },
+        {
+          "name": "width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 167
+        },
+        {
+          "name": "height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 168
+        },
+        {
+          "name": "seed_value",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed_value"
+          },
+          "link": 169
+        },
+        {
+          "name": "steps",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": 170
+        },
+        {
+          "name": "cfg",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": 171
+        },
+        {
+          "name": "sampler_name",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": 174
+        },
+        {
+          "name": "scheduler_name",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scheduler_name"
+          },
+          "link": 176
+        },
+        {
+          "name": "denoise",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": 177
+        }
+      ],
+      "outputs": [
+        {
+          "name": "metadata",
+          "type": "METADATA",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Image Saver Metadata"
+      },
+      "widgets_values": [
+        "",
+        "unknown",
+        "unknown",
+        512,
+        512,
+        0,
+        20,
+        7,
+        "",
+        "normal",
+        1,
+        0,
+        "",
+        true,
+        true,
+        ""
+      ],
+      "widgets_values_named": {
+        "modelname": "",
+        "positive": "unknown",
+        "negative": "unknown",
+        "width": 512,
+        "height": 512,
+        "seed_value": 0,
+        "steps": 20,
+        "cfg": 7,
+        "sampler_name": "",
+        "scheduler_name": "normal",
+        "denoise": 1,
+        "clip_skip": 0,
+        "additional_hashes": "",
+        "download_civitai_data": true,
+        "easy_remix": true,
+        "custom": ""
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 89,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.5811864983893,
+        531.3110671967993
+      ],
+      "size": [
+        400.19613024127455,
+        108.89180864580544
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            144,
+            166
+          ]
+        }
+      ],
+      "title": "Negative prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)"
+      ],
+      "widgets_values_named": {
+        "value": "jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 98,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        -1040.2329174497268,
+        597.4796173664959
+      ],
+      "size": [
+        309.7873724203706,
+        103.11012948579582
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            178
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            179
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "Anima_Custom-v1.7.safetensors",
+        "fp8_e4m3fn"
+      ],
+      "widgets_values_named": {
+        "unet_name": "Anima_Custom-v1.7.safetensors",
+        "weight_dtype": "fp8_e4m3fn"
+      }
+    },
+    {
+      "id": 107,
+      "type": "easy hiresFix",
+      "pos": [
+        1248.599097977089,
+        497.12073758003544
+      ],
+      "size": [
+        306.1647075571225,
+        699.8260321681237
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "shape": 7,
+          "type": "PIPE_LINE",
+          "link": null
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 232
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 231
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            233
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "1.3.6",
+        "Node name for S&R": "easy hiresFix",
+        "aux_id": "yolain/ComfyUI-Easy-Use"
+      },
+      "widgets_values": [
+        "remacri_original.safetensors",
+        true,
+        "nearest-exact",
+        "by percentage",
+        50,
+        1024,
+        1024,
+        1024,
+        "disabled",
+        "Preview",
+        0,
+        "ComfyUI"
+      ],
+      "widgets_values_named": {
+        "model_name": "remacri_original.safetensors",
+        "rescale_after_model": true,
+        "rescale_method": "nearest-exact",
+        "rescale": "by percentage",
+        "percent": 50,
+        "width": 1024,
+        "height": 1024,
+        "longer_side": 1024,
+        "crop": "disabled",
+        "image_output": "Preview",
+        "link_id": 0,
+        "save_prefix": "ComfyUI"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 85,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.6492409220378,
+        842.1794807717683
+      ],
+      "size": [
+        400,
+        142.02014373954012
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            128,
+            159
+          ]
+        }
+      ],
+      "title": "Region 1 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), huge breasts, areola slip, big areola, apple, caramel_apple, holding_object "
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), huge breasts, areola slip, big areola, apple, caramel_apple, holding_object "
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 77,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.0419804165576,
+        674.2287405889998
+      ],
+      "size": [
+        400,
+        130.23113979205937
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            127,
+            163
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.6493169545776,
+        1024.5932352253676
+      ],
+      "size": [
+        400,
+        167.57425827323232
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            132,
+            161
+          ]
+        }
+      ],
+      "title": "Region 2 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
     }
   ],
   "links": [
@@ -3915,10 +3919,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9550043196409924,
+      "scale": 0.6561910642712521,
       "offset": [
-        814.6033542473231,
-        -237.81395026115953
+        1395.3743684802546,
+        -200.08143711813017
       ]
     },
     "frontendVersion": "1.51.9"
