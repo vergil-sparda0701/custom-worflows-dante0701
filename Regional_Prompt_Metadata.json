@@ -1,8 +1,8 @@
 {
   "id": "cfa727c2-7ec3-466f-99d4-1aa573c06299",
   "revision": 0,
-  "last_node_id": 107,
-  "last_link_id": 233,
+  "last_node_id": 109,
+  "last_link_id": 237,
   "nodes": [
     {
       "id": 75,
@@ -18,7 +18,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -85,9 +85,10 @@
       ],
       "title": "Region split config",
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Width/Height Literal (Image Saver)"
+        "Node name for S&R": "Width/Height Literal (Image Saver)",
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
         448
@@ -100,21 +101,21 @@
       "id": 99,
       "type": "Image Saver Simple",
       "pos": [
-        1580.7355329730583,
-        497.3252945844257
+        1886.6014771981042,
+        498.35300400842567
       ],
       "size": [
         302.3589362821142,
         695.4325068445669
       ],
       "flags": {},
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 233
+          "link": 236
         },
         {
           "name": "metadata",
@@ -138,9 +139,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Image Saver Simple"
+        "Node name for S&R": "Image Saver Simple",
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
         "Regional_%basemodelname",
@@ -170,179 +172,6 @@
       }
     },
     {
-      "id": 79,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6117254720165,
-        496.6813088641129
-      ],
-      "size": [
-        221.8981034938553,
-        343.0311235836426
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            136
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            130
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            131
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            129,
-            158
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 81,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6100594046562,
-        886.050249680133
-      ],
-      "size": [
-        222.63713870302368,
-        308.1632084618418
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            137
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            134
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            135
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            133,
-            160
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 106,
-      "type": "ShowText|pysssss",
-      "pos": [
-        2512.7400103186424,
-        520.9414308149027
-      ],
-      "size": [
-        502.5480289290474,
-        376.2771385219479
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 230
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, areola slip, big areola,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5), leaning foward, hands on own thighs, one eye closed\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 217180681072284, Size: 912x1152, Model hash: 26F308A9B7, Model: Anima_Custom-v1.7, Version: ComfyUI"
-      ],
-      "widgets_values_named": {
-        "text_0": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, leaning foward, presenting breasts, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, areola slip, big areola,, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (medium breasts:1.5), leaning foward, hands on own thighs, one eye closed\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 217180681072284, Size: 912x1152, Model hash: 26F308A9B7, Model: Anima_Custom-v1.7, Version: ComfyUI"
-      }
-    },
-    {
       "id": 63,
       "type": "VAELoader",
       "pos": [
@@ -356,7 +185,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -407,7 +236,7 @@
         258
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -535,7 +364,7 @@
         111.60520650293932
       ],
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -590,7 +419,7 @@
         116.8409038458824
       ],
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -640,7 +469,7 @@
         58
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -690,7 +519,7 @@
         50.49075778160295
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -719,9 +548,10 @@
       ],
       "title": "Aspect ratio to string",
       "properties": {
-        "cnr_id": "comfyui-ppm",
+        "aux_id": "pamparamm/ComfyUI-ppm",
         "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
-        "Node name for S&R": "LatentToWidthHeight"
+        "Node name for S&R": "LatentToWidthHeight",
+        "cnr_id": "comfyui-ppm"
       }
     },
     {
@@ -736,7 +566,7 @@
         109.97471345969313
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -756,9 +586,10 @@
       ],
       "title": "Sample to string",
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Any to String (Image Saver)"
+        "Node name for S&R": "Any to String (Image Saver)",
+        "cnr_id": "comfyui-image-saver"
       },
       "color": "#233",
       "bgcolor": "#355"
@@ -775,7 +606,7 @@
         119.26468594253993
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -795,9 +626,10 @@
       ],
       "title": "Scheduler to string",
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Any to String (Image Saver)"
+        "Node name for S&R": "Any to String (Image Saver)",
+        "cnr_id": "comfyui-image-saver"
       },
       "color": "#233",
       "bgcolor": "#355"
@@ -814,7 +646,7 @@
         185.5239009998612
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -852,9 +684,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "was-ns",
+        "aux_id": "ltdrdata/was-node-suite-comfyui",
         "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate"
+        "Node name for S&R": "Text Concatenate",
+        "cnr_id": "was-ns"
       },
       "widgets_values": [
         ", ",
@@ -879,7 +712,7 @@
         142
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -918,9 +751,10 @@
       ],
       "title": "Concatenate regions and triggers",
       "properties": {
-        "cnr_id": "was-ns",
+        "aux_id": "ltdrdata/was-node-suite-comfyui",
         "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate"
+        "Node name for S&R": "Text Concatenate",
+        "cnr_id": "was-ns"
       },
       "widgets_values": [
         ", ",
@@ -947,7 +781,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1131,7 +965,7 @@
         302
       ],
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1185,12 +1019,13 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Input Parameters (Image Saver)"
+        "Node name for S&R": "Input Parameters (Image Saver)",
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
-        193328973495197,
+        1123359963576771,
         "randomize",
         16,
         3.5,
@@ -1199,7 +1034,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 193328973495197,
+        "seed": 1123359963576771,
         "control_after_generate": "randomize",
         "steps": 16,
         "cfg": 3.5,
@@ -1222,7 +1057,7 @@
         698.9561309463033
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1345,9 +1180,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-image-saver",
+        "aux_id": "alexopus/ComfyUI-Image-Saver",
         "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Image Saver Metadata"
+        "Node name for S&R": "Image Saver Metadata",
+        "cnr_id": "comfyui-image-saver"
       },
       "widgets_values": [
         "",
@@ -1400,7 +1236,7 @@
         108.89180864580544
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1440,7 +1276,7 @@
         103.11012948579582
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1465,12 +1301,306 @@
         "Node name for S&R": "UNETLoaderWithName"
       },
       "widgets_values": [
-        "Anima_Custom-v1.7.safetensors",
+        "Anima_Custom-v1.72.safetensors",
         "fp8_e4m3fn"
       ],
       "widgets_values_named": {
-        "unet_name": "Anima_Custom-v1.7.safetensors",
+        "unet_name": "Anima_Custom-v1.72.safetensors",
         "weight_dtype": "fp8_e4m3fn"
+      }
+    },
+    {
+      "id": 79,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.6117254720165,
+        496.6813088641129
+      ],
+      "size": [
+        221.8981034938553,
+        343.0311235836426
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            136
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            130
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            131
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            129,
+            158
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Tsunade_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Tsunade_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 81,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.6100594046562,
+        886.050249680133
+      ],
+      "size": [
+        222.63713870302368,
+        308.1632084618418
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            137
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            134
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            135
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            133,
+            160
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Mei_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Mei_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.6493169545776,
+        1024.5932352253676
+      ],
+      "size": [
+        400,
+        167.57425827323232
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            132,
+            161
+          ]
+        }
+      ],
+      "title": "Region 2 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 85,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.6492409220378,
+        842.1794807717683
+      ],
+      "size": [
+        400,
+        142.02014373954012
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            128,
+            159
+          ]
+        }
+      ],
+      "title": "Region 1 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), huge breasts, areola slip, big areola, leaning foward, presenting breasts, hands on own thighs"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), huge breasts, areola slip, big areola, leaning foward, presenting breasts, hands on own thighs"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 77,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.0419804165576,
+        674.2287405889998
+      ],
+      "size": [
+        400,
+        130.23113979205937
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            127,
+            163
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, looking at viewer"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, looking at viewer"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 106,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2378.7944263771333,
+        429.3278012284415
+      ],
+      "size": [
+        502.5480289290474,
+        376.2771385219479
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 230
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss",
+        "cnr_id": "comfyui-custom-scripts"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, looking at viewer, TS4N4D3_NS, long hair, twintails, brown eyes, low twintails, facial mark, short eyebrows, forehead mark, pink lips, (official style:1.45), huge breasts, areola slip, big areola, leaning foward, presenting breasts, hands on own thighs, M31_NS, long hair, brown hair, hair over one eye, sidelocks, very long hair, crossed bangs, green eyes, pink lips, hair bun, (official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 8627986248465, Size: 912x1152, Model hash: 6A81E6081D, Model: Anima_Custom-v1.72, Version: ComfyUI"
+      ],
+      "widgets_values_named": {
+        "text_0": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile, looking at viewer, TS4N4D3_NS, long hair, twintails, brown eyes, low twintails, facial mark, short eyebrows, forehead mark, pink lips, (official style:1.45), huge breasts, areola slip, big areola, leaning foward, presenting breasts, hands on own thighs, M31_NS, long hair, brown hair, hair over one eye, sidelocks, very long hair, crossed bangs, green eyes, pink lips, hair bun, (official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed\nNegative prompt: jpeg artifacts, lowres, worst quality, low quality, bad hands, bad anatomy, blur, bad anatomy, (fused anatomy:1.5)\nSteps: 16, Sampler: res_multistep_simple, CFG scale: 3.5, Seed: 8627986248465, Size: 912x1152, Model hash: 6A81E6081D, Model: Anima_Custom-v1.72, Version: ComfyUI"
       }
     },
     {
@@ -1485,7 +1615,7 @@
         699.8260321681237
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1517,7 +1647,7 @@
           "name": "image",
           "type": "IMAGE",
           "links": [
-            233
+            237
           ]
         },
         {
@@ -1527,10 +1657,10 @@
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-easy-use",
+        "aux_id": "yolain/ComfyUI-Easy-Use",
         "ver": "1.3.6",
         "Node name for S&R": "easy hiresFix",
-        "aux_id": "yolain/ComfyUI-Easy-Use"
+        "cnr_id": "comfyui-easy-use"
       },
       "widgets_values": [
         "remacri_original.safetensors",
@@ -1564,124 +1694,110 @@
       "bgcolor": "#335"
     },
     {
-      "id": 85,
-      "type": "PrimitiveStringMultiline",
+      "id": 109,
+      "type": "LoadImage",
       "pos": [
-        -701.6492409220378,
-        842.1794807717683
+        1580.8276103339624,
+        727.2601162478766
       ],
       "size": [
-        400,
-        142.02014373954012
+        273.33823926308787,
+        467.5927690496193
       ],
       "flags": {},
-      "order": 9,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            128,
-            159
+            235
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            234
           ]
         }
       ],
-      "title": "Region 1 prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "(official style:1.45), huge breasts, areola slip, big areola, apple, caramel_apple, holding_object "
+        "firma danielg20019.png",
+        "image"
       ],
       "widgets_values_named": {
-        "value": "(official style:1.45), huge breasts, areola slip, big areola, apple, caramel_apple, holding_object "
-      },
-      "color": "#223",
-      "bgcolor": "#335"
+        "image": "firma danielg20019.png",
+        "upload": "image"
+      }
     },
     {
-      "id": 77,
-      "type": "PrimitiveStringMultiline",
+      "id": 108,
+      "type": "ApplySignature",
       "pos": [
-        -701.0419804165576,
-        674.2287405889998
+        1583.3083419131235,
+        497.0038534688312
       ],
       "size": [
-        400,
-        130.23113979205937
+        270.5893646162016,
+        194
       ],
       "flags": {},
-      "order": 10,
+      "order": 24,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 237
+        },
+        {
+          "name": "signature",
+          "type": "IMAGE",
+          "link": 235
+        },
+        {
+          "name": "signature_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": 234
+        }
+      ],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "image",
+          "type": "IMAGE",
           "links": [
-            127,
-            163
+            236
           ]
         }
       ],
-      "title": "Positive prompt",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "aux_id": "vergil-sparda0701/comfyui-apply-signature",
+        "ver": "c23d6edc0b84032c83fa7865db96e499d6d6bf7b",
+        "Node name for S&R": "ApplySignature"
       },
       "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile"
+        true,
+        40.24779396592354,
+        "izquierda",
+        "abajo",
+        9
       ],
       "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, back lighting,\n2girls, side-by-side, breasts, huge hips, thick thighs, curvy hips, narrow waist, japanese clothes, kimono, off_shoulder, off_shoulder_kimono, japanese temple, outdoors, golden hour, sunset, gradient sky, starry sky, purple sky, orange sky, sun, cherry_blossoms, petals, clouds, sun rays, light trays, shadowed body, smile"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 86,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.6493169545776,
-        1024.5932352253676
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            132,
-            161
-          ]
-        }
-      ],
-      "title": "Region 2 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (medium breasts:1.5), leaning foward, presenting breasts, hands on own thighs, one eye closed"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
+        "enabled": true,
+        "size_pct": 40.24779396592354,
+        "h_align": "izquierda",
+        "v_align": "abajo",
+        "margin": 9
+      }
     }
   ],
   "links": [
@@ -2118,10 +2234,34 @@
       "IMAGE"
     ],
     [
-      233,
+      234,
+      109,
+      1,
+      108,
+      2,
+      "MASK"
+    ],
+    [
+      235,
+      109,
+      0,
+      108,
+      1,
+      "IMAGE"
+    ],
+    [
+      236,
+      108,
+      0,
+      99,
+      0,
+      "IMAGE"
+    ],
+    [
+      237,
       107,
       1,
-      99,
+      108,
       0,
       "IMAGE"
     ]
@@ -2215,8 +2355,8 @@
       "id": 8,
       "title": "Save Image",
       "bounding": [
-        1570.7355329730583,
-        427.3252945844257,
+        1876.6014771981042,
+        428.35300400842567,
         322.3589362821142,
         775.4325068445669
       ],
@@ -2234,6 +2374,18 @@
       ],
       "color": "#3f789e",
       "flags": {}
+    },
+    {
+      "id": 10,
+      "title": "9. Signature",
+      "bounding": [
+        1570.8276103339624,
+        427.0038534688312,
+        293.8886853938079,
+        775.6471045116657
+      ],
+      "color": "#3f789e",
+      "flags": {}
     }
   ],
   "definitions": {
@@ -2242,9 +2394,9 @@
         "id": "52b4727f-3bd7-49c0-91c0-c3d45777177f",
         "version": 1,
         "state": {
-          "lastGroupId": 9,
-          "lastNodeId": 107,
-          "lastLinkId": 233,
+          "lastGroupId": 10,
+          "lastNodeId": 109,
+          "lastLinkId": 237,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2896,9 +3048,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "ComfyUI-Crystools",
+              "aux_id": "crystian/ComfyUI-Crystools",
               "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
-              "Node name for S&R": "Switch any [Crystools]"
+              "Node name for S&R": "Switch any [Crystools]",
+              "cnr_id": "ComfyUI-Crystools"
             },
             "widgets_values": [
               true
@@ -2946,9 +3099,10 @@
               }
             ],
             "properties": {
-              "cnr_id": "ComfyUI-Crystools",
+              "aux_id": "crystian/ComfyUI-Crystools",
               "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
-              "Node name for S&R": "Switch any [Crystools]"
+              "Node name for S&R": "Switch any [Crystools]",
+              "cnr_id": "ComfyUI-Crystools"
             },
             "widgets_values": [
               true
@@ -3444,9 +3598,9 @@
         "id": "01d6a9ac-3afa-4515-879d-ded4de85ed00",
         "version": 1,
         "state": {
-          "lastGroupId": 9,
-          "lastNodeId": 107,
-          "lastLinkId": 233,
+          "lastGroupId": 10,
+          "lastNodeId": 109,
+          "lastLinkId": 237,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3919,10 +4073,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6561910642712521,
+      "scale": 0.8440993888182349,
       "offset": [
-        1395.3743684802546,
-        -200.08143711813017
+        1947.7667683687885,
+        -634.1048941165659
       ]
     },
     "frontendVersion": "1.51.9"
