@@ -101,7 +101,7 @@
       ],
       "size": [
         225,
-        0
+        34
       ],
       "flags": {
         "collapsed": true
@@ -160,7 +160,7 @@
       ],
       "flags": {},
       "order": 25,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "image",
@@ -257,7 +257,7 @@
       ],
       "size": [
         225,
-        0
+        34
       ],
       "flags": {
         "collapsed": true
@@ -315,7 +315,7 @@
         78
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -392,10 +392,10 @@
         "previewExposures": []
       },
       "widgets_values": [
-        189850557025054
+        1032477941967222
       ],
       "widgets_values_named": {
-        "seed": 189850557025054
+        "seed": 1032477941967222
       }
     },
     {
@@ -439,10 +439,10 @@
         "previewExposures": []
       },
       "widgets_values": [
-        282580720815760
+        303317085534180
       ],
       "widgets_values_named": {
-        "seed": 282580720815760
+        "seed": 303317085534180
       }
     },
     {
@@ -587,183 +587,6 @@
         "image_output": "Preview",
         "link_id": 0,
         "save_prefix": "ComfyUI"
-      }
-    },
-    {
-      "id": 144,
-      "type": "Image Saver Metadata",
-      "pos": [
-        4830.538826719997,
-        179.13646634831235
-      ],
-      "size": [
-        483.109375,
-        767.484375
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "modelname",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "modelname"
-          },
-          "link": 263
-        },
-        {
-          "name": "positive",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "positive"
-          },
-          "link": 371
-        },
-        {
-          "name": "negative",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "negative"
-          },
-          "link": 265
-        },
-        {
-          "name": "width",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 302
-        },
-        {
-          "name": "height",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 303
-        },
-        {
-          "name": "seed_value",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "seed_value"
-          },
-          "link": 268
-        },
-        {
-          "name": "steps",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "steps"
-          },
-          "link": 269
-        },
-        {
-          "name": "cfg",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "cfg"
-          },
-          "link": 270
-        },
-        {
-          "name": "sampler_name",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "sampler_name"
-          },
-          "link": 271
-        },
-        {
-          "name": "scheduler_name",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "scheduler_name"
-          },
-          "link": 272
-        },
-        {
-          "name": "denoise",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "denoise"
-          },
-          "link": 273
-        }
-      ],
-      "outputs": [
-        {
-          "name": "metadata",
-          "type": "METADATA",
-          "links": [
-            276
-          ]
-        },
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
-        "Node name for S&R": "Image Saver Metadata",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
-      },
-      "widgets_values": [
-        "",
-        "unknown",
-        "unknown",
-        512,
-        512,
-        0,
-        20,
-        7,
-        "",
-        "normal",
-        1,
-        0,
-        "",
-        true,
-        true,
-        ""
-      ],
-      "widgets_values_named": {
-        "modelname": "",
-        "positive": "unknown",
-        "negative": "unknown",
-        "width": 512,
-        "height": 512,
-        "seed_value": 0,
-        "steps": 20,
-        "cfg": 7,
-        "sampler_name": "",
-        "scheduler_name": "normal",
-        "denoise": 1,
-        "clip_skip": 0,
-        "additional_hashes": "",
-        "download_civitai_data": true,
-        "easy_remix": true,
-        "custom": ""
       }
     },
     {
@@ -938,7 +761,7 @@
       ],
       "flags": {},
       "order": 4,
-      "mode": 0,
+      "mode": 4,
       "inputs": [],
       "outputs": [
         {
@@ -1068,10 +891,10 @@
         "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
       },
       "widgets_values": [
-        "P4N_DB, medium hair, black hair, short hair, bandana, black eyes"
+        "N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair"
       ],
       "widgets_values_named": {
-        "text_0": "P4N_DB, medium hair, black hair, short hair, bandana, black eyes"
+        "text_0": "N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair"
       }
     },
     {
@@ -1161,196 +984,6 @@
       }
     },
     {
-      "id": 113,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        1310.3717545381899,
-        3.2241306366427747
-      ],
-      "size": [
-        310.2709706372302,
-        102
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            294
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            263
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "An_Anima-v1.0.safetensors",
-        "default"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.0.safetensors",
-        "weight_dtype": "default"
-      }
-    },
-    {
-      "id": 143,
-      "type": "ColorMatch",
-      "pos": [
-        4831.674032752524,
-        9.721803416599114
-      ],
-      "size": [
-        475.9268094281506,
-        126
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image_ref",
-          "type": "IMAGE",
-          "link": 417
-        },
-        {
-          "name": "image_target",
-          "type": "IMAGE",
-          "link": 262
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            275
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-kjnodes",
-        "ver": "dcfcb5dc9bad14912272cedd351cbb377bd27a22",
-        "Node name for S&R": "ColorMatch",
-        "aux_id": "kijai/ComfyUI-KJNodes"
-      },
-      "widgets_values": [
-        "reinhard",
-        1,
-        true
-      ],
-      "widgets_values_named": {
-        "method": "reinhard",
-        "strength": 1,
-        "multithread": true
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 123,
-      "type": "Input Parameters (Image Saver)",
-      "pos": [
-        2485.017676894352,
-        8.801151427217274
-      ],
-      "size": [
-        284.3125,
-        653.015625
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "seed",
-          "type": "INT",
-          "links": [
-            268,
-            410
-          ]
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "links": [
-            269,
-            411
-          ]
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "links": [
-            270,
-            412
-          ]
-        },
-        {
-          "name": "sampler",
-          "type": "COMBO",
-          "links": [
-            253,
-            413
-          ]
-        },
-        {
-          "name": "scheduler",
-          "type": "COMBO",
-          "links": [
-            252,
-            414
-          ]
-        },
-        {
-          "name": "denoise",
-          "type": "FLOAT",
-          "links": [
-            273,
-            415
-          ]
-        }
-      ],
-      "title": "Parametros",
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
-        "Node name for S&R": "Input Parameters (Image Saver)",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
-      },
-      "widgets_values": [
-        586830992662007,
-        "randomize",
-        16,
-        2,
-        "res_multistep",
-        "simple",
-        1
-      ],
-      "widgets_values_named": {
-        "seed": 586830992662007,
-        "control_after_generate": "randomize",
-        "steps": 16,
-        "cfg": 2,
-        "sampler": "res_multistep",
-        "scheduler": "simple",
-        "denoise": 1
-      }
-    },
-    {
       "id": 105,
       "type": "Note",
       "pos": [
@@ -1362,7 +995,7 @@
         190.70833832487028
       ],
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1376,38 +1009,6 @@
       "color": "#432",
       "bgcolor": "#653",
       "shape": "default"
-    },
-    {
-      "id": 170,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        590.4486505003648,
-        -0.6970100626693329
-      ],
-      "size": [
-        348.5625,
-        534
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
     },
     {
       "id": 147,
@@ -1480,6 +1081,77 @@
         "time_format": "%Y-%m-%d-%H%M%S",
         "show_preview": true
       }
+    },
+    {
+      "id": 170,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        590.4486505003648,
+        -0.6970100626693329
+      ],
+      "size": [
+        348.5625,
+        534
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 116,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2059.5319170761895,
+        39.34481219778257
+      ],
+      "size": [
+        400,
+        295.125
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            281
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality,shiny skin,\n1girl, solo, huge breasts, (huge hips:1.55), abs, (toned thighs:1.55), (thick thighs:1.55), navel, goth fashion, skirt, micro skirt, leather skirt, black skirt, pantyhose, fishnet pantyhose, boots, knee high boots, black boots, top, crop top, black top, cleavage, elbow gloves, black gloves, parted lips, seductive gaze, sitting, crossed legs, dark atmosphere, night, moon, moonlight, full moon, back lighting, shadowed body, black lips, smile,, highleg thong"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality,shiny skin,\n1girl, solo, huge breasts, (huge hips:1.55), abs, (toned thighs:1.55), (thick thighs:1.55), navel, goth fashion, skirt, micro skirt, leather skirt, black skirt, pantyhose, fishnet pantyhose, boots, knee high boots, black boots, top, crop top, black top, cleavage, elbow gloves, black gloves, parted lips, seductive gaze, sitting, crossed legs, dark atmosphere, night, moon, moonlight, full moon, back lighting, shadowed body, black lips, smile,, highleg thong"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 169,
@@ -1625,45 +1297,6 @@
       }
     },
     {
-      "id": 116,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2059.5319170761895,
-        39.34481219778257
-      ],
-      "size": [
-        400,
-        295.125
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            281
-          ]
-        }
-      ],
-      "title": "Positive prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.33.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, (official style:1.55),\n1girl, solo, breasts, dildo, female_masturbation, nipples, dildo_riding, masturbation, nude, makeup, squatting, pussy, navel, open_mouth, sex_toy, curtains, indoors, vaginal, barefoot, pussy_juice, tiptoes, half-closed_eyes, vaginal_object_insertion, completely_nude, backlighting, blurry_background, object_insertion, window, looking_at_viewer, uncensored, tongue, spread_legs, blush, huge_breasts, blurry, shiny, full_body, shiny_skin, tongue_out, saliva, stomach, spreading own pussy"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, (official style:1.55),\n1girl, solo, breasts, dildo, female_masturbation, nipples, dildo_riding, masturbation, nude, makeup, squatting, pussy, navel, open_mouth, sex_toy, curtains, indoors, vaginal, barefoot, pussy_juice, tiptoes, half-closed_eyes, vaginal_object_insertion, completely_nude, backlighting, blurry_background, object_insertion, window, looking_at_viewer, uncensored, tongue, spread_legs, blush, huge_breasts, blurry, shiny, full_body, shiny_skin, tongue_out, saliva, stomach, spreading own pussy"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 152,
       "type": "LoraLoaderWithPreview",
       "pos": [
@@ -1675,7 +1308,7 @@
         322
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1720,16 +1353,383 @@
         "Node name for S&R": "LoraLoaderWithPreview"
       },
       "widgets_values": [
-        "drive/Dragon_Ball/Pan_DB_Anima.safetensors",
+        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/Dragon_Ball/Pan_DB_Anima.safetensors",
+        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
+      }
+    },
+    {
+      "id": 123,
+      "type": "Input Parameters (Image Saver)",
+      "pos": [
+        2485.017676894352,
+        8.801151427217274
+      ],
+      "size": [
+        284.3125,
+        653.015625
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            268,
+            410
+          ]
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "links": [
+            269,
+            411
+          ]
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "links": [
+            270,
+            412
+          ]
+        },
+        {
+          "name": "sampler",
+          "type": "COMBO",
+          "links": [
+            253,
+            413
+          ]
+        },
+        {
+          "name": "scheduler",
+          "type": "COMBO",
+          "links": [
+            252,
+            414
+          ]
+        },
+        {
+          "name": "denoise",
+          "type": "FLOAT",
+          "links": [
+            273,
+            415
+          ]
+        }
+      ],
+      "title": "Parametros",
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
+        "Node name for S&R": "Input Parameters (Image Saver)",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
+      },
+      "widgets_values": [
+        687853536732061,
+        "randomize",
+        30,
+        3.5,
+        "euler_ancestral",
+        "simple",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 687853536732061,
+        "control_after_generate": "randomize",
+        "steps": 30,
+        "cfg": 3.5,
+        "sampler": "euler_ancestral",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    {
+      "id": 113,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        1310.3717545381899,
+        3.2241306366427747
+      ],
+      "size": [
+        310.2709706372302,
+        102
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            294
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            263
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "An_Anima-v1.1.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_Anima-v1.1.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 143,
+      "type": "ColorMatch",
+      "pos": [
+        4831.674032752524,
+        9.721803416599114
+      ],
+      "size": [
+        475.9268094281506,
+        126
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_ref",
+          "type": "IMAGE",
+          "link": 417
+        },
+        {
+          "name": "image_target",
+          "type": "IMAGE",
+          "link": 262
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            275
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "dcfcb5dc9bad14912272cedd351cbb377bd27a22",
+        "Node name for S&R": "ColorMatch",
+        "aux_id": "kijai/ComfyUI-KJNodes"
+      },
+      "widgets_values": [
+        "reinhard",
+        1,
+        true
+      ],
+      "widgets_values_named": {
+        "method": "reinhard",
+        "strength": 1,
+        "multithread": true
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 144,
+      "type": "Image Saver Metadata",
+      "pos": [
+        4830.538826719997,
+        179.13646634831235
+      ],
+      "size": [
+        479.66492794561236,
+        518
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "modelname",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "modelname"
+          },
+          "link": 263
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 371
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": 265
+        },
+        {
+          "name": "width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 302
+        },
+        {
+          "name": "height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 303
+        },
+        {
+          "name": "seed_value",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed_value"
+          },
+          "link": 268
+        },
+        {
+          "name": "steps",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": 269
+        },
+        {
+          "name": "cfg",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": 270
+        },
+        {
+          "name": "sampler_name",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": 271
+        },
+        {
+          "name": "scheduler_name",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scheduler_name"
+          },
+          "link": 272
+        },
+        {
+          "name": "denoise",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": 273
+        }
+      ],
+      "outputs": [
+        {
+          "name": "metadata",
+          "type": "METADATA",
+          "links": [
+            276
+          ]
+        },
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
+        "Node name for S&R": "Image Saver Metadata",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
+      },
+      "widgets_values": [
+        "",
+        "unknown",
+        "unknown",
+        512,
+        512,
+        0,
+        20,
+        7,
+        "",
+        "normal",
+        1,
+        0,
+        "",
+        true,
+        true,
+        ""
+      ],
+      "widgets_values_named": {
+        "modelname": "",
+        "positive": "unknown",
+        "negative": "unknown",
+        "width": 512,
+        "height": 512,
+        "seed_value": 0,
+        "steps": 20,
+        "cfg": 7,
+        "sampler_name": "",
+        "scheduler_name": "normal",
+        "denoise": 1,
+        "clip_skip": 0,
+        "additional_hashes": "",
+        "download_civitai_data": true,
+        "easy_remix": true,
+        "custom": ""
       }
     }
   ],
@@ -2224,10 +2224,10 @@
       "id": 44,
       "title": "Color match + metadata",
       "bounding": [
-        4820.373335252512,
-        -62.89152443794269,
-        497.5372949593002,
-        1025.8282524921094
+        4820.538826719997,
+        -60.278196583400884,
+        499.66492794561236,
+        767.4146629317132
       ],
       "color": "#3f789e",
       "flags": {}
@@ -4778,8 +4778,8 @@
     "ds": {
       "scale": 0.8709670819814505,
       "offset": [
-        -1439.9932282257148,
-        263.04498450528314
+        -4177.180627601027,
+        -288.0666580726755
       ]
     },
     "frontendVersion": "1.51.9",
@@ -4788,5 +4788,11 @@
       "outputs": []
     }
   },
-  "version": 0.4
+  "version": 0.4,
+  "seed_widgets": {
+    "123": 0,
+    "159": 0,
+    "161": 0,
+    "169": 0
+  }
 }
