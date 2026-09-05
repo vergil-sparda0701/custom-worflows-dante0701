@@ -909,46 +909,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 89,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.5811864983893,
-        531.3110671967993
-      ],
-      "size": [
-        400.19613024127455,
-        108.89180864580544
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            144,
-            166
-          ]
-        }
-      ],
-      "title": "Negative prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5)"
-      ],
-      "widgets_values_named": {
-        "value": "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5)"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 122,
       "type": "319999ad-f0b5-4977-b14d-1ece65172622",
       "pos": [
@@ -1074,7 +1034,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        962905763958228,
+        961293521447888,
         16,
         3.5,
         "euler_ancestral",
@@ -1085,7 +1045,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 962905763958228,
+        "seed": 961293521447888,
         "steps": 16,
         "cfg": 3.5,
         "sampler": "euler_ancestral",
@@ -1097,46 +1057,6 @@
       },
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 77,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -701.0419804165576,
-        674.2287405889998
-      ],
-      "size": [
-        400,
-        130.23113979205937
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            127,
-            163
-          ]
-        }
-      ],
-      "title": "Positive prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n2girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, arms behind head, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,side-by-side, (huge breasts:1.55)"
-      ],
-      "widgets_values_named": {
-        "value": "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n2girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, arms behind head, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,side-by-side, (huge breasts:1.55)"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 127,
@@ -1211,7 +1131,7 @@
         467.5927690496193
       ],
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1242,189 +1162,6 @@
       "widgets_values_named": {
         "image": "firma danielg20019.png",
         "upload": "image"
-      }
-    },
-    {
-      "id": 85,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -701.6492409220378,
-        842.1794807717683
-      ],
-      "size": [
-        400,
-        142.02014373954012
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            128,
-            159
-          ]
-        }
-      ],
-      "title": "Region 1 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), green bikini, (muscular female:1.55)"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), green bikini, (muscular female:1.55)"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 86,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.6493169545776,
-        1024.5932352253676
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            132,
-            161
-          ]
-        }
-      ],
-      "title": "Region 2 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (curvy:1.55), curvy figure, aqua bikini, breasts out, nipples, big areola, pumped nipples, micro bikini"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (curvy:1.55), curvy figure, aqua bikini, breasts out, nipples, big areola, pumped nipples, micro bikini"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 121,
-      "type": "462ea682-d104-4047-85be-a91f1efada0d",
-      "pos": [
-        -1036.077055082786,
-        938.4145283952377
-      ],
-      "size": [
-        298.25875718187854,
-        253.66026750951505
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Width",
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": null
-        },
-        {
-          "label": "Height",
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": null
-        },
-        {
-          "label": "Batch size",
-          "name": "batch_size",
-          "type": "INT",
-          "widget": {
-            "name": "batch_size"
-          },
-          "link": null
-        },
-        {
-          "label": "Region split",
-          "name": "size",
-          "type": "INT",
-          "widget": {
-            "name": "size"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            287
-          ]
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            275,
-            276
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            277,
-            278
-          ]
-        },
-        {
-          "label": "regions",
-          "name": "size",
-          "type": "INT",
-          "links": [
-            279
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        896,
-        1152,
-        1,
-        2
-      ],
-      "widgets_values_named": {
-        "width": 896,
-        "height": 1152,
-        "batch_size": 1,
-        "size": 2
       }
     },
     {
@@ -1612,6 +1349,269 @@
       },
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 77,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.0419804165576,
+        674.2287405889998
+      ],
+      "size": [
+        400,
+        130.23113979205937
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            127,
+            163
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n2girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,side-by-side, (huge breasts:1.55)"
+      ],
+      "widgets_values_named": {
+        "value": "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n2girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,side-by-side, (huge breasts:1.55)"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.6493169545776,
+        1024.5932352253676
+      ],
+      "size": [
+        400,
+        167.57425827323232
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            132,
+            161
+          ]
+        }
+      ],
+      "title": "Region 2 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (curvy:1.55), curvy figure, aqua bikini, breasts out, nipples, big areola, pumped nipples, micro bikini, (huge hips:1.55), leaning foward, hands on own thighs, presenting breasts"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (curvy:1.55), curvy figure, aqua bikini, breasts out, nipples, big areola, pumped nipples, micro bikini, (huge hips:1.55), leaning foward, hands on own thighs, presenting breasts"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 89,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.5811864983893,
+        531.3110671967993
+      ],
+      "size": [
+        400.19613024127455,
+        108.89180864580544
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            144,
+            166
+          ]
+        }
+      ],
+      "title": "Negative prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5), (extra digits:1.5)"
+      ],
+      "widgets_values_named": {
+        "value": "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5), (extra digits:1.5)"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 121,
+      "type": "462ea682-d104-4047-85be-a91f1efada0d",
+      "pos": [
+        -1036.077055082786,
+        938.4145283952377
+      ],
+      "size": [
+        298.25875718187854,
+        253.66026750951505
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Width",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "label": "Height",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "label": "Batch size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        },
+        {
+          "label": "Region split",
+          "name": "size",
+          "type": "INT",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            287
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            275,
+            276
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            277,
+            278
+          ]
+        },
+        {
+          "label": "regions",
+          "name": "size",
+          "type": "INT",
+          "links": [
+            279
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        1152,
+        896,
+        1,
+        2
+      ],
+      "widgets_values_named": {
+        "width": 1152,
+        "height": 896,
+        "batch_size": 1,
+        "size": 2
+      }
+    },
+    {
+      "id": 85,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.6492409220378,
+        842.1794807717683
+      ],
+      "size": [
+        400,
+        142.02014373954012
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            128,
+            159
+          ]
+        }
+      ],
+      "title": "Region 1 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), green bikini, (muscular female:1.55), one eye closed, leaning foward presenting breasts"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), green bikini, (muscular female:1.55), one eye closed, leaning foward presenting breasts"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -4358,10 +4358,10 @@
               "Node name for S&R": "ShowText|pysssss"
             },
             "widgets_values": [
-              "448"
+              "576"
             ],
             "widgets_values_named": {
-              "text_undefined": "448"
+              "text_0": "576"
             }
           }
         ],
@@ -5520,10 +5520,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5917356748252713,
+      "scale": 1.0131689609785044,
       "offset": [
-        1798.7785138729812,
-        -155.1257290629286
+        1167.7988774353341,
+        -671.2881913821927
       ]
     },
     "frontendVersion": "1.51.9"
