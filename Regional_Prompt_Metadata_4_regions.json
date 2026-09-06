@@ -1,8 +1,8 @@
 {
   "id": "80536e5a-c9a2-4733-b92a-a08ba137c601",
   "revision": 0,
-  "last_node_id": 159,
-  "last_link_id": 493,
+  "last_node_id": 167,
+  "last_link_id": 530,
   "nodes": [
     {
       "id": 75,
@@ -18,7 +18,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -100,18 +100,1488 @@
       "bgcolor": "#533"
     },
     {
-      "id": 97,
-      "type": "Any to String (Image Saver)",
+      "id": 147,
+      "type": "ShowText|pysssss",
       "pos": [
-        647.0331263681645,
-        1417.4664790870313
+        634.1690301918351,
+        1079.0474251744017
       ],
       "size": [
-        269.0978108139417,
-        119.26468594253993
+        255.98140913792554,
+        128.6720671057044
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 417
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss",
+        "cnr_id": "comfyui-custom-scripts"
+      },
+      "widgets_values": [
+        "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (huge breasts:1.5), white bikini, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, big areola, orange bikini, H1M4_NS, short hair, black hair, whisker markings, facial mark, blue eyes, blunt bangs, ahoge, (official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush, aqua bikini, child, aged down"
+      ],
+      "widgets_values_named": {
+        "text_0": "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (huge breasts:1.5), white bikini, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, big areola, orange bikini, H1M4_NS, short hair, black hair, whisker markings, facial mark, blue eyes, blunt bangs, ahoge, (official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush, aqua bikini, child, aged down"
+      }
+    },
+    {
+      "id": 69,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -1040.3270992908572,
+        512.5233595751959
+      ],
+      "size": [
+        311.323599878148,
+        58
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 477
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            441
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3
+      ],
+      "widgets_values_named": {
+        "shift": 3
+      }
+    },
+    {
+      "id": 81,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.6100594046562,
+        886.050249680133
+      ],
+      "size": [
+        222.63713870302368,
+        308.1632084618418
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            389
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            399
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            400
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            160,
+            398
+          ]
+        }
+      ],
+      "title": "🖼️ Lora Info 2",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 158,
+      "type": "5baddabe-8134-4561-8e8d-d39501ae2b99",
+      "pos": [
+        -1037.6893165253546,
+        615.4906415459858
+      ],
+      "size": [
+        304.1178580499518,
+        400.66202100945986
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "weight dtype",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        },
+        {
+          "label": "clip",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "clip type",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "label": "vae",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            473,
+            474
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            475,
+            476
+          ]
+        },
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            477
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            478
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "An_Anima-v1.1.safetensors",
+        "fp8_e4m3fn",
+        "qwen_3_06b_base.safetensors",
+        "lumina2",
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_Anima-v1.1.safetensors",
+        "weight_dtype": "fp8_e4m3fn",
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "lumina2",
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 77,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -701.0419804165576,
+        674.2287405889998
+      ],
+      "size": [
+        400,
+        236.47734936984762
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            383,
+            415
+          ]
+        }
+      ],
+      "title": "Positive prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face"
+      ],
+      "widgets_values_named": {
+        "value": "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 79,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.6117254720165,
+        496.6813088641129
+      ],
+      "size": [
+        221.8981034938553,
+        343.0311235836426
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            388
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            395
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            396
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            158,
+            394
+          ]
+        }
+      ],
+      "title": "🖼️ Lora Info 1",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 127,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        -1426.5544692201058,
+        560.8478279304226
+      ],
+      "size": [
+        348.5625,
+        534
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 155,
+      "type": "be129b71-4fcb-4cf9-aa4a-e230b63fd94d",
+      "pos": [
+        289.9317647317139,
+        497.1458726723547
+      ],
+      "size": [
+        311.18544631651184,
+        593.8475049837127
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 441
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 442
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 443
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 444
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 474
+        },
+        {
+          "label": "steps 2nd sampler",
+          "name": "steps_1",
+          "type": "INT",
+          "widget": {
+            "name": "steps_1"
+          },
+          "link": null
+        },
+        {
+          "label": "cfg 2nd sampler",
+          "name": "cfg_1",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg_1"
+          },
+          "link": null
+        },
+        {
+          "label": "denoise 2nd sampler",
+          "name": "denoise_1",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise_1"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            446
+          ]
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "links": [
+            447
+          ]
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "links": [
+            448
+          ]
+        },
+        {
+          "name": "sampler",
+          "type": "COMBO",
+          "links": [
+            449
+          ]
+        },
+        {
+          "name": "scheduler",
+          "type": "COMBO",
+          "links": [
+            450
+          ]
+        },
+        {
+          "name": "denoise",
+          "type": "FLOAT",
+          "links": [
+            451
+          ]
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            452,
+            453
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        1072515416293232,
+        16,
+        3.5,
+        "euler_ancestral",
+        "simple",
+        1,
+        8,
+        2,
+        0.2
+      ],
+      "widgets_values_named": {
+        "seed": 1072515416293232,
+        "steps": 16,
+        "cfg": 3.5,
+        "sampler": "euler_ancestral",
+        "scheduler": "simple",
+        "denoise": 1,
+        "steps_1": 8,
+        "cfg_1": 2,
+        "denoise_1": 0.2
+      },
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 115,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -270.24438192982643,
+        1231.224612360075
+      ],
+      "size": [
+        221.83847556105,
+        312.95521168694904
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            402
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            386
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            387
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            385,
+            413
+          ]
+        }
+      ],
+      "title": "🖼️ Lora Info 3",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Himawari_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Himawari_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 114,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -696.0183296104934,
+        1416.9988585921972
+      ],
+      "size": [
+        394.8256278363315,
+        214.14431834897255
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            384,
+            414
+          ]
+        }
+      ],
+      "title": "Region 3 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush, aqua bikini, child, aged down"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush, aqua bikini, child, aged down"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.6493169545776,
+        1180.3146131974702
+      ],
+      "size": [
+        400,
+        186.9784499714574
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            161,
+            397
+          ]
+        }
+      ],
+      "title": "Region 2 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), huge breasts, big areola, orange bikini"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), huge breasts, big areola, orange bikini"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 85,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -699.3141601759438,
+        958.9335537069794
+      ],
+      "size": [
+        400,
+        166.598786557292
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            159,
+            393
+          ]
+        }
+      ],
+      "title": "Region 1 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (huge breasts:1.5), white bikini"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (huge breasts:1.5), white bikini"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 161,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -698.9940812333607,
+        1682.7152359810123
+      ],
+      "size": [
+        398.70638722011836,
+        210.26351948725642
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            513
+          ]
+        }
+      ],
+      "title": "Region 4 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush, red bikini, "
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush, red bikini, "
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 160,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        -271.67606017946855,
+        1589.2604383959597
+      ],
+      "size": [
+        221.83847556105,
+        312.95521168694904
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            516,
+            517
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            518,
+            520
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            519
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            521
+          ]
+        }
+      ],
+      "title": "🖼️ Lora Info 4",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Kushina_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Kushina_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 148,
+      "type": "ad96373b-1245-4004-8ac1-6e852df62413",
+      "pos": [
+        -1032.9082789802308,
+        1079.5368867759548
+      ],
+      "size": [
+        300.0797265988459,
+        453.0918649311319
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "batch size",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        },
+        {
+          "label": "region split",
+          "name": "size",
+          "type": "INT",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            444
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            421,
+            422
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            423,
+            424
+          ]
+        },
+        {
+          "label": "region 2",
+          "name": "size",
+          "type": "INT",
+          "links": [
+            425
+          ]
+        },
+        {
+          "label": "region 3",
+          "name": "value",
+          "type": "INT",
+          "links": [
+            426
+          ]
+        },
+        {
+          "label": "region 4",
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            528
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        1536,
+        864,
+        1,
+        4
+      ],
+      "widgets_values_named": {
+        "width": 1536,
+        "height": 864,
+        "batch_size": 1,
+        "size": 4
+      }
+    },
+    {
+      "id": 142,
+      "type": "d0618eff-490c-4a1e-8661-3b32d3196ceb",
+      "pos": [
+        -24.113070491955167,
+        496.2326481535069
+      ],
+      "size": [
+        287.3009723939393,
+        1405.1850348249368
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 476
+        },
+        {
+          "name": "negative_conditioning",
+          "type": "CONDITIONING",
+          "link": 382
+        },
+        {
+          "name": "base_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "base_prompt"
+          },
+          "link": 383
+        },
+        {
+          "name": "zone_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "zone_prompt"
+          },
+          "link": 384
+        },
+        {
+          "name": "lora_trigger",
+          "type": "STRING",
+          "widget": {
+            "name": "lora_trigger"
+          },
+          "link": 385
+        },
+        {
+          "name": "lora_strength_model",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_model"
+          },
+          "link": 386
+        },
+        {
+          "name": "lora_strength_clip",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_clip"
+          },
+          "link": 387
+        },
+        {
+          "name": "on_true",
+          "type": "*",
+          "link": 388
+        },
+        {
+          "name": "on_true_1",
+          "type": "*",
+          "link": 389
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 422
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 424
+        },
+        {
+          "label": "region 2",
+          "name": "x",
+          "type": "INT",
+          "widget": {
+            "name": "x"
+          },
+          "link": 425
+        },
+        {
+          "name": "zone_prompt_1",
+          "type": "STRING",
+          "widget": {
+            "name": "zone_prompt_1"
+          },
+          "link": 393
+        },
+        {
+          "name": "lora_trigger_1",
+          "type": "STRING",
+          "widget": {
+            "name": "lora_trigger_1"
+          },
+          "link": 394
+        },
+        {
+          "name": "lora_strength_model_1",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_model_1"
+          },
+          "link": 395
+        },
+        {
+          "name": "lora_strength_clip_1",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_clip_1"
+          },
+          "link": 396
+        },
+        {
+          "name": "zone_prompt_2",
+          "type": "STRING",
+          "widget": {
+            "name": "zone_prompt_2"
+          },
+          "link": 397
+        },
+        {
+          "name": "lora_trigger_2",
+          "type": "STRING",
+          "widget": {
+            "name": "lora_trigger_2"
+          },
+          "link": 398
+        },
+        {
+          "name": "lora_strength_model_2",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_model_2"
+          },
+          "link": 399
+        },
+        {
+          "name": "strength",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength"
+          },
+          "link": 400
+        },
+        {
+          "label": "region 3",
+          "name": "values.b",
+          "type": "FLOAT,INT,BOOLEAN",
+          "widget": {
+            "name": "values.b"
+          },
+          "link": 426
+        },
+        {
+          "name": "on_true_2",
+          "type": "*",
+          "link": 402
+        },
+        {
+          "name": "zone_prompt_3",
+          "type": "STRING",
+          "widget": {
+            "name": "zone_prompt_3"
+          },
+          "link": 513
+        },
+        {
+          "name": "lora_trigger_3",
+          "type": "STRING",
+          "widget": {
+            "name": "lora_trigger_3"
+          },
+          "link": 521
+        },
+        {
+          "name": "lora_strength_model_3",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_model_3"
+          },
+          "link": 518
+        },
+        {
+          "name": "lora_strength_clip_2",
+          "type": "FLOAT",
+          "widget": {
+            "name": "lora_strength_clip_2"
+          },
+          "link": 519
+        },
+        {
+          "name": "strength_1",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_1"
+          },
+          "link": 520
+        },
+        {
+          "name": "on_true_3",
+          "type": "*",
+          "link": 516
+        },
+        {
+          "name": "on_false",
+          "type": "*",
+          "link": 517
+        },
+        {
+          "label": "region 4",
+          "name": "x_1",
+          "type": "INT",
+          "widget": {
+            "name": "x_1"
+          },
+          "link": 528
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            442
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            443
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "orange dress",
+        "US4G1_SM, long hair, blonde hair, very long hair, parted bangs, blue eyes, hair bun, double bun, twin tails,",
+        1,
+        1,
+        896,
+        1152,
+        448,
+        "aqua dress",
+        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+        1,
+        1,
+        "aqua dress",
+        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+        1,
+        1,
+        448,
+        "aqua dress",
+        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+        1,
+        1,
+        1,
+        448
+      ],
+      "widgets_values_named": {
+        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+        "zone_prompt": "orange dress",
+        "lora_trigger": "US4G1_SM, long hair, blonde hair, very long hair, parted bangs, blue eyes, hair bun, double bun, twin tails,",
+        "lora_strength_model": 1,
+        "lora_strength_clip": 1,
+        "width": 896,
+        "height": 1152,
+        "x": 448,
+        "zone_prompt_1": "aqua dress",
+        "lora_trigger_1": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+        "lora_strength_model_1": 1,
+        "lora_strength_clip_1": 1,
+        "zone_prompt_2": "aqua dress",
+        "lora_trigger_2": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+        "lora_strength_model_2": 1,
+        "strength": 1,
+        "values.b": 448,
+        "zone_prompt_3": "aqua dress",
+        "lora_trigger_3": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+        "lora_strength_model_3": 1,
+        "lora_strength_clip_2": 1,
+        "strength_1": 1,
+        "x_1": 448
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 146,
+      "type": "Text Concatenate",
+      "pos": [
+        624.5933745715563,
+        887.470002175449
+      ],
+      "size": [
+        270,
+        142
       ],
       "flags": {},
       "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 415
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 416
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            417,
+            418
+          ]
+        }
+      ],
+      "title": "Concat regions and prompt",
+      "properties": {
+        "aux_id": "ltdrdata/was-node-suite-comfyui",
+        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
+        "Node name for S&R": "Text Concatenate",
+        "cnr_id": "was-ns"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ],
+      "widgets_values_named": {
+        "delimiter": ", ",
+        "clean_whitespace": "true"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 145,
+      "type": "Text Concatenate",
+      "pos": [
+        622.6568780021487,
+        690.6105142161763
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 412
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 413
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": 414
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            416
+          ]
+        }
+      ],
+      "title": "Concat regions and triggers",
+      "properties": {
+        "aux_id": "ltdrdata/was-node-suite-comfyui",
+        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
+        "Node name for S&R": "Text Concatenate",
+        "cnr_id": "was-ns"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ],
+      "widgets_values_named": {
+        "delimiter": ", ",
+        "clean_whitespace": "true"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 92,
+      "type": "Text Concatenate",
+      "pos": [
+        622.5118534139839,
+        495.65011562367255
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 158
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 159
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": 160
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": 161
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            412
+          ]
+        }
+      ],
+      "title": "Concat regions and triggers",
+      "properties": {
+        "aux_id": "ltdrdata/was-node-suite-comfyui",
+        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
+        "Node name for S&R": "Text Concatenate",
+        "cnr_id": "was-ns"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ],
+      "widgets_values_named": {
+        "delimiter": ", ",
+        "clean_whitespace": "true"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 97,
+      "type": "Any to String (Image Saver)",
+      "pos": [
+        626.1829571172497,
+        1416.2394363165374
+      ],
+      "size": [
+        266.96281596525364,
+        119.26468594253993
+      ],
+      "flags": {},
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -143,15 +1613,15 @@
       "id": 96,
       "type": "Any to String (Image Saver)",
       "pos": [
-        647.1412929316522,
-        1261.5505862361726
+        624.4598251098596,
+        1259.407922122786
       ],
       "size": [
         269.006624695797,
         109.97471345969313
       ],
       "flags": {},
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -183,15 +1653,15 @@
       "id": 94,
       "type": "Image Saver Metadata",
       "pos": [
-        947.2462342084428,
-        496.91157868770716
+        920.020083196666,
+        495.5399348650632
       ],
       "size": [
-        273.48613362643994,
-        1045.9731016033934
+        259.3619029948253,
+        1406.4597589206558
       ],
       "flags": {},
-      "order": 23,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -362,15 +1832,15 @@
       "id": 107,
       "type": "easy hiresFix",
       "pos": [
-        1248.599097977089,
-        497.12073758003544
+        1210.169930101604,
+        495.57731036334496
       ],
       "size": [
-        294.14072919090563,
-        1047.9488518634937
+        279.1916067774987,
+        1401.291786745018
       ],
       "flags": {},
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -449,60 +1919,52 @@
       "bgcolor": "#335"
     },
     {
-      "id": 147,
-      "type": "ShowText|pysssss",
+      "id": 143,
+      "type": "PreviewImage",
       "pos": [
-        653.1879567569645,
-        1080.2744679448956
+        291.6843143705969,
+        1131.7837386349534
       ],
       "size": [
-        255.98140913792554,
-        128.6720671057044
+        304.60411908870265,
+        763.6589899268299
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
-          "name": "text",
-          "type": "STRING",
-          "link": 417
+          "name": "images",
+          "type": "IMAGE",
+          "link": 453
         }
       ],
       "outputs": [
         {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
+          "name": "images",
+          "type": "IMAGE",
           "links": null
         }
       ],
       "properties": {
-        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss",
-        "cnr_id": "comfyui-custom-scripts"
-      },
-      "widgets_values": [
-        "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (huge breasts:1.5), hand to mouth, parted lips, teeth, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, big areola, H1M4_NS, short hair, black hair, whisker markings, facial mark, blue eyes, blunt bangs, ahoge, (official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush"
-      ],
-      "widgets_values_named": {
-        "text_0": "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face, B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes, (official style:1.45), (huge breasts:1.5), hand to mouth, parted lips, teeth, N4RUK0_NS, facial mark, blue eyes, hair tie, twintails, whisker markings, blonde hair, hair between eyes, long hair, (official style:1.45), huge breasts, big areola, H1M4_NS, short hair, black hair, whisker markings, facial mark, blue eyes, blunt bangs, ahoge, (official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush"
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PreviewImage"
       }
     },
     {
       "id": 99,
       "type": "Image Saver Simple",
       "pos": [
-        1563.6110262952068,
-        497.3252945844257
+        1515.4906475820878,
+        495.4223797695985
       ],
       "size": [
-        303.08758318377636,
-        1049.5548788157978
+        301.0700883676816,
+        1401.629213136321
       ],
       "flags": {},
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -560,1285 +2022,6 @@
         "counter": 0,
         "time_format": "%Y-%m-%d-%H%M%S",
         "show_preview": true
-      }
-    },
-    {
-      "id": 85,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -699.3141601759438,
-        958.9335537069794
-      ],
-      "size": [
-        400,
-        142.02014373954012
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            159,
-            393
-          ]
-        }
-      ],
-      "title": "Region 1 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (huge breasts:1.5), hand to mouth, parted lips, teeth "
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (huge breasts:1.5), hand to mouth, parted lips, teeth "
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 69,
-      "type": "ModelSamplingAuraFlow",
-      "pos": [
-        -1040.3270992908572,
-        512.5233595751959
-      ],
-      "size": [
-        311.323599878148,
-        58
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 477
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            441
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.64",
-        "Node name for S&R": "ModelSamplingAuraFlow",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
-      },
-      "widgets_values": [
-        3
-      ],
-      "widgets_values_named": {
-        "shift": 3
-      }
-    },
-    {
-      "id": 114,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -699.8991679501383,
-        1369.1351659976112
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            384,
-            414
-          ]
-        }
-      ],
-      "title": "Region 3 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), (medium breasts:1.5), hands on own thighs, one eye closed, blush"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 81,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6100594046562,
-        886.050249680133
-      ],
-      "size": [
-        222.63713870302368,
-        308.1632084618418
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            389
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            399
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            400
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            160,
-            398
-          ]
-        }
-      ],
-      "title": "🖼️ Lora Info 2",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 92,
-      "type": "Text Concatenate",
-      "pos": [
-        647.0245080364706,
-        496.87715839416666
-      ],
-      "size": [
-        270,
-        142
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_a",
-          "shape": 7,
-          "type": "STRING",
-          "link": 158
-        },
-        {
-          "name": "text_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 159
-        },
-        {
-          "name": "text_c",
-          "shape": 7,
-          "type": "STRING",
-          "link": 160
-        },
-        {
-          "name": "text_d",
-          "shape": 7,
-          "type": "STRING",
-          "link": 161
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            412
-          ]
-        }
-      ],
-      "title": "Concat regions and triggers",
-      "properties": {
-        "aux_id": "ltdrdata/was-node-suite-comfyui",
-        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate",
-        "cnr_id": "was-ns"
-      },
-      "widgets_values": [
-        ", ",
-        "true"
-      ],
-      "widgets_values_named": {
-        "delimiter": ", ",
-        "clean_whitespace": "true"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 145,
-      "type": "Text Concatenate",
-      "pos": [
-        648.0851539675282,
-        691.8375569866703
-      ],
-      "size": [
-        270,
-        142
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_a",
-          "shape": 7,
-          "type": "STRING",
-          "link": 412
-        },
-        {
-          "name": "text_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 413
-        },
-        {
-          "name": "text_c",
-          "shape": 7,
-          "type": "STRING",
-          "link": 414
-        },
-        {
-          "name": "text_d",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            416
-          ]
-        }
-      ],
-      "title": "Concat regions and triggers",
-      "properties": {
-        "aux_id": "ltdrdata/was-node-suite-comfyui",
-        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate",
-        "cnr_id": "was-ns"
-      },
-      "widgets_values": [
-        ", ",
-        "true"
-      ],
-      "widgets_values_named": {
-        "delimiter": ", ",
-        "clean_whitespace": "true"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 146,
-      "type": "Text Concatenate",
-      "pos": [
-        650.9372718798287,
-        888.697044945943
-      ],
-      "size": [
-        270,
-        142
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_a",
-          "shape": 7,
-          "type": "STRING",
-          "link": 415
-        },
-        {
-          "name": "text_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 416
-        },
-        {
-          "name": "text_c",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        },
-        {
-          "name": "text_d",
-          "shape": 7,
-          "type": "STRING",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            417,
-            418
-          ]
-        }
-      ],
-      "title": "Concat regions and prompt",
-      "properties": {
-        "aux_id": "ltdrdata/was-node-suite-comfyui",
-        "ver": "44de705818d4663fefefde57ffe0ea5a9ea39df4",
-        "Node name for S&R": "Text Concatenate",
-        "cnr_id": "was-ns"
-      },
-      "widgets_values": [
-        ", ",
-        "true"
-      ],
-      "widgets_values_named": {
-        "delimiter": ", ",
-        "clean_whitespace": "true"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 142,
-      "type": "d0618eff-490c-4a1e-8661-3b32d3196ceb",
-      "pos": [
-        -24.113070491955167,
-        496.2326481535069
-      ],
-      "size": [
-        292.4393804017585,
-        1047.3649791526252
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 476
-        },
-        {
-          "name": "negative_conditioning",
-          "type": "CONDITIONING",
-          "link": 382
-        },
-        {
-          "name": "base_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "base_prompt"
-          },
-          "link": 383
-        },
-        {
-          "name": "zone_prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "zone_prompt"
-          },
-          "link": 384
-        },
-        {
-          "name": "lora_trigger",
-          "type": "STRING",
-          "widget": {
-            "name": "lora_trigger"
-          },
-          "link": 385
-        },
-        {
-          "name": "lora_strength_model",
-          "type": "FLOAT",
-          "widget": {
-            "name": "lora_strength_model"
-          },
-          "link": 386
-        },
-        {
-          "name": "lora_strength_clip",
-          "type": "FLOAT",
-          "widget": {
-            "name": "lora_strength_clip"
-          },
-          "link": 387
-        },
-        {
-          "name": "on_true",
-          "type": "*",
-          "link": 388
-        },
-        {
-          "name": "on_true_1",
-          "type": "*",
-          "link": 389
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 422
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 424
-        },
-        {
-          "name": "x",
-          "type": "INT",
-          "widget": {
-            "name": "x"
-          },
-          "link": 425
-        },
-        {
-          "name": "zone_prompt_1",
-          "type": "STRING",
-          "widget": {
-            "name": "zone_prompt_1"
-          },
-          "link": 393
-        },
-        {
-          "name": "lora_trigger_1",
-          "type": "STRING",
-          "widget": {
-            "name": "lora_trigger_1"
-          },
-          "link": 394
-        },
-        {
-          "name": "lora_strength_model_1",
-          "type": "FLOAT",
-          "widget": {
-            "name": "lora_strength_model_1"
-          },
-          "link": 395
-        },
-        {
-          "name": "lora_strength_clip_1",
-          "type": "FLOAT",
-          "widget": {
-            "name": "lora_strength_clip_1"
-          },
-          "link": 396
-        },
-        {
-          "name": "zone_prompt_2",
-          "type": "STRING",
-          "widget": {
-            "name": "zone_prompt_2"
-          },
-          "link": 397
-        },
-        {
-          "name": "lora_trigger_2",
-          "type": "STRING",
-          "widget": {
-            "name": "lora_trigger_2"
-          },
-          "link": 398
-        },
-        {
-          "name": "lora_strength_model_2",
-          "type": "FLOAT",
-          "widget": {
-            "name": "lora_strength_model_2"
-          },
-          "link": 399
-        },
-        {
-          "name": "strength",
-          "type": "FLOAT",
-          "widget": {
-            "name": "strength"
-          },
-          "link": 400
-        },
-        {
-          "label": "region 3",
-          "name": "values.b",
-          "type": "FLOAT,INT,BOOLEAN",
-          "widget": {
-            "name": "values.b"
-          },
-          "link": 426
-        },
-        {
-          "name": "on_true_2",
-          "type": "*",
-          "link": 402
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            442
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            443
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
-        "orange dress",
-        "US4G1_SM, long hair, blonde hair, very long hair, parted bangs, blue eyes, hair bun, double bun, twin tails,",
-        1,
-        1,
-        896,
-        1152,
-        448,
-        "aqua dress",
-        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
-        1,
-        1,
-        "aqua dress",
-        "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
-        1,
-        1,
-        448
-      ],
-      "widgets_values_named": {
-        "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
-        "zone_prompt": "orange dress",
-        "lora_trigger": "US4G1_SM, long hair, blonde hair, very long hair, parted bangs, blue eyes, hair bun, double bun, twin tails,",
-        "lora_strength_model": 1,
-        "lora_strength_clip": 1,
-        "width": 896,
-        "height": 1152,
-        "x": 448,
-        "zone_prompt_1": "aqua dress",
-        "lora_trigger_1": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
-        "lora_strength_model_1": 1,
-        "lora_strength_clip_1": 1,
-        "zone_prompt_2": "aqua dress",
-        "lora_trigger_2": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
-        "lora_strength_model_2": 1,
-        "strength": 1,
-        "values.b": 448
-      },
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 86,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -700.6493169545776,
-        1151.855171518003
-      ],
-      "size": [
-        400,
-        167.57425827323232
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            161,
-            397
-          ]
-        }
-      ],
-      "title": "Region 2 prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(official style:1.45), huge breasts, big areola"
-      ],
-      "widgets_values_named": {
-        "value": "(official style:1.45), huge breasts, big areola"
-      },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 143,
-      "type": "PreviewImage",
-      "pos": [
-        299.62546187145057,
-        1132.7180017641826
-      ],
-      "size": [
-        309.7045920145015,
-        413.4265416309868
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 453
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
-    },
-    {
-      "id": 158,
-      "type": "5baddabe-8134-4561-8e8d-d39501ae2b99",
-      "pos": [
-        -1037.6893165253546,
-        615.4906415459858
-      ],
-      "size": [
-        304.1178580499518,
-        400.66202100945986
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "model",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          },
-          "link": null
-        },
-        {
-          "label": "weight dtype",
-          "name": "weight_dtype",
-          "type": "COMBO",
-          "widget": {
-            "name": "weight_dtype"
-          },
-          "link": null
-        },
-        {
-          "label": "clip",
-          "name": "clip_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "clip_name"
-          },
-          "link": null
-        },
-        {
-          "label": "clip type",
-          "name": "type",
-          "type": "COMBO",
-          "widget": {
-            "name": "type"
-          },
-          "link": null
-        },
-        {
-          "label": "vae",
-          "name": "vae_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "vae_name"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            473,
-            474
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            475,
-            476
-          ]
-        },
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            477
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            478
-          ]
-        }
-      ],
-      "title": "Checkpoint",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "An_Anima-v1.1.safetensors",
-        "fp8_e4m3fn",
-        "qwen_3_06b_base.safetensors",
-        "lumina2",
-        "qwen_image_vae.safetensors"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.1.safetensors",
-        "weight_dtype": "fp8_e4m3fn",
-        "clip_name": "qwen_3_06b_base.safetensors",
-        "type": "lumina2",
-        "vae_name": "qwen_image_vae.safetensors"
-      }
-    },
-    {
-      "id": 77,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        -701.0419804165576,
-        674.2287405889998
-      ],
-      "size": [
-        400,
-        236.47734936984762
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            383,
-            415
-          ]
-        }
-      ],
-      "title": "Positive prompt",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face"
-      ],
-      "widgets_values_named": {
-        "value": "(3d render:1.3), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:2.5), dramatic lighting,  \n3girls, multiple girls, beach, sky, gradient sky, sunset, sun, sun light, milky way, from front, bikini, swimsuit, looking at viewer, huge hips, thick thighs, upper body, navel, smile, seductive gaze, starry sky,(huge breasts:1.55), detailed eyes, detailed face, kneeling, kneeling on ground, open mouth, tongue, tongue out, saliva, cum, cum on tongue, cum on face, facial, cum in face"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 115,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -270.24438192982643,
-        1231.224612360075
-      ],
-      "size": [
-        221.83847556105,
-        312.95521168694904
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            402
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            386
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            387
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            385,
-            413
-          ]
-        }
-      ],
-      "title": "🖼️ Lora Info 3",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Naruto_Shippuden/Himawari_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Himawari_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 79,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6117254720165,
-        496.6813088641129
-      ],
-      "size": [
-        221.8981034938553,
-        343.0311235836426
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            388
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            395
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            396
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            158,
-            394
-          ]
-        }
-      ],
-      "title": "🖼️ Lora Info 1",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 155,
-      "type": "be129b71-4fcb-4cf9-aa4a-e230b63fd94d",
-      "pos": [
-        297.87291223256756,
-        498.080135801584
-      ],
-      "size": [
-        311.18544631651184,
-        593.8475049837127
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 441
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 442
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 443
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 444
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 474
-        },
-        {
-          "label": "steps 2nd sampler",
-          "name": "steps_1",
-          "type": "INT",
-          "widget": {
-            "name": "steps_1"
-          },
-          "link": null
-        },
-        {
-          "label": "cfg 2nd sampler",
-          "name": "cfg_1",
-          "type": "FLOAT",
-          "widget": {
-            "name": "cfg_1"
-          },
-          "link": null
-        },
-        {
-          "label": "denoise 2nd sampler",
-          "name": "denoise_1",
-          "type": "FLOAT",
-          "widget": {
-            "name": "denoise_1"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "seed",
-          "type": "INT",
-          "links": [
-            446
-          ]
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "links": [
-            447
-          ]
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "links": [
-            448
-          ]
-        },
-        {
-          "name": "sampler",
-          "type": "COMBO",
-          "links": [
-            449
-          ]
-        },
-        {
-          "name": "scheduler",
-          "type": "COMBO",
-          "links": [
-            450
-          ]
-        },
-        {
-          "name": "denoise",
-          "type": "FLOAT",
-          "links": [
-            451
-          ]
-        },
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            452,
-            453
-          ]
-        }
-      ],
-      "title": "KSampler",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        353611111580003,
-        16,
-        3.5,
-        "euler_ancestral",
-        "simple",
-        1,
-        8,
-        2,
-        0.2
-      ],
-      "widgets_values_named": {
-        "seed": 353611111580003,
-        "steps": 16,
-        "cfg": 3.5,
-        "sampler": "euler_ancestral",
-        "scheduler": "simple",
-        "denoise": 1,
-        "steps_1": 8,
-        "cfg_1": 2,
-        "denoise_1": 0.2
-      },
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 148,
-      "type": "ad96373b-1245-4004-8ac1-6e852df62413",
-      "pos": [
-        -1032.9082789802308,
-        1079.5368867759548
-      ],
-      "size": [
-        300.0797265988459,
-        453.0918649311319
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "batch size",
-          "name": "batch_size",
-          "type": "INT",
-          "widget": {
-            "name": "batch_size"
-          },
-          "link": null
-        },
-        {
-          "label": "region split",
-          "name": "size",
-          "type": "INT",
-          "widget": {
-            "name": "size"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            444
-          ]
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            421,
-            422
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            423,
-            424
-          ]
-        },
-        {
-          "name": "size",
-          "type": "INT",
-          "links": [
-            425
-          ]
-        },
-        {
-          "label": "region 3",
-          "name": "value",
-          "type": "INT",
-          "links": [
-            426
-          ]
-        }
-      ],
-      "title": "Aspect ratio",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        1216,
-        896,
-        1,
-        3
-      ],
-      "widgets_values_named": {
-        "width": 1216,
-        "height": 896,
-        "batch_size": 1,
-        "size": 3
-      }
-    },
-    {
-      "id": 127,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        -1426.5544692201058,
-        560.8478279304226
-      ],
-      "size": [
-        348.5625,
-        534
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": []
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
       }
     }
   ],
@@ -2306,6 +2489,70 @@
       94,
       0,
       "STRING"
+    ],
+    [
+      513,
+      161,
+      0,
+      142,
+      22,
+      "STRING"
+    ],
+    [
+      516,
+      160,
+      0,
+      142,
+      27,
+      "STRING"
+    ],
+    [
+      517,
+      160,
+      0,
+      142,
+      28,
+      "STRING"
+    ],
+    [
+      518,
+      160,
+      1,
+      142,
+      24,
+      "FLOAT"
+    ],
+    [
+      519,
+      160,
+      2,
+      142,
+      25,
+      "FLOAT"
+    ],
+    [
+      520,
+      160,
+      1,
+      142,
+      26,
+      "FLOAT"
+    ],
+    [
+      521,
+      160,
+      3,
+      142,
+      23,
+      "STRING"
+    ],
+    [
+      528,
+      148,
+      5,
+      142,
+      29,
+      "INT"
     ]
   ],
   "groups": [
@@ -2315,8 +2562,8 @@
       "bounding": [
         -1051.4119373039744,
         426.9955713278588,
-        331.0848380131173,
-        1122.492802452895
+        330.86334900485906,
+        1482.7227797191135
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2327,8 +2574,8 @@
       "bounding": [
         -711.6492409220378,
         426.91564503300054,
-        421.1558144750318,
-        1122.6556350181077
+        422.6434710170265,
+        1482.8485692339766
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2339,8 +2586,8 @@
       "bounding": [
         -281.6117254720165,
         426.6813088641129,
-        241.79032303380254,
-        1123.4855424500176
+        240.61859354347675,
+        1483.2420296503708
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2351,8 +2598,8 @@
       "bounding": [
         -31.927005949437408,
         426.36456640670366,
-        306.91482137073876,
-        1124.4487159976336
+        302.2758285641609,
+        1484.5905760885555
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2361,10 +2608,10 @@
       "id": 5,
       "title": "5. Sampler",
       "bounding": [
-        286.2623972862443,
-        427.0072084490061,
-        341.61592034336707,
-        1124.1138030573163
+        278.32124978539065,
+        426.0729453197768,
+        332.75006774709203,
+        1484.4858111708957
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2373,10 +2620,10 @@
       "id": 6,
       "title": "6. Concatenate strings",
       "bounding": [
-        637.0245080364706,
-        426.87715839416666,
-        292.8986226044009,
-        1124.1836736372188
+        618.0055814713412,
+        425.65011562367255,
+        281.796649391223,
+        1484.6961882485848
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2385,10 +2632,10 @@
       "id": 7,
       "title": "7. Save metadata",
       "bounding": [
-        937.2462342084428,
-        426.91157868770716,
-        292.10334947004355,
-        1124.4575725967236
+        910.020083196666,
+        425.5399348650632,
+        280.49690614063013,
+        1484.678156398419
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2397,10 +2644,10 @@
       "id": 8,
       "title": "Save Image",
       "bounding": [
-        1558.7115546068414,
-        427.3252945844257,
-        314.6660492140775,
-        1124.97032204582
+        1510.5911758937225,
+        425.4223797695985,
+        310.25911960651,
+        1484.583029210376
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2409,10 +2656,10 @@
       "id": 9,
       "title": "8. HiresFix",
       "bounding": [
-        1238.599097977089,
-        427.12073758003544,
-        311.4409475886389,
-        1124.7815072880537
+        1200.169930101604,
+        425.57731036334496,
+        300.49313618524593,
+        1484.5521008115536
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2424,9 +2671,9 @@
         "id": "d0618eff-490c-4a1e-8661-3b32d3196ceb",
         "version": 1,
         "state": {
-          "lastGroupId": 12,
-          "lastNodeId": 159,
-          "lastLinkId": 493,
+          "lastGroupId": 13,
+          "lastNodeId": 167,
+          "lastLinkId": 530,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2438,16 +2685,16 @@
             -1273.4826993030033,
             603.225316118063,
             175.5,
-            487.9999999999999
+            647.9999999999999
           ]
         },
         "outputNode": {
           "id": -20,
           "bounding": [
-            932.0820659929724,
-            971.2838563896322,
+            1500.1653540865098,
+            781.06596204276,
             128,
-            87.99999999999989
+            88
           ]
         },
         "inputs": [
@@ -2458,7 +2705,8 @@
             "linkIds": [
               348,
               346,
-              347
+              347,
+              502
             ],
             "localized_name": "clip",
             "pos": [
@@ -2473,7 +2721,8 @@
             "linkIds": [
               380,
               349,
-              350
+              350,
+              503
             ],
             "localized_name": "negative_conditioning",
             "pos": [
@@ -2488,7 +2737,8 @@
             "linkIds": [
               353,
               351,
-              352
+              352,
+              505
             ],
             "localized_name": "base_prompt",
             "pos": [
@@ -2584,7 +2834,8 @@
             "linkIds": [
               334,
               332,
-              333
+              333,
+              511
             ],
             "localized_name": "width",
             "pos": [
@@ -2602,7 +2853,8 @@
               335,
               336,
               337,
-              338
+              338,
+              512
             ],
             "localized_name": "height",
             "pos": [
@@ -2618,9 +2870,11 @@
               344,
               345,
               341,
-              342
+              342,
+              526
             ],
             "localized_name": "x",
+            "label": "region 2",
             "pos": [
               -1121.9826993030033,
               847.225316118063
@@ -2760,6 +3014,103 @@
               -1121.9826993030033,
               1047.225316118063
             ]
+          },
+          {
+            "id": "2927cfa7-3c53-4364-ac74-9bb6db08f401",
+            "name": "zone_prompt_3",
+            "type": "STRING",
+            "linkIds": [
+              506
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1067.225316118063
+            ]
+          },
+          {
+            "id": "50a89472-f78c-4079-8b97-cbc4e34e388e",
+            "name": "lora_trigger_3",
+            "type": "STRING",
+            "linkIds": [
+              507
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1087.225316118063
+            ]
+          },
+          {
+            "id": "a2c78750-8819-4738-a598-5d893cd562a8",
+            "name": "lora_strength_model_3",
+            "type": "FLOAT",
+            "linkIds": [
+              508
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1107.225316118063
+            ]
+          },
+          {
+            "id": "37838ef3-99ee-4c31-a9dd-14a7763e6468",
+            "name": "lora_strength_clip_2",
+            "type": "FLOAT",
+            "linkIds": [
+              509
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1127.225316118063
+            ]
+          },
+          {
+            "id": "0a494685-85dd-41a1-b1cc-855da6ce6949",
+            "name": "strength_1",
+            "type": "FLOAT",
+            "linkIds": [
+              510
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1147.225316118063
+            ]
+          },
+          {
+            "id": "c70b8bfe-8e45-461f-bdbe-f29e651bea12",
+            "name": "on_true_3",
+            "type": "*",
+            "linkIds": [
+              514
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1167.225316118063
+            ]
+          },
+          {
+            "id": "e7aa6903-a464-45e7-9cd1-c33068e63280",
+            "name": "on_false",
+            "type": "*",
+            "linkIds": [
+              515
+            ],
+            "pos": [
+              -1121.9826993030033,
+              1187.225316118063
+            ]
+          },
+          {
+            "id": "89946742-5832-4539-91c7-b29f10b3d478",
+            "name": "x_1",
+            "type": "INT",
+            "linkIds": [
+              527
+            ],
+            "label": "region 4",
+            "pos": [
+              -1121.9826993030033,
+              1207.225316118063
+            ]
           }
         ],
         "outputs": [
@@ -2768,12 +3119,12 @@
             "name": "positive",
             "type": "CONDITIONING",
             "linkIds": [
-              405
+              497
             ],
             "localized_name": "positive",
             "pos": [
-              956.0820659929724,
-              995.2838563896322
+              1524.1653540865098,
+              805.06596204276
             ]
           },
           {
@@ -2781,12 +3132,12 @@
             "name": "negative",
             "type": "CONDITIONING",
             "linkIds": [
-              406
+              496
             ],
             "localized_name": "negative",
             "pos": [
-              956.0820659929724,
-              1015.2838563896322
+              1524.1653540865098,
+              825.06596204276
             ]
           }
         ],
@@ -2894,102 +3245,6 @@
             ],
             "widgets_values_named": {
               "boolean": true
-            }
-          },
-          {
-            "id": 133,
-            "type": "AnimaRectMask",
-            "pos": [
-              -131.97935796943898,
-              1162.3305042146796
-            ],
-            "size": [
-              270,
-              202
-            ],
-            "flags": {},
-            "order": 3,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "width",
-                "name": "width",
-                "type": "INT",
-                "widget": {
-                  "name": "width"
-                },
-                "link": 334
-              },
-              {
-                "localized_name": "height",
-                "name": "height",
-                "type": "INT",
-                "widget": {
-                  "name": "height"
-                },
-                "link": 339
-              },
-              {
-                "localized_name": "x",
-                "name": "x",
-                "type": "INT",
-                "widget": {
-                  "name": "x"
-                },
-                "link": 344
-              },
-              {
-                "localized_name": "rect_width",
-                "name": "rect_width",
-                "type": "INT",
-                "widget": {
-                  "name": "rect_width"
-                },
-                "link": 345
-              },
-              {
-                "localized_name": "rect_height",
-                "name": "rect_height",
-                "type": "INT",
-                "widget": {
-                  "name": "rect_height"
-                },
-                "link": 340
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MASK",
-                "name": "MASK",
-                "type": "MASK",
-                "links": [
-                  323
-                ]
-              }
-            ],
-            "title": "Anima Rect Mask 2",
-            "properties": {
-              "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
-              "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
-              "Node name for S&R": "AnimaRectMask"
-            },
-            "widgets_values": [
-              896,
-              1152,
-              448,
-              0,
-              448,
-              1152,
-              10
-            ],
-            "widgets_values_named": {
-              "width": 896,
-              "height": 1152,
-              "x": 448,
-              "y": 0,
-              "rect_width": 448,
-              "rect_height": 1152,
-              "feather": 10
             }
           },
           {
@@ -3470,102 +3725,6 @@
             }
           },
           {
-            "id": 139,
-            "type": "AnimaRectMask",
-            "pos": [
-              430.8396851057587,
-              1169.3323604177087
-            ],
-            "size": [
-              270,
-              202
-            ],
-            "flags": {},
-            "order": 8,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "width",
-                "name": "width",
-                "type": "INT",
-                "widget": {
-                  "name": "width"
-                },
-                "link": 333
-              },
-              {
-                "localized_name": "height",
-                "name": "height",
-                "type": "INT",
-                "widget": {
-                  "name": "height"
-                },
-                "link": 337
-              },
-              {
-                "localized_name": "x",
-                "name": "x",
-                "type": "INT",
-                "widget": {
-                  "name": "x"
-                },
-                "link": 436
-              },
-              {
-                "localized_name": "rect_width",
-                "name": "rect_width",
-                "type": "INT",
-                "widget": {
-                  "name": "rect_width"
-                },
-                "link": 342
-              },
-              {
-                "localized_name": "rect_height",
-                "name": "rect_height",
-                "type": "INT",
-                "widget": {
-                  "name": "rect_height"
-                },
-                "link": 338
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MASK",
-                "name": "MASK",
-                "type": "MASK",
-                "links": [
-                  327
-                ]
-              }
-            ],
-            "title": "Anima Rect Mask 3",
-            "properties": {
-              "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
-              "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
-              "Node name for S&R": "AnimaRectMask"
-            },
-            "widgets_values": [
-              896,
-              1152,
-              448,
-              0,
-              448,
-              1152,
-              10
-            ],
-            "widgets_values_named": {
-              "width": 896,
-              "height": 1152,
-              "x": 448,
-              "y": 0,
-              "rect_width": 448,
-              "rect_height": 1152,
-              "feather": 10
-            }
-          },
-          {
             "id": 130,
             "type": "AnimaRegionalZone",
             "pos": [
@@ -3689,7 +3848,7 @@
                 "name": "positive",
                 "type": "CONDITIONING",
                 "links": [
-                  405
+                  501
                 ]
               },
               {
@@ -3697,7 +3856,7 @@
                 "name": "negative",
                 "type": "CONDITIONING",
                 "links": [
-                  406
+                  500
                 ]
               },
               {
@@ -3733,6 +3892,506 @@
               "strength": 1,
               "set_cond_area": "default"
             }
+          },
+          {
+            "id": 162,
+            "type": "AnimaRegionalZone",
+            "pos": [
+              984.9681867775034,
+              584.1314311187806
+            ],
+            "size": [
+              400,
+              416
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 502
+              },
+              {
+                "localized_name": "negative_conditioning",
+                "name": "negative_conditioning",
+                "type": "CONDITIONING",
+                "link": 503
+              },
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "link": 494
+              },
+              {
+                "localized_name": "previous_positive",
+                "name": "previous_positive",
+                "shape": 7,
+                "type": "CONDITIONING",
+                "link": 501
+              },
+              {
+                "localized_name": "previous_negative",
+                "name": "previous_negative",
+                "shape": 7,
+                "type": "CONDITIONING",
+                "link": 500
+              },
+              {
+                "localized_name": "previous_hooks",
+                "name": "previous_hooks",
+                "shape": 7,
+                "type": "HOOKS",
+                "link": null
+              },
+              {
+                "localized_name": "base_prompt",
+                "name": "base_prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "base_prompt"
+                },
+                "link": 505
+              },
+              {
+                "localized_name": "zone_prompt",
+                "name": "zone_prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "zone_prompt"
+                },
+                "link": 506
+              },
+              {
+                "localized_name": "lora_trigger",
+                "name": "lora_trigger",
+                "type": "STRING",
+                "widget": {
+                  "name": "lora_trigger"
+                },
+                "link": 507
+              },
+              {
+                "localized_name": "lora_name",
+                "name": "lora_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "lora_name"
+                },
+                "link": 495
+              },
+              {
+                "localized_name": "lora_strength_model",
+                "name": "lora_strength_model",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "lora_strength_model"
+                },
+                "link": 508
+              },
+              {
+                "localized_name": "lora_strength_clip",
+                "name": "lora_strength_clip",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "lora_strength_clip"
+                },
+                "link": 509
+              },
+              {
+                "localized_name": "strength",
+                "name": "strength",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength"
+                },
+                "link": 510
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "links": [
+                  497
+                ]
+              },
+              {
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "links": [
+                  496
+                ]
+              },
+              {
+                "localized_name": "hooks",
+                "name": "hooks",
+                "type": "HOOKS",
+                "links": []
+              }
+            ],
+            "title": "Anima Regional Zone (chainable) 3",
+            "properties": {
+              "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+              "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+              "Node name for S&R": "AnimaRegionalZone"
+            },
+            "widgets_values": [
+              "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+              "aqua dress",
+              "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+              "drive/Sailor_Moon/Ami_SM_Anima.safetensors",
+              1,
+              1,
+              1,
+              "default"
+            ],
+            "widgets_values_named": {
+              "base_prompt": "masterpiece, best quality, 2girls, side by side, upper body, large breasts, looking at viewer, seductive smile, blush, parted lips, teeth, dress, lace dress",
+              "zone_prompt": "aqua dress",
+              "lora_trigger": "4M1_SM, blue hair, eyelashes, short hair, lips, lipstick, blue eyes,",
+              "lora_name": "drive/Sailor_Moon/Ami_SM_Anima.safetensors",
+              "lora_strength_model": 1,
+              "lora_strength_clip": 1,
+              "strength": 1,
+              "set_cond_area": "default"
+            }
+          },
+          {
+            "id": 163,
+            "type": "Switch any [Crystools]",
+            "pos": [
+              980.2880068029988,
+              1064.9287444983242
+            ],
+            "size": [
+              270,
+              78
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "on_true",
+                "name": "on_true",
+                "type": "*",
+                "link": 514
+              },
+              {
+                "localized_name": "on_false",
+                "name": "on_false",
+                "type": "*",
+                "link": 515
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "*",
+                "name": "*",
+                "type": "*",
+                "links": [
+                  495
+                ]
+              }
+            ],
+            "title": "🪛 Switch any 3",
+            "properties": {
+              "aux_id": "crystian/ComfyUI-Crystools",
+              "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
+              "Node name for S&R": "Switch any [Crystools]",
+              "cnr_id": "ComfyUI-Crystools"
+            },
+            "widgets_values": [
+              true
+            ],
+            "widgets_values_named": {
+              "boolean": true
+            }
+          },
+          {
+            "id": 139,
+            "type": "AnimaRectMask",
+            "pos": [
+              479.1959585919542,
+              1284.824435070443
+            ],
+            "size": [
+              270,
+              202
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "widget": {
+                  "name": "width"
+                },
+                "link": 333
+              },
+              {
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "widget": {
+                  "name": "height"
+                },
+                "link": 337
+              },
+              {
+                "localized_name": "x",
+                "name": "x",
+                "type": "INT",
+                "widget": {
+                  "name": "x"
+                },
+                "link": 436
+              },
+              {
+                "localized_name": "rect_width",
+                "name": "rect_width",
+                "type": "INT",
+                "widget": {
+                  "name": "rect_width"
+                },
+                "link": 342
+              },
+              {
+                "localized_name": "rect_height",
+                "name": "rect_height",
+                "type": "INT",
+                "widget": {
+                  "name": "rect_height"
+                },
+                "link": 338
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MASK",
+                "name": "MASK",
+                "type": "MASK",
+                "links": [
+                  327
+                ]
+              }
+            ],
+            "title": "Anima Rect Mask 3",
+            "properties": {
+              "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+              "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+              "Node name for S&R": "AnimaRectMask"
+            },
+            "widgets_values": [
+              896,
+              1152,
+              448,
+              0,
+              448,
+              1152,
+              10
+            ],
+            "widgets_values_named": {
+              "width": 896,
+              "height": 1152,
+              "x": 448,
+              "y": 0,
+              "rect_width": 448,
+              "rect_height": 1152,
+              "feather": 10
+            }
+          },
+          {
+            "id": 133,
+            "type": "AnimaRectMask",
+            "pos": [
+              -131.97935796943898,
+              1162.3305042146796
+            ],
+            "size": [
+              270,
+              202
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "widget": {
+                  "name": "width"
+                },
+                "link": 334
+              },
+              {
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "widget": {
+                  "name": "height"
+                },
+                "link": 339
+              },
+              {
+                "localized_name": "x",
+                "name": "x",
+                "type": "INT",
+                "widget": {
+                  "name": "x"
+                },
+                "link": 344
+              },
+              {
+                "localized_name": "rect_width",
+                "name": "rect_width",
+                "type": "INT",
+                "widget": {
+                  "name": "rect_width"
+                },
+                "link": 345
+              },
+              {
+                "localized_name": "rect_height",
+                "name": "rect_height",
+                "type": "INT",
+                "widget": {
+                  "name": "rect_height"
+                },
+                "link": 340
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MASK",
+                "name": "MASK",
+                "type": "MASK",
+                "links": [
+                  323
+                ]
+              }
+            ],
+            "title": "Anima Rect Mask 2",
+            "properties": {
+              "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+              "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+              "Node name for S&R": "AnimaRectMask"
+            },
+            "widgets_values": [
+              896,
+              1152,
+              448,
+              0,
+              448,
+              1152,
+              10
+            ],
+            "widgets_values_named": {
+              "width": 896,
+              "height": 1152,
+              "x": 448,
+              "y": 0,
+              "rect_width": 448,
+              "rect_height": 1152,
+              "feather": 10
+            }
+          },
+          {
+            "id": 164,
+            "type": "AnimaRectMask",
+            "pos": [
+              975.0616307989121,
+              1181.5935586030655
+            ],
+            "size": [
+              270,
+              202
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "widget": {
+                  "name": "width"
+                },
+                "link": 511
+              },
+              {
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "widget": {
+                  "name": "height"
+                },
+                "link": 512
+              },
+              {
+                "localized_name": "x",
+                "name": "x",
+                "type": "INT",
+                "widget": {
+                  "name": "x"
+                },
+                "link": 527
+              },
+              {
+                "localized_name": "rect_width",
+                "name": "rect_width",
+                "type": "INT",
+                "widget": {
+                  "name": "rect_width"
+                },
+                "link": 526
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MASK",
+                "name": "MASK",
+                "type": "MASK",
+                "links": [
+                  494
+                ]
+              }
+            ],
+            "title": "Anima Rect Mask 4",
+            "properties": {
+              "aux_id": "vergil-sparda0701/ComfyUI-AnimaRegional",
+              "ver": "9d5a85528e73c6c644807cb9367ce092f3c3e272",
+              "Node name for S&R": "AnimaRectMask"
+            },
+            "widgets_values": [
+              896,
+              1152,
+              448,
+              0,
+              448,
+              1152,
+              10
+            ],
+            "widgets_values_named": {
+              "width": 896,
+              "height": 1152,
+              "x": 448,
+              "y": 0,
+              "rect_width": 448,
+              "rect_height": 1152,
+              "feather": 10
+            }
           }
         ],
         "groups": [
@@ -3766,6 +4425,18 @@
             "bounding": [
               410.29396446101987,
               484.64729599556176,
+              461.7881015319524,
+              1070.802154138613
+            ],
+            "color": "#3f789e",
+            "flags": {}
+          },
+          {
+            "id": 13,
+            "title": "Region 3",
+            "bounding": [
+              954.5159101541733,
+              496.9084941809207,
               461.7881015319524,
               1070.802154138613
             ],
@@ -4199,26 +4870,170 @@
             "type": "STRING"
           },
           {
-            "id": 405,
-            "origin_id": 130,
-            "origin_slot": 0,
-            "target_id": -20,
-            "target_slot": 0,
-            "type": "CONDITIONING"
+            "id": 436,
+            "origin_id": -10,
+            "origin_slot": 20,
+            "target_id": 139,
+            "target_slot": 2,
+            "type": "INT"
           },
           {
-            "id": 406,
-            "origin_id": 130,
+            "id": 494,
+            "origin_id": 164,
+            "origin_slot": 0,
+            "target_id": 162,
+            "target_slot": 2,
+            "type": "MASK"
+          },
+          {
+            "id": 495,
+            "origin_id": 163,
+            "origin_slot": 0,
+            "target_id": 162,
+            "target_slot": 9,
+            "type": "COMBO"
+          },
+          {
+            "id": 496,
+            "origin_id": 162,
             "origin_slot": 1,
             "target_id": -20,
             "target_slot": 1,
             "type": "CONDITIONING"
           },
           {
-            "id": 436,
+            "id": 497,
+            "origin_id": 162,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 500,
+            "origin_id": 130,
+            "origin_slot": 1,
+            "target_id": 162,
+            "target_slot": 4,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 501,
+            "origin_id": 130,
+            "origin_slot": 0,
+            "target_id": 162,
+            "target_slot": 3,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 502,
             "origin_id": -10,
-            "origin_slot": 20,
-            "target_id": 139,
+            "origin_slot": 0,
+            "target_id": 162,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 503,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 162,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 505,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 162,
+            "target_slot": 6,
+            "type": "STRING"
+          },
+          {
+            "id": 506,
+            "origin_id": -10,
+            "origin_slot": 22,
+            "target_id": 162,
+            "target_slot": 7,
+            "type": "STRING"
+          },
+          {
+            "id": 507,
+            "origin_id": -10,
+            "origin_slot": 23,
+            "target_id": 162,
+            "target_slot": 8,
+            "type": "STRING"
+          },
+          {
+            "id": 508,
+            "origin_id": -10,
+            "origin_slot": 24,
+            "target_id": 162,
+            "target_slot": 10,
+            "type": "FLOAT"
+          },
+          {
+            "id": 509,
+            "origin_id": -10,
+            "origin_slot": 25,
+            "target_id": 162,
+            "target_slot": 11,
+            "type": "FLOAT"
+          },
+          {
+            "id": 510,
+            "origin_id": -10,
+            "origin_slot": 26,
+            "target_id": 162,
+            "target_slot": 12,
+            "type": "FLOAT"
+          },
+          {
+            "id": 511,
+            "origin_id": -10,
+            "origin_slot": 9,
+            "target_id": 164,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 512,
+            "origin_id": -10,
+            "origin_slot": 10,
+            "target_id": 164,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 514,
+            "origin_id": -10,
+            "origin_slot": 27,
+            "target_id": 163,
+            "target_slot": 0,
+            "type": "*"
+          },
+          {
+            "id": 515,
+            "origin_id": -10,
+            "origin_slot": 28,
+            "target_id": 163,
+            "target_slot": 1,
+            "type": "*"
+          },
+          {
+            "id": 526,
+            "origin_id": -10,
+            "origin_slot": 11,
+            "target_id": 164,
+            "target_slot": 3,
+            "type": "INT"
+          },
+          {
+            "id": 527,
+            "origin_id": -10,
+            "origin_slot": 29,
+            "target_id": 164,
             "target_slot": 2,
             "type": "INT"
           }
@@ -4229,9 +5044,9 @@
         "id": "ad96373b-1245-4004-8ac1-6e852df62413",
         "version": 1,
         "state": {
-          "lastGroupId": 12,
-          "lastNodeId": 159,
-          "lastLinkId": 493,
+          "lastGroupId": 13,
+          "lastNodeId": 167,
+          "lastLinkId": 530,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4252,7 +5067,7 @@
             -311.88330105051443,
             1110.5425187485778,
             128,
-            148
+            168
           ]
         },
         "inputs": [
@@ -4357,6 +5172,7 @@
               435
             ],
             "localized_name": "size",
+            "label": "region 2",
             "pos": [
               -287.88330105051443,
               1194.5425187485778
@@ -4374,6 +5190,19 @@
             "pos": [
               -287.88330105051443,
               1214.5425187485778
+            ]
+          },
+          {
+            "id": "c3af40a3-060c-46d3-88f9-e9a3638d485a",
+            "name": "INT",
+            "type": "INT",
+            "linkIds": [
+              525
+            ],
+            "label": "region 4",
+            "pos": [
+              -287.88330105051443,
+              1234.5425187485778
             ]
           }
         ],
@@ -4495,10 +5324,10 @@
               "Node name for S&R": "ShowText|pysssss"
             },
             "widgets_values": [
-              "405"
+              "384"
             ],
             "widgets_values_named": {
-              "text_0": "405"
+              "text_0": "384"
             }
           },
           {
@@ -4551,11 +5380,301 @@
             }
           },
           {
+            "id": 150,
+            "type": "CR Integer To String",
+            "pos": [
+              -1080.8776306367176,
+              1655.7383874861125
+            ],
+            "size": [
+              196.319921875,
+              46
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "int_",
+                "name": "int_",
+                "type": "INT",
+                "link": 431
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  432
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR Integer To String"
+            }
+          },
+          {
+            "id": 154,
+            "type": "ShowText|pysssss",
+            "pos": [
+              -204.28635413975536,
+              1675.3536318265367
+            ],
+            "size": [
+              140,
+              76
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "text",
+                "name": "text",
+                "type": "STRING",
+                "link": 439
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "shape": 6,
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
+              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+              "Node name for S&R": "ShowText|pysssss"
+            },
+            "widgets_values": [
+              "768"
+            ],
+            "widgets_values_named": {
+              "text_0": "768"
+            }
+          },
+          {
+            "id": 153,
+            "type": "CR Integer To String",
+            "pos": [
+              -463.89297593105465,
+              1681.7863894902046
+            ],
+            "size": [
+              196.319921875,
+              46
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "int_",
+                "name": "int_",
+                "type": "INT",
+                "link": 440
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  439
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR Integer To String"
+            }
+          },
+          {
+            "id": 166,
+            "type": "CR Integer To String",
+            "pos": [
+              107.43460509998124,
+              1612.6841334691721
+            ],
+            "size": [
+              196.319921875,
+              46
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "int_",
+                "name": "int_",
+                "type": "INT",
+                "link": 522
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  523
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR Integer To String"
+            }
+          },
+          {
+            "id": 167,
+            "type": "ShowText|pysssss",
+            "pos": [
+              367.04122689128064,
+              1606.2513758055043
+            ],
+            "size": [
+              140,
+              76
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "text",
+                "name": "text",
+                "type": "STRING",
+                "link": 523
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "shape": 6,
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
+              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+              "Node name for S&R": "ShowText|pysssss"
+            },
+            "widgets_values": [
+              "1152"
+            ],
+            "widgets_values_named": {
+              "text_0": "1152"
+            }
+          },
+          {
+            "id": 152,
+            "type": "ComfyMathExpression",
+            "pos": [
+              -589.7577993979351,
+              1466.8129325636614
+            ],
+            "size": [
+              400,
+              148
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "a",
+                "name": "values.a",
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": 437
+              },
+              {
+                "localized_name": "b",
+                "name": "values.b",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              },
+              {
+                "localized_name": "c",
+                "name": "values.c",
+                "shape": 7,
+                "type": "FLOAT,INT,BOOLEAN",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "FLOTANTE",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "localized_name": "ENTERO",
+                "name": "INT",
+                "type": "INT",
+                "links": [
+                  438,
+                  440
+                ]
+              },
+              {
+                "localized_name": "BOOL",
+                "name": "BOOL",
+                "type": "BOOLEAN",
+                "links": null
+              }
+            ],
+            "title": "region 3",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.34.0",
+              "Node name for S&R": "ComfyMathExpression"
+            },
+            "widgets_values": [
+              "a * 2"
+            ],
+            "widgets_values_named": {
+              "expression": "a * 2"
+            }
+          },
+          {
             "id": 84,
             "type": "Width/Height Literal (Image Saver)",
             "pos": [
-              -1041.3601960073745,
-              1326.1542509739593
+              -1426.0416043658618,
+              1471.134629530061
             ],
             "size": [
               310.3919574189955,
@@ -4649,7 +5768,8 @@
                 "links": [
                   431,
                   435,
-                  437
+                  437,
+                  530
                 ]
               },
               {
@@ -4659,6 +5779,7 @@
                 "links": null
               }
             ],
+            "title": "region 2",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -4672,25 +5793,25 @@
             }
           },
           {
-            "id": 152,
+            "id": 165,
             "type": "ComfyMathExpression",
             "pos": [
-              -589.7577993979351,
-              1466.8129325636614
+              -49.27943980486,
+              1400.1785765999255
             ],
             "size": [
               400,
               148
             ],
             "flags": {},
-            "order": 6,
+            "order": 9,
             "mode": 0,
             "inputs": [
               {
                 "localized_name": "a",
                 "name": "values.a",
                 "type": "FLOAT,INT,BOOLEAN",
-                "link": 437
+                "link": 530
               },
               {
                 "localized_name": "b",
@@ -4719,8 +5840,8 @@
                 "name": "INT",
                 "type": "INT",
                 "links": [
-                  438,
-                  440
+                  522,
+                  525
                 ]
               },
               {
@@ -4730,147 +5851,17 @@
                 "links": null
               }
             ],
+            "title": "region 4",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
               "Node name for S&R": "ComfyMathExpression"
             },
             "widgets_values": [
-              "a * 2"
+              "a * 3"
             ],
             "widgets_values_named": {
-              "expression": "a * 2"
-            }
-          },
-          {
-            "id": 150,
-            "type": "CR Integer To String",
-            "pos": [
-              -1080.8776306367176,
-              1655.7383874861125
-            ],
-            "size": [
-              196.319921875,
-              46
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "int_",
-                "name": "int_",
-                "type": "INT",
-                "link": 431
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "type": "STRING",
-                "links": [
-                  432
-                ]
-              },
-              {
-                "localized_name": "show_help",
-                "name": "show_help",
-                "type": "STRING",
-                "links": null
-              }
-            ],
-            "properties": {
-              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
-              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-              "Node name for S&R": "CR Integer To String"
-            }
-          },
-          {
-            "id": 154,
-            "type": "ShowText|pysssss",
-            "pos": [
-              -204.28635413975536,
-              1675.3536318265367
-            ],
-            "size": [
-              140,
-              76
-            ],
-            "flags": {},
-            "order": 8,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "text",
-                "name": "text",
-                "type": "STRING",
-                "link": 439
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "shape": 6,
-                "type": "STRING",
-                "links": null
-              }
-            ],
-            "properties": {
-              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
-              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-              "Node name for S&R": "ShowText|pysssss"
-            },
-            "widgets_values": [
-              "810"
-            ],
-            "widgets_values_named": {
-              "text_0": "810"
-            }
-          },
-          {
-            "id": 153,
-            "type": "CR Integer To String",
-            "pos": [
-              -463.89297593105465,
-              1681.7863894902046
-            ],
-            "size": [
-              196.319921875,
-              46
-            ],
-            "flags": {},
-            "order": 7,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "int_",
-                "name": "int_",
-                "type": "INT",
-                "link": 440
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "type": "STRING",
-                "links": [
-                  439
-                ]
-              },
-              {
-                "localized_name": "show_help",
-                "name": "show_help",
-                "type": "STRING",
-                "links": null
-              }
-            ],
-            "properties": {
-              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
-              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-              "Node name for S&R": "CR Integer To String"
+              "expression": "a * 3"
             }
           }
         ],
@@ -5011,6 +6002,38 @@
             "target_id": 153,
             "target_slot": 0,
             "type": "INT"
+          },
+          {
+            "id": 522,
+            "origin_id": 165,
+            "origin_slot": 1,
+            "target_id": 166,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 523,
+            "origin_id": 166,
+            "origin_slot": 0,
+            "target_id": 167,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 525,
+            "origin_id": 165,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 5,
+            "type": "INT"
+          },
+          {
+            "id": 530,
+            "origin_id": 149,
+            "origin_slot": 1,
+            "target_id": 165,
+            "target_slot": 0,
+            "type": "INT"
           }
         ],
         "extra": {}
@@ -5019,9 +6042,9 @@
         "id": "be129b71-4fcb-4cf9-aa4a-e230b63fd94d",
         "version": 1,
         "state": {
-          "lastGroupId": 12,
-          "lastNodeId": 159,
-          "lastLinkId": 493,
+          "lastGroupId": 13,
+          "lastNodeId": 167,
+          "lastLinkId": 530,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5336,7 +6359,7 @@
               302
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -5489,7 +6512,7 @@
               46
             ],
             "flags": {},
-            "order": 3,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -5533,7 +6556,7 @@
               296.24945020469863
             ],
             "flags": {},
-            "order": 1,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -5660,7 +6683,7 @@
               296.24945020469863
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -6068,9 +7091,9 @@
         "id": "5baddabe-8134-4561-8e8d-d39501ae2b99",
         "version": 1,
         "state": {
-          "lastGroupId": 12,
-          "lastNodeId": 159,
-          "lastLinkId": 493,
+          "lastGroupId": 13,
+          "lastNodeId": 167,
+          "lastLinkId": 530,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6297,7 +7320,7 @@
               111.60520650293932
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -6373,7 +7396,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 0,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -6506,10 +7529,10 @@
   "extra": {
     "frontendVersion": "1.51.9",
     "ds": {
-      "scale": 0.5803107252222454,
+      "scale": 0.41569226031962486,
       "offset": [
-        1938.8856616535213,
-        -930.2816033332621
+        2768.87931400006,
+        57.63719339642205
       ]
     }
   },
