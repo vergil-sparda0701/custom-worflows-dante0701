@@ -74,7 +74,7 @@
       ],
       "size": [
         263.1875,
-        659.90625
+        666
       ],
       "flags": {},
       "order": 22,
@@ -205,8 +205,8 @@
         7.881752739901089
       ],
       "size": [
-        293.9218161554727,
-        554
+        293.90625,
+        678
       ],
       "flags": {},
       "order": 19,
@@ -279,7 +279,7 @@
         604.6829640802091
       ],
       "size": [
-        321.5982316977552,
+        321.59375,
         62
       ],
       "flags": {},
@@ -326,11 +326,11 @@
       "type": "daea7cbc-754c-47ec-9c9b-3a6c6bb30022",
       "pos": [
         936.765336821599,
-        407.3999476799156
+        375.7295787133768
       ],
       "size": [
-        321.9734079100674,
-        160.53968123747524
+        321.96875,
+        182
       ],
       "flags": {},
       "order": 1,
@@ -380,11 +380,11 @@
       "type": "ShowText|pysssss",
       "pos": [
         1290.4017489981752,
-        563.0243115191837
+        542.873472398782
       ],
       "size": [
-        369.6433081033381,
-        102.99952924378135
+        369.625,
+        126
       ],
       "flags": {},
       "order": 12,
@@ -413,10 +413,10 @@
         "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
       },
       "widgets_values": [
-        "4S4M1_TL0K, long hair, black hair, red lips, wavy hair, green eyes, purple eyeshadow, eyeshadow, pruple lips"
+        "K0RR4_TL0K, blue eyes, dark-skinned female, short hair, hair between eyes, dark skin, brown hair"
       ],
       "widgets_values_named": {
-        "text_0": "4S4M1_TL0K, long hair, black hair, red lips, wavy hair, green eyes, purple eyeshadow, eyeshadow, pruple lips"
+        "text_0": "K0RR4_TL0K, blue eyes, dark-skinned female, short hair, hair between eyes, dark skin, brown hair"
       }
     },
     {
@@ -460,12 +460,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        432616098144226,
+        322563841269991,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 432616098144226,
+        "seed": 322563841269991,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -478,8 +478,8 @@
         6.55574045720072
       ],
       "size": [
-        317.6667650921843,
-        104.31196669019823
+        317.65625,
+        104.296875
       ],
       "flags": {},
       "order": 2,
@@ -496,95 +496,6 @@
       "color": "#432",
       "bgcolor": "#653",
       "shape": "default"
-    },
-    {
-      "id": 117,
-      "type": "Note",
-      "pos": [
-        591.4132616151423,
-        149.89426888366305
-      ],
-      "size": [
-        316.28125,
-        519.6320327262578
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
-      ],
-      "widgets_values_named": {
-        "text": "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
-      },
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": "default"
-    },
-    {
-      "id": 176,
-      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
-      "pos": [
-        2067.533492137341,
-        367.3615450789768
-      ],
-      "size": [
-        390.58888659523654,
-        292.67879402922404
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 466
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            485
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            468
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      ],
-      "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
     },
     {
       "id": 134,
@@ -730,8 +641,8 @@
         9.855191914651897
       ],
       "size": [
-        480.32602443967244,
-        687.9173604161285
+        480.3125,
+        687.90625
       ],
       "flags": {},
       "order": 17,
@@ -907,8 +818,8 @@
         6.317654697648187
       ],
       "size": [
-        310.42972211673623,
-        656.5180516753658
+        310.421875,
+        656.515625
       ],
       "flags": {},
       "order": 14,
@@ -1025,7 +936,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        559795020237351,
+        165001347933820,
         16,
         4,
         "euler_ancestral",
@@ -1036,7 +947,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 559795020237351,
+        "seed": 165001347933820,
         "steps": 16,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1097,12 +1008,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        19903116338649,
+        820246117000470,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 19903116338649,
+        "seed": 820246117000470,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -1183,6 +1094,263 @@
       }
     },
     {
+      "id": 170,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        165.43135990050385,
+        -15.876166515514305
+      ],
+      "size": [
+        348.5625,
+        534
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 194,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1686.1230026397868,
+        534.8188500903746
+      ],
+      "size": [
+        336.328125,
+        126
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 565
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (hour glass figure:1.5), (abdomen:1.5), (toned thighs:1.5), (looking at viewer:1.5), looking at front"
+      ],
+      "widgets_values_named": {
+        "text_0": "(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (hour glass figure:1.5), (abdomen:1.5), (toned thighs:1.5), (looking at viewer:1.5), looking at front"
+      }
+    },
+    {
+      "id": 176,
+      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
+      "pos": [
+        2067.533492137341,
+        367.3615450789768
+      ],
+      "size": [
+        390.578125,
+        292.671875
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 466
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            485
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            468
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:2.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      ],
+      "widgets_values_named": {
+        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:2.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 209,
+      "type": "a4feaafb-41e6-4ae9-8e0b-8d482629e1c0",
+      "pos": [
+        1685.673993780812,
+        6.434872952487242
+      ],
+      "size": [
+        333.671875,
+        474.5625
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Breasts",
+          "name": "choice",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice"
+          },
+          "link": null
+        },
+        {
+          "label": "Hips",
+          "name": "choice_1",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_1"
+          },
+          "link": null
+        },
+        {
+          "label": "Thighs",
+          "name": "choice_2",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_2"
+          },
+          "link": null
+        },
+        {
+          "label": "Body type",
+          "name": "choice_3",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_3"
+          },
+          "link": null
+        },
+        {
+          "label": "Torso",
+          "name": "choice_4",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_4"
+          },
+          "link": null
+        },
+        {
+          "label": "Thighs type",
+          "name": "choice_5",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_5"
+          },
+          "link": null
+        },
+        {
+          "label": "Looking",
+          "name": "choice_6",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_6"
+          },
+          "link": null
+        },
+        {
+          "label": "Around",
+          "name": "choice_1_1",
+          "type": "COMBO",
+          "widget": {
+            "name": "choice_1_1"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            564,
+            565
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "(huge breasts:1.5)",
+        "(huge hips:1.5)",
+        "(thick thighs:1.5)",
+        "(hour glass figure:1.5)",
+        "(abdomen:1.5)",
+        "(toned thighs:1.5)",
+        "(looking at viewer:1.5)",
+        "looking at front"
+      ],
+      "widgets_values_named": {
+        "choice": "(huge breasts:1.5)",
+        "choice_1": "(huge hips:1.5)",
+        "choice_2": "(thick thighs:1.5)",
+        "choice_3": "(hour glass figure:1.5)",
+        "choice_4": "(abdomen:1.5)",
+        "choice_5": "(toned thighs:1.5)",
+        "choice_6": "(looking at viewer:1.5)",
+        "choice_1_1": "looking at front"
+      }
+    },
+    {
       "id": 174,
       "type": "35348233-dcd1-4277-ab03-21d001e51f45",
       "pos": [
@@ -1190,11 +1358,11 @@
         4.1028160554163176
       ],
       "size": [
-        321.2447097031345,
-        368.5302990298356
+        321.234375,
+        330.109375
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1293,7 +1461,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        "An_Anima-v1.2.safetensors",
+        "An_Anima-v1.1.safetensors",
         "default",
         "qwen_3_06b_base.safetensors",
         "stable_diffusion",
@@ -1301,12 +1469,111 @@
         "qwen_image_vae.safetensors"
       ],
       "widgets_values_named": {
-        "unet_name": "An_Anima-v1.2.safetensors",
+        "unet_name": "An_Anima-v1.1.safetensors",
         "weight_dtype": "default",
         "clip_name": "qwen_3_06b_base.safetensors",
         "type": "stable_diffusion",
         "device": "default",
         "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 117,
+      "type": "Note",
+      "pos": [
+        591.4132616151423,
+        149.89426888366305
+      ],
+      "size": [
+        316.28125,
+        519.625
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
+      ],
+      "widgets_values_named": {
+        "text": "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
+      },
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": "default"
+    },
+    {
+      "id": 172,
+      "type": "LoraLoaderWithPreview",
+      "pos": [
+        1288.2676833356877,
+        5.874036922330854
+      ],
+      "size": [
+        368.9375,
+        492.578125
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 453
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 452
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            427,
+            534
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            466,
+            475,
+            535
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            431
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraLoaderWithPreview"
+      },
+      "widgets_values": [
+        "drive/Avatar/Korra_TLOK_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Avatar/Korra_TLOK_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
       }
     },
     {
@@ -1317,8 +1584,8 @@
         6.254828670895704
       ],
       "size": [
-        390.1152873051319,
-        315.4971973906815
+        390.109375,
+        315.484375
       ],
       "flags": {},
       "order": 13,
@@ -1377,281 +1644,13 @@
         "previewExposures": []
       },
       "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), \n1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto"
+        "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), dynamic angle, pastel colors, volumetric lighting, intrincate details, \n1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto, cleavage, gym, modern gym"
       ],
       "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), \n1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto"
+        "value": "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), dynamic angle, pastel colors, volumetric lighting, intrincate details, \n1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto, cleavage, gym, modern gym"
       },
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 170,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        165.43135990050385,
-        -15.876166515514305
-      ],
-      "size": [
-        348.5625,
-        534
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
-    },
-    {
-      "id": 194,
-      "type": "ShowText|pysssss",
-      "pos": [
-        1686.1230026397868,
-        551.5933472169168
-      ],
-      "size": [
-        336.32975389826083,
-        88
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 565
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (hour glass figure:1.5), (abdomen:1.5), (toned thighs:1.5), (looking at viewer:1.5), looking at front"
-      ],
-      "widgets_values_named": {
-        "text_0": "(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (hour glass figure:1.5), (abdomen:1.5), (toned thighs:1.5), (looking at viewer:1.5), looking at front"
-      }
-    },
-    {
-      "id": 172,
-      "type": "LoraLoaderWithPreview",
-      "pos": [
-        1288.2676833356877,
-        5.874036922330854
-      ],
-      "size": [
-        368.93978714744776,
-        502.1153116267352
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 453
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 452
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            427,
-            534
-          ]
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            466,
-            475,
-            535
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            431
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraLoaderWithPreview"
-      },
-      "widgets_values": [
-        "drive/Avatar/Asami_TLOK_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Avatar/Asami_TLOK_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      }
-    },
-    {
-      "id": 209,
-      "type": "a4feaafb-41e6-4ae9-8e0b-8d482629e1c0",
-      "pos": [
-        1685.673993780812,
-        6.434872952487242
-      ],
-      "size": [
-        333.6789071824437,
-        474.5780012384856
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Breasts",
-          "name": "choice",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice"
-          },
-          "link": null
-        },
-        {
-          "label": "Hips",
-          "name": "choice_1",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_1"
-          },
-          "link": null
-        },
-        {
-          "label": "Thighs",
-          "name": "choice_2",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_2"
-          },
-          "link": null
-        },
-        {
-          "label": "Body type",
-          "name": "choice_3",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_3"
-          },
-          "link": null
-        },
-        {
-          "label": "Torso",
-          "name": "choice_4",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_4"
-          },
-          "link": null
-        },
-        {
-          "label": "Thighs type",
-          "name": "choice_5",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_5"
-          },
-          "link": null
-        },
-        {
-          "label": "Looking",
-          "name": "choice_6",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_6"
-          },
-          "link": null
-        },
-        {
-          "label": "Around",
-          "name": "choice_1_1",
-          "type": "COMBO",
-          "widget": {
-            "name": "choice_1_1"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            564,
-            565
-          ]
-        }
-      ],
-      "title": "Preset prompting",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "(huge breasts:1.5)",
-        "(huge hips:1.5)",
-        "(thick thighs:1.5)",
-        "(hour glass figure:1.5)",
-        "(abdomen:1.5)",
-        "(toned thighs:1.5)",
-        "(looking at viewer:1.5)",
-        "looking at front"
-      ],
-      "widgets_values_named": {
-        "choice": "(huge breasts:1.5)",
-        "choice_1": "(huge hips:1.5)",
-        "choice_2": "(thick thighs:1.5)",
-        "choice_3": "(hour glass figure:1.5)",
-        "choice_4": "(abdomen:1.5)",
-        "choice_5": "(toned thighs:1.5)",
-        "choice_6": "(looking at viewer:1.5)",
-        "choice_1_1": "looking at front"
-      }
     }
   ],
   "links": [
@@ -2115,8 +2114,8 @@
       "bounding": [
         5105.295238431211,
         -62.118247260098954,
-        316.80859375,
-        620.5418531833226
+        315.4474069238622,
+        764.8276567539028
       ],
       "color": "#3f789e",
       "flags": {}
@@ -6591,7 +6590,7 @@
             "type": "STRING",
             "linkIds": [
               589,
-              560
+              589
             ],
             "localized_name": "CADENA",
             "pos": [
@@ -6614,7 +6613,7 @@
               246
             ],
             "flags": {},
-            "order": 7,
+            "order": 4,
             "mode": 0,
             "inputs": [
               {
@@ -6684,7 +6683,7 @@
               174
             ],
             "flags": {},
-            "order": 3,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -6748,7 +6747,7 @@
               150
             ],
             "flags": {},
-            "order": 4,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -6810,7 +6809,7 @@
               174
             ],
             "flags": {},
-            "order": 9,
+            "order": 6,
             "mode": 0,
             "inputs": [
               {
@@ -6863,136 +6862,6 @@
             }
           },
           {
-            "id": 217,
-            "type": "CustomCombo",
-            "pos": [
-              1911.2369073576035,
-              -37.57377200536996
-            ],
-            "size": [
-              223.6021484375,
-              198
-            ],
-            "flags": {},
-            "order": 10,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "elección",
-                "name": "choice",
-                "type": "COMBO",
-                "widget": {
-                  "name": "choice"
-                },
-                "link": 587
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "type": "STRING",
-                "links": [
-                  580
-                ]
-              },
-              {
-                "localized_name": "ÍNDICE",
-                "name": "INDEX",
-                "type": "INT",
-                "links": []
-              }
-            ],
-            "title": "Tipo de cuerpo",
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.34.0",
-              "Node name for S&R": "CustomCombo"
-            },
-            "widgets_values": [
-              "(muscular female:1.5)",
-              0,
-              "(muscular female:1.5)",
-              "(curvy figure:1.5)",
-              "(voluptuous female:1.5)",
-              "(hour glass figure:1.5)",
-              ""
-            ],
-            "widgets_values_named": {
-              "choice": "(muscular female:1.5)",
-              "index": 0,
-              "option1": "(muscular female:1.5)",
-              "option2": "(curvy figure:1.5)",
-              "option3": "(voluptuous female:1.5)",
-              "option4": "(hour glass figure:1.5)",
-              "option5": ""
-            }
-          },
-          {
-            "id": 215,
-            "type": "CustomCombo",
-            "pos": [
-              2147.325875216322,
-              -33.668693427250474
-            ],
-            "size": [
-              223.6021484375,
-              174
-            ],
-            "flags": {},
-            "order": 8,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "elección",
-                "name": "choice",
-                "type": "COMBO",
-                "widget": {
-                  "name": "choice"
-                },
-                "link": 583
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "type": "STRING",
-                "links": [
-                  582
-                ]
-              },
-              {
-                "localized_name": "ÍNDICE",
-                "name": "INDEX",
-                "type": "INT",
-                "links": []
-              }
-            ],
-            "title": "Torso",
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.34.0",
-              "Node name for S&R": "CustomCombo"
-            },
-            "widgets_values": [
-              "(abs:1.5)",
-              0,
-              "(abs:1.5)",
-              "(slim torso:1.5)",
-              "(abdomen:1.5)",
-              ""
-            ],
-            "widgets_values_named": {
-              "choice": "(abs:1.5)",
-              "index": 0,
-              "option1": "(abs:1.5)",
-              "option2": "(slim torso:1.5)",
-              "option3": "(abdomen:1.5)",
-              "option4": ""
-            }
-          },
-          {
             "id": 213,
             "type": "Text Concatenate",
             "pos": [
@@ -7004,7 +6873,7 @@
               142
             ],
             "flags": {},
-            "order": 6,
+            "order": 3,
             "mode": 0,
             "inputs": [
               {
@@ -7072,7 +6941,7 @@
               142
             ],
             "flags": {},
-            "order": 5,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -7140,7 +7009,7 @@
               226.9311608444981
             ],
             "flags": {},
-            "order": 0,
+            "order": 8,
             "mode": 0,
             "inputs": [
               {
@@ -7206,7 +7075,7 @@
               246
             ],
             "flags": {},
-            "order": 2,
+            "order": 10,
             "mode": 0,
             "inputs": [
               {
@@ -7276,7 +7145,7 @@
               142
             ],
             "flags": {},
-            "order": 1,
+            "order": 9,
             "mode": 0,
             "inputs": [
               {
@@ -7330,6 +7199,140 @@
             "widgets_values_named": {
               "delimiter": ", ",
               "clean_whitespace": "true"
+            }
+          },
+          {
+            "id": 217,
+            "type": "CustomCombo",
+            "pos": [
+              1911.2369073576035,
+              -37.57377200536996
+            ],
+            "size": [
+              223.6021484375,
+              222
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "elección",
+                "name": "choice",
+                "type": "COMBO",
+                "widget": {
+                  "name": "choice"
+                },
+                "link": 587
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  580
+                ]
+              },
+              {
+                "localized_name": "ÍNDICE",
+                "name": "INDEX",
+                "type": "INT",
+                "links": []
+              }
+            ],
+            "title": "Tipo de cuerpo",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.34.0",
+              "Node name for S&R": "CustomCombo"
+            },
+            "widgets_values": [
+              "(muscular female:1.5)",
+              0,
+              "(muscular female:1.5)",
+              "(curvy figure:1.5)",
+              "(voluptuous female:1.5)",
+              "(hour glass figure:1.5)",
+              "chubby",
+              ""
+            ],
+            "widgets_values_named": {
+              "choice": "(muscular female:1.5)",
+              "index": 0,
+              "option1": "(muscular female:1.5)",
+              "option2": "(curvy figure:1.5)",
+              "option3": "(voluptuous female:1.5)",
+              "option4": "(hour glass figure:1.5)",
+              "option5": "chubby",
+              "option6": ""
+            }
+          },
+          {
+            "id": 215,
+            "type": "CustomCombo",
+            "pos": [
+              2147.325875216322,
+              -33.668693427250474
+            ],
+            "size": [
+              223.6021484375,
+              198
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "elección",
+                "name": "choice",
+                "type": "COMBO",
+                "widget": {
+                  "name": "choice"
+                },
+                "link": 583
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CADENA",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  582
+                ]
+              },
+              {
+                "localized_name": "ÍNDICE",
+                "name": "INDEX",
+                "type": "INT",
+                "links": []
+              }
+            ],
+            "title": "Torso",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.34.0",
+              "Node name for S&R": "CustomCombo"
+            },
+            "widgets_values": [
+              "(abs:1.5)",
+              0,
+              "(abs:1.5)",
+              "(slim torso:1.5)",
+              "(abdomen:1.5)",
+              "belly overhang ",
+              ""
+            ],
+            "widgets_values_named": {
+              "choice": "(abs:1.5)",
+              "index": 0,
+              "option1": "(abs:1.5)",
+              "option2": "(slim torso:1.5)",
+              "option3": "(abdomen:1.5)",
+              "option4": "belly overhang ",
+              "option5": ""
             }
           }
         ],
@@ -7500,10 +7503,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.8983944796386611,
+      "scale": 1.5001969296603184,
       "offset": [
-        -1019.5426467523617,
-        154.37201763399943
+        -1341.2077295088493,
+        174.26189309996158
       ]
     }
   },
