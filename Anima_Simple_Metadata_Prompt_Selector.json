@@ -329,12 +329,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        1049658432734244,
+        244948078703796,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 1049658432734244,
+        "seed": 244948078703796,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -641,12 +641,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        150089629394197,
+        994305822546663,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 150089629394197,
+        "seed": 994305822546663,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -946,66 +946,6 @@
       }
     },
     {
-      "id": 176,
-      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
-      "pos": [
-        2052.533631755252,
-        499.0076870638372
-      ],
-      "size": [
-        410.58885302565886,
-        169.15761933326849
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 466
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            485
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            468
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      ],
-      "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 117,
       "type": "Note",
       "pos": [
@@ -1159,7 +1099,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        1072519546657955,
+        279189309137259,
         24,
         4,
         "euler",
@@ -1170,7 +1110,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 1072519546657955,
+        "seed": 279189309137259,
         "steps": 24,
         "cfg": 4,
         "sampler": "euler",
@@ -1212,45 +1152,6 @@
         "customSortAlphabet": "",
         "toggleRestriction": "default"
       }
-    },
-    {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2051.696350405205,
-        4.537177259638717
-      ],
-      "size": [
-        409.1646589303441,
-        118.588003634203
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            566
-          ]
-        }
-      ],
-      "title": "🎨 Quality prompts",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), shiny skin, official style, anime key visual, photograph, pastel colors, comic book"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), shiny skin, official style, anime key visual, photograph, pastel colors, comic book"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 172,
@@ -1335,7 +1236,7 @@
         368.5302990298356
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1462,7 +1363,7 @@
         660.7803204741324
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1568,6 +1469,106 @@
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2051.696350405205,
+        4.537177259638717
+      ],
+      "size": [
+        409.1646589303441,
+        118.588003634203
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            566
+          ]
+        }
+      ],
+      "title": "🎨 Quality prompts",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), (shiny skin:1.4), (moist skin:1.45), official style, anime key visual, photograph, pastel colors, comic book"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), (shiny skin:1.4), (moist skin:1.45), official style, anime key visual, photograph, pastel colors, comic book"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 176,
+      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
+      "pos": [
+        2052.533631755252,
+        499.0076870638372
+      ],
+      "size": [
+        410.58885302565886,
+        169.15761933326849
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 466
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            485
+          ]
+        },
+        {
+          "label": "Negative prompt",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            468
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      ],
+      "widgets_values_named": {
+        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
     }
   ],
   "links": [
@@ -4726,6 +4727,7 @@
               265
             ],
             "localized_name": "CADENA",
+            "label": "Negative prompt",
             "pos": [
               2539.7436567103314,
               503.4276633826645
@@ -6282,10 +6284,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 1.0783535997793727,
+      "scale": 0.7131459170164356,
       "offset": [
-        -961.0384388945207,
-        -246.23088397604184
+        -977.9375966223546,
+        91.33067980123515
       ]
     }
   },
