@@ -326,10 +326,10 @@
         "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
       },
       "widgets_values": [
-        "R0GU3_X3, streaked hair, multicolored hair, brown hair, purple lips, two-tone hair, lipstick, dyed bangs, green eyes, short hair, medium hair, white hair, eyeshadow, hair between eyes"
+        "H1N4T4_NS, black hair, blue hair, long hair, blunt bangs, purple hair, purple eyes, white eyes, no pupils"
       ],
       "widgets_values_named": {
-        "text_0": "R0GU3_X3, streaked hair, multicolored hair, brown hair, purple lips, two-tone hair, lipstick, dyed bangs, green eyes, short hair, medium hair, white hair, eyeshadow, hair between eyes"
+        "text_0": "H1N4T4_NS, black hair, blue hair, long hair, blunt bangs, purple hair, purple eyes, white eyes, no pupils"
       }
     },
     {
@@ -373,12 +373,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        494379801620509,
+        430443377566420,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 494379801620509,
+        "seed": 430443377566420,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -802,12 +802,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        245484915150053,
+        5770879377698,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 245484915150053,
+        "seed": 5770879377698,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -948,45 +948,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2061.0713346694642,
-        5.787175161540112
-      ],
-      "size": [
-        392.9146862056259,
-        117.33800573230161
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            539
-          ]
-        }
-      ],
-      "title": "Quality prompts",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), dynamic angle, pastel colors, volumetric lighting, intrincate details"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), dynamic angle, pastel colors, volumetric lighting, intrincate details"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 170,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
@@ -998,7 +959,7 @@
         534
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1019,6 +980,95 @@
       }
     },
     {
+      "id": 142,
+      "type": "easy hiresFix",
+      "pos": [
+        4316.152277725666,
+        8.315726580969473
+      ],
+      "size": [
+        263.1875,
+        659.90625
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "shape": 7,
+          "type": "PIPE_LINE",
+          "link": null
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 259
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 449
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            540
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null
+        }
+      ],
+      "title": "Post HiresFix",
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "595e0738a9e3f8d0d9c4d875461b2d2c9e7559c7",
+        "Node name for S&R": "easy hiresFix",
+        "aux_id": "yolain/ComfyUI-Easy-Use"
+      },
+      "widgets_values": [
+        "remacri_original.safetensors",
+        true,
+        "nearest-exact",
+        "by percentage",
+        25,
+        1024,
+        1024,
+        1024,
+        "disabled",
+        "Preview",
+        0,
+        "ComfyUI"
+      ],
+      "widgets_values_named": {
+        "model_name": "remacri_original.safetensors",
+        "rescale_after_model": true,
+        "rescale_method": "nearest-exact",
+        "rescale": "by percentage",
+        "percent": 25,
+        "width": 1024,
+        "height": 1024,
+        "longer_side": 1024,
+        "crop": "disabled",
+        "image_output": "Preview",
+        "link_id": 0,
+        "save_prefix": "ComfyUI"
+      }
+    },
+    {
       "id": 174,
       "type": "35348233-dcd1-4277-ab03-21d001e51f45",
       "pos": [
@@ -1030,7 +1080,7 @@
         368.5302990298356
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1129,7 +1179,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        "An_Anima-v1.2.safetensors",
+        "An_Anima-v1.3.safetensors",
         "default",
         "qwen_3_06b_base.safetensors",
         "stable_diffusion",
@@ -1137,158 +1187,12 @@
         "qwen_image_vae.safetensors"
       ],
       "widgets_values_named": {
-        "unet_name": "An_Anima-v1.2.safetensors",
+        "unet_name": "An_Anima-v1.3.safetensors",
         "weight_dtype": "default",
         "clip_name": "qwen_3_06b_base.safetensors",
         "type": "stable_diffusion",
         "device": "default",
         "vae_name": "qwen_image_vae.safetensors"
-      }
-    },
-    {
-      "id": 179,
-      "type": "2c6cb57c-5eed-4cc4-b289-3419a5cfe1f5",
-      "pos": [
-        2064.420177200469,
-        168.99734612389008
-      ],
-      "size": [
-        391.1260486991573,
-        282.14000458039385
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Triggers",
-          "name": "string_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 474
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 475
-        },
-        {
-          "label": "Positive prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        },
-        {
-          "label": "Quality prompt",
-          "name": "text1",
-          "shape": 7,
-          "type": "STRING",
-          "link": 539
-        }
-      ],
-      "outputs": [
-        {
-          "label": "prompt",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            476
-          ]
-        },
-        {
-          "label": "ACONDICIONAMIENTO",
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            484
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "1girl, top, crop top, cleavage, sleeveless, white top, over hang top, thong, mini shorts, micro shorts, (denim shorts:1.55), highleg thong, smile, seductive gaze, parted lips, outdoors, park, bank, trees, grabbing own breasts, speech bubble, \"These tits are all yours, goku\" written on speech bubble,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (voluptuous female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), "
-      ],
-      "widgets_values_named": {
-        "value": "1girl, top, crop top, cleavage, sleeveless, white top, over hang top, thong, mini shorts, micro shorts, (denim shorts:1.55), highleg thong, smile, seductive gaze, parted lips, outdoors, park, bank, trees, grabbing own breasts, speech bubble, \"These tits are all yours, goku\" written on speech bubble,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (voluptuous female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), "
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 172,
-      "type": "LoraLoaderWithPreview",
-      "pos": [
-        1656.9595948016358,
-        4.683870259183575
-      ],
-      "size": [
-        368.93978714744776,
-        502.1153116267352
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 453
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 452
-        }
-      ],
-      "outputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            427,
-            534
-          ]
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            430,
-            466,
-            475
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            431
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraLoaderWithPreview"
-      },
-      "widgets_values": [
-        "drive/X_Men_Evolution/Rogue_XE_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/X_Men_Evolution/Rogue_XE_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
       }
     },
     {
@@ -1416,116 +1320,212 @@
         "previewExposures": []
       },
       "widgets_values": [
-        671324715900309,
-        16,
+        611814119784682,
+        24,
         4,
-        "euler_ancestral",
+        "euler",
         "simple",
         1,
-        8,
+        12,
         2,
         0.2
       ],
       "widgets_values_named": {
-        "seed": 671324715900309,
-        "steps": 16,
+        "seed": 611814119784682,
+        "steps": 24,
         "cfg": 4,
-        "sampler": "euler_ancestral",
+        "sampler": "euler",
         "scheduler": "simple",
         "denoise": 1,
-        "steps_1": 8,
+        "steps_1": 12,
         "cfg_1": 2,
         "denoise_1": 0.2
       }
     },
     {
-      "id": 142,
-      "type": "easy hiresFix",
+      "id": 179,
+      "type": "2c6cb57c-5eed-4cc4-b289-3419a5cfe1f5",
       "pos": [
-        4316.152277725666,
-        8.315726580969473
+        2064.420177200469,
+        168.99734612389008
       ],
       "size": [
-        263.1875,
-        659.90625
+        391.1260486991573,
+        282.14000458039385
       ],
       "flags": {},
-      "order": 20,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
-          "name": "pipe",
+          "label": "Triggers",
+          "name": "string_b",
           "shape": 7,
-          "type": "PIPE_LINE",
+          "type": "STRING",
+          "link": 474
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 475
+        },
+        {
+          "label": "Positive prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
           "link": null
         },
         {
-          "name": "image",
+          "label": "Quality prompt",
+          "name": "text1",
           "shape": 7,
-          "type": "IMAGE",
-          "link": 259
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": 449
+          "type": "STRING",
+          "link": 539
         }
       ],
       "outputs": [
         {
-          "name": "pipe",
-          "type": "PIPE_LINE",
-          "links": null
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
+          "label": "prompt",
+          "name": "STRING",
+          "type": "STRING",
           "links": [
-            540
+            476
           ]
         },
         {
-          "name": "latent",
-          "type": "LATENT",
-          "links": null
+          "label": "ACONDICIONAMIENTO",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            484
+          ]
         }
       ],
-      "title": "Post HiresFix",
       "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "595e0738a9e3f8d0d9c4d875461b2d2c9e7559c7",
-        "Node name for S&R": "easy hiresFix",
-        "aux_id": "yolain/ComfyUI-Easy-Use"
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
       },
       "widgets_values": [
-        "remacri_original.safetensors",
-        true,
-        "nearest-exact",
-        "by percentage",
-        25,
-        1024,
-        1024,
-        1024,
-        "disabled",
-        "Preview",
-        0,
-        "ComfyUI"
+        "1girl, looking at viewer, seductive gaze, huge breasts, back lighting, leaning foward, hands on own thighs, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body"
       ],
       "widgets_values_named": {
-        "model_name": "remacri_original.safetensors",
-        "rescale_after_model": true,
-        "rescale_method": "nearest-exact",
-        "rescale": "by percentage",
-        "percent": 25,
-        "width": 1024,
-        "height": 1024,
-        "longer_side": 1024,
-        "crop": "disabled",
-        "image_output": "Preview",
-        "link_id": 0,
-        "save_prefix": "ComfyUI"
+        "value": "1girl, looking at viewer, seductive gaze, huge breasts, back lighting, leaning foward, hands on own thighs, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 172,
+      "type": "LoraLoaderWithPreview",
+      "pos": [
+        1656.9595948016358,
+        4.683870259183575
+      ],
+      "size": [
+        368.93978714744776,
+        502.1153116267352
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 453
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 452
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            427,
+            534
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            430,
+            466,
+            475
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            431
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraLoaderWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Hinata_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Hinata_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
       }
+    },
+    {
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2061.0713346694642,
+        5.787175161540112
+      ],
+      "size": [
+        392.9146862056259,
+        117.33800573230161
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            539
+          ]
+        }
+      ],
+      "title": "Quality prompts",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), dynamic angle, (shiny skin:1.45), volumetric lighting, intrincate details, (official style:1.95), (illustration)"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), dynamic angle, (shiny skin:1.45), volumetric lighting, intrincate details, (official style:1.95), (illustration)"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -5053,65 +5053,6 @@
             "bgcolor": "#353"
           },
           {
-            "id": 180,
-            "type": "CR Text Concatenate",
-            "pos": [
-              2058.600070271395,
-              149.52016500325928
-            ],
-            "size": [
-              270,
-              78
-            ],
-            "flags": {},
-            "order": 2,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "text1",
-                "name": "text1",
-                "shape": 7,
-                "type": "STRING",
-                "link": 479
-              },
-              {
-                "localized_name": "text2",
-                "name": "text2",
-                "shape": 7,
-                "type": "STRING",
-                "link": 480
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "STRING",
-                "name": "STRING",
-                "type": "*",
-                "links": [
-                  535
-                ]
-              },
-              {
-                "localized_name": "show_help",
-                "name": "show_help",
-                "type": "STRING",
-                "links": null
-              }
-            ],
-            "properties": {
-              "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
-              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-              "Node name for S&R": "CR Text Concatenate",
-              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes"
-            },
-            "widgets_values": [
-              ","
-            ],
-            "widgets_values_named": {
-              "separator": ","
-            }
-          },
-          {
             "id": 188,
             "type": "CR Text Concatenate",
             "pos": [
@@ -5149,6 +5090,65 @@
                 "links": [
                   536,
                   537
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR Text Concatenate",
+              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes"
+            },
+            "widgets_values": [
+              ","
+            ],
+            "widgets_values_named": {
+              "separator": ","
+            }
+          },
+          {
+            "id": 180,
+            "type": "CR Text Concatenate",
+            "pos": [
+              2076.39036893712,
+              142.40404553696916
+            ],
+            "size": [
+              270,
+              78
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "text1",
+                "name": "text1",
+                "shape": 7,
+                "type": "STRING",
+                "link": 479
+              },
+              {
+                "localized_name": "text2",
+                "name": "text2",
+                "shape": 7,
+                "type": "STRING",
+                "link": 480
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "*",
+                "links": [
+                  535
                 ]
               },
               {
@@ -6312,10 +6312,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.7303944690514227,
+      "scale": 1.3226018175035448,
       "offset": [
-        -3266.554027723054,
-        395.8371351001216
+        -845.7925912396616,
+        260.7594137596219
       ]
     }
   },
