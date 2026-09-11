@@ -329,12 +329,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        138418762608246,
+        1049658432734244,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 138418762608246,
+        "seed": 1049658432734244,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -641,12 +641,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        772938905606905,
+        150089629394197,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 772938905606905,
+        "seed": 150089629394197,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -939,43 +939,100 @@
         "cnr_id": "comfyui-custom-scripts"
       },
       "widgets_values": [
-        "KY0UK4_3K, blue eyes, blonde hair, spiked hair, long hair, ahoge, dark-skinned female, parted bangs"
+        "B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes"
       ],
       "widgets_values_named": {
-        "text_0": "KY0UK4_3K, blue eyes, blonde hair, spiked hair, long hair, ahoge, dark-skinned female, parted bangs"
+        "text_0": "B0RUK0_NS, hair between eyes, hair down, long hair, blonde hair, facial mark, whisker markings, blue eyes"
       }
     },
     {
-      "id": 170,
-      "type": "Fast Groups Bypasser (rgthree)",
+      "id": 176,
+      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
       "pos": [
-        162.622511373418,
-        -0.6146961081680243
+        2052.533631755252,
+        499.0076870638372
       ],
       "size": [
-        348.5625,
-        534
+        410.58885302565886,
+        169.15761933326849
       ],
       "flags": {},
-      "order": 3,
+      "order": 11,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 466
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            485
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            468
+          ]
         }
       ],
       "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      ],
+      "widgets_values_named": {
+        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 117,
+      "type": "Note",
+      "pos": [
+        534.1609100104777,
+        150.23842858583782
+      ],
+      "size": [
+        316.28125,
+        519.6320327262578
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
+      ],
+      "widgets_values_named": {
+        "text": "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
+      },
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": "default"
     },
     {
       "id": 181,
@@ -1102,7 +1159,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        611947781042714,
+        1072519546657955,
         24,
         4,
         "euler",
@@ -1113,7 +1170,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 611947781042714,
+        "seed": 1072519546657955,
         "steps": 24,
         "cfg": 4,
         "sampler": "euler",
@@ -1125,64 +1182,75 @@
       }
     },
     {
-      "id": 176,
-      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
+      "id": 170,
+      "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        2052.533631755252,
-        499.0076870638372
+        162.622511373418,
+        -0.6146961081680243
       ],
       "size": [
-        410.58885302565886,
-        169.15761933326849
+        355.0538772267578,
+        672.1736009695566
       ],
       "flags": {},
-      "order": 11,
+      "order": 4,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 466
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            485
-          ]
-        },
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2051.696350405205,
+        4.537177259638717
+      ],
+      "size": [
+        409.1646589303441,
+        118.588003634203
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
         {
           "name": "STRING",
           "type": "STRING",
           "links": [
-            468
+            566
           ]
         }
       ],
+      "title": "🎨 Quality prompts",
       "properties": {
         "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+        "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), shiny skin, official style, anime key visual, photograph, pastel colors, comic book"
       ],
       "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+        "value": "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), shiny skin, official style, anime key visual, photograph, pastel colors, comic book"
       },
-      "color": "#322",
-      "bgcolor": "#533"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 172,
@@ -1243,97 +1311,17 @@
         "Node name for S&R": "LoraLoaderWithPreview"
       },
       "widgets_values": [
-        "drive/Energy_Kyouka/Kyouka_EK_Anima.safetensors",
+        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/Energy_Kyouka/Kyouka_EK_Anima.safetensors",
+        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
       }
-    },
-    {
-      "id": 199,
-      "type": "1ffc0f56-dfa4-4542-bc6c-8f1a9ca4e891",
-      "pos": [
-        2052.2423397030675,
-        166.21973508765294
-      ],
-      "size": [
-        409.43872319375396,
-        292.12739164294214
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 557
-        },
-        {
-          "name": "prompt_list",
-          "type": "PROMPT_LIST",
-          "link": 558
-        },
-        {
-          "label": "Quality prompt",
-          "name": "text_a",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "text_a"
-          },
-          "link": 566
-        },
-        {
-          "label": "Trigger words",
-          "name": "text_a_1",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "text_a_1"
-          },
-          "link": 567
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            559
-          ]
-        },
-        {
-          "name": "prompt",
-          "type": "STRING",
-          "links": [
-            560
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "",
-        "",
-        5
-      ],
-      "widgets_values_named": {
-        "text_a": "",
-        "text_a_1": "",
-        "index": 5
-      },
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 174,
@@ -1347,7 +1335,7 @@
         368.5302990298356
       ],
       "flags": {},
-      "order": 4,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1446,7 +1434,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        "Civitai/animaCustom_v12.safetensors",
+        "An_Anima-v1.3.safetensors",
         "default",
         "qwen_3_06b_base.safetensors",
         "stable_diffusion",
@@ -1454,7 +1442,7 @@
         "qwen_image_vae.safetensors"
       ],
       "widgets_values_named": {
-        "unet_name": "Civitai/animaCustom_v12.safetensors",
+        "unet_name": "An_Anima-v1.3.safetensors",
         "weight_dtype": "default",
         "clip_name": "qwen_3_06b_base.safetensors",
         "type": "stable_diffusion",
@@ -1474,7 +1462,7 @@
         660.7803204741324
       ],
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1495,79 +1483,91 @@
         "Node name for S&R": "PromptListNode"
       },
       "widgets_values": [
-        "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hands on own hair, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front"
+        "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hand on own hair, hand on bed, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front\n\n10. 1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips"
       ],
       "widgets_values_named": {
-        "prompts": "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hands on own hair, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front"
+        "prompts": "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hand on own hair, hand on bed, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front\n\n10. 1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips"
       }
     },
     {
-      "id": 117,
-      "type": "Note",
+      "id": 199,
+      "type": "1ffc0f56-dfa4-4542-bc6c-8f1a9ca4e891",
       "pos": [
-        534.1609100104777,
-        150.23842858583782
+        2052.2423397030675,
+        166.21973508765294
       ],
       "size": [
-        316.28125,
-        519.6320327262578
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
-      ],
-      "widgets_values_named": {
-        "text": "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
-      },
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": "default"
-    },
-    {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2051.696350405205,
-        4.537177259638717
-      ],
-      "size": [
-        409.1646589303441,
-        118.588003634203
+        409.43872319375396,
+        292.12739164294214
       ],
       "flags": {},
-      "order": 7,
+      "order": 13,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 557
+        },
+        {
+          "name": "prompt_list",
+          "type": "PROMPT_LIST",
+          "link": 558
+        },
+        {
+          "label": "Quality prompt",
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "text_a"
+          },
+          "link": 566
+        },
+        {
+          "label": "Trigger words",
+          "name": "text_a_1",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "text_a_1"
+          },
+          "link": 567
+        }
+      ],
       "outputs": [
         {
-          "name": "STRING",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            559
+          ]
+        },
+        {
+          "name": "prompt",
           "type": "STRING",
           "links": [
-            566
+            560
           ]
         }
       ],
-      "title": "🎨 Quality prompts",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "previewExposures": []
       },
       "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), shiny skin, official style, anime key visual, photograph"
+        "",
+        "",
+        10
       ],
       "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, anime screenshot, (anime coloring:1.6), (anime screencap:1.7), shiny skin, official style, anime key visual, photograph"
+        "text_a": "",
+        "text_a_1": "",
+        "index": 10
       },
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -6282,10 +6282,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.8203618815457321,
+      "scale": 1.0783535997793727,
       "offset": [
-        -1034.2338605401403,
-        545.515380561173
+        -961.0384388945207,
+        -246.23088397604184
       ]
     }
   },
