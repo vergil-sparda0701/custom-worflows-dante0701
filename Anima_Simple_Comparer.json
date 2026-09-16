@@ -1,8 +1,8 @@
 {
   "id": "6532d4fd-8fff-4bab-a497-dd0e41c94c15",
   "revision": 0,
-  "last_node_id": 249,
-  "last_link_id": 616,
+  "last_node_id": 251,
+  "last_link_id": 624,
   "nodes": [
     {
       "id": 105,
@@ -43,7 +43,7 @@
         203.00418670384738
       ],
       "flags": {},
-      "order": 11,
+      "order": 15,
       "mode": 4,
       "inputs": [
         {
@@ -64,62 +64,12 @@
         "cnr_id": "comfyui-custom-scripts",
         "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
         "Node name for S&R": "ShowText|pysssss"
-      }
-    },
-    {
-      "id": 203,
-      "type": "AnimaCheckpointMergeSimple",
-      "pos": [
-        1549.8865911459825,
-        779.9672120580875
-      ],
-      "size": [
-        326.2857421875,
-        298
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 4,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "status",
-          "type": "STRING",
-          "links": [
-            435
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-AnimaMergeTools",
-        "ver": "155df23214db7e20eff9df84d9350148bb6b86ad",
-        "Node name for S&R": "AnimaCheckpointMergeSimple"
       },
       "widgets_values": [
-        "[diffusion_models] An_Anima-v1.2.safetensors",
-        "[diffusion_models] Civitai/rdbtAnima_ym15V23Base_fp16.safetensors",
-        55,
-        45,
-        "An_Anima-v1.3.safetensors",
-        "[checkpoints] /content/ComfyUI/models/checkpoints",
-        "None",
-        0,
-        true,
-        true,
-        false
+        "Output path: /content/ComfyUI/models/diffusion_models/An_RDBT.safetensors\n[0/1] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[100/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[200/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[300/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[400/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[500/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[600/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[700/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[800/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[900/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[1000/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[1100/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[0/1] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[100/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[200/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[300/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[400/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[500/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[600/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[0/1] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[100/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[200/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[300/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[400/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[500/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[600/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[1185/1186] Saving\n[1186/1186] Done\nSaved OK: /content/ComfyUI/models/diffusion_models/An_RDBT.safetensors (2491.1 MB)"
       ],
       "widgets_values_named": {
-        "checkpoint1": "[diffusion_models] An_Anima-v1.2.safetensors",
-        "checkpoint2": "[diffusion_models] Civitai/rdbtAnima_ym15V23Base_fp16.safetensors",
-        "weight1": 55,
-        "weight2": 45,
-        "output_filename": "An_Anima-v1.3.safetensors",
-        "output_folder": "[checkpoints] /content/ComfyUI/models/checkpoints",
-        "checkpoint3": "None",
-        "weight3": 0,
-        "keep_dtype": true,
-        "skip_ema": true,
-        "output_diffusion_format": false
+        "text_0": "Output path: /content/ComfyUI/models/diffusion_models/An_RDBT.safetensors\n[0/1] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[100/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[200/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[300/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[400/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[500/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[600/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[700/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[800/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[900/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[1000/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[1100/1185] Loading CP1: rdbtAnima_b1V2Base_int8.safetensors\n[0/1] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[100/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[200/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[300/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[400/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[500/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[600/685] Loading CP2: rdbtAnima_b1V23Base_fp16.safetensors\n[0/1] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[100/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[200/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[300/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[400/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[500/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[600/685] Loading CP3: rdbtDigitalAnimeArt_v2Base_bf16.safetensors\n[1185/1186] Saving\n[1186/1186] Done\nSaved OK: /content/ComfyUI/models/diffusion_models/An_RDBT.safetensors (2491.1 MB)"
       }
     },
     {
@@ -134,7 +84,7 @@
         105.01593887148556
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -173,7 +123,7 @@
         46
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -221,7 +171,7 @@
         60.258952024649716
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -257,7 +207,7 @@
         111.43988844210298
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -297,7 +247,7 @@
         118
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -340,7 +290,7 @@
         514
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -392,9 +342,7 @@
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
         "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
+      }
     },
     {
       "id": 208,
@@ -494,7 +442,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -521,7 +469,7 @@
         46
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -569,7 +517,7 @@
         46
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -612,7 +560,7 @@
         644.4059988229544
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -673,7 +621,7 @@
         "aux_id": "alexopus/ComfyUI-Image-Saver"
       },
       "widgets_values": [
-        646712762296315,
+        125735201108676,
         "randomize",
         24,
         3,
@@ -682,218 +630,13 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 646712762296315,
+        "seed": 125735201108676,
         "control_after_generate": "randomize",
         "steps": 24,
         "cfg": 3,
         "sampler": "euler",
         "scheduler": "simple",
         "denoise": 1
-      }
-    },
-    {
-      "id": 220,
-      "type": "d788c8d5-3d56-4a4c-8a3f-bf9188a102a3",
-      "pos": [
-        2781.2007325716327,
-        -21.474399822156663
-      ],
-      "size": [
-        346.37854494570183,
-        699.8192600604824
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Model 1 name",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          },
-          "link": null
-        },
-        {
-          "label": "Model 2 Name",
-          "name": "vae_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "vae_name"
-          },
-          "link": null
-        },
-        {
-          "label": "Latent image",
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 571
-        },
-        {
-          "label": "Lora name",
-          "name": "text",
-          "type": "STRING",
-          "link": 526
-        },
-        {
-          "label": "Strenght model",
-          "name": "text_1",
-          "type": "STRING",
-          "link": 570
-        },
-        {
-          "label": "Strenght clip",
-          "name": "text_2",
-          "type": "STRING",
-          "link": 569
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 573
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 572
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "widget": {
-            "name": "seed"
-          },
-          "link": 550
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "widget": {
-            "name": "steps"
-          },
-          "link": 551
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "widget": {
-            "name": "cfg"
-          },
-          "link": 552
-        },
-        {
-          "name": "sampler_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "sampler_name"
-          },
-          "link": 553
-        },
-        {
-          "name": "scheduler",
-          "type": "COMBO",
-          "widget": {
-            "name": "scheduler"
-          },
-          "link": 554
-        },
-        {
-          "name": "denoise",
-          "type": "FLOAT",
-          "widget": {
-            "name": "denoise"
-          },
-          "link": 555
-        },
-        {
-          "label": "Positive prompt",
-          "name": "text_3",
-          "type": "STRING",
-          "widget": {
-            "name": "text_3"
-          },
-          "link": 585
-        },
-        {
-          "label": "Negative prompt",
-          "name": "text_4",
-          "type": "STRING",
-          "widget": {
-            "name": "text_4"
-          },
-          "link": 586
-        }
-      ],
-      "outputs": [
-        {
-          "label": "IMAGE 1",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            578
-          ]
-        },
-        {
-          "label": "IMAGE 2",
-          "name": "IMAGE_1",
-          "type": "IMAGE",
-          "links": [
-            579
-          ]
-        },
-        {
-          "label": "Model name 1",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            594,
-            609
-          ]
-        },
-        {
-          "label": "Model name 2",
-          "name": "STRING_1",
-          "type": "STRING",
-          "links": [
-            595
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "previewExposures": [
-          {
-            "name": "$$canvas-image-preview",
-            "sourceNodeId": "219",
-            "sourcePreviewName": "$$canvas-image-preview"
-          }
-        ]
-      },
-      "widgets_values": [
-        "An_Anima-v1.3.safetensors",
-        "Civitai/rdbtAnima_ym15V23Base_fp16.safetensors",
-        0,
-        488,
-        6.4,
-        "euler",
-        "simple",
-        1,
-        "",
-        ""
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.3.safetensors",
-        "vae_name": "Civitai/rdbtAnima_ym15V23Base_fp16.safetensors",
-        "seed": 0,
-        "steps": 488,
-        "cfg": 6.4,
-        "sampler_name": "euler",
-        "scheduler": "simple",
-        "denoise": 1,
-        "text_3": "",
-        "text_4": ""
       }
     },
     {
@@ -908,7 +651,7 @@
         190.41613772200253
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1188,78 +931,6 @@
       }
     },
     {
-      "id": 218,
-      "type": "79819ccc-1e2f-4e77-af3b-43a1d1d3dd23",
-      "pos": [
-        2064.7348590814254,
-        163.85003638506146
-      ],
-      "size": [
-        361.79795557651596,
-        262.8583314759592
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Positive prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        },
-        {
-          "label": "Triggers",
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 470
-        },
-        {
-          "label": "Quality prompt",
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 590
-        }
-      ],
-      "outputs": [
-        {
-          "label": "Prompt",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            585,
-            608
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "1girl, top, crop top, cleavage, sleeveless, white top, over hang top, thong, mini shorts, micro shorts, (denim shorts:1.55), highleg thong, smile, seductive gaze, parted lips, outdoors, park, bank, trees, grabbing own breasts, speech bubble, \"These tits are all yours, goku\" written on speech bubble,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (voluptuous female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), ",
-        "",
-        ""
-      ],
-      "widgets_values_named": {
-        "value": "1girl, top, crop top, cleavage, sleeveless, white top, over hang top, thong, mini shorts, micro shorts, (denim shorts:1.55), highleg thong, smile, seductive gaze, parted lips, outdoors, park, bank, trees, grabbing own breasts, speech bubble, \"These tits are all yours, goku\" written on speech bubble,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (voluptuous female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), ",
-        "string_b": "",
-        "string_a": ""
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 211,
       "type": "LoraInfoWithPreview",
       "pos": [
@@ -1271,7 +942,7 @@
         652.7726928026373
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1320,6 +991,331 @@
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
+      }
+    },
+    {
+      "id": 203,
+      "type": "AnimaCheckpointMergeSimple",
+      "pos": [
+        1397.6681766947718,
+        779.9672120580875
+      ],
+      "size": [
+        603.3779817591311,
+        298
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "status",
+          "type": "STRING",
+          "links": [
+            435
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-AnimaMergeTools",
+        "ver": "155df23214db7e20eff9df84d9350148bb6b86ad",
+        "Node name for S&R": "AnimaCheckpointMergeSimple"
+      },
+      "widgets_values": [
+        "[diffusion_models] Civitai/rdbtAnima_b1V2Base_int8.safetensors",
+        "[diffusion_models] Civitai/rdbtAnima_b1V23Base_fp16.safetensors",
+        34,
+        33,
+        "An_RDBT.safetensors",
+        "[diffusion_models] /content/ComfyUI/models/diffusion_models",
+        "[diffusion_models] Civitai/rdbtDigitalAnimeArt_v2Base_bf16.safetensors",
+        33,
+        true,
+        true,
+        false
+      ],
+      "widgets_values_named": {
+        "checkpoint1": "[diffusion_models] Civitai/rdbtAnima_b1V2Base_int8.safetensors",
+        "checkpoint2": "[diffusion_models] Civitai/rdbtAnima_b1V23Base_fp16.safetensors",
+        "weight1": 34,
+        "weight2": 33,
+        "output_filename": "An_RDBT.safetensors",
+        "output_folder": "[diffusion_models] /content/ComfyUI/models/diffusion_models",
+        "checkpoint3": "[diffusion_models] Civitai/rdbtDigitalAnimeArt_v2Base_bf16.safetensors",
+        "weight3": 33,
+        "keep_dtype": true,
+        "skip_ema": true,
+        "output_diffusion_format": false
+      }
+    },
+    {
+      "id": 218,
+      "type": "79819ccc-1e2f-4e77-af3b-43a1d1d3dd23",
+      "pos": [
+        2064.7348590814254,
+        163.85003638506146
+      ],
+      "size": [
+        361.79795557651596,
+        262.8583314759592
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Positive prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        },
+        {
+          "label": "Triggers",
+          "name": "string_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 470
+        },
+        {
+          "label": "Quality prompt",
+          "name": "string_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 590
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Prompt",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            585,
+            608
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "1girl, top, crop top, cleavage, sleeveless, white top, over hang top, thong, mini shorts, micro shorts, (denim shorts:1.55), highleg thong, smile, seductive gaze, parted lips, outdoors, park, bank, trees, grabbing own breasts, speech bubble, \"These tits are all yours, goku\" written on speech bubble,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (voluptuous female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), "
+      ],
+      "widgets_values_named": {
+        "value": "1girl, top, crop top, cleavage, sleeveless, white top, over hang top, thong, mini shorts, micro shorts, (denim shorts:1.55), highleg thong, smile, seductive gaze, parted lips, outdoors, park, bank, trees, grabbing own breasts, speech bubble, \"These tits are all yours, goku\" written on speech bubble,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (voluptuous female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), "
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 220,
+      "type": "d788c8d5-3d56-4a4c-8a3f-bf9188a102a3",
+      "pos": [
+        2781.2007325716327,
+        -21.474399822156663
+      ],
+      "size": [
+        346.37854494570183,
+        699.8192600604824
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Model 1 name",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "Model 2 Name",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        },
+        {
+          "label": "Latent image",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 571
+        },
+        {
+          "label": "Lora name",
+          "name": "text",
+          "type": "STRING",
+          "link": 526
+        },
+        {
+          "label": "Strenght model",
+          "name": "text_1",
+          "type": "STRING",
+          "link": 570
+        },
+        {
+          "label": "Strenght clip",
+          "name": "text_2",
+          "type": "STRING",
+          "link": 569
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 573
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 572
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 550
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": 551
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": 552
+        },
+        {
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": 553
+        },
+        {
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": 554
+        },
+        {
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": 555
+        },
+        {
+          "label": "Positive prompt",
+          "name": "text_3",
+          "type": "STRING",
+          "widget": {
+            "name": "text_3"
+          },
+          "link": 585
+        },
+        {
+          "label": "Negative prompt",
+          "name": "text_4",
+          "type": "STRING",
+          "widget": {
+            "name": "text_4"
+          },
+          "link": 586
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE 1",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            578
+          ]
+        },
+        {
+          "label": "IMAGE 2",
+          "name": "IMAGE_1",
+          "type": "IMAGE",
+          "links": [
+            579
+          ]
+        },
+        {
+          "label": "Model name 1",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            594,
+            609
+          ]
+        },
+        {
+          "label": "Model name 2",
+          "name": "STRING_1",
+          "type": "STRING",
+          "links": [
+            595
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "previewExposures": [
+          {
+            "name": "$$canvas-image-preview",
+            "sourceNodeId": "219",
+            "sourcePreviewName": "$$canvas-image-preview"
+          }
+        ]
+      },
+      "widgets_values": [
+        "An_RDBT.safetensors",
+        "Civitai/rdbtAnima_b1V2Base_int8.safetensors",
+        0,
+        488,
+        6.4,
+        "euler",
+        "simple",
+        1,
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_RDBT.safetensors",
+        "vae_name": "Civitai/rdbtAnima_b1V2Base_int8.safetensors",
+        "seed": 0,
+        "steps": 488,
+        "cfg": 6.4,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1,
+        "text_3": "",
+        "text_4": ""
       }
     }
   ],
@@ -1750,8 +1746,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 62,
-          "lastNodeId": 249,
-          "lastLinkId": 616,
+          "lastNodeId": 251,
+          "lastLinkId": 624,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -1954,8 +1950,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 62,
-          "lastNodeId": 249,
-          "lastLinkId": 616,
+          "lastNodeId": 251,
+          "lastLinkId": 624,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -1985,7 +1981,7 @@
             "name": "value",
             "type": "STRING",
             "linkIds": [
-              591
+              619
             ],
             "label": "Positive prompt",
             "pos": [
@@ -1998,7 +1994,7 @@
             "name": "string_b",
             "type": "STRING",
             "linkIds": [
-              615
+              617
             ],
             "label": "Triggers",
             "pos": [
@@ -2011,7 +2007,7 @@
             "name": "string_a",
             "type": "STRING",
             "linkIds": [
-              612
+              621
             ],
             "label": "Quality prompt",
             "pos": [
@@ -2026,7 +2022,7 @@
             "name": "STRING",
             "type": "STRING",
             "linkIds": [
-              616
+              624
             ],
             "label": "Prompt",
             "pos": [
@@ -2038,11 +2034,127 @@
         "widgets": [],
         "nodes": [
           {
+            "id": 250,
+            "type": "CR Text Concatenate",
+            "pos": [
+              2230.4352704821536,
+              256.8452825653104
+            ],
+            "size": [
+              270,
+              78
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "text1",
+                "name": "text1",
+                "shape": 7,
+                "type": "STRING",
+                "link": 620
+              },
+              {
+                "localized_name": "text2",
+                "name": "text2",
+                "shape": 7,
+                "type": "STRING",
+                "link": 617
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "*",
+                "links": [
+                  622
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR Text Concatenate"
+            },
+            "widgets_values": [
+              ","
+            ],
+            "widgets_values_named": {
+              "separator": ","
+            }
+          },
+          {
+            "id": 251,
+            "type": "CR Text Concatenate",
+            "pos": [
+              2536.4476733294473,
+              299.678428339021
+            ],
+            "size": [
+              270,
+              78
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "text1",
+                "name": "text1",
+                "shape": 7,
+                "type": "STRING",
+                "link": 621
+              },
+              {
+                "localized_name": "text2",
+                "name": "text2",
+                "shape": 7,
+                "type": "STRING",
+                "link": 622
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "*",
+                "links": [
+                  624
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR Text Concatenate"
+            },
+            "widgets_values": [
+              ","
+            ],
+            "widgets_values_named": {
+              "separator": ","
+            }
+          },
+          {
             "id": 216,
             "type": "PrimitiveStringMultiline",
             "pos": [
-              1836.399688467202,
-              213.79713483223136
+              1744.6369512430292,
+              241.60403132894388
             ],
             "size": [
               365.77192043572313,
@@ -2059,7 +2171,7 @@
                 "widget": {
                   "name": "value"
                 },
-                "link": 591
+                "link": 619
               }
             ],
             "outputs": [
@@ -2068,7 +2180,7 @@
                 "name": "STRING",
                 "type": "STRING",
                 "links": [
-                  611
+                  620
                 ]
               }
             ],
@@ -2084,132 +2196,20 @@
             "widgets_values_named": {
               "value": ""
             }
-          },
-          {
-            "id": 248,
-            "type": "StringConcatenate",
-            "pos": [
-              1916.9946315892273,
-              490.404767175424
-            ],
-            "size": [
-              400,
-              200
-            ],
-            "flags": {},
-            "order": 1,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "cadena_a",
-                "name": "string_a",
-                "type": "STRING",
-                "widget": {
-                  "name": "string_a"
-                },
-                "link": 612
-              },
-              {
-                "localized_name": "cadena_b",
-                "name": "string_b",
-                "type": "STRING",
-                "widget": {
-                  "name": "string_b"
-                },
-                "link": 611
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "type": "STRING",
-                "links": [
-                  614
-                ]
-              }
-            ],
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.35.0",
-              "Node name for S&R": "StringConcatenate"
-            },
-            "widgets_values": [
-              "",
-              "",
-              ","
-            ],
-            "widgets_values_named": {
-              "string_a": "",
-              "string_b": "",
-              "delimiter": ","
-            }
-          },
-          {
-            "id": 249,
-            "type": "StringConcatenate",
-            "pos": [
-              2379.0570319418357,
-              448.606451289079
-            ],
-            "size": [
-              400,
-              200
-            ],
-            "flags": {},
-            "order": 2,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "cadena_a",
-                "name": "string_a",
-                "type": "STRING",
-                "widget": {
-                  "name": "string_a"
-                },
-                "link": 614
-              },
-              {
-                "localized_name": "cadena_b",
-                "name": "string_b",
-                "type": "STRING",
-                "widget": {
-                  "name": "string_b"
-                },
-                "link": 615
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "CADENA",
-                "name": "STRING",
-                "type": "STRING",
-                "links": [
-                  616
-                ]
-              }
-            ],
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.35.0",
-              "Node name for S&R": "StringConcatenate"
-            },
-            "widgets_values": [
-              "",
-              "",
-              ","
-            ],
-            "widgets_values_named": {
-              "string_a": "",
-              "string_b": "",
-              "delimiter": ","
-            }
           }
         ],
         "groups": [],
         "links": [
           {
-            "id": 591,
+            "id": 617,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 250,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 619,
             "origin_id": -10,
             "origin_slot": 0,
             "target_id": 216,
@@ -2217,44 +2217,36 @@
             "type": "STRING"
           },
           {
-            "id": 611,
+            "id": 620,
             "origin_id": 216,
             "origin_slot": 0,
-            "target_id": 248,
-            "target_slot": 1,
+            "target_id": 250,
+            "target_slot": 0,
             "type": "STRING"
           },
           {
-            "id": 612,
+            "id": 621,
             "origin_id": -10,
             "origin_slot": 2,
-            "target_id": 248,
+            "target_id": 251,
             "target_slot": 0,
             "type": "STRING"
           },
           {
-            "id": 614,
-            "origin_id": 248,
+            "id": 622,
+            "origin_id": 250,
             "origin_slot": 0,
-            "target_id": 249,
-            "target_slot": 0,
-            "type": "STRING"
-          },
-          {
-            "id": 615,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 249,
+            "target_id": 251,
             "target_slot": 1,
             "type": "STRING"
           },
           {
-            "id": 616,
-            "origin_id": 249,
+            "id": 624,
+            "origin_id": 251,
             "origin_slot": 0,
             "target_id": -20,
             "target_slot": 0,
-            "type": "STRING"
+            "type": "*"
           }
         ],
         "extra": {}
@@ -2264,8 +2256,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 62,
-          "lastNodeId": 249,
-          "lastLinkId": 616,
+          "lastNodeId": 251,
+          "lastLinkId": 624,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2730,97 +2722,6 @@
               "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
               "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
               "Node name for S&R": "CR String To Combo"
-            }
-          },
-          {
-            "id": 226,
-            "type": "LoraLoader",
-            "pos": [
-              2874.669929708967,
-              220.04603852202007
-            ],
-            "size": [
-              270,
-              126
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "modelo",
-                "name": "model",
-                "type": "MODEL",
-                "link": 498
-              },
-              {
-                "localized_name": "clip",
-                "name": "clip",
-                "type": "CLIP",
-                "link": 535
-              },
-              {
-                "localized_name": "nombre_lora",
-                "name": "lora_name",
-                "type": "COMBO",
-                "widget": {
-                  "name": "lora_name"
-                },
-                "link": 518
-              },
-              {
-                "localized_name": "fuerza_modelo",
-                "name": "strength_model",
-                "type": "FLOAT",
-                "widget": {
-                  "name": "strength_model"
-                },
-                "link": 560
-              },
-              {
-                "localized_name": "fuerza_clip",
-                "name": "strength_clip",
-                "type": "FLOAT",
-                "widget": {
-                  "name": "strength_clip"
-                },
-                "link": 556
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MODELO",
-                "name": "MODEL",
-                "type": "MODEL",
-                "links": [
-                  505
-                ]
-              },
-              {
-                "localized_name": "CLIP",
-                "name": "CLIP",
-                "type": "CLIP",
-                "links": [
-                  500,
-                  501
-                ]
-              }
-            ],
-            "title": "Cargar LoRA 2",
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.35.0",
-              "Node name for S&R": "LoraLoader"
-            },
-            "widgets_values": [
-              "drive/Avatar/Asami_TLOK_Anima.safetensors",
-              1,
-              1
-            ],
-            "widgets_values_named": {
-              "lora_name": "drive/Avatar/Asami_TLOK_Anima.safetensors",
-              "strength_model": 1,
-              "strength_clip": 1
             }
           },
           {
@@ -3629,6 +3530,97 @@
               "unet_name": "An_Anima-v1.2.safetensors",
               "weight_dtype": "default"
             }
+          },
+          {
+            "id": 226,
+            "type": "LoraLoader",
+            "pos": [
+              2874.669929708967,
+              220.04603852202007
+            ],
+            "size": [
+              270,
+              126
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "modelo",
+                "name": "model",
+                "type": "MODEL",
+                "link": 498
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 535
+              },
+              {
+                "localized_name": "nombre_lora",
+                "name": "lora_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "lora_name"
+                },
+                "link": 518
+              },
+              {
+                "localized_name": "fuerza_modelo",
+                "name": "strength_model",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_model"
+                },
+                "link": 560
+              },
+              {
+                "localized_name": "fuerza_clip",
+                "name": "strength_clip",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "strength_clip"
+                },
+                "link": 556
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MODELO",
+                "name": "MODEL",
+                "type": "MODEL",
+                "links": [
+                  505
+                ]
+              },
+              {
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": [
+                  500,
+                  501
+                ]
+              }
+            ],
+            "title": "Cargar LoRA 2",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.35.0",
+              "Node name for S&R": "LoraLoader"
+            },
+            "widgets_values": [
+              "drive/Avatar/Asami_TLOK_Anima.safetensors",
+              1,
+              1
+            ],
+            "widgets_values_named": {
+              "lora_name": "drive/Avatar/Asami_TLOK_Anima.safetensors",
+              "strength_model": 1,
+              "strength_clip": 1
+            }
           }
         ],
         "groups": [
@@ -4070,8 +4062,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 62,
-          "lastNodeId": 249,
-          "lastLinkId": 616,
+          "lastNodeId": 251,
+          "lastLinkId": 624,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4283,12 +4275,12 @@
   },
   "config": {},
   "extra": {
-    "frontendVersion": "1.51.10",
+    "frontendVersion": "1.52.7",
     "ds": {
-      "scale": 2.5041412415481026,
+      "scale": 0.5994715037240417,
       "offset": [
-        -2443.991792658325,
-        32.449719176119494
+        -986.0648057247209,
+        222.58884446213258
       ]
     }
   },
