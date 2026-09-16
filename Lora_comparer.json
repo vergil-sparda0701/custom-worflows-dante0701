@@ -1,8 +1,8 @@
 {
   "id": "323631c0-af3c-419c-9f40-8c4701cc8c51",
   "revision": 0,
-  "last_node_id": 248,
-  "last_link_id": 713,
+  "last_node_id": 249,
+  "last_link_id": 720,
   "nodes": [
     {
       "id": 210,
@@ -16,7 +16,7 @@
         102.99952924378135
       ],
       "flags": {},
-      "order": 8,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -34,10 +34,10 @@
         }
       ],
       "properties": {
-        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
+        "cnr_id": "comfyui-custom-scripts",
         "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
         "Node name for S&R": "ShowText|pysssss",
-        "cnr_id": "comfyui-custom-scripts"
+        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
       },
       "widgets_values": [
         "KY0UK4_3K, blue eyes, blonde hair, spiked hair, long hair, ahoge, dark-skinned female, parted bangs"
@@ -58,13 +58,13 @@
         102.99952924378135
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 677
+          "link": 719
         }
       ],
       "outputs": [
@@ -76,10 +76,10 @@
         }
       ],
       "properties": {
-        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
+        "cnr_id": "comfyui-custom-scripts",
         "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
         "Node name for S&R": "ShowText|pysssss",
-        "cnr_id": "comfyui-custom-scripts"
+        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
       },
       "widgets_values": [
         "KY0UK4_3K, blue eyes, blonde hair, spiked hair, long hair, ahoge, dark-skinned female, parted bangs"
@@ -102,7 +102,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -145,7 +145,7 @@
         262
       ],
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -263,7 +263,7 @@
         262
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -381,7 +381,7 @@
         46
       ],
       "flags": {},
-      "order": 24,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -424,7 +424,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -477,7 +477,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -528,7 +528,7 @@
         46
       ],
       "flags": {},
-      "order": 7,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -552,9 +552,10 @@
         }
       ],
       "properties": {
-        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "Node name for S&R": "CR String To Combo"
+        "Node name for S&R": "CR String To Combo",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes"
       }
     },
     {
@@ -571,7 +572,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -656,7 +657,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -707,13 +708,13 @@
         46
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 679
+          "link": 714
         }
       ],
       "outputs": [
@@ -731,9 +732,10 @@
         }
       ],
       "properties": {
-        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "Node name for S&R": "CR String To Combo"
+        "Node name for S&R": "CR String To Combo",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes"
       }
     },
     {
@@ -748,7 +750,7 @@
         126
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -775,7 +777,7 @@
           "widget": {
             "name": "strength_model"
           },
-          "link": 675
+          "link": 717
         },
         {
           "name": "strength_clip",
@@ -783,7 +785,7 @@
           "widget": {
             "name": "strength_clip"
           },
-          "link": 676
+          "link": 718
         }
       ],
       "outputs": [
@@ -820,74 +822,6 @@
       }
     },
     {
-      "id": 233,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        1509.5084308109642,
-        44.143305740940356
-      ],
-      "size": [
-        369.4810248229695,
-        500.0288219628918
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            660,
-            665
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            661
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            662
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            663,
-            664
-          ]
-        }
-      ],
-      "title": "🖼️ Lora Info (con Preview) 1",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Energy_Kyouka/Kyouka_EK_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Energy_Kyouka/Kyouka_EK_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      }
-    },
-    {
       "id": 207,
       "type": "0d0b0d42-0648-4323-b972-d496b01a0296",
       "pos": [
@@ -899,7 +833,7 @@
         661.7746924127825
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [
         {
@@ -1050,9 +984,10 @@
         }
       ],
       "properties": {
-        "aux_id": "FizzleDorf/ComfyUI_FizzNodes",
+        "cnr_id": "comfyui_fizznodes",
         "ver": "7d6ea60c55ebd1268bd76fa462da052852bff192",
-        "Node name for S&R": "ConcatStringSingle"
+        "Node name for S&R": "ConcatStringSingle",
+        "aux_id": "FizzleDorf/ComfyUI_FizzNodes"
       }
     },
     {
@@ -1078,7 +1013,7 @@
         {
           "name": "string_b",
           "type": "STRING",
-          "link": 678
+          "link": 720
         }
       ],
       "outputs": [
@@ -1092,9 +1027,10 @@
         }
       ],
       "properties": {
-        "aux_id": "FizzleDorf/ComfyUI_FizzNodes",
+        "cnr_id": "comfyui_fizznodes",
         "ver": "7d6ea60c55ebd1268bd76fa462da052852bff192",
-        "Node name for S&R": "ConcatStringSingle"
+        "Node name for S&R": "ConcatStringSingle",
+        "aux_id": "FizzleDorf/ComfyUI_FizzNodes"
       }
     },
     {
@@ -1109,7 +1045,7 @@
         181.4928265442104
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1166,7 +1102,7 @@
         660.7913250757193
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1226,12 +1162,13 @@
         }
       ],
       "properties": {
-        "aux_id": "alexopus/ComfyUI-Image-Saver",
+        "cnr_id": "comfyui-image-saver",
         "ver": "b4b349e553d0f43713fa6914708b70b296392f73",
-        "Node name for S&R": "Input Parameters (Image Saver)"
+        "Node name for S&R": "Input Parameters (Image Saver)",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
       },
       "widgets_values": [
-        460852054523116,
+        12367459499073,
         "randomize",
         24,
         4.5,
@@ -1240,7 +1177,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 460852054523116,
+        "seed": 12367459499073,
         "control_after_generate": "randomize",
         "steps": 24,
         "cfg": 4.5,
@@ -1253,7 +1190,7 @@
       "id": 240,
       "type": "SomethingToString",
       "pos": [
-        3384.0702195755825,
+        3390.022685806461,
         175.53238757743247
       ],
       "size": [
@@ -1261,7 +1198,7 @@
         82
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1280,9 +1217,10 @@
         }
       ],
       "properties": {
-        "aux_id": "kijai/ComfyUI-KJNodes",
+        "cnr_id": "comfyui-kjnodes",
         "ver": "d3cfe21625e5170126ce06fbfcfe1d88108688c3",
-        "Node name for S&R": "SomethingToString"
+        "Node name for S&R": "SomethingToString",
+        "aux_id": "kijai/ComfyUI-KJNodes"
       },
       "widgets_values": [
         "",
@@ -1297,7 +1235,7 @@
       "id": 239,
       "type": "SomethingToString",
       "pos": [
-        3374.0237740215134,
+        3379.976240252392,
         312.89972749321356
       ],
       "size": [
@@ -1305,7 +1243,7 @@
         82
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1324,9 +1262,10 @@
         }
       ],
       "properties": {
-        "aux_id": "kijai/ComfyUI-KJNodes",
+        "cnr_id": "comfyui-kjnodes",
         "ver": "d3cfe21625e5170126ce06fbfcfe1d88108688c3",
-        "Node name for S&R": "SomethingToString"
+        "Node name for S&R": "SomethingToString",
+        "aux_id": "kijai/ComfyUI-KJNodes"
       },
       "widgets_values": [
         "",
@@ -1338,15 +1277,343 @@
       }
     },
     {
+      "id": 226,
+      "type": "VAEDecode",
+      "pos": [
+        2583.333847948642,
+        342.1003423162981
+      ],
+      "size": [
+        169.8580078125,
+        46
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 627
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 629
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            653
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 231,
+      "type": "PreviewImage",
+      "pos": [
+        2581.870288096012,
+        427.52700323227924
+      ],
+      "size": [
+        288.240443695758,
+        282.49958026819525
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 653
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            698
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 230,
+      "type": "PreviewImage",
+      "pos": [
+        2292.676635806042,
+        429.2339436919849
+      ],
+      "size": [
+        278.57879009535316,
+        272.8378611455088
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 652
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            699
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 215,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        713.7631203621922,
+        278.86794144970713
+      ],
+      "size": [
+        432.64198332502156,
+        207.2837401125728
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            610,
+            684
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,(watermark:1.45),simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      ],
+      "widgets_values_named": {
+        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,(watermark:1.45),simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      }
+    },
+    {
+      "id": 249,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        1897.7415234899495,
+        42.500845005431245
+      ],
+      "size": [
+        369.4810248229695,
+        503.43453037161976
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            714,
+            715,
+            716
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            717
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            718
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            719,
+            720
+          ]
+        }
+      ],
+      "title": "🖼️ Lora Info (con Preview) 2",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Energy_Kyouka/Kyouka_EK_Anima_v1.3.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Energy_Kyouka/Kyouka_EK_Anima_v1.3.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
+    },
+    {
+      "id": 233,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        1509.5084308109642,
+        44.143305740940356
+      ],
+      "size": [
+        369.4810248229695,
+        500.0288219628918
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            660,
+            665
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            661
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            662
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            663,
+            664
+          ]
+        }
+      ],
+      "title": "🖼️ Lora Info (con Preview) 1",
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Energy_Kyouka/Kyouka_EK_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Energy_Kyouka/Kyouka_EK_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
+    },
+    {
+      "id": 214,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        711.2865504470253,
+        44.086001682028446
+      ],
+      "size": [
+        435.0698994401059,
+        195.95347314152625
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            607,
+            616
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "1girl, breasts, solo, nipples, cum, cum on body, nude, cum on breasts,  , armpits, arm up, parted lips, sweat, indoors, looking at viewer, blush, arms behind head, upper body, curtains, completely nude, lips, bed, cum on armpits, cum on face, facial, open mouth, tongue out, saliva, cum on tongue,"
+      ],
+      "widgets_values_named": {
+        "value": "1girl, breasts, solo, nipples, cum, cum on body, nude, cum on breasts,  , armpits, arm up, parted lips, sweat, indoors, looking at viewer, blush, arms behind head, upper body, curtains, completely nude, lips, bed, cum on armpits, cum on face, facial, open mouth, tongue out, saliva, cum on tongue,"
+      }
+    },
+    {
       "id": 238,
       "type": "Image Saver Metadata",
       "pos": [
-        3319.2338350882637,
+        3325.1863013191423,
         43.87418850571738
       ],
       "size": [
-        400,
-        518
+        400.25226529731117,
+        662.455509526893
       ],
       "flags": {},
       "order": 17,
@@ -1458,7 +1725,7 @@
           "widget": {
             "name": "additional_hashes"
           },
-          "link": 713
+          "link": 716
         }
       ],
       "outputs": [
@@ -1481,9 +1748,10 @@
         }
       ],
       "properties": {
-        "aux_id": "alexopus/ComfyUI-Image-Saver",
+        "cnr_id": "comfyui-image-saver",
         "ver": "b4b349e553d0f43713fa6914708b70b296392f73",
-        "Node name for S&R": "Image Saver Metadata"
+        "Node name for S&R": "Image Saver Metadata",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
       },
       "widgets_values": [
         "",
@@ -1523,88 +1791,15 @@
       }
     },
     {
-      "id": 241,
-      "type": "Image Saver Simple",
-      "pos": [
-        3763.878289530996,
-        42.1199842519539
-      ],
-      "size": [
-        296.80859375,
-        554
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 697
-        },
-        {
-          "name": "metadata",
-          "shape": 7,
-          "type": "METADATA",
-          "link": 696
-        }
-      ],
-      "outputs": [
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "aux_id": "alexopus/ComfyUI-Image-Saver",
-        "ver": "b4b349e553d0f43713fa6914708b70b296392f73",
-        "Node name for S&R": "Image Saver Simple"
-      },
-      "widgets_values": [
-        "%time_%basemodelname_%seed",
-        "",
-        "png",
-        true,
-        100,
-        false,
-        true,
-        false,
-        0,
-        "%Y-%m-%d-%H%M%S",
-        "",
-        true
-      ],
-      "widgets_values_named": {
-        "filename": "%time_%basemodelname_%seed",
-        "path": "",
-        "extension": "png",
-        "lossless_webp": true,
-        "quality_jpeg_or_webp": 100,
-        "optimize_png": false,
-        "embed_workflow": true,
-        "save_workflow_as_json": false,
-        "counter": 0,
-        "time_format": "%Y-%m-%d-%H%M%S",
-        "label": "",
-        "show_preview": true
-      }
-    },
-    {
       "id": 227,
       "type": "CR Simple Image Compare",
       "pos": [
-        2899.8708484088065,
+        2896.0308869786586,
         43.7739579139062
       ],
       "size": [
         404.19838367268176,
-        658.4551547334689
+        662.4071407417192
       ],
       "flags": {},
       "order": 28,
@@ -1636,7 +1831,7 @@
           "widget": {
             "name": "text2"
           },
-          "link": 681
+          "link": 715
         }
       ],
       "outputs": [
@@ -1654,9 +1849,10 @@
         }
       ],
       "properties": {
-        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "Node name for S&R": "CR Simple Image Compare"
+        "Node name for S&R": "CR Simple Image Compare",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes"
       },
       "widgets_values": [
         "Lora 1",
@@ -1678,265 +1874,77 @@
       }
     },
     {
-      "id": 226,
-      "type": "VAEDecode",
+      "id": 241,
+      "type": "Image Saver Simple",
       "pos": [
-        2583.333847948642,
-        342.1003423162981
+        3748.605071624749,
+        43.58068111489659
       ],
       "size": [
-        169.8580078125,
-        46
+        314.7826924990118,
+        661.1256395146296
       ],
       "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 627
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 629
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            653
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "VAEDecode"
-      }
-    },
-    {
-      "id": 231,
-      "type": "PreviewImage",
-      "pos": [
-        2581.870288096012,
-        427.52700323227924
-      ],
-      "size": [
-        288.240443695758,
-        282.49958026819525
-      ],
-      "flags": {},
-      "order": 27,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 653
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            698
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
-    },
-    {
-      "id": 230,
-      "type": "PreviewImage",
-      "pos": [
-        2292.676635806042,
-        429.2339436919849
-      ],
-      "size": [
-        278.57879009535316,
-        272.8378611455088
-      ],
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 652
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            699
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
-    },
-    {
-      "id": 215,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        713.7631203621922,
-        278.86794144970713
-      ],
-      "size": [
-        432.64198332502156,
-        207.2837401125728
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            610,
-            684
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,(watermark:1.45),simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      ],
-      "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,(watermark:1.45),simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      }
-    },
-    {
-      "id": 236,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        1897.7415234899495,
-        42.500845005431245
-      ],
-      "size": [
-        369.4810248229695,
-        503.43453037161976
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            679,
-            681,
-            713
-          ]
+          "link": 697
         },
         {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            675
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            676
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            677,
-            678
-          ]
+          "name": "metadata",
+          "shape": 7,
+          "type": "METADATA",
+          "link": 696
         }
       ],
-      "title": "🖼️ Lora Info (con Preview) 2",
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Energy_Kyouka/Kyouka_EK_Anima_v1.2.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Energy_Kyouka/Kyouka_EK_Anima_v1.2.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      }
-    },
-    {
-      "id": 214,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        711.2865504470253,
-        44.086001682028446
-      ],
-      "size": [
-        435.0698994401059,
-        195.95347314152625
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
       "outputs": [
         {
-          "name": "STRING",
+          "name": "hashes",
           "type": "STRING",
-          "links": [
-            607,
-            616
-          ]
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": null
         }
       ],
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "cnr_id": "comfyui-image-saver",
+        "ver": "b4b349e553d0f43713fa6914708b70b296392f73",
+        "Node name for S&R": "Image Saver Simple",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
       },
       "widgets_values": [
-        "1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips, muscular female, toned female, abs, toned thighs,"
+        "%time_%basemodelname_%seed",
+        "",
+        "png",
+        true,
+        100,
+        false,
+        true,
+        false,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        "",
+        true
       ],
       "widgets_values_named": {
-        "value": "1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips, muscular female, toned female, abs, toned thighs,"
+        "filename": "%time_%basemodelname_%seed",
+        "path": "",
+        "extension": "png",
+        "lossless_webp": true,
+        "quality_jpeg_or_webp": 100,
+        "optimize_png": false,
+        "embed_workflow": true,
+        "save_workflow_as_json": false,
+        "counter": 0,
+        "time_format": "%Y-%m-%d-%H%M%S",
+        "label": "",
+        "show_preview": true
       }
     }
   ],
@@ -2310,60 +2318,12 @@
       "CLIP"
     ],
     [
-      675,
-      236,
-      1,
-      235,
-      3,
-      "FLOAT"
-    ],
-    [
-      676,
-      236,
-      2,
-      235,
-      4,
-      "FLOAT"
-    ],
-    [
-      677,
-      236,
-      3,
-      217,
-      0,
-      "STRING"
-    ],
-    [
-      678,
-      236,
-      3,
-      221,
-      1,
-      "STRING"
-    ],
-    [
-      679,
-      236,
-      0,
-      237,
-      0,
-      "STRING"
-    ],
-    [
       680,
       237,
       0,
       235,
       2,
       "COMBO"
-    ],
-    [
-      681,
-      236,
-      0,
-      227,
-      3,
-      "STRING"
     ],
     [
       682,
@@ -2502,11 +2462,59 @@
       "IMAGE"
     ],
     [
-      713,
-      236,
+      714,
+      249,
+      0,
+      237,
+      0,
+      "STRING"
+    ],
+    [
+      715,
+      249,
+      0,
+      227,
+      3,
+      "STRING"
+    ],
+    [
+      716,
+      249,
       0,
       238,
       11,
+      "STRING"
+    ],
+    [
+      717,
+      249,
+      1,
+      235,
+      3,
+      "FLOAT"
+    ],
+    [
+      718,
+      249,
+      2,
+      235,
+      4,
+      "FLOAT"
+    ],
+    [
+      719,
+      249,
+      3,
+      217,
+      0,
+      "STRING"
+    ],
+    [
+      720,
+      249,
+      3,
+      221,
+      1,
       "STRING"
     ]
   ],
@@ -2563,7 +2571,7 @@
       "id": 57,
       "title": "Image comparer",
       "bounding": [
-        2889.8708484088065,
+        2886.0308869786586,
         -26.22604208609379,
         424.19838367268176,
         738.4551547334689
@@ -2582,6 +2590,30 @@
       ],
       "color": "#3f789e",
       "flags": {}
+    },
+    {
+      "id": 59,
+      "title": "Metadata",
+      "bounding": [
+        3315.1863013191423,
+        -26.125811494282623,
+        419.06668758559226,
+        738.8987311648458
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 60,
+      "title": "Save image",
+      "bounding": [
+        3738.605071624749,
+        -26.41931888510341,
+        334.7826924990118,
+        738.9258535722322
+      ],
+      "color": "#3f789e",
+      "flags": {}
     }
   ],
   "definitions": {
@@ -2590,9 +2622,9 @@
         "id": "0d0b0d42-0648-4323-b972-d496b01a0296",
         "version": 1,
         "state": {
-          "lastGroupId": 58,
-          "lastNodeId": 248,
-          "lastLinkId": 713,
+          "lastGroupId": 60,
+          "lastNodeId": 249,
+          "lastLinkId": 720,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3029,9 +3061,9 @@
         "id": "76d1b3fa-c466-4da8-b550-b10eee1e0045",
         "version": 1,
         "state": {
-          "lastGroupId": 58,
-          "lastNodeId": 248,
-          "lastLinkId": 713,
+          "lastGroupId": 60,
+          "lastNodeId": 249,
+          "lastLinkId": 720,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3189,10 +3221,10 @@
               }
             ],
             "properties": {
-              "aux_id": "pamparamm/ComfyUI-ppm",
+              "cnr_id": "comfyui-ppm",
               "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
               "Node name for S&R": "LatentToWidthHeight",
-              "cnr_id": "comfyui-ppm"
+              "aux_id": "pamparamm/ComfyUI-ppm"
             }
           },
           {
@@ -3364,10 +3396,10 @@
               }
             ],
             "properties": {
-              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+              "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
               "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
               "Node name for S&R": "CR SDXL Aspect Ratio",
-              "cnr_id": "ComfyUI_Comfyroll_CustomNodes"
+              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes"
             },
             "widgets_values": [
               1024,
@@ -3485,10 +3517,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.1662771989092435,
+      "scale": 0.43735242391089196,
       "offset": [
-        -604.6918551927392,
-        339.7083141291371
+        347.558567191372,
+        289.03064541686643
       ]
     },
     "frontendVersion": "1.52.7"
