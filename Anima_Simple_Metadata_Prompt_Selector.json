@@ -515,10 +515,10 @@
         "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
       },
       "widgets_values": [
-        "H0LL1_FZNG, grey hair, red eyes, hair between eyes, hair intakes, hair behind ear, frown, long hair, sidelocks"
+        "N4_S3Y304NG, black hair, purple hair, multicolored hair, colored inner hair, red eyes, white pupils, muscular female, toned female, dark-skinned female"
       ],
       "widgets_values_named": {
-        "text_0": "H0LL1_FZNG, grey hair, red eyes, hair between eyes, hair intakes, hair behind ear, frown, long hair, sidelocks"
+        "text_0": "N4_S3Y304NG, black hair, purple hair, multicolored hair, colored inner hair, red eyes, white pupils, muscular female, toned female, dark-skinned female"
       }
     },
     {
@@ -683,7 +683,7 @@
       ],
       "flags": {},
       "order": 21,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "pipe",
@@ -809,12 +809,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        187365559344273,
+        24529438205148,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 187365559344273,
+        "seed": 24529438205148,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -860,14 +860,281 @@
         "previewExposures": []
       },
       "widgets_values": [
-        541366892687275,
+        246759757456527,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 541366892687275,
+        "seed": 246759757456527,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
+      }
+    },
+    {
+      "id": 111,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        876.0500395836514,
+        581.7309451630466
+      ],
+      "size": [
+        321.5982316977552,
+        82
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 585
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            483
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        4,
+        "flow"
+      ],
+      "widgets_values_named": {
+        "shift": 4,
+        "sampling": "flow"
+      }
+    },
+    {
+      "id": 173,
+      "type": "daea7cbc-754c-47ec-9c9b-3a6c6bb30022",
+      "pos": [
+        875.6543123083171,
+        375.78825520334624
+      ],
+      "size": [
+        321.9734079100674,
+        170
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            442
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            443
+          ]
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            486
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "3:4 portrait 896x1152",
+        1
+      ],
+      "widgets_values_named": {
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "3:4 portrait 896x1152",
+        "batch_size": 1
+      }
+    },
+    {
+      "id": 174,
+      "type": "35348233-dcd1-4277-ab03-21d001e51f45",
+      "pos": [
+        878.053085140048,
+        3.882407197661636
+      ],
+      "size": [
+        320.1622505082087,
+        333.89163782624394
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Checkpoint model",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "Weight Dtype",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        },
+        {
+          "label": "CLIP",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "CLIP type",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "label": "CLIP device",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          },
+          "link": null
+        },
+        {
+          "label": "VAE",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            448,
+            449,
+            450,
+            487
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            584
+          ]
+        },
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            583
+          ]
+        },
+        {
+          "label": "Checkpoint name",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            454
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "An_RDBT-v1.0.safetensors",
+        "default",
+        "qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default",
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_RDBT-v1.0.safetensors",
+        "weight_dtype": "default",
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "stable_diffusion",
+        "device": "default",
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 170,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        162.622511373418,
+        -0.6146961081680243
+      ],
+      "size": [
+        355.0538772267578,
+        672.1736009695566
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
       }
     },
     {
@@ -995,7 +1262,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        162606670845214,
+        848086539055584,
         32,
         4,
         "euler_ancestral",
@@ -1006,7 +1273,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 162606670845214,
+        "seed": 848086539055584,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1018,183 +1285,43 @@
       }
     },
     {
-      "id": 174,
-      "type": "35348233-dcd1-4277-ab03-21d001e51f45",
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
       "pos": [
-        878.053085140048,
-        3.882407197661636
+        2051.696350405205,
+        4.537177259638717
       ],
       "size": [
-        320.1622505082087,
-        333.89163782624394
+        405.23533205276317,
+        225.98960495473796
       ],
       "flags": {},
-      "order": 3,
+      "order": 6,
       "mode": 0,
-      "inputs": [
-        {
-          "label": "Checkpoint model",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          },
-          "link": null
-        },
-        {
-          "label": "Weight Dtype",
-          "name": "weight_dtype",
-          "type": "COMBO",
-          "widget": {
-            "name": "weight_dtype"
-          },
-          "link": null
-        },
-        {
-          "label": "CLIP",
-          "name": "clip_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "clip_name"
-          },
-          "link": null
-        },
-        {
-          "label": "CLIP type",
-          "name": "type",
-          "type": "COMBO",
-          "widget": {
-            "name": "type"
-          },
-          "link": null
-        },
-        {
-          "label": "CLIP device",
-          "name": "device",
-          "shape": 7,
-          "type": "COMBO",
-          "widget": {
-            "name": "device"
-          },
-          "link": null
-        },
-        {
-          "label": "VAE",
-          "name": "vae_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "vae_name"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            448,
-            449,
-            450,
-            487
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            584
-          ]
-        },
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            583
-          ]
-        },
-        {
-          "label": "Checkpoint name",
           "name": "STRING",
           "type": "STRING",
           "links": [
-            454
+            566
           ]
         }
       ],
+      "title": "🎨 Quality prompts",
       "properties": {
         "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "Anima_Custom-v1.72.safetensors",
-        "default",
-        "qwen_3_06b_base.safetensors",
-        "stable_diffusion",
-        "default",
-        "qwen_image_vae.safetensors"
+        "masterpiece, best quality, amazing quality, highres, (shiny skin:1.4), official style"
       ],
       "widgets_values_named": {
-        "unet_name": "Anima_Custom-v1.72.safetensors",
-        "weight_dtype": "default",
-        "clip_name": "qwen_3_06b_base.safetensors",
-        "type": "stable_diffusion",
-        "device": "default",
-        "vae_name": "qwen_image_vae.safetensors"
-      }
-    },
-    {
-      "id": 111,
-      "type": "ModelSamplingAuraFlow",
-      "pos": [
-        876.0500395836514,
-        581.7309451630466
-      ],
-      "size": [
-        321.5982316977552,
-        82
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 585
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "slot_index": 0,
-          "links": [
-            483
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.64",
-        "Node name for S&R": "ModelSamplingAuraFlow",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65
+        "value": "masterpiece, best quality, amazing quality, highres, (shiny skin:1.4), official style"
       },
-      "widgets_values": [
-        4,
-        "flow"
-      ],
-      "widgets_values_named": {
-        "shift": 4,
-        "sampling": "flow"
-      }
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 204,
@@ -1255,245 +1382,16 @@
         "Node name for S&R": "LoraLoaderWithPreview"
       },
       "widgets_values": [
-        "drive/Freezing/Holly_FZNG_Anima.safetensors",
+        "drive/Stop_Smoking/Na_Seyeoon_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/Freezing/Holly_FZNG_Anima.safetensors",
+        "lora_name": "drive/Stop_Smoking/Na_Seyeoon_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
-      }
-    },
-    {
-      "id": 176,
-      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
-      "pos": [
-        2052.533631755252,
-        499.0076870638372
-      ],
-      "size": [
-        410.58885302565886,
-        169.15761933326849
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 588
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            485
-          ]
-        },
-        {
-          "label": "Negative prompt",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            468
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      ],
-      "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 170,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        162.622511373418,
-        -0.6146961081680243
-      ],
-      "size": [
-        355.0538772267578,
-        672.1736009695566
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
-    },
-    {
-      "id": 190,
-      "type": "PromptListNode",
-      "pos": [
-        1626.8094630226674,
-        1.9902189961792582
-      ],
-      "size": [
-        405.9896910233224,
-        660.7803204741324
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "prompt_list",
-          "type": "PROMPT_LIST",
-          "links": [
-            558
-          ]
-        },
-        {
-          "name": "preview",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-PromptSelector",
-        "ver": "4eb9db21e6da8bdad182d8ddd1f2547981932b61",
-        "Node name for S&R": "PromptListNode"
-      },
-      "widgets_values": [
-        "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, (huge hips:1.45), (thick thighs:1.5), sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, curvy hips, parted lips, seductive gaze\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hand on own hair, hand on bed, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front, abs, toned female\n\n10. 1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips\n\n11. felicia (darkstalkers) cosplay, 1girl, breasts, solo, cat ears, animal ears, huge breasts, (huge hips:1.7), tail, pussy, navel, cat tail, one eye closed, armpits, looking at viewer, thighs, smile, simple background, cat girl, white background, arms up, revealing clothes, uncensored, stomach, thighhighs, animal hands, closed mouth, white fur, thick thighs, arms behind head, white thighhighs"
-      ],
-      "widgets_values_named": {
-        "prompts": "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, (huge hips:1.45), (thick thighs:1.5), sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, curvy hips, parted lips, seductive gaze\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hand on own hair, hand on bed, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front, abs, toned female\n\n10. 1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips\n\n11. felicia (darkstalkers) cosplay, 1girl, breasts, solo, cat ears, animal ears, huge breasts, (huge hips:1.7), tail, pussy, navel, cat tail, one eye closed, armpits, looking at viewer, thighs, smile, simple background, cat girl, white background, arms up, revealing clothes, uncensored, stomach, thighhighs, animal hands, closed mouth, white fur, thick thighs, arms behind head, white thighhighs"
-      }
-    },
-    {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2051.696350405205,
-        4.537177259638717
-      ],
-      "size": [
-        405.23533205276317,
-        225.98960495473796
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            566
-          ]
-        }
-      ],
-      "title": "🎨 Quality prompts",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, amazing quality, highres, (shiny skin:1.4), official style, (photograph:1.4), (realistic:1.2), illustration, intrincate details, ultra detailed, detailed face and eyes"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, highres, (shiny skin:1.4), official style, (photograph:1.4), (realistic:1.2), illustration, intrincate details, ultra detailed, detailed face and eyes"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 173,
-      "type": "daea7cbc-754c-47ec-9c9b-3a6c6bb30022",
-      "pos": [
-        875.6543123083171,
-        375.78825520334624
-      ],
-      "size": [
-        321.9734079100674,
-        162
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            442
-          ]
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            443
-          ]
-        },
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            486
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        "3:4 portrait 896x1152",
-        1
-      ],
-      "widgets_values_named": {
-        "width": 1024,
-        "height": 1024,
-        "aspect_ratio": "3:4 portrait 896x1152",
-        "batch_size": 1
       }
     },
     {
@@ -1566,15 +1464,117 @@
       "widgets_values": [
         "",
         "",
-        2
+        12
       ],
       "widgets_values_named": {
         "text_a": "",
         "text_a_1": "",
-        "index": 2
+        "index": 12
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 190,
+      "type": "PromptListNode",
+      "pos": [
+        1626.8094630226674,
+        1.9902189961792582
+      ],
+      "size": [
+        405.9896910233224,
+        660.7803204741324
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "prompt_list",
+          "type": "PROMPT_LIST",
+          "links": [
+            558
+          ]
+        },
+        {
+          "name": "preview",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-PromptSelector",
+        "ver": "4eb9db21e6da8bdad182d8ddd1f2547981932b61",
+        "Node name for S&R": "PromptListNode"
+      },
+      "widgets_values": [
+        "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, curvy hips, parted lips, seductive gaze\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hand on own hair, hand on bed, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front, abs, toned female\n\n10. 1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips\n\n11. felicia (darkstalkers) cosplay, 1girl, breasts, solo, cat ears, animal ears, huge breasts, (huge hips:1.7), tail, pussy, navel, cat tail, one eye closed, armpits, looking at viewer, thighs, smile, simple background, cat girl, white background, arms up, revealing clothes, uncensored, stomach, thighhighs, animal hands, closed mouth, white fur, thick thighs, arms behind head, white thighhighs\n\n12. 1girl, solo, huge breasts, huge hips, curvy hips, narrow waist, thick thighs, muscular, muscular female, toned female, leotard, black leotard, highleg leotard, strapless, fishnets, pantyhose, elbow gloves, fake animal ears, hairband, rabbit ears, looking at viewer, smile, seductive smile, leaning foward"
+      ],
+      "widgets_values_named": {
+        "prompts": "1. 1girl, looking at viewer, seductive gaze, back lighting, huge ass, back, thick ass, girthy ass, panties aside, anus, spread anus, spreading own ass, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, (\"Or, maybe my ass, goku?\" written on spech bubble:1.45)\n\n2. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, arms behind head, contrapposto, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, curvy hips, parted lips, seductive gaze\n\n3. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, sitting, spread legs, M legs, panties aside, pussy, spreading own pussy, smile, seductive smile, modeling, modeling pose, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Or, Do you prefer to use my pussy instead, goku?\" written on spech bubble\n\n4. 1girl, huge breasts, looking at viewer, lips, seductive gaze, parted lips, teet, seductive smile, abdomen, navel, arms behind head, micro bra, covered nipples, areola, big areola\n\n5. 1girl, looking at viewer, seductive gaze, back lighting, huge breasts, kneeling, hand on own hair, hand on bed, head up, looking up, smile, seductive smile, modeling, modeling pose, lingerie, black lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body\n\n6. 1girl, bra, sports bra, looking at viewer, sports thong, black thong, white bra, smile, hand on own hip, contrapposto,(huge breasts:1.5), (huge hips:1.5), (thick thighs:1.5), (muscular female:1.5), (abs:1.5), (toned thighs:1.5), (looking at viewer:1.5), from front\n\n7. 1girl, (huge breasts:1.6), muscular female, toned female, abs, navel, outdoors, farm, grass, barn, denim, denim shorts, nail polish, tied shirt, midriff, shirt, short shorts, plaid shirt, red nails, plaid, sleeves rolled up, blue shorts, cutoffs, red shirt, cleavage, looking at viewer, smile, seductive smile, parted lips, sitting, one eye closed, hand to mouth, speech bubble, \"Do you like this outfit daddy?\" written on speech bubble\n\n8. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, (breasts out:1.9), modeling, modeling pose, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"These melons are yours, Goku\" written on spech bubble, from front\n\n9. 1girl, looking at viewer, seductive gaze, huge breasts, back lighting, lying on bed, black lingerie, on side, smile, seductive smile, lingerie, lace lingerie, bra, panties, garter belt, garter straps, thigh highs, huge hips, thick thighs, sun, sunlight, window, bedroom, cityscape, sunset, luxury bedroom, light rays, shadowed body, speech bubble, \"Feed me with your cum, Goku\" written on spech bubble, from front, abs, toned female\n\n10. 1girl, solo, (huge breasts:1.25), huge hips, curvy hips, thick thighs, narrow waist, highlegs, bikini, swimsuit, navel, white bikini, side-tied bikini bottom, strapless bikini, front-tied bikini top, covered nipples, beach, outdoors, gradient sky, blue sky, orange sky, starry sky, sunset, looking at viewer, smile, hand to mouth, parted lips\n\n11. felicia (darkstalkers) cosplay, 1girl, breasts, solo, cat ears, animal ears, huge breasts, (huge hips:1.7), tail, pussy, navel, cat tail, one eye closed, armpits, looking at viewer, thighs, smile, simple background, cat girl, white background, arms up, revealing clothes, uncensored, stomach, thighhighs, animal hands, closed mouth, white fur, thick thighs, arms behind head, white thighhighs\n\n12. 1girl, solo, huge breasts, huge hips, curvy hips, narrow waist, thick thighs, muscular, muscular female, toned female, leotard, black leotard, highleg leotard, strapless, fishnets, pantyhose, elbow gloves, fake animal ears, hairband, rabbit ears, looking at viewer, smile, seductive smile, leaning foward"
+      }
+    },
+    {
+      "id": 176,
+      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
+      "pos": [
+        2052.533631755252,
+        499.0076870638372
+      ],
+      "size": [
+        410.58885302565886,
+        169.15761933326849
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 588
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            485
+          ]
+        },
+        {
+          "label": "Negative prompt",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            468
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      ],
+      "widgets_values_named": {
+        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
     }
   ],
   "links": [
@@ -4057,7 +4057,7 @@
               46
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [
               {
@@ -4104,7 +4104,7 @@
               106
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [
               {
@@ -4176,7 +4176,7 @@
               278
             ],
             "flags": {},
-            "order": 0,
+            "order": 2,
             "mode": 0,
             "inputs": [
               {
@@ -6454,10 +6454,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.7655483448988295,
+      "scale": 0.8476160537795611,
       "offset": [
-        -901.9907191768934,
-        202.97515317708513
+        -1122.7870555430509,
+        51.173278370685836
       ]
     }
   },

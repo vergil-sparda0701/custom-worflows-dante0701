@@ -111,80 +111,6 @@
       }
     },
     {
-      "id": 147,
-      "type": "Image Saver Simple",
-      "pos": [
-        5115.295238431211,
-        7.881752739901089
-      ],
-      "size": [
-        293.9218161554727,
-        554
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 540
-        },
-        {
-          "name": "metadata",
-          "shape": 7,
-          "type": "METADATA",
-          "link": 276
-        }
-      ],
-      "outputs": [
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
-        "Node name for S&R": "Image Saver Simple",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
-      },
-      "widgets_values": [
-        "%basemodelname",
-        "Anima_Simple",
-        "png",
-        true,
-        100,
-        false,
-        true,
-        false,
-        0,
-        "%Y-%m-%d-%H%M%S",
-        true,
-        true
-      ],
-      "widgets_values_named": {
-        "filename": "%basemodelname",
-        "path": "Anima_Simple",
-        "extension": "png",
-        "lossless_webp": true,
-        "quality_jpeg_or_webp": 100,
-        "optimize_png": false,
-        "embed_workflow": true,
-        "save_workflow_as_json": false,
-        "counter": 0,
-        "time_format": "%Y-%m-%d-%H%M%S",
-        "label": true,
-        "show_preview": true
-      }
-    },
-    {
       "id": 161,
       "type": "b91c5511-1d5b-40a3-a904-2af78eebba64",
       "pos": [
@@ -225,12 +151,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        700126762704862,
+        178883293376120,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 700126762704862,
+        "seed": 178883293376120,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -428,183 +354,6 @@
       }
     },
     {
-      "id": 144,
-      "type": "Image Saver Metadata",
-      "pos": [
-        4608.34250506676,
-        9.855191914651897
-      ],
-      "size": [
-        480.32602443967244,
-        687.9173604161285
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "modelname",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "modelname"
-          },
-          "link": 454
-        },
-        {
-          "name": "positive",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "positive"
-          },
-          "link": 476
-        },
-        {
-          "name": "negative",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "negative"
-          },
-          "link": 468
-        },
-        {
-          "name": "width",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "width"
-          },
-          "link": 442
-        },
-        {
-          "name": "height",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "height"
-          },
-          "link": 443
-        },
-        {
-          "name": "seed_value",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "seed_value"
-          },
-          "link": 488
-        },
-        {
-          "name": "steps",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "steps"
-          },
-          "link": 489
-        },
-        {
-          "name": "cfg",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "cfg"
-          },
-          "link": 490
-        },
-        {
-          "name": "sampler_name",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "sampler_name"
-          },
-          "link": 271
-        },
-        {
-          "name": "scheduler_name",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "scheduler_name"
-          },
-          "link": 272
-        },
-        {
-          "name": "denoise",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "denoise"
-          },
-          "link": 493
-        }
-      ],
-      "outputs": [
-        {
-          "name": "metadata",
-          "type": "METADATA",
-          "links": [
-            276
-          ]
-        },
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
-        "Node name for S&R": "Image Saver Metadata",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
-      },
-      "widgets_values": [
-        "",
-        "unknown",
-        "unknown",
-        512,
-        512,
-        0,
-        20,
-        7,
-        "",
-        "normal",
-        1,
-        0,
-        "",
-        true,
-        true,
-        ""
-      ],
-      "widgets_values_named": {
-        "modelname": "",
-        "positive": "unknown",
-        "negative": "unknown",
-        "width": 512,
-        "height": 512,
-        "seed_value": 0,
-        "steps": 20,
-        "cfg": 7,
-        "sampler_name": "",
-        "scheduler_name": "normal",
-        "denoise": 1,
-        "clip_skip": 0,
-        "additional_hashes": "",
-        "download_civitai_data": true,
-        "easy_remix": true,
-        "custom": ""
-      }
-    },
-    {
       "id": 160,
       "type": "59b7079a-9965-46ae-a431-8734005dfe27",
       "pos": [
@@ -691,7 +440,7 @@
         162.28263087281084
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -861,48 +610,6 @@
       }
     },
     {
-      "id": 150,
-      "type": "ShowText|pysssss",
-      "pos": [
-        1659.0936604641233,
-        561.8341448560375
-      ],
-      "size": [
-        369.6433081033381,
-        102.99952924378135
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 566
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss",
-        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
-      },
-      "widgets_values": [
-        "4K3N0_H, ribbon, black hair, bow, very long hair, hair ribbon, ponytail, sidelocks, orange ribbon, purple eyes, hair between eyes, long hair"
-      ],
-      "widgets_values_named": {
-        "text_0": "4K3N0_H, ribbon, black hair, bow, very long hair, hair ribbon, ponytail, sidelocks, orange ribbon, purple eyes, hair between eyes, long hair"
-      }
-    },
-    {
       "id": 159,
       "type": "a3187631-2869-4751-8e69-3fc99fed87d7",
       "pos": [
@@ -952,12 +659,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        854080556073582,
+        844788981876620,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 854080556073582,
+        "seed": 844788981876620,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -1141,7 +848,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        293527913060204,
+        784002771505307,
         32,
         4,
         "euler_ancestral",
@@ -1152,7 +859,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 293527913060204,
+        "seed": 784002771505307,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1162,45 +869,6 @@
         "cfg_1": 4,
         "denoise_1": 0.2
       }
-    },
-    {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2061.0713346694642,
-        5.787175161540112
-      ],
-      "size": [
-        392.9146862056259,
-        117.33800573230161
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            539
-          ]
-        }
-      ],
-      "title": "Quality prompts",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, score_7, amazing quality, highres, (official style:2.4)"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, score_7, amazing quality, highres, (official style:2.4)"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 192,
@@ -1214,7 +882,7 @@
         46
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1242,82 +910,6 @@
         "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
         "Node name for S&R": "CR String To Combo"
       }
-    },
-    {
-      "id": 179,
-      "type": "2c6cb57c-5eed-4cc4-b289-3419a5cfe1f5",
-      "pos": [
-        2064.420177200469,
-        168.99734612389008
-      ],
-      "size": [
-        391.1260486991573,
-        282.14000458039385
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Triggers",
-          "name": "string_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 563
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 559
-        },
-        {
-          "label": "Positive prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        },
-        {
-          "label": "Quality prompt",
-          "name": "text1",
-          "shape": 7,
-          "type": "STRING",
-          "link": 539
-        }
-      ],
-      "outputs": [
-        {
-          "label": "prompt",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            476
-          ]
-        },
-        {
-          "label": "ACONDICIONAMIENTO",
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            484
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "1girl, looking at viewer, huge breasts, upper body"
-      ],
-      "widgets_values_named": {
-        "value": "1girl, looking at viewer, huge breasts, upper body"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 190,
@@ -1405,70 +997,6 @@
       }
     },
     {
-      "id": 191,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        1663.20013614407,
-        8.077805453701423
-      ],
-      "size": [
-        368.2469344137493,
-        515.2185481617348
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            564
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            561
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            562
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            563,
-            566
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/DxD/Akeno_DxD_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/DxD/Akeno_DxD_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      }
-    },
-    {
       "id": 174,
       "type": "35348233-dcd1-4277-ab03-21d001e51f45",
       "pos": [
@@ -1480,7 +1008,7 @@
         368.5302990298356
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1581,7 +1109,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        "Civitai/animaCustom_v14.safetensors",
+        "An_RDBT.safetensors",
         "default",
         "qwen_3_06b_base.safetensors",
         "stable_diffusion",
@@ -1589,12 +1117,484 @@
         "qwen_image_vae.safetensors"
       ],
       "widgets_values_named": {
-        "unet_name": "Civitai/animaCustom_v14.safetensors",
+        "unet_name": "An_RDBT.safetensors",
         "weight_dtype": "default",
         "clip_name": "qwen_3_06b_base.safetensors",
         "type": "stable_diffusion",
         "device": "default",
         "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2061.0713346694642,
+        5.787175161540112
+      ],
+      "size": [
+        392.9146862056259,
+        117.33800573230161
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            539
+          ]
+        }
+      ],
+      "title": "Quality prompts",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, score_7, amazing quality, highres, anime coloring"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, score_7, amazing quality, highres, anime coloring"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 144,
+      "type": "Image Saver Metadata",
+      "pos": [
+        4605.957490533502,
+        7.810883531081387
+      ],
+      "size": [
+        477.58706430801794,
+        657.7889426315622
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "modelname",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "modelname"
+          },
+          "link": 454
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 476
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": 468
+        },
+        {
+          "name": "width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 442
+        },
+        {
+          "name": "height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 443
+        },
+        {
+          "name": "seed_value",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed_value"
+          },
+          "link": 488
+        },
+        {
+          "name": "steps",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": 489
+        },
+        {
+          "name": "cfg",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": 490
+        },
+        {
+          "name": "sampler_name",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": 271
+        },
+        {
+          "name": "scheduler_name",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scheduler_name"
+          },
+          "link": 272
+        },
+        {
+          "name": "denoise",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": 493
+        }
+      ],
+      "outputs": [
+        {
+          "name": "metadata",
+          "type": "METADATA",
+          "links": [
+            276
+          ]
+        },
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
+        "Node name for S&R": "Image Saver Metadata",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
+      },
+      "widgets_values": [
+        "",
+        "unknown",
+        "unknown",
+        512,
+        512,
+        0,
+        20,
+        7,
+        "",
+        "normal",
+        1,
+        0,
+        "",
+        true,
+        true,
+        ""
+      ],
+      "widgets_values_named": {
+        "modelname": "",
+        "positive": "unknown",
+        "negative": "unknown",
+        "width": 512,
+        "height": 512,
+        "seed_value": 0,
+        "steps": 20,
+        "cfg": 7,
+        "sampler_name": "",
+        "scheduler_name": "normal",
+        "denoise": 1,
+        "clip_skip": 0,
+        "additional_hashes": "",
+        "download_civitai_data": true,
+        "easy_remix": true,
+        "custom": ""
+      }
+    },
+    {
+      "id": 179,
+      "type": "2c6cb57c-5eed-4cc4-b289-3419a5cfe1f5",
+      "pos": [
+        2064.420177200469,
+        168.99734612389008
+      ],
+      "size": [
+        391.1260486991573,
+        282.14000458039385
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Triggers",
+          "name": "string_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 563
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 559
+        },
+        {
+          "label": "Positive prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        },
+        {
+          "label": "Quality prompt",
+          "name": "text1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 539
+        }
+      ],
+      "outputs": [
+        {
+          "label": "prompt",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            476
+          ]
+        },
+        {
+          "label": "ACONDICIONAMIENTO",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            484
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "1girl, looking at viewer, huge breasts, shirt, cleavage, sleeveless shirt, abs, (lifting own shirt:1.35), sweat, (sweating:1.45), sweat drops on abs, from below, smile, parted lips, teeth, lips, huge hips, curvy hips, thick thighs, covered pussy, wet"
+      ],
+      "widgets_values_named": {
+        "value": "1girl, looking at viewer, huge breasts, shirt, cleavage, sleeveless shirt, abs, (lifting own shirt:1.35), sweat, (sweating:1.45), sweat drops on abs, from below, smile, parted lips, teeth, lips, huge hips, curvy hips, thick thighs, covered pussy, wet"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 150,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1659.0936604641233,
+        561.8341448560375
+      ],
+      "size": [
+        369.6433081033381,
+        102.99952924378135
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 566
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss",
+        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
+      },
+      "widgets_values": [
+        "K40R1_0C, single hair bun, red hair, hair bun, short hair, red lips, green eyes, rimless eyewear, round eyewear, blunt bangs, muscular female, toned female, glasses, sidelocks"
+      ],
+      "widgets_values_named": {
+        "text_0": "K40R1_0C, single hair bun, red hair, hair bun, short hair, red lips, green eyes, rimless eyewear, round eyewear, blunt bangs, muscular female, toned female, glasses, sidelocks"
+      }
+    },
+    {
+      "id": 191,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        1663.20013614407,
+        8.077805453701423
+      ],
+      "size": [
+        368.2469344137493,
+        509.6734112587376
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            564
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            561
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            562
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            563,
+            566
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/OC/Kaori_Hiiragi_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/OC/Kaori_Hiiragi_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
+    },
+    {
+      "id": 147,
+      "type": "Image Saver Simple",
+      "pos": [
+        5115.295238431211,
+        7.881752739901089
+      ],
+      "size": [
+        290.98494361997837,
+        659.7277006965795
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 540
+        },
+        {
+          "name": "metadata",
+          "shape": 7,
+          "type": "METADATA",
+          "link": 276
+        }
+      ],
+      "outputs": [
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "205d66a9d8035e3ad2ba6c61b7ebf7871664e472",
+        "Node name for S&R": "Image Saver Simple",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
+      },
+      "widgets_values": [
+        "%basemodelname",
+        "Anima_Simple",
+        "png",
+        true,
+        100,
+        false,
+        true,
+        false,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        true,
+        true
+      ],
+      "widgets_values_named": {
+        "filename": "%basemodelname",
+        "path": "Anima_Simple",
+        "extension": "png",
+        "lossless_webp": true,
+        "quality_jpeg_or_webp": 100,
+        "optimize_png": false,
+        "embed_workflow": true,
+        "save_workflow_as_json": false,
+        "counter": 0,
+        "time_format": "%Y-%m-%d-%H%M%S",
+        "label": true,
+        "show_preview": true
       }
     }
   ],
@@ -2025,10 +2025,10 @@
       "id": 44,
       "title": "Color match + metadata",
       "bounding": [
-        4598.34250506676,
-        -59.642110600932824,
+        4595.957490533502,
+        -61.68641898450333,
         499.66492794561236,
-        767.4146629317132
+        735.2319989277468
       ],
       "color": "#3f789e",
       "flags": {}
@@ -2075,8 +2075,8 @@
       "bounding": [
         5105.295238431211,
         -62.118247260098954,
-        316.80859375,
-        620.5418531833226
+        307.99793879915705,
+        736.0591258861856
       ],
       "color": "#3f789e",
       "flags": {}
@@ -6406,10 +6406,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 0.6441318332593805,
+      "scale": 1.0325975655150395,
       "offset": [
-        -823.8393705143079,
-        284.9255610065416
+        -1604.4986228843347,
+        87.5428243812209
       ]
     }
   },
