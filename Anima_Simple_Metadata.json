@@ -1,8 +1,8 @@
 {
   "id": "6532d4fd-8fff-4bab-a497-dd0e41c94c15",
   "revision": 0,
-  "last_node_id": 198,
-  "last_link_id": 592,
+  "last_node_id": 203,
+  "last_link_id": 599,
   "nodes": [
     {
       "id": 140,
@@ -151,12 +151,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        610915430184044,
+        940795499667994,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 610915430184044,
+        "seed": 940795499667994,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -429,38 +429,6 @@
       }
     },
     {
-      "id": 170,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        590.4486505003648,
-        -0.6970100626693329
-      ],
-      "size": [
-        348.5625,
-        534
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
-    },
-    {
       "id": 142,
       "type": "easy hiresFix",
       "pos": [
@@ -599,12 +567,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        70316854311016,
+        571392510070887,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 70316854311016,
+        "seed": 571392510070887,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -621,7 +589,7 @@
         258.96293587412566
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -788,7 +756,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        134079061230936,
+        1045316396820140,
         32,
         4,
         "euler_ancestral",
@@ -799,7 +767,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 134079061230936,
+        "seed": 1045316396820140,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1073,7 +1041,7 @@
         368.5302990298356
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1191,105 +1159,6 @@
       }
     },
     {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2052.1398570113183,
-        5.787175161540112
-      ],
-      "size": [
-        408.5447295189397,
-        115.10505114088159
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            539
-          ]
-        }
-      ],
-      "title": "Quality prompts",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, highres, anime coloring, official style"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, highres, anime coloring, official style"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 176,
-      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
-      "pos": [
-        2053.019862237075,
-        497.75770823539
-      ],
-      "size": [
-        408.4517567346443,
-        166.7483271134421
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 554
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            485
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            468
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      ],
-      "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 190,
       "type": "LoraLoader",
       "pos": [
@@ -1304,7 +1173,7 @@
         "collapsed": true
       },
       "order": 11,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "model",
@@ -1375,6 +1244,210 @@
       }
     },
     {
+      "id": 192,
+      "type": "CR String To Combo",
+      "pos": [
+        1744.6145506966168,
+        230.13814273680597
+      ],
+      "size": [
+        197.5162109375,
+        46
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 569
+        }
+      ],
+      "outputs": [
+        {
+          "name": "any",
+          "type": "*",
+          "links": [
+            565
+          ]
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR String To Combo"
+      }
+    },
+    {
+      "id": 176,
+      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
+      "pos": [
+        2053.019862237075,
+        497.75770823539
+      ],
+      "size": [
+        408.4517567346443,
+        166.7483271134421
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 554
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            485
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            468
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "score_1, score_2, score_3, blurry, worst quality, low quality, jpeg artifacts, signature, watermark, username, error, deformed hands, bad anatomy, extra limbs, poorly drawn hands, poorly drawn face, mutation, deformed, extra eyes, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, bad proportions, missing arms, missing legs, extra digit, fewer digits, cropped, normal quality"
+      ],
+      "widgets_values_named": {
+        "value": "score_1, score_2, score_3, blurry, worst quality, low quality, jpeg artifacts, signature, watermark, username, error, deformed hands, bad anatomy, extra limbs, poorly drawn hands, poorly drawn face, mutation, deformed, extra eyes, extra arms, extra legs, malformed limbs, fused fingers, too many fingers, long neck, cross-eyed, bad proportions, missing arms, missing legs, extra digit, fewer digits, cropped, normal quality"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2052.1398570113183,
+        5.787175161540112
+      ],
+      "size": [
+        408.5447295189397,
+        115.10505114088159
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            539
+          ]
+        }
+      ],
+      "title": "Quality prompts",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(illustration), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:1.5), dramatic lighting"
+      ],
+      "widgets_values_named": {
+        "value": "(illustration), official style, masterpiece, best quality, amazing quality, highres, (shiny skin:1.5), dramatic lighting"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 194,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        1654.2687436628075,
+        8.077805453701423
+      ],
+      "size": [
+        372.745083320047,
+        357.95908872380005
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            569
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            570
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            571
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            592,
+            595
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Mikoto_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Mikoto_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
+    },
+    {
       "id": 198,
       "type": "Switch string [Crystools]",
       "pos": [
@@ -1387,7 +1460,7 @@
       ],
       "flags": {},
       "order": 12,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "on_true",
@@ -1395,7 +1468,7 @@
           "widget": {
             "name": "on_true"
           },
-          "link": 590
+          "link": 596
         },
         {
           "name": "on_false",
@@ -1423,53 +1496,85 @@
       "widgets_values": [
         "",
         "",
-        true
+        false
       ],
       "widgets_values_named": {
         "on_true": "",
         "on_false": "",
-        "boolean": true
+        "boolean": false
       }
     },
     {
-      "id": 192,
-      "type": "CR String To Combo",
+      "id": 200,
+      "type": "EditableShowText",
       "pos": [
-        1744.6145506966168,
-        230.13814273680597
+        1652.8502076667137,
+        416.3285970696444
       ],
       "size": [
-        197.5162109375,
-        46
+        375.20817747311935,
+        96.18413234050013
       ],
       "flags": {},
-      "order": 9,
-      "mode": 0,
+      "order": 10,
+      "mode": 4,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 569
+          "link": 595
         }
       ],
       "outputs": [
         {
-          "name": "any",
-          "type": "*",
-          "links": [
-            565
-          ]
-        },
-        {
-          "name": "show_help",
+          "name": "STRING",
           "type": "STRING",
+          "links": [
+            596
+          ]
+        }
+      ],
+      "title": "Edit triggers",
+      "properties": {
+        "Node name for S&R": "EditableShowText"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "widgets_values_named": {
+        "edited_text": ""
+      }
+    },
+    {
+      "id": 170,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        590.4486505003648,
+        -0.6970100626693329
+      ],
+      "size": [
+        348.5625,
+        534
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
           "links": null
         }
       ],
       "properties": {
-        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
-        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "Node name for S&R": "CR String To Combo"
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
       }
     },
     {
@@ -1540,117 +1645,13 @@
         "previewExposures": []
       },
       "widgets_values": [
-        "1girl, looking at viewer, huge breasts, upper body, cleavage, smile, red lips, lipstick, lips, hair bun, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees, sidelocks"
+        "cammy white, blonde hair, short hair, blue eyes, scar on face, ahoge, huge ahoge,\n1girl, \nhuge breasts, muscular female, toned female, huge hips, curvy hips, thick thighs, narrow waist, abs, navel, lips, red lips, parted lips,\ndress, strapless dress, black dress, short dress, cleavage, covered navel, jacket, crop jacket, white jacket, open jacket, heels, white heels,\nroom, bedroom, mirror, holding, cellphone, holding cellphone, knee up,  sitting, chair,\nlooking at viewer, smile, seductive gaze, mirror selfie, pantyshot, no panties, \nspeech bubble, \"I'm ready for you, goku\" written on speech bubble"
       ],
       "widgets_values_named": {
-        "value": "1girl, looking at viewer, huge breasts, upper body, cleavage, smile, red lips, lipstick, lips, hair bun, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees, sidelocks"
+        "value": "cammy white, blonde hair, short hair, blue eyes, scar on face, ahoge, huge ahoge,\n1girl, \nhuge breasts, muscular female, toned female, huge hips, curvy hips, thick thighs, narrow waist, abs, navel, lips, red lips, parted lips,\ndress, strapless dress, black dress, short dress, cleavage, covered navel, jacket, crop jacket, white jacket, open jacket, heels, white heels,\nroom, bedroom, mirror, holding, cellphone, holding cellphone, knee up,  sitting, chair,\nlooking at viewer, smile, seductive gaze, mirror selfie, pantyshot, no panties, \nspeech bubble, \"I'm ready for you, goku\" written on speech bubble"
       },
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 194,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        1654.2687436628075,
-        8.077805453701423
-      ],
-      "size": [
-        372.745083320047,
-        357.95908872380005
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            569
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            570
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            571
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            591,
-            592
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      }
-    },
-    {
-      "id": 197,
-      "type": "EditableShowText",
-      "pos": [
-        1652.8502076667137,
-        416.3285970696444
-      ],
-      "size": [
-        375.20817747311935,
-        96.18413234050013
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 591
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            590
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EditableShowText"
-      },
-      "widgets_values": [
-        "N4RUK0_NS, facial mark, blue eyes, whisker markings, blonde hair, hair between eyes, short hair"
-      ],
-      "widgets_values_named": {
-        "edited_text": "N4RUK0_NS, facial mark, blue eyes, whisker markings, blonde hair, hair between eyes, short hair"
-      }
     }
   ],
   "links": [
@@ -2007,27 +2008,27 @@
       "STRING"
     ],
     [
-      590,
-      197,
-      0,
-      198,
-      0,
-      "STRING"
-    ],
-    [
-      591,
-      194,
-      3,
-      197,
-      0,
-      "STRING"
-    ],
-    [
       592,
       194,
       3,
       198,
       1,
+      "STRING"
+    ],
+    [
+      595,
+      194,
+      3,
+      200,
+      0,
+      "STRING"
+    ],
+    [
+      596,
+      200,
+      0,
+      198,
+      0,
       "STRING"
     ]
   ],
@@ -2196,8 +2197,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2400,8 +2401,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2930,8 +2931,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3497,8 +3498,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4023,8 +4024,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4315,8 +4316,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4754,8 +4755,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4997,8 +4998,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5419,8 +5420,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 198,
-          "lastLinkId": 592,
+          "lastNodeId": 203,
+          "lastLinkId": 599,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6477,10 +6478,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 1.2585953448585043,
+      "scale": 1.1470731668987242,
       "offset": [
-        -1334.2781643607425,
-        -62.963640140163655
+        -650.1305343297521,
+        222.5877683274399
       ]
     }
   },
