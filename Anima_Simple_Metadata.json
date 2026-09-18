@@ -1,8 +1,8 @@
 {
   "id": "6532d4fd-8fff-4bab-a497-dd0e41c94c15",
   "revision": 0,
-  "last_node_id": 192,
-  "last_link_id": 566,
+  "last_node_id": 198,
+  "last_link_id": 592,
   "nodes": [
     {
       "id": 140,
@@ -16,7 +16,7 @@
         248
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 4,
       "inputs": [
         {
@@ -122,7 +122,7 @@
         651.046875
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 4,
       "inputs": [
         {
@@ -151,12 +151,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        178883293376120,
+        610915430184044,
         "bbox/hand_yolov8s.pt",
         "[CONCAT] hand, perfect hands"
       ],
       "widgets_values_named": {
-        "seed": 178883293376120,
+        "seed": 610915430184044,
         "model_name": "bbox/hand_yolov8s.pt",
         "wildcard": "[CONCAT] hand, perfect hands"
       }
@@ -229,7 +229,7 @@
         78
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -277,7 +277,7 @@
         666
       ],
       "flags": {},
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -429,66 +429,6 @@
       }
     },
     {
-      "id": 176,
-      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
-      "pos": [
-        2067.533492137341,
-        497.75770823539
-      ],
-      "size": [
-        390.58888659523654,
-        162.28263087281084
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 554
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            485
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            468
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      ],
-      "widgets_values_named": {
-        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
-      },
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 170,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
@@ -532,7 +472,7 @@
         659.90625
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -621,7 +561,7 @@
         657.8125
       ],
       "flags": {},
-      "order": 18,
+      "order": 19,
       "mode": 4,
       "inputs": [
         {
@@ -659,12 +599,12 @@
         "previewExposures": []
       },
       "widgets_values": [
-        844788981876620,
+        70316854311016,
         "bbox/face_yolov8n.pt",
         "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       ],
       "widgets_values_named": {
-        "seed": 844788981876620,
+        "seed": 70316854311016,
         "model_name": "bbox/face_yolov8n.pt",
         "wildcard": "[CONCAT] {face|face,detailed face, perfect eyes, detailed eyes}"
       }
@@ -735,7 +675,7 @@
         656.5180516753658
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -848,7 +788,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        784002771505307,
+        134079061230936,
         32,
         4,
         "euler_ancestral",
@@ -859,7 +799,7 @@
         0.2
       ],
       "widgets_values_named": {
-        "seed": 784002771505307,
+        "seed": 134079061230936,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -869,300 +809,6 @@
         "cfg_1": 4,
         "denoise_1": 0.2
       }
-    },
-    {
-      "id": 192,
-      "type": "CR String To Combo",
-      "pos": [
-        1728.349059347172,
-        357.7597093395034
-      ],
-      "size": [
-        197.5162109375,
-        46
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 564
-        }
-      ],
-      "outputs": [
-        {
-          "name": "any",
-          "type": "*",
-          "links": [
-            565
-          ]
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
-        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-        "Node name for S&R": "CR String To Combo"
-      }
-    },
-    {
-      "id": 190,
-      "type": "LoraLoader",
-      "pos": [
-        1658.345245168561,
-        518.8174105525059
-      ],
-      "size": [
-        270,
-        126
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 556
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 557
-        },
-        {
-          "name": "lora_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "lora_name"
-          },
-          "link": 565
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "widget": {
-            "name": "strength_model"
-          },
-          "link": 561
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "widget": {
-            "name": "strength_clip"
-          },
-          "link": 562
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            558
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            559,
-            560
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.36.0",
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "drive/Avatar/Asami_TLOK_Anima.safetensors",
-        1,
-        1
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/Avatar/Asami_TLOK_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1
-      }
-    },
-    {
-      "id": 174,
-      "type": "35348233-dcd1-4277-ab03-21d001e51f45",
-      "pos": [
-        1305.8792242669945,
-        3.800093243160328
-      ],
-      "size": [
-        321.2447097031345,
-        368.5302990298356
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Checkpoint model",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          },
-          "link": null
-        },
-        {
-          "label": "Weight Dtype",
-          "name": "weight_dtype",
-          "type": "COMBO",
-          "widget": {
-            "name": "weight_dtype"
-          },
-          "link": null
-        },
-        {
-          "label": "CLIP",
-          "name": "clip_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "clip_name"
-          },
-          "link": null
-        },
-        {
-          "label": "CLIP type",
-          "name": "type",
-          "type": "COMBO",
-          "widget": {
-            "name": "type"
-          },
-          "link": null
-        },
-        {
-          "label": "CLIP device",
-          "name": "device",
-          "shape": 7,
-          "type": "COMBO",
-          "widget": {
-            "name": "device"
-          },
-          "link": null
-        },
-        {
-          "label": "VAE",
-          "name": "vae_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "vae_name"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            448,
-            449,
-            450,
-            487
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            554,
-            557
-          ]
-        },
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            551,
-            556
-          ]
-        },
-        {
-          "label": "Checkpoint name",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            454
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "An_RDBT.safetensors",
-        "default",
-        "qwen_3_06b_base.safetensors",
-        "stable_diffusion",
-        "default",
-        "qwen_image_vae.safetensors"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_RDBT.safetensors",
-        "weight_dtype": "default",
-        "clip_name": "qwen_3_06b_base.safetensors",
-        "type": "stable_diffusion",
-        "device": "default",
-        "vae_name": "qwen_image_vae.safetensors"
-      }
-    },
-    {
-      "id": 187,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        2061.0713346694642,
-        5.787175161540112
-      ],
-      "size": [
-        392.9146862056259,
-        117.33800573230161
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            539
-          ]
-        }
-      ],
-      "title": "Quality prompts",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.35.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "masterpiece, best quality, score_7, amazing quality, highres, anime coloring"
-      ],
-      "widgets_values_named": {
-        "value": "masterpiece, best quality, score_7, amazing quality, highres, anime coloring"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 144,
@@ -1176,7 +822,7 @@
         657.7889426315622
       ],
       "flags": {},
-      "order": 17,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1342,188 +988,6 @@
       }
     },
     {
-      "id": 179,
-      "type": "2c6cb57c-5eed-4cc4-b289-3419a5cfe1f5",
-      "pos": [
-        2064.420177200469,
-        168.99734612389008
-      ],
-      "size": [
-        391.1260486991573,
-        282.14000458039385
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "Triggers",
-          "name": "string_b",
-          "shape": 7,
-          "type": "STRING",
-          "link": 563
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 559
-        },
-        {
-          "label": "Positive prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        },
-        {
-          "label": "Quality prompt",
-          "name": "text1",
-          "shape": 7,
-          "type": "STRING",
-          "link": 539
-        }
-      ],
-      "outputs": [
-        {
-          "label": "prompt",
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            476
-          ]
-        },
-        {
-          "label": "ACONDICIONAMIENTO",
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            484
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "1girl, looking at viewer, huge breasts, shirt, cleavage, sleeveless shirt, abs, (lifting own shirt:1.35), sweat, (sweating:1.45), sweat drops on abs, from below, smile, parted lips, teeth, lips, huge hips, curvy hips, thick thighs, covered pussy, wet"
-      ],
-      "widgets_values_named": {
-        "value": "1girl, looking at viewer, huge breasts, shirt, cleavage, sleeveless shirt, abs, (lifting own shirt:1.35), sweat, (sweating:1.45), sweat drops on abs, from below, smile, parted lips, teeth, lips, huge hips, curvy hips, thick thighs, covered pussy, wet"
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 150,
-      "type": "ShowText|pysssss",
-      "pos": [
-        1659.0936604641233,
-        561.8341448560375
-      ],
-      "size": [
-        369.6433081033381,
-        102.99952924378135
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 566
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "shape": 6,
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-custom-scripts",
-        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
-        "Node name for S&R": "ShowText|pysssss",
-        "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
-      },
-      "widgets_values": [
-        "K40R1_0C, single hair bun, red hair, hair bun, short hair, red lips, green eyes, rimless eyewear, round eyewear, blunt bangs, muscular female, toned female, glasses, sidelocks"
-      ],
-      "widgets_values_named": {
-        "text_0": "K40R1_0C, single hair bun, red hair, hair bun, short hair, red lips, green eyes, rimless eyewear, round eyewear, blunt bangs, muscular female, toned female, glasses, sidelocks"
-      }
-    },
-    {
-      "id": 191,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        1663.20013614407,
-        8.077805453701423
-      ],
-      "size": [
-        368.2469344137493,
-        509.6734112587376
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            564
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            561
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            562
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            563,
-            566
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "drive/OC/Kaori_Hiiragi_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "drive/OC/Kaori_Hiiragi_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      }
-    },
-    {
       "id": 147,
       "type": "Image Saver Simple",
       "pos": [
@@ -1535,7 +999,7 @@
         659.7277006965795
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1595,6 +1059,597 @@
         "time_format": "%Y-%m-%d-%H%M%S",
         "label": true,
         "show_preview": true
+      }
+    },
+    {
+      "id": 174,
+      "type": "35348233-dcd1-4277-ab03-21d001e51f45",
+      "pos": [
+        1305.8792242669945,
+        3.800093243160328
+      ],
+      "size": [
+        321.2447097031345,
+        368.5302990298356
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Checkpoint model",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        },
+        {
+          "label": "Weight Dtype",
+          "name": "weight_dtype",
+          "type": "COMBO",
+          "widget": {
+            "name": "weight_dtype"
+          },
+          "link": null
+        },
+        {
+          "label": "CLIP",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "CLIP type",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        },
+        {
+          "label": "CLIP device",
+          "name": "device",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "device"
+          },
+          "link": null
+        },
+        {
+          "label": "VAE",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            448,
+            449,
+            450,
+            487
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            554,
+            557
+          ]
+        },
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            551,
+            556
+          ]
+        },
+        {
+          "label": "Checkpoint name",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            454
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "An_RDBT-v1.0.safetensors",
+        "default",
+        "qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default",
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_RDBT-v1.0.safetensors",
+        "weight_dtype": "default",
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "stable_diffusion",
+        "device": "default",
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 187,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2052.1398570113183,
+        5.787175161540112
+      ],
+      "size": [
+        408.5447295189397,
+        115.10505114088159
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            539
+          ]
+        }
+      ],
+      "title": "Quality prompts",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.35.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, highres, anime coloring, official style"
+      ],
+      "widgets_values_named": {
+        "value": "masterpiece, best quality, highres, anime coloring, official style"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 176,
+      "type": "2abe84d4-00a3-45f4-bb4e-008f6dd2e2a7",
+      "pos": [
+        2053.019862237075,
+        497.75770823539
+      ],
+      "size": [
+        408.4517567346443,
+        166.7483271134421
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 554
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            485
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            468
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      ],
+      "widgets_values_named": {
+        "value": "(bad quality,worst detail,worst quality, low quality, sketch:1.1),error,bad anatomy,bad hands,ugly,anatomical nonsense,bad anatomy,extra fingers,watermark,simple background, (blurry:1.5), navel, wided eyes, scary face, bad hands, (horrible hands:1.5), missing fingers"
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 190,
+      "type": "LoraLoader",
+      "pos": [
+        1695.1524818218195,
+        275.6485266158556
+      ],
+      "size": [
+        270,
+        126
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 556
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 557
+        },
+        {
+          "name": "lora_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "lora_name"
+          },
+          "link": 565
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_model"
+          },
+          "link": 570
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "widget": {
+            "name": "strength_clip"
+          },
+          "link": 571
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            558
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            559,
+            560
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.36.0",
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "drive/Avatar/Asami_TLOK_Anima.safetensors",
+        1,
+        1
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Avatar/Asami_TLOK_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1
+      }
+    },
+    {
+      "id": 198,
+      "type": "Switch string [Crystools]",
+      "pos": [
+        1657.85502570184,
+        555.7692239612911
+      ],
+      "size": [
+        367.59302446334505,
+        106
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "widget": {
+            "name": "on_true"
+          },
+          "link": 590
+        },
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "widget": {
+            "name": "on_false"
+          },
+          "link": 592
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            589
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
+        "Node name for S&R": "Switch string [Crystools]"
+      },
+      "widgets_values": [
+        "",
+        "",
+        true
+      ],
+      "widgets_values_named": {
+        "on_true": "",
+        "on_false": "",
+        "boolean": true
+      }
+    },
+    {
+      "id": 192,
+      "type": "CR String To Combo",
+      "pos": [
+        1744.6145506966168,
+        230.13814273680597
+      ],
+      "size": [
+        197.5162109375,
+        46
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 569
+        }
+      ],
+      "outputs": [
+        {
+          "name": "any",
+          "type": "*",
+          "links": [
+            565
+          ]
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR String To Combo"
+      }
+    },
+    {
+      "id": 179,
+      "type": "2c6cb57c-5eed-4cc4-b289-3419a5cfe1f5",
+      "pos": [
+        2052.139459303181,
+        168.99734612389008
+      ],
+      "size": [
+        408.9889188385655,
+        283.25650317032483
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Triggers",
+          "name": "string_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 589
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 559
+        },
+        {
+          "label": "Positive prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        },
+        {
+          "label": "Quality prompt",
+          "name": "text1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 539
+        }
+      ],
+      "outputs": [
+        {
+          "label": "prompt",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            476
+          ]
+        },
+        {
+          "label": "ACONDICIONAMIENTO",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            484
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "1girl, looking at viewer, huge breasts, upper body, cleavage, smile, red lips, lipstick, lips, hair bun, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees, sidelocks"
+      ],
+      "widgets_values_named": {
+        "value": "1girl, looking at viewer, huge breasts, upper body, cleavage, smile, red lips, lipstick, lips, hair bun, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees, sidelocks"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 194,
+      "type": "LoraInfoWithPreview",
+      "pos": [
+        1654.2687436628075,
+        8.077805453701423
+      ],
+      "size": [
+        372.745083320047,
+        357.95908872380005
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "lora_name",
+          "type": "STRING",
+          "links": [
+            569
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            570
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            571
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            591,
+            592
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
+      },
+      "widgets_values": [
+        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        1,
+        1,
+        null
+      ],
+      "widgets_values_named": {
+        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
+      }
+    },
+    {
+      "id": 197,
+      "type": "EditableShowText",
+      "pos": [
+        1652.8502076667137,
+        416.3285970696444
+      ],
+      "size": [
+        375.20817747311935,
+        96.18413234050013
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 591
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            590
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EditableShowText"
+      },
+      "widgets_values": [
+        "N4RUK0_NS, facial mark, blue eyes, whisker markings, blonde hair, hair between eyes, short hair"
+      ],
+      "widgets_values_named": {
+        "edited_text": "N4RUK0_NS, facial mark, blue eyes, whisker markings, blonde hair, hair between eyes, short hair"
       }
     }
   ],
@@ -1912,38 +1967,6 @@
       "CLIP"
     ],
     [
-      561,
-      191,
-      1,
-      190,
-      3,
-      "FLOAT"
-    ],
-    [
-      562,
-      191,
-      2,
-      190,
-      4,
-      "FLOAT"
-    ],
-    [
-      563,
-      191,
-      3,
-      179,
-      0,
-      "STRING"
-    ],
-    [
-      564,
-      191,
-      0,
-      192,
-      0,
-      "STRING"
-    ],
-    [
       565,
       192,
       0,
@@ -1952,11 +1975,59 @@
       "COMBO"
     ],
     [
-      566,
-      191,
-      3,
-      150,
+      569,
+      194,
       0,
+      192,
+      0,
+      "STRING"
+    ],
+    [
+      570,
+      194,
+      1,
+      190,
+      3,
+      "FLOAT"
+    ],
+    [
+      571,
+      194,
+      2,
+      190,
+      4,
+      "FLOAT"
+    ],
+    [
+      589,
+      198,
+      0,
+      179,
+      0,
+      "STRING"
+    ],
+    [
+      590,
+      197,
+      0,
+      198,
+      0,
+      "STRING"
+    ],
+    [
+      591,
+      194,
+      3,
+      197,
+      0,
+      "STRING"
+    ],
+    [
+      592,
+      194,
+      3,
+      198,
+      1,
       "STRING"
     ]
   ],
@@ -2125,8 +2196,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2329,8 +2400,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2859,8 +2930,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3426,8 +3497,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3952,8 +4023,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4244,8 +4315,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4683,8 +4754,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4926,8 +4997,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5348,8 +5419,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 51,
-          "lastNodeId": 192,
-          "lastLinkId": 566,
+          "lastNodeId": 198,
+          "lastLinkId": 592,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6406,10 +6477,10 @@
       "outputs": []
     },
     "ds": {
-      "scale": 1.0325975655150395,
+      "scale": 1.2585953448585043,
       "offset": [
-        -1604.4986228843347,
-        87.5428243812209
+        -1334.2781643607425,
+        -62.963640140163655
       ]
     }
   },
