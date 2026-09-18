@@ -1,8 +1,8 @@
 {
   "id": "cfa727c2-7ec3-466f-99d4-1aa573c06299",
   "revision": 0,
-  "last_node_id": 186,
-  "last_link_id": 494,
+  "last_node_id": 189,
+  "last_link_id": 496,
   "nodes": [
     {
       "id": 69,
@@ -13,7 +13,7 @@
       ],
       "size": [
         311.3125,
-        62
+        82
       ],
       "flags": {},
       "order": 12,
@@ -48,10 +48,12 @@
         "secondTabWidth": 65
       },
       "widgets_values": [
-        3
+        3,
+        "flow"
       ],
       "widgets_values_named": {
-        "shift": 3
+        "shift": 3,
+        "sampling": "flow"
       }
     },
     {
@@ -537,6 +539,395 @@
       "bgcolor": "#355"
     },
     {
+      "id": 99,
+      "type": "Image Saver Simple",
+      "pos": [
+        1882.0241133237698,
+        502.77695262058
+      ],
+      "size": [
+        302.34375,
+        695.421875
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 343
+        },
+        {
+          "name": "metadata",
+          "shape": 7,
+          "type": "METADATA",
+          "link": 180
+        }
+      ],
+      "outputs": [
+        {
+          "name": "hashes",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "a1111_params",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-image-saver",
+        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
+        "Node name for S&R": "Image Saver Simple",
+        "aux_id": "alexopus/ComfyUI-Image-Saver"
+      },
+      "widgets_values": [
+        "Regional_%basemodelname",
+        "Regional_Prompt_%basemodelname",
+        "png",
+        true,
+        100,
+        false,
+        true,
+        false,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        true,
+        true
+      ],
+      "widgets_values_named": {
+        "filename": "Regional_%basemodelname",
+        "path": "Regional_Prompt_%basemodelname",
+        "extension": "png",
+        "lossless_webp": true,
+        "quality_jpeg_or_webp": 100,
+        "optimize_png": false,
+        "embed_workflow": true,
+        "save_workflow_as_json": false,
+        "counter": 0,
+        "time_format": "%Y-%m-%d-%H%M%S",
+        "label": true,
+        "show_preview": true
+      }
+    },
+    {
+      "id": 128,
+      "type": "LoadImage",
+      "pos": [
+        1581.0287313730842,
+        727.5218611042434
+      ],
+      "size": [
+        273.328125,
+        467.578125
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            340
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            341
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "firma danielg20019.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "firma danielg20019.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 127,
+      "type": "ApplySignature",
+      "pos": [
+        1583.5094629522453,
+        497.265598325198
+      ],
+      "size": [
+        268.95375247514767,
+        194
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 342
+        },
+        {
+          "name": "signature",
+          "type": "IMAGE",
+          "link": 340
+        },
+        {
+          "name": "signature_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": 341
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            343
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "vergil-sparda0701/comfyui-apply-signature",
+        "ver": "c23d6edc0b84032c83fa7865db96e499d6d6bf7b",
+        "Node name for S&R": "ApplySignature"
+      },
+      "widgets_values": [
+        true,
+        40.24779396592354,
+        "izquierda",
+        "abajo",
+        9
+      ],
+      "widgets_values_named": {
+        "enabled": true,
+        "size_pct": 40.24779396592354,
+        "h_align": "izquierda",
+        "v_align": "abajo",
+        "margin": 9
+      }
+    },
+    {
+      "id": 112,
+      "type": "62b3623b-a3fa-4b86-8019-fc37463af54a",
+      "pos": [
+        -1039.551841768595,
+        742.9923420165798
+      ],
+      "size": [
+        303.1875,
+        149.65840687160664
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "CLIP",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "VAE",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            250,
+            288
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            252,
+            484
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "qwen_3_06b_base.safetensors",
+        "lumina2",
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "type": "lumina2",
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 184,
+      "type": "Note",
+      "pos": [
+        -1387.5611594056115,
+        496.2249639460542
+      ],
+      "size": [
+        317.6667650921843,
+        104.31196669019823
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "| Low-Res     | High-Res    |\n|-------------|-------------|\n| 1024 x 1024 | 1536 x 1536 |\n|  896 x 1152 | 1152 x 1536 |\n|  832 x 1216 | 1024 x 1536 |\n| 1344 x  768 | 1536 x  864 |"
+      ],
+      "widgets_values_named": {
+        "text": "| Low-Res     | High-Res    |\n|-------------|-------------|\n| 1024 x 1024 | 1536 x 1536 |\n|  896 x 1152 | 1152 x 1536 |\n|  832 x 1216 | 1024 x 1536 |\n| 1344 x  768 | 1536 x  864 |"
+      },
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": "default"
+    },
+    {
+      "id": 185,
+      "type": "Note",
+      "pos": [
+        -1386.6015881697701,
+        639.5634923725163
+      ],
+      "size": [
+        318.28410815798725,
+        553.9667093128877
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
+      ],
+      "widgets_values_named": {
+        "text": "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
+      },
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": "default"
+    },
+    {
+      "id": 98,
+      "type": "UNETLoaderWithName",
+      "pos": [
+        -1040.2329174497268,
+        601.22067916557
+      ],
+      "size": [
+        305.18900476371266,
+        102
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            178
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            179
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
+        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
+        "Node name for S&R": "UNETLoaderWithName"
+      },
+      "widgets_values": [
+        "An_RDBT-v1.0.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "An_RDBT-v1.0.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 85,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -700.341206824538,
+        874.8808321922894
+      ],
+      "size": [
+        401.3080340974999,
+        128.93508443179144
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            128,
+            159
+          ]
+        }
+      ],
+      "title": "Region 1 prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "(official style:1.45)"
+      ],
+      "widgets_values_named": {
+        "value": "(official style:1.45)"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 87,
       "type": "52b4727f-3bd7-49c0-91c0-c3d45777177f",
       "pos": [
@@ -723,264 +1114,18 @@
       "bgcolor": "#653"
     },
     {
-      "id": 99,
-      "type": "Image Saver Simple",
-      "pos": [
-        1882.0241133237698,
-        502.77695262058
-      ],
-      "size": [
-        302.34375,
-        695.421875
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 343
-        },
-        {
-          "name": "metadata",
-          "shape": 7,
-          "type": "METADATA",
-          "link": 180
-        }
-      ],
-      "outputs": [
-        {
-          "name": "hashes",
-          "type": "STRING",
-          "links": null
-        },
-        {
-          "name": "a1111_params",
-          "type": "STRING",
-          "links": []
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-image-saver",
-        "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-        "Node name for S&R": "Image Saver Simple",
-        "aux_id": "alexopus/ComfyUI-Image-Saver"
-      },
-      "widgets_values": [
-        "Regional_%basemodelname",
-        "Regional_Prompt_%basemodelname",
-        "png",
-        true,
-        100,
-        false,
-        true,
-        false,
-        0,
-        "%Y-%m-%d-%H%M%S",
-        true,
-        true
-      ],
-      "widgets_values_named": {
-        "filename": "Regional_%basemodelname",
-        "path": "Regional_Prompt_%basemodelname",
-        "extension": "png",
-        "lossless_webp": true,
-        "quality_jpeg_or_webp": 100,
-        "optimize_png": false,
-        "embed_workflow": true,
-        "save_workflow_as_json": false,
-        "counter": 0,
-        "time_format": "%Y-%m-%d-%H%M%S",
-        "label": true,
-        "show_preview": true
-      }
-    },
-    {
-      "id": 128,
-      "type": "LoadImage",
-      "pos": [
-        1581.0287313730842,
-        727.5218611042434
-      ],
-      "size": [
-        273.328125,
-        467.578125
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 4,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            340
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            341
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "firma danielg20019.png",
-        "image"
-      ],
-      "widgets_values_named": {
-        "image": "firma danielg20019.png",
-        "upload": "image"
-      }
-    },
-    {
-      "id": 127,
-      "type": "ApplySignature",
-      "pos": [
-        1583.5094629522453,
-        497.265598325198
-      ],
-      "size": [
-        268.95375247514767,
-        194
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 342
-        },
-        {
-          "name": "signature",
-          "type": "IMAGE",
-          "link": 340
-        },
-        {
-          "name": "signature_mask",
-          "shape": 7,
-          "type": "MASK",
-          "link": 341
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            343
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/comfyui-apply-signature",
-        "ver": "c23d6edc0b84032c83fa7865db96e499d6d6bf7b",
-        "Node name for S&R": "ApplySignature"
-      },
-      "widgets_values": [
-        true,
-        40.24779396592354,
-        "izquierda",
-        "abajo",
-        9
-      ],
-      "widgets_values_named": {
-        "enabled": true,
-        "size_pct": 40.24779396592354,
-        "h_align": "izquierda",
-        "v_align": "abajo",
-        "margin": 9
-      }
-    },
-    {
-      "id": 183,
-      "type": "LoraInfoWithPreview",
-      "pos": [
-        -271.6117254720165,
-        496.6813088641129
-      ],
-      "size": [
-        225,
-        343.015625
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "lora_name",
-          "type": "STRING",
-          "links": [
-            488
-          ]
-        },
-        {
-          "name": "strength_model",
-          "type": "FLOAT",
-          "links": [
-            489
-          ]
-        },
-        {
-          "name": "strength_clip",
-          "type": "FLOAT",
-          "links": [
-            490
-          ]
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": [
-            491,
-            492
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
-        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
-        "Node name for S&R": "LoraInfoWithPreview"
-      },
-      "widgets_values": [
-        "hinata/Hinata_NS_Anima.safetensors",
-        1,
-        1,
-        null
-      ],
-      "widgets_values_named": {
-        "lora_name": "hinata/Hinata_NS_Anima.safetensors",
-        "strength_model": 1,
-        "strength_clip": 1,
-        "lora_preview_display": null
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 86,
+      "id": 77,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        -700.6493169545776,
-        1046.8302639675871
+        -701.0419804165576,
+        661.1482000207913
       ],
       "size": [
-        401.3080340974999,
-        145.32547125778046
+        403.92430188570904,
+        166.84425361132344
       ],
       "flags": {},
-      "order": 2,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -988,138 +1133,25 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            132,
-            161
+            127,
+            163
           ]
         }
       ],
-      "title": "Region 2 prompt",
+      "title": "Positive prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "(official style:1.45), speech bubble, \"FUCK US GOKU!!!\" written on speech bubble"
+        "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), pastel colors, volumetric lighting, intrincate details, shiny skin, illustration,\n2girls, multiple girls, side-by-side, \nhuge breasts, huge hips, thick thighs, curvy hips, narrow waist, navel, toned female, toned abdomen, naked, nude, nipples, pumped nipples, big areola,\nlooking at viewer, smile, seductive gaze, hug, breast press,"
       ],
       "widgets_values_named": {
-        "value": "(official style:1.45), speech bubble, \"FUCK US GOKU!!!\" written on speech bubble"
+        "value": "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), pastel colors, volumetric lighting, intrincate details, shiny skin, illustration,\n2girls, multiple girls, side-by-side, \nhuge breasts, huge hips, thick thighs, curvy hips, narrow waist, navel, toned female, toned abdomen, naked, nude, nipples, pumped nipples, big areola,\nlooking at viewer, smile, seductive gaze, hug, breast press,"
       },
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 112,
-      "type": "62b3623b-a3fa-4b86-8019-fc37463af54a",
-      "pos": [
-        -1039.551841768595,
-        742.9923420165798
-      ],
-      "size": [
-        303.1875,
-        149.65840687160664
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "CLIP",
-          "name": "clip_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "clip_name"
-          },
-          "link": null
-        },
-        {
-          "label": "VAE",
-          "name": "vae_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "vae_name"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            250,
-            288
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            252,
-            484
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "previewExposures": []
-      },
-      "widgets_values": [
-        "qwen_3_06b_base.safetensors",
-        "lumina2",
-        "qwen_image_vae.safetensors"
-      ],
-      "widgets_values_named": {
-        "clip_name": "qwen_3_06b_base.safetensors",
-        "type": "lumina2",
-        "vae_name": "qwen_image_vae.safetensors"
-      }
-    },
-    {
-      "id": 98,
-      "type": "UNETLoaderWithName",
-      "pos": [
-        -1040.2329174497268,
-        601.22067916557
-      ],
-      "size": [
-        305.18900476371266,
-        102
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            178
-          ]
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            179
-          ]
-        }
-      ],
-      "properties": {
-        "aux_id": "suito-venus/comfyui-diffusion-model-loader-with-name",
-        "ver": "5beeedf40231add4a7146a9435405f8be7a85010",
-        "Node name for S&R": "UNETLoaderWithName"
-      },
-      "widgets_values": [
-        "An_Anima-v1.2.safetensors",
-        "fp8_e4m3fn"
-      ],
-      "widgets_values_named": {
-        "unet_name": "An_Anima-v1.2.safetensors",
-        "weight_dtype": "fp8_e4m3fn"
-      }
+      "color": "#232",
+      "bgcolor": "#353"
     },
     {
       "id": 121,
@@ -1133,7 +1165,7 @@
         253.65625
       ],
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1160,15 +1192,6 @@
           "type": "INT",
           "widget": {
             "name": "batch_size"
-          },
-          "link": null
-        },
-        {
-          "label": "Region split",
-          "name": "size",
-          "type": "INT",
-          "widget": {
-            "name": "size"
           },
           "link": null
         }
@@ -1212,133 +1235,55 @@
         "previewExposures": []
       },
       "widgets_values": [
-        1152,
         896,
-        1,
-        2
+        1152,
+        1
       ],
       "widgets_values_named": {
-        "width": 1152,
-        "height": 896,
-        "batch_size": 1,
-        "size": 2
+        "width": 896,
+        "height": 1152,
+        "batch_size": 1
       }
     },
     {
-      "id": 184,
-      "type": "Note",
+      "id": 86,
+      "type": "PrimitiveStringMultiline",
       "pos": [
-        -1387.5611594056115,
-        496.2249639460542
+        -700.6493169545776,
+        1046.8302639675871
       ],
       "size": [
-        317.6667650921843,
-        104.31196669019823
+        401.3080340974999,
+        145.32547125778046
       ],
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "| Low-Res     | High-Res    |\n|-------------|-------------|\n| 1024 x 1024 | 1536 x 1536 |\n|  896 x 1152 | 1152 x 1536 |\n|  832 x 1216 | 1024 x 1536 |\n| 1344 x  768 | 1536 x  864 |"
-      ],
-      "widgets_values_named": {
-        "text": "| Low-Res     | High-Res    |\n|-------------|-------------|\n| 1024 x 1024 | 1536 x 1536 |\n|  896 x 1152 | 1152 x 1536 |\n|  832 x 1216 | 1024 x 1536 |\n| 1344 x  768 | 1536 x  864 |"
-      },
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": "default"
-    },
-    {
-      "id": 185,
-      "type": "Note",
-      "pos": [
-        -1386.6015881697701,
-        639.5634923725163
-      ],
-      "size": [
-        318.28410815798725,
-        553.9667093128877
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
-      ],
-      "widgets_values_named": {
-        "text": "💡 Lighting            Tag\nCinematic               cinematic lighting\nHigh Contrast           dramatic lighting\nAtmospheric Rays        volumetric lighting\nCyberpunk / Glow        neon lighting\nRear Light              backlighting\nEdge Light              rim lighting\nSunrise / Sunset        golden hour\nTwilight                blue hour\nNighttime               moonlight\nHard Sun                direct sunlight\nStudio Setup            studio lighting\nSoft / Diffuse          soft lighting\nStrong / Direct         hard lighting\n\n🎨 Style & Medium      Tag\nArtistic / Clean        illustration\nJapanese Animation      anime\nPromo Art               anime key visual\nCamera Realism          photograph\nHigh Realism            photorealistic\nDigital Paint           concept art\nCanvas Oil              oil painting\nSoft Paint              watercolor\n3D Model                3d render\nWestern Comic           comic book\n\n📷 Composition & Shot  Tag\nFace & Head             portrait\nTight / Detail          close-up\nWaist Up                medium shot\nThighs Up               cowboy shot\nHead to Toe             full body\nHigh Angle              from above\nLow Angle               from below\nTilted / Dynamic        dynamic angle\nUneasy Tilt             dutch angle\nBroad View              wide angle\nFull Setting            establishing shot\nBlurry BG / Bokeh       depth of field\n\n🌈 Color & Palette     Tag\nHigh Saturation         vibrant\nSoft & Light            pastel colors\nSingle Color            monochrome\nBlack & White           greyscale\nReds / Yellows          warm colors\nBlues / Purples         cool colors\nCinematic Tint          color grading"
-      },
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": "default"
-    },
-    {
-      "id": 182,
-      "type": "fe489209-3042-43c6-b542-7e54ceee62e9",
-      "pos": [
-        -695.993490215058,
-        494.0744143053743
-      ],
-      "size": [
-        393.4375,
-        125.0710802027337
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 484
-        },
-        {
-          "label": "Negative prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
       "outputs": [
         {
           "name": "STRING",
           "type": "STRING",
           "links": [
-            485
-          ]
-        },
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            486
+            132,
+            161
           ]
         }
       ],
+      "title": "Region 2 prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
-        "previewExposures": []
+        "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5), (extra digits:1.5)"
+        "(official style:1.45), (smile:1.5), seductive gaze, gigantic breasts"
       ],
       "widgets_values_named": {
-        "value": "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5), (extra digits:1.5)"
+        "value": "(official style:1.45), (smile:1.5), seductive gaze, gigantic breasts"
       },
-      "color": "#322",
-      "bgcolor": "#533"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
       "id": 122,
@@ -1465,7 +1410,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        796901304826844,
+        931707876628297,
         32,
         4,
         "euler_ancestral",
@@ -1476,7 +1421,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 796901304826844,
+        "seed": 931707876628297,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1490,55 +1435,75 @@
       "bgcolor": "#355"
     },
     {
-      "id": 85,
-      "type": "PrimitiveStringMultiline",
+      "id": 182,
+      "type": "fe489209-3042-43c6-b542-7e54ceee62e9",
       "pos": [
-        -700.341206824538,
-        874.8808321922894
+        -695.993490215058,
+        494.0744143053743
       ],
       "size": [
-        401.3080340974999,
-        128.93508443179144
+        393.4375,
+        125.0710802027337
       ],
       "flags": {},
-      "order": 8,
+      "order": 11,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 484
+        },
+        {
+          "label": "Negative prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
       "outputs": [
         {
           "name": "STRING",
           "type": "STRING",
           "links": [
-            128,
-            159
+            485
+          ]
+        },
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            486
           ]
         }
       ],
-      "title": "Region 1 prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "previewExposures": []
       },
       "widgets_values": [
-        "(official style:1.45) speech bubble, (\"YEEES GOKU\" written on speech bubble:1.45), muscular female, toned female, abs"
+        "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5), (extra digits:1.5), (blurry:1.5)"
       ],
       "widgets_values_named": {
-        "value": "(official style:1.45) speech bubble, (\"YEEES GOKU\" written on speech bubble:1.45), muscular female, toned female, abs"
+        "value": "jpeg artifacts, lowres, worst quality, low quality, (bad hands:1.5), bad anatomy, blur, bad anatomy, (fused anatomy:2.5), (extra digits:1.5), (blurry:1.5)"
       },
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#322",
+      "bgcolor": "#533"
     },
     {
-      "id": 77,
-      "type": "PrimitiveStringMultiline",
+      "id": 183,
+      "type": "LoraInfoWithPreview",
       "pos": [
-        -701.0419804165576,
-        661.1482000207913
+        -271.6117254720165,
+        496.6813088641129
       ],
       "size": [
-        403.92430188570904,
-        166.84425361132344
+        225,
+        343.015625
       ],
       "flags": {},
       "order": 9,
@@ -1546,28 +1511,54 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "STRING",
+          "name": "lora_name",
           "type": "STRING",
           "links": [
-            127,
-            163
+            488
+          ]
+        },
+        {
+          "name": "strength_model",
+          "type": "FLOAT",
+          "links": [
+            489
+          ]
+        },
+        {
+          "name": "strength_clip",
+          "type": "FLOAT",
+          "links": [
+            490
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            491,
+            492
           ]
         }
       ],
-      "title": "Positive prompt",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "aux_id": "vergil-sparda0701/ComfyUI-LoraLoaderPreview",
+        "ver": "a0250acb128fa271d589b38e6b8e979b2cc9461e",
+        "Node name for S&R": "LoraInfoWithPreview"
       },
       "widgets_values": [
-        "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), pastel colors, volumetric lighting, intrincate details, shiny skin, illustration,\n2girls, multiple girls, side-by-side, \nhuge breasts, huge hips, thick thighs, curvy hips, narrow waist, navel, toned female, toned abdomen, naked, nude, nipples, pumped nipples, big areola, lactation, projectile lactation, kiss, yuri, lesbian,\nroom, bedroom, window, night, moonlight, full moon, lying on bed, pussy, spread legs, cum, cum on body, cum on belly, cum on face, cum on breasts"
+        "drive/DxD/Akeno_DxD_Anima.safetensors",
+        1,
+        1,
+        null
       ],
       "widgets_values_named": {
-        "value": "masterpiece, best quality, amazing quality, (highres:1.4), anime screenshot, (anime coloring:1.6), (anime screencap:1.7), pastel colors, volumetric lighting, intrincate details, shiny skin, illustration,\n2girls, multiple girls, side-by-side, \nhuge breasts, huge hips, thick thighs, curvy hips, narrow waist, navel, toned female, toned abdomen, naked, nude, nipples, pumped nipples, big areola, lactation, projectile lactation, kiss, yuri, lesbian,\nroom, bedroom, window, night, moonlight, full moon, lying on bed, pussy, spread legs, cum, cum on body, cum on belly, cum on face, cum on breasts"
+        "lora_name": "drive/DxD/Akeno_DxD_Anima.safetensors",
+        "strength_model": 1,
+        "strength_clip": 1,
+        "lora_preview_display": null
       },
-      "color": "#232",
-      "bgcolor": "#353"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
       "id": 81,
@@ -1621,13 +1612,13 @@
         "Node name for S&R": "LoraInfoWithPreview"
       },
       "widgets_values": [
-        "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        "drive/DxD/Rias_DxD_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/Naruto_Shippuden/Boruko_NS_Anima.safetensors",
+        "lora_name": "drive/DxD/Rias_DxD_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
@@ -2171,8 +2162,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 54,
-          "lastNodeId": 186,
-          "lastLinkId": 494,
+          "lastNodeId": 189,
+          "lastLinkId": 496,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3375,8 +3366,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 54,
-          "lastNodeId": 186,
-          "lastLinkId": 494,
+          "lastNodeId": 189,
+          "lastLinkId": 496,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3660,8 +3651,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 54,
-          "lastNodeId": 186,
-          "lastLinkId": 494,
+          "lastNodeId": 189,
+          "lastLinkId": 496,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3962,8 +3953,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 54,
-          "lastNodeId": 186,
-          "lastLinkId": 494,
+          "lastNodeId": 189,
+          "lastLinkId": 496,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3975,7 +3966,7 @@
             -1229.3601960073745,
             1025.4612029560253,
             128,
-            128
+            108
           ]
         },
         "outputNode": {
@@ -4025,19 +4016,6 @@
             "pos": [
               -1125.3601960073745,
               1089.4612029560253
-            ]
-          },
-          {
-            "id": "15ea1710-d30c-4053-98e6-a7259934ac3c",
-            "name": "size",
-            "type": "INT",
-            "linkIds": [
-              283
-            ],
-            "label": "Region split",
-            "pos": [
-              -1125.3601960073745,
-              1109.4612029560253
             ]
           }
         ],
@@ -4266,59 +4244,10 @@
               "aux_id": "pythongosssss/ComfyUI-Custom-Scripts"
             },
             "widgets_values": [
-              "576"
+              "448"
             ],
             "widgets_values_named": {
-              "text_0": "576"
-            }
-          },
-          {
-            "id": 84,
-            "type": "Width/Height Literal (Image Saver)",
-            "pos": [
-              -1095.935795374061,
-              1164.1465461822627
-            ],
-            "size": [
-              310.3919574189955,
-              58
-            ],
-            "flags": {},
-            "order": 0,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "size",
-                "name": "size",
-                "type": "INT",
-                "widget": {
-                  "name": "size"
-                },
-                "link": 283
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "size",
-                "name": "size",
-                "type": "INT",
-                "links": [
-                  349
-                ]
-              }
-            ],
-            "title": "Region split config",
-            "properties": {
-              "cnr_id": "comfyui-image-saver",
-              "ver": "1d2df13cfca0364fa28be3d40484cbeed33305ac",
-              "Node name for S&R": "Width/Height Literal (Image Saver)",
-              "aux_id": "alexopus/ComfyUI-Image-Saver"
-            },
-            "widgets_values": [
-              576
-            ],
-            "widgets_values_named": {
-              "size": 576
+              "text_0": "448"
             }
           },
           {
@@ -4330,7 +4259,7 @@
             ],
             "size": [
               400,
-              148
+              128
             ],
             "flags": {},
             "order": 2,
@@ -4347,7 +4276,7 @@
                 "name": "values.b",
                 "shape": 7,
                 "type": "FLOAT,INT,BOOLEAN",
-                "link": 349
+                "link": 495
               },
               {
                 "localized_name": "c",
@@ -4390,6 +4319,46 @@
             ],
             "widgets_values_named": {
               "expression": "a / b"
+            }
+          },
+          {
+            "id": 187,
+            "type": "PrimitiveInt",
+            "pos": [
+              -1119.1851120585666,
+              1226.618999653384
+            ],
+            "size": [
+              270,
+              82
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "ENTERO",
+                "name": "INT",
+                "type": "INT",
+                "links": [
+                  495
+                ]
+              }
+            ],
+            "title": "Region split",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.36.0",
+              "Node name for S&R": "PrimitiveInt"
+            },
+            "widgets_values": [
+              2,
+              "fixed"
+            ],
+            "widgets_values_named": {
+              "value": 2,
+              "fixed": "fixed"
             }
           }
         ],
@@ -4444,27 +4413,11 @@
             "type": "INT"
           },
           {
-            "id": 283,
-            "origin_id": -10,
-            "origin_slot": 3,
-            "target_id": 84,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
             "id": 348,
             "origin_id": 129,
             "origin_slot": 1,
             "target_id": -20,
             "target_slot": 3,
-            "type": "INT"
-          },
-          {
-            "id": 349,
-            "origin_id": 84,
-            "origin_slot": 0,
-            "target_id": 129,
-            "target_slot": 1,
             "type": "INT"
           },
           {
@@ -4490,6 +4443,14 @@
             "target_id": 131,
             "target_slot": 0,
             "type": "STRING"
+          },
+          {
+            "id": 495,
+            "origin_id": 187,
+            "origin_slot": 0,
+            "target_id": 129,
+            "target_slot": 1,
+            "type": "INT"
           }
         ],
         "extra": {}
@@ -4499,8 +4460,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 54,
-          "lastNodeId": 186,
-          "lastLinkId": 494,
+          "lastNodeId": 189,
+          "lastLinkId": 496,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5548,8 +5509,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 54,
-          "lastNodeId": 186,
-          "lastLinkId": 494,
+          "lastNodeId": 189,
+          "lastLinkId": 496,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5790,12 +5751,12 @@
   },
   "config": {},
   "extra": {
-    "frontendVersion": "1.51.10",
+    "frontendVersion": "1.52.7",
     "ds": {
-      "scale": 0.709097461162899,
+      "scale": 1.038189592888601,
       "offset": [
-        2146.1771772964867,
-        -93.17112215148529
+        735.6703731334732,
+        -852.1545273024655
       ]
     }
   },
