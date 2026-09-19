@@ -1,18 +1,18 @@
 {
   "id": "cfa727c2-7ec3-466f-99d4-1aa573c06299",
   "revision": 0,
-  "last_node_id": 199,
-  "last_link_id": 513,
+  "last_node_id": 202,
+  "last_link_id": 529,
   "nodes": [
     {
       "id": 69,
       "type": "ModelSamplingAuraFlow",
       "pos": [
-        -1530.3861180517367,
+        -1534.524939710354,
         490.6359354125442
       ],
       "size": [
-        311.3125,
+        315.4513216586172,
         82
       ],
       "flags": {},
@@ -722,11 +722,11 @@
       "id": 112,
       "type": "62b3623b-a3fa-4b86-8019-fc37463af54a",
       "pos": [
-        -1527.947325836328,
+        -1536.2249691535621,
         757.6181909976206
       ],
       "size": [
-        303.1875,
+        318.0872579710215,
         149.65840687160664
       ],
       "flags": {},
@@ -844,11 +844,11 @@
       "id": 98,
       "type": "UNETLoaderWithName",
       "pos": [
-        -1528.6284015174597,
+        -1533.5949875078002,
         615.8465281466108
       ],
       "size": [
-        305.18900476371266,
+        315.1221262216685,
         102
       ],
       "flags": {},
@@ -1119,12 +1119,12 @@
       "id": 121,
       "type": "462ea682-d104-4047-85be-a91f1efada0d",
       "pos": [
-        -1526.1360738436656,
-        958.0309306886683
+        -1533.5859528291764,
+        957.2031663569448
       ],
       "size": [
-        298.25,
-        227.03969490965517
+        315.63300044346647,
+        227.86745924137858
       ],
       "flags": {},
       "order": 6,
@@ -1197,14 +1197,16 @@
         "previewExposures": []
       },
       "widgets_values": [
-        1152,
-        896,
-        1
+        1024,
+        1024,
+        1,
+        "3:4 portrait 896x1152"
       ],
       "widgets_values_named": {
-        "width": 1152,
-        "height": 896,
-        "batch_size": 1
+        "width": 1024,
+        "height": 1024,
+        "batch_size": 1,
+        "aspect_ratio": "3:4 portrait 896x1152"
       }
     },
     {
@@ -1372,7 +1374,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        37860221142844,
+        878461409632262,
         32,
         4,
         "euler_ancestral",
@@ -1383,7 +1385,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 37860221142844,
+        "seed": 878461409632262,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1510,13 +1512,13 @@
         "Node name for S&R": "LoraInfoWithPreview"
       },
       "widgets_values": [
-        "drive/Sailor_Moon/Ikuko_SM_Anima.safetensors",
+        "drive/OC/Tsukiko_Tsukinaga_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/Sailor_Moon/Ikuko_SM_Anima.safetensors",
+        "lora_name": "drive/OC/Tsukiko_Tsukinaga_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
@@ -1578,13 +1580,13 @@
         "Node name for S&R": "LoraInfoWithPreview"
       },
       "widgets_values": [
-        "drive/Sailor_Moon/Saeko_SM_Anima.safetensors",
+        "drive/OC/Kaori_Hiiragi_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/Sailor_Moon/Saeko_SM_Anima.safetensors",
+        "lora_name": "drive/OC/Kaori_Hiiragi_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
@@ -1847,7 +1849,6 @@
           ]
         }
       ],
-      "title": "Quality prompt + Positive prompt",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.36.0",
@@ -1855,11 +1856,11 @@
       },
       "widgets_values": [
         "masterpiece, best quality, amazing quality",
-        "2girls, table, sitting around table, tatami, face to face, looking at viewer, huge breasts, thick thighs, cleavage, smile, red lips, lipstick, lips, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees, kneeling, hands on own lap"
+        "2girls, standing, hug, breast press, looking at viewer, huge breasts, thick thighs, cleavage, smile, red lips, lipstick, lips, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees"
       ],
       "widgets_values_named": {
         "value": "masterpiece, best quality, amazing quality",
-        "value_1": "2girls, table, sitting around table, tatami, face to face, looking at viewer, huge breasts, thick thighs, cleavage, smile, red lips, lipstick, lips, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees, kneeling, hands on own lap"
+        "value_1": "2girls, standing, hug, breast press, looking at viewer, huge breasts, thick thighs, cleavage, smile, red lips, lipstick, lips, parted lips, hair ornament, flower, flower on hair, japanese clothes, kimono, white kimono, off shoulder kimono, back lighting, japanese temple, falling petals, cherry blossom trees"
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -2519,8 +2520,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
+          "lastNodeId": 202,
+          "lastLinkId": 529,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -2529,17 +2530,17 @@
         "inputNode": {
           "id": -10,
           "bounding": [
-            -617.697132844218,
-            567.987061113741,
+            -689.1285525326226,
+            406.2811015566378,
             171.861328125,
-            368
+            368.00000000000006
           ]
         },
         "outputNode": {
           "id": -20,
           "bounding": [
-            1045.200493706597,
-            704.7870946830769,
+            931.3584232191337,
+            415.30290641144404,
             128,
             88
           ]
@@ -2555,8 +2556,8 @@
             ],
             "localized_name": "clip",
             "pos": [
-              -469.835804719218,
-              591.987061113741
+              -541.2672244076226,
+              430.2811015566378
             ]
           },
           {
@@ -2569,8 +2570,8 @@
             ],
             "localized_name": "negative_conditioning",
             "pos": [
-              -469.835804719218,
-              611.987061113741
+              -541.2672244076226,
+              450.2811015566378
             ]
           },
           {
@@ -2583,8 +2584,8 @@
             ],
             "localized_name": "base_prompt",
             "pos": [
-              -469.835804719218,
-              631.987061113741
+              -541.2672244076226,
+              470.2811015566378
             ]
           },
           {
@@ -2596,8 +2597,8 @@
             ],
             "localized_name": "zone_prompt",
             "pos": [
-              -469.835804719218,
-              651.987061113741
+              -541.2672244076226,
+              490.2811015566378
             ]
           },
           {
@@ -2610,8 +2611,8 @@
             "localized_name": "lora_trigger",
             "label": "lora_trigger 1",
             "pos": [
-              -469.835804719218,
-              671.987061113741
+              -541.2672244076226,
+              510.2811015566378
             ]
           },
           {
@@ -2624,8 +2625,8 @@
             ],
             "localized_name": "lora_strength_model",
             "pos": [
-              -469.835804719218,
-              691.987061113741
+              -541.2672244076226,
+              530.2811015566379
             ]
           },
           {
@@ -2637,8 +2638,8 @@
             ],
             "localized_name": "lora_strength_clip",
             "pos": [
-              -469.835804719218,
-              711.987061113741
+              -541.2672244076226,
+              550.2811015566379
             ]
           },
           {
@@ -2650,8 +2651,8 @@
             ],
             "localized_name": "zone_prompt_1",
             "pos": [
-              -469.835804719218,
-              731.987061113741
+              -541.2672244076226,
+              570.2811015566379
             ]
           },
           {
@@ -2664,8 +2665,8 @@
             "localized_name": "lora_trigger_1",
             "label": "lora_trigger_2",
             "pos": [
-              -469.835804719218,
-              751.987061113741
+              -541.2672244076226,
+              590.2811015566379
             ]
           },
           {
@@ -2678,8 +2679,8 @@
             ],
             "localized_name": "lora_strength_model_1",
             "pos": [
-              -469.835804719218,
-              771.987061113741
+              -541.2672244076226,
+              610.2811015566379
             ]
           },
           {
@@ -2691,8 +2692,8 @@
             ],
             "localized_name": "strength",
             "pos": [
-              -469.835804719218,
-              791.987061113741
+              -541.2672244076226,
+              630.2811015566379
             ]
           },
           {
@@ -2706,8 +2707,8 @@
             "localized_name": "on_true",
             "label": "Lora name 1",
             "pos": [
-              -469.835804719218,
-              811.987061113741
+              -541.2672244076226,
+              650.2811015566379
             ]
           },
           {
@@ -2721,8 +2722,8 @@
             "localized_name": "on_true_1",
             "label": "Lora name 2",
             "pos": [
-              -469.835804719218,
-              831.987061113741
+              -541.2672244076226,
+              670.2811015566379
             ]
           },
           {
@@ -2735,8 +2736,8 @@
             ],
             "localized_name": "width",
             "pos": [
-              -469.835804719218,
-              851.987061113741
+              -541.2672244076226,
+              690.2811015566379
             ]
           },
           {
@@ -2751,8 +2752,8 @@
             ],
             "localized_name": "height",
             "pos": [
-              -469.835804719218,
-              871.987061113741
+              -541.2672244076226,
+              710.2811015566379
             ]
           },
           {
@@ -2766,8 +2767,8 @@
             ],
             "localized_name": "rect_width",
             "pos": [
-              -469.835804719218,
-              891.987061113741
+              -541.2672244076226,
+              730.2811015566379
             ]
           }
         ],
@@ -2781,8 +2782,8 @@
             ],
             "localized_name": "positive",
             "pos": [
-              1069.200493706597,
-              728.7870946830769
+              955.3584232191337,
+              439.30290641144404
             ]
           },
           {
@@ -2794,8 +2795,8 @@
             ],
             "localized_name": "negative",
             "pos": [
-              1069.200493706597,
-              748.7870946830769
+              955.3584232191337,
+              459.30290641144404
             ]
           }
         ],
@@ -2805,8 +2806,8 @@
             "id": 72,
             "type": "AnimaRegionalZone",
             "pos": [
-              170.7178173568043,
-              421.7248985457338
+              -185.27612267540783,
+              425.91923877591734
             ],
             "size": [
               400,
@@ -2974,8 +2975,8 @@
             "id": 74,
             "type": "AnimaRegionalZone",
             "pos": [
-              585.2004937065971,
-              421.88897026909723
+              491.2303582399849,
+              425.6297439426001
             ],
             "size": [
               400,
@@ -3143,12 +3144,12 @@
             "id": 80,
             "type": "Switch any [Crystools]",
             "pos": [
-              122.74569331689815,
-              915.0215215304182
+              -460.8294144023513,
+              662.626416431781
             ],
             "size": [
-              270,
-              78
+              272.5637420494617,
+              179.0855679178395
             ],
             "flags": {},
             "order": 4,
@@ -3194,12 +3195,12 @@
             "id": 82,
             "type": "Switch any [Crystools]",
             "pos": [
-              261.7283477239833,
-              1072.9360313031696
+              218.0436955156854,
+              662.9255315158383
             ],
             "size": [
-              270,
-              78
+              269.44713259377374,
+              179.7275858734663
             ],
             "flags": {},
             "order": 5,
@@ -3245,8 +3246,8 @@
             "id": 73,
             "type": "AnimaRectMask",
             "pos": [
-              -172.68925713160272,
-              415.47600289264335
+              -459.39453000461594,
+              425.8806448103186
             ],
             "size": [
               270,
@@ -3332,8 +3333,8 @@
             "id": 76,
             "type": "AnimaRectMask",
             "pos": [
-              -110.39976497102033,
-              661.2671271539504
+              217.81936685521066,
+              425.7816943091258
             ],
             "size": [
               270,
@@ -3731,8 +3732,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
+          "lastNodeId": 202,
+          "lastLinkId": 529,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4012,314 +4013,12 @@
         "extra": {}
       },
       {
-        "id": "cd2ffb2e-30b0-4f44-bf53-61109ee07576",
-        "version": 1,
-        "state": {
-          "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
-          "lastRerouteId": 0
-        },
-        "revision": 0,
-        "config": {},
-        "name": "Aspect ratio",
-        "inputNode": {
-          "id": -10,
-          "bounding": [
-            -1228.9617316257877,
-            952.0110819000022,
-            128,
-            108
-          ]
-        },
-        "outputNode": {
-          "id": -20,
-          "bounding": [
-            -670.2382018483198,
-            922.0110819000022,
-            128,
-            108
-          ]
-        },
-        "inputs": [
-          {
-            "id": "d026ad6c-684a-48c9-9989-031ce58618a4",
-            "name": "width",
-            "type": "INT",
-            "linkIds": [
-              261
-            ],
-            "pos": [
-              -1124.9617316257877,
-              976.0110819000022
-            ]
-          },
-          {
-            "id": "d7b562cc-3f63-4318-bfdb-f96da2f985f2",
-            "name": "height",
-            "type": "INT",
-            "linkIds": [
-              262
-            ],
-            "pos": [
-              -1124.9617316257877,
-              996.0110819000022
-            ]
-          },
-          {
-            "id": "7fdd4ece-91d1-49ed-a419-978375ffd38c",
-            "name": "batch_size",
-            "type": "INT",
-            "linkIds": [
-              263
-            ],
-            "pos": [
-              -1124.9617316257877,
-              1016.0110819000022
-            ]
-          }
-        ],
-        "outputs": [
-          {
-            "id": "1305e010-b6fb-4367-8e85-039dd8147d3e",
-            "name": "LATENT",
-            "type": "LATENT",
-            "linkIds": [
-              221
-            ],
-            "localized_name": "LATENTE",
-            "pos": [
-              -646.2382018483198,
-              946.0110819000022
-            ]
-          },
-          {
-            "id": "4efed2f8-7529-452e-9ee8-011cbaa91fd9",
-            "name": "width",
-            "type": "INT",
-            "linkIds": [
-              138,
-              138
-            ],
-            "localized_name": "width",
-            "pos": [
-              -646.2382018483198,
-              966.0110819000022
-            ]
-          },
-          {
-            "id": "cf477cfa-ef5e-41d8-bab6-3acc23000bc8",
-            "name": "height",
-            "type": "INT",
-            "linkIds": [
-              139,
-              139
-            ],
-            "localized_name": "height",
-            "pos": [
-              -646.2382018483198,
-              986.0110819000022
-            ]
-          }
-        ],
-        "widgets": [],
-        "nodes": [
-          {
-            "id": 83,
-            "type": "LatentToWidthHeight",
-            "pos": [
-              -1040.5816544704558,
-              1042.061092955505
-            ],
-            "size": [
-              310.34345262213594,
-              50.49075778160295
-            ],
-            "flags": {},
-            "order": 1,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "latent",
-                "name": "latent",
-                "type": "LATENT",
-                "link": 112
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "width",
-                "name": "width",
-                "type": "INT",
-                "links": [
-                  138
-                ]
-              },
-              {
-                "localized_name": "height",
-                "name": "height",
-                "type": "INT",
-                "links": [
-                  139
-                ]
-              }
-            ],
-            "title": "Aspect ratio to string",
-            "properties": {
-              "aux_id": "pamparamm/ComfyUI-ppm",
-              "ver": "6c6c360155cace9d7091306c1b8e26d9c7438620",
-              "Node name for S&R": "LatentToWidthHeight",
-              "cnr_id": "comfyui-ppm"
-            }
-          },
-          {
-            "id": 68,
-            "type": "EmptySD3LatentImage",
-            "pos": [
-              -1040.9617316257877,
-              889.4703130628963
-            ],
-            "size": [
-              309.98670785492254,
-              116.8409038458824
-            ],
-            "flags": {},
-            "order": 0,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "ancho",
-                "name": "width",
-                "type": "INT",
-                "widget": {
-                  "name": "width"
-                },
-                "link": 261
-              },
-              {
-                "localized_name": "altura",
-                "name": "height",
-                "type": "INT",
-                "widget": {
-                  "name": "height"
-                },
-                "link": 262
-              },
-              {
-                "localized_name": "tamaño_del_lote",
-                "name": "batch_size",
-                "type": "INT",
-                "widget": {
-                  "name": "batch_size"
-                },
-                "link": 263
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "LATENTE",
-                "name": "LATENT",
-                "type": "LATENT",
-                "slot_index": 0,
-                "links": [
-                  112,
-                  221
-                ]
-              }
-            ],
-            "title": "Aspect ratio",
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.3.64",
-              "Node name for S&R": "EmptySD3LatentImage",
-              "enableTabs": false,
-              "tabWidth": 65,
-              "tabXOffset": 10,
-              "hasSecondTab": false,
-              "secondTabText": "Send Back",
-              "secondTabOffset": 80,
-              "secondTabWidth": 65
-            },
-            "widgets_values": [
-              912,
-              1152,
-              1
-            ],
-            "widgets_values_named": {
-              "width": 912,
-              "height": 1152,
-              "batch_size": 1
-            }
-          }
-        ],
-        "groups": [],
-        "links": [
-          {
-            "id": 112,
-            "origin_id": 68,
-            "origin_slot": 0,
-            "target_id": 83,
-            "target_slot": 0,
-            "type": "LATENT"
-          },
-          {
-            "id": 221,
-            "origin_id": 68,
-            "origin_slot": 0,
-            "target_id": -20,
-            "target_slot": 0,
-            "type": "LATENT"
-          },
-          {
-            "id": 138,
-            "origin_id": 83,
-            "origin_slot": 0,
-            "target_id": -20,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 139,
-            "origin_id": 83,
-            "origin_slot": 1,
-            "target_id": -20,
-            "target_slot": 2,
-            "type": "INT"
-          },
-          {
-            "id": 261,
-            "origin_id": -10,
-            "origin_slot": 0,
-            "target_id": 68,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
-            "id": 262,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 68,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 263,
-            "origin_id": -10,
-            "origin_slot": 2,
-            "target_id": 68,
-            "target_slot": 2,
-            "type": "INT"
-          }
-        ],
-        "extra": {}
-      },
-      {
         "id": "462ea682-d104-4047-85be-a91f1efada0d",
         "version": 1,
         "state": {
           "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
+          "lastNodeId": 202,
+          "lastLinkId": 529,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4328,10 +4027,10 @@
         "inputNode": {
           "id": -10,
           "bounding": [
-            -1229.3601960073745,
-            1025.4612029560253,
+            -1572.3603857088779,
+            963.6414013237774,
             128,
-            108
+            127.99999999999989
           ]
         },
         "outputNode": {
@@ -4349,12 +4048,12 @@
             "name": "width",
             "type": "INT",
             "linkIds": [
-              280
+              522
             ],
             "label": "Width",
             "pos": [
-              -1125.3601960073745,
-              1049.4612029560253
+              -1468.3603857088779,
+              987.6414013237774
             ]
           },
           {
@@ -4362,12 +4061,12 @@
             "name": "height",
             "type": "INT",
             "linkIds": [
-              281
+              523
             ],
             "label": "Height",
             "pos": [
-              -1125.3601960073745,
-              1069.4612029560253
+              -1468.3603857088779,
+              1007.6414013237774
             ]
           },
           {
@@ -4375,12 +4074,24 @@
             "name": "batch_size",
             "type": "INT",
             "linkIds": [
-              282
+              524
             ],
             "label": "Batch size",
             "pos": [
-              -1125.3601960073745,
-              1089.4612029560253
+              -1468.3603857088779,
+              1027.6414013237772
+            ]
+          },
+          {
+            "id": "0e0ba6fd-6d8e-4733-a763-2c2b86e90db8",
+            "name": "aspect_ratio",
+            "type": "COMBO",
+            "linkIds": [
+              525
+            ],
+            "pos": [
+              -1468.3603857088779,
+              1047.6414013237772
             ]
           }
         ],
@@ -4390,7 +4101,7 @@
             "name": "LATENT",
             "type": "LATENT",
             "linkIds": [
-              253
+              528
             ],
             "localized_name": "LATENTE",
             "pos": [
@@ -4403,8 +4114,7 @@
             "name": "width",
             "type": "INT",
             "linkIds": [
-              254,
-              254
+              526
             ],
             "localized_name": "width",
             "pos": [
@@ -4417,8 +4127,7 @@
             "name": "height",
             "type": "INT",
             "linkIds": [
-              256,
-              256
+              527
             ],
             "localized_name": "height",
             "pos": [
@@ -4444,97 +4153,14 @@
         "widgets": [],
         "nodes": [
           {
-            "id": 113,
-            "type": "cd2ffb2e-30b0-4f44-bf53-61109ee07576",
-            "pos": [
-              -1038.528589749093,
-              937.8712373002111
-            ],
-            "size": [
-              305.8572460240782,
-              146
-            ],
-            "flags": {},
-            "order": 1,
-            "mode": 0,
-            "inputs": [
-              {
-                "name": "width",
-                "type": "INT",
-                "widget": {
-                  "name": "width"
-                },
-                "link": 280
-              },
-              {
-                "name": "height",
-                "type": "INT",
-                "widget": {
-                  "name": "height"
-                },
-                "link": 281
-              },
-              {
-                "name": "batch_size",
-                "type": "INT",
-                "widget": {
-                  "name": "batch_size"
-                },
-                "link": 282
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "LATENTE",
-                "name": "LATENT",
-                "type": "LATENT",
-                "links": [
-                  253
-                ]
-              },
-              {
-                "localized_name": "width",
-                "name": "width",
-                "type": "INT",
-                "links": [
-                  254,
-                  350
-                ]
-              },
-              {
-                "localized_name": "height",
-                "name": "height",
-                "type": "INT",
-                "links": [
-                  256
-                ]
-              }
-            ],
-            "properties": {
-              "cnr_id": "comfy-core",
-              "ver": "0.34.0",
-              "previewExposures": []
-            },
-            "widgets_values": [
-              1152,
-              896,
-              1
-            ],
-            "widgets_values_named": {
-              "width": 1152,
-              "height": 896,
-              "batch_size": 1
-            }
-          },
-          {
             "id": 130,
             "type": "CR Integer To String",
             "pos": [
-              -734.6523748920499,
-              1302.3143039483152
+              -322.22068028091485,
+              937.6008510412805
             ],
             "size": [
-              196.319921875,
+              213.10188289274143,
               46
             ],
             "flags": {},
@@ -4575,12 +4201,12 @@
             "id": 131,
             "type": "ShowText|pysssss",
             "pos": [
-              -475.04575310075063,
-              1295.8815462846474
+              -322.08113149949384,
+              1019.4103774741685
             ],
             "size": [
-              140,
-              76
+              211.34486796738219,
+              200.56896310191632
             ],
             "flags": {},
             "order": 4,
@@ -4609,22 +4235,22 @@
               "cnr_id": "comfyui-custom-scripts"
             },
             "widgets_values": [
-              "576"
+              "0"
             ],
             "widgets_values_named": {
-              "text_0": "576"
+              "text_0": "0"
             }
           },
           {
             "id": 129,
             "type": "ComfyMathExpression",
             "pos": [
-              -722.8256529732008,
-              1096.1132097051232
+              -727.5610122606869,
+              937.6745770433782
             ],
             "size": [
-              400,
-              148
+              401.6876522634597,
+              282.448108672118
             ],
             "flags": {},
             "order": 2,
@@ -4634,14 +4260,14 @@
                 "localized_name": "a",
                 "name": "values.a",
                 "type": "FLOAT,INT,BOOLEAN",
-                "link": 350
+                "link": 495
               },
               {
                 "localized_name": "b",
                 "name": "values.b",
                 "shape": 7,
                 "type": "FLOAT,INT,BOOLEAN",
-                "link": 495
+                "link": 529
               },
               {
                 "localized_name": "c",
@@ -4690,12 +4316,12 @@
             "id": 187,
             "type": "PrimitiveInt",
             "pos": [
-              -1119.1851120585666,
-              1226.618999653384
+              -1277.4039002031122,
+              938.3595008641327
             ],
             "size": [
-              270,
-              82
+              273.39598710410655,
+              281.31552409790356
             ],
             "flags": {},
             "order": 0,
@@ -4725,58 +4351,130 @@
               "value": 2,
               "fixed": "fixed"
             }
+          },
+          {
+            "id": 200,
+            "type": "CR SDXL Aspect Ratio",
+            "pos": [
+              -999.9277109332414,
+              937.648780836087
+            ],
+            "size": [
+              269.71711923899113,
+              282.2430819265478
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "widget": {
+                  "name": "width"
+                },
+                "link": 522
+              },
+              {
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "widget": {
+                  "name": "height"
+                },
+                "link": 523
+              },
+              {
+                "localized_name": "aspect_ratio",
+                "name": "aspect_ratio",
+                "type": "COMBO",
+                "widget": {
+                  "name": "aspect_ratio"
+                },
+                "link": 525
+              },
+              {
+                "localized_name": "batch_size",
+                "name": "batch_size",
+                "type": "INT",
+                "widget": {
+                  "name": "batch_size"
+                },
+                "link": 524
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "links": [
+                  526,
+                  529
+                ]
+              },
+              {
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "links": [
+                  527
+                ]
+              },
+              {
+                "localized_name": "upscale_factor",
+                "name": "upscale_factor",
+                "type": "FLOAT",
+                "links": []
+              },
+              {
+                "localized_name": "batch_size",
+                "name": "batch_size",
+                "type": "INT",
+                "links": []
+              },
+              {
+                "localized_name": "empty_latent",
+                "name": "empty_latent",
+                "type": "LATENT",
+                "links": [
+                  528
+                ]
+              },
+              {
+                "localized_name": "show_help",
+                "name": "show_help",
+                "type": "STRING",
+                "links": []
+              }
+            ],
+            "properties": {
+              "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+              "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+              "Node name for S&R": "CR SDXL Aspect Ratio",
+              "cnr_id": "ComfyUI_Comfyroll_CustomNodes"
+            },
+            "widgets_values": [
+              1024,
+              1024,
+              "3:4 portrait 896x1152",
+              "Off",
+              1,
+              1
+            ],
+            "widgets_values_named": {
+              "width": 1024,
+              "height": 1024,
+              "aspect_ratio": "3:4 portrait 896x1152",
+              "swap_dimensions": "Off",
+              "upscale_factor": 1,
+              "batch_size": 1
+            }
           }
         ],
         "groups": [],
         "links": [
-          {
-            "id": 253,
-            "origin_id": 113,
-            "origin_slot": 0,
-            "target_id": -20,
-            "target_slot": 0,
-            "type": "LATENT"
-          },
-          {
-            "id": 254,
-            "origin_id": 113,
-            "origin_slot": 1,
-            "target_id": -20,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 256,
-            "origin_id": 113,
-            "origin_slot": 2,
-            "target_id": -20,
-            "target_slot": 2,
-            "type": "INT"
-          },
-          {
-            "id": 280,
-            "origin_id": -10,
-            "origin_slot": 0,
-            "target_id": 113,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
-            "id": 281,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 113,
-            "target_slot": 1,
-            "type": "INT"
-          },
-          {
-            "id": 282,
-            "origin_id": -10,
-            "origin_slot": 2,
-            "target_id": 113,
-            "target_slot": 2,
-            "type": "INT"
-          },
           {
             "id": 348,
             "origin_id": 129,
@@ -4802,16 +4500,72 @@
             "type": "STRING"
           },
           {
-            "id": 350,
-            "origin_id": 113,
+            "id": 522,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 200,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 523,
+            "origin_id": -10,
             "origin_slot": 1,
+            "target_id": 200,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 524,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 200,
+            "target_slot": 3,
+            "type": "INT"
+          },
+          {
+            "id": 525,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 200,
+            "target_slot": 2,
+            "type": "COMBO"
+          },
+          {
+            "id": 526,
+            "origin_id": 200,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 527,
+            "origin_id": 200,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 2,
+            "type": "INT"
+          },
+          {
+            "id": 528,
+            "origin_id": 200,
+            "origin_slot": 4,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "LATENT"
+          },
+          {
+            "id": 495,
+            "origin_id": 187,
+            "origin_slot": 0,
             "target_id": 129,
             "target_slot": 0,
             "type": "INT"
           },
           {
-            "id": 495,
-            "origin_id": 187,
+            "id": 529,
+            "origin_id": 200,
             "origin_slot": 0,
             "target_id": 129,
             "target_slot": 1,
@@ -4825,8 +4579,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
+          "lastNodeId": 202,
+          "lastLinkId": 529,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5134,8 +4888,8 @@
               635.2613833167667
             ],
             "size": [
-              319.75570176743713,
-              263.8554743867104
+              320.76589114366334,
+              304.56645669153875
             ],
             "flags": {},
             "order": 1,
@@ -5258,12 +5012,12 @@
             "id": 125,
             "type": "KSampler",
             "pos": [
-              -59.937835660118196,
+              -64.86761600517008,
               636.7724168193281
             ],
             "size": [
-              285.4296875,
-              262
+              290.3594678450519,
+              303.3749394951684
             ],
             "flags": {},
             "order": 3,
@@ -5387,12 +5141,12 @@
             "id": 124,
             "type": "VAEDecode",
             "pos": [
-              239.11335434627472,
+              230.31384630733726,
               637.3449649373869
             ],
             "size": [
-              169.8580078125,
-              46
+              178.65751585143747,
+              302.85005944729517
             ],
             "flags": {},
             "order": 2,
@@ -5436,7 +5190,7 @@
             ],
             "size": [
               322.6333921851143,
-              302
+              304.288826588774
             ],
             "flags": {},
             "order": 0,
@@ -5874,8 +5628,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
+          "lastNodeId": 202,
+          "lastLinkId": 529,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6117,8 +5871,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 55,
-          "lastNodeId": 199,
-          "lastLinkId": 513,
+          "lastNodeId": 202,
+          "lastLinkId": 529,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6127,8 +5881,8 @@
         "inputNode": {
           "id": -10,
           "bounding": [
-            -866.2858516631675,
-            587.7264308643672,
+            -871.3165104440042,
+            627.9717203015009,
             136.142578125,
             88
           ]
@@ -6136,8 +5890,8 @@
         "outputNode": {
           "id": -20,
           "bounding": [
-            197.5666167450287,
-            656.8473099852458,
+            466.82231480284156,
+            607.6788900747347,
             128,
             68
           ]
@@ -6152,8 +5906,8 @@
             ],
             "label": "Quality prompt",
             "pos": [
-              -754.1432735381675,
-              611.7264308643672
+              -759.1739323190042,
+              651.9717203015009
             ]
           },
           {
@@ -6165,8 +5919,8 @@
             ],
             "label": "positive prompt",
             "pos": [
-              -754.1432735381675,
-              631.7264308643672
+              -759.1739323190042,
+              671.9717203015009
             ]
           }
         ],
@@ -6181,8 +5935,8 @@
             "localized_name": "CADENA",
             "label": "prompt",
             "pos": [
-              221.5666167450287,
-              680.8473099852458
+              490.82231480284156,
+              631.6788900747347
             ]
           }
         ],
@@ -6192,8 +5946,8 @@
             "id": 194,
             "type": "PrimitiveStringMultiline",
             "pos": [
-              -598.5397887513556,
-              617.1499615343926
+              -707.8019551563798,
+              615.8940745642199
             ],
             "size": [
               403.92430188570904,
@@ -6242,8 +5996,8 @@
             "id": 77,
             "type": "PrimitiveStringMultiline",
             "pos": [
-              -591.6296507212513,
-              836.1776131284706
+              -299.8295154824799,
+              615.9156024320547
             ],
             "size": [
               403.92430188570904,
@@ -6292,12 +6046,12 @@
             "id": 196,
             "type": "CR Text Concatenate",
             "pos": [
-              -157.16495497869246,
-              640.4077495456855
+              106.77578455736233,
+              615.483126988071
             ],
             "size": [
-              270,
-              78
+              268.24118518116074,
+              168.4517561868571
             ],
             "flags": {},
             "order": 2,
@@ -6398,10 +6152,10 @@
   "extra": {
     "frontendVersion": "1.53.6",
     "ds": {
-      "scale": 0.8097341182907354,
+      "scale": 0.817744421167201,
       "offset": [
-        2035.7160040874614,
-        -96.35099519606817
+        2330.3826325022,
+        -557.4094138628486
       ]
     }
   },
