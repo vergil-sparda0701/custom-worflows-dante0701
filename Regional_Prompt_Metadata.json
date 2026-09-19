@@ -2,7 +2,7 @@
   "id": "cfa727c2-7ec3-466f-99d4-1aa573c06299",
   "revision": 0,
   "last_node_id": 202,
-  "last_link_id": 529,
+  "last_link_id": 531,
   "nodes": [
     {
       "id": 69,
@@ -1254,11 +1254,11 @@
       "type": "319999ad-f0b5-4977-b14d-1ece65172622",
       "pos": [
         181.2577110060905,
-        485.43029680341175
+        491.1237131406679
       ],
       "size": [
-        324.375,
-        701.34375
+        324.849451361438,
+        695.6503336627438
       ],
       "flags": {},
       "order": 22,
@@ -1374,7 +1374,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        878461409632262,
+        861962794458404,
         32,
         4,
         "euler_ancestral",
@@ -1385,7 +1385,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 878461409632262,
+        "seed": 861962794458404,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -2521,7 +2521,7 @@
         "state": {
           "lastGroupId": 55,
           "lastNodeId": 202,
-          "lastLinkId": 529,
+          "lastLinkId": 531,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -3733,7 +3733,7 @@
         "state": {
           "lastGroupId": 55,
           "lastNodeId": 202,
-          "lastLinkId": 529,
+          "lastLinkId": 531,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4018,7 +4018,7 @@
         "state": {
           "lastGroupId": 55,
           "lastNodeId": 202,
-          "lastLinkId": 529,
+          "lastLinkId": 531,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -4235,10 +4235,10 @@
               "cnr_id": "comfyui-custom-scripts"
             },
             "widgets_values": [
-              "0"
+              "448"
             ],
             "widgets_values_named": {
-              "text_0": "0"
+              "text_0": "448"
             }
           },
           {
@@ -4260,14 +4260,14 @@
                 "localized_name": "a",
                 "name": "values.a",
                 "type": "FLOAT,INT,BOOLEAN",
-                "link": 495
+                "link": 530
               },
               {
                 "localized_name": "b",
                 "name": "values.b",
                 "shape": 7,
                 "type": "FLOAT,INT,BOOLEAN",
-                "link": 529
+                "link": 531
               },
               {
                 "localized_name": "c",
@@ -4316,8 +4316,8 @@
             "id": 187,
             "type": "PrimitiveInt",
             "pos": [
-              -1277.4039002031122,
-              938.3595008641327
+              -1314.05848508185,
+              935.6443464286706
             ],
             "size": [
               273.39598710410655,
@@ -4333,7 +4333,7 @@
                 "name": "INT",
                 "type": "INT",
                 "links": [
-                  495
+                  531
                 ]
               }
             ],
@@ -4411,7 +4411,7 @@
                 "type": "INT",
                 "links": [
                   526,
-                  529
+                  530
                 ]
               },
               {
@@ -4556,16 +4556,16 @@
             "type": "LATENT"
           },
           {
-            "id": 495,
-            "origin_id": 187,
+            "id": 530,
+            "origin_id": 200,
             "origin_slot": 0,
             "target_id": 129,
             "target_slot": 0,
             "type": "INT"
           },
           {
-            "id": 529,
-            "origin_id": 200,
+            "id": 531,
+            "origin_id": 187,
             "origin_slot": 0,
             "target_id": 129,
             "target_slot": 1,
@@ -4580,7 +4580,7 @@
         "state": {
           "lastGroupId": 55,
           "lastNodeId": 202,
-          "lastLinkId": 529,
+          "lastLinkId": 531,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5629,7 +5629,7 @@
         "state": {
           "lastGroupId": 55,
           "lastNodeId": 202,
-          "lastLinkId": 529,
+          "lastLinkId": 531,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -5872,7 +5872,7 @@
         "state": {
           "lastGroupId": 55,
           "lastNodeId": 202,
-          "lastLinkId": 529,
+          "lastLinkId": 531,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -6152,10 +6152,10 @@
   "extra": {
     "frontendVersion": "1.53.6",
     "ds": {
-      "scale": 0.817744421167201,
+      "scale": 0.5716337941016028,
       "offset": [
-        2330.3826325022,
-        -557.4094138628486
+        2030.1314064952442,
+        -613.0202389642868
       ]
     }
   },
