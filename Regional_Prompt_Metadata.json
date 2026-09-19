@@ -1374,7 +1374,7 @@
         "previewExposures": []
       },
       "widgets_values": [
-        861962794458404,
+        717034858355752,
         32,
         4,
         "euler_ancestral",
@@ -1385,7 +1385,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 861962794458404,
+        "seed": 717034858355752,
         "steps": 32,
         "cfg": 4,
         "sampler": "euler_ancestral",
@@ -1512,13 +1512,13 @@
         "Node name for S&R": "LoraInfoWithPreview"
       },
       "widgets_values": [
-        "drive/OC/Tsukiko_Tsukinaga_Anima.safetensors",
+        "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/OC/Tsukiko_Tsukinaga_Anima.safetensors",
+        "lora_name": "drive/Naruto_Shippuden/Naruko_NS_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
@@ -1580,13 +1580,13 @@
         "Node name for S&R": "LoraInfoWithPreview"
       },
       "widgets_values": [
-        "drive/OC/Kaori_Hiiragi_Anima.safetensors",
+        "drive/Naruto_Shippuden/Tsunade_NS_Anima.safetensors",
         1,
         1,
         null
       ],
       "widgets_values_named": {
-        "lora_name": "drive/OC/Kaori_Hiiragi_Anima.safetensors",
+        "lora_name": "drive/Naruto_Shippuden/Tsunade_NS_Anima.safetensors",
         "strength_model": 1,
         "strength_clip": 1,
         "lora_preview_display": null
@@ -6154,8 +6154,8 @@
     "ds": {
       "scale": 0.5716337941016028,
       "offset": [
-        2030.1314064952442,
-        -613.0202389642868
+        2497.213979045202,
+        -303.3813624619868
       ]
     }
   },
