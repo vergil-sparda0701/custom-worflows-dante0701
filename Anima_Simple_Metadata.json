@@ -1448,63 +1448,6 @@
       }
     },
     {
-      "id": 198,
-      "type": "Switch string [Crystools]",
-      "pos": [
-        1657.85502570184,
-        555.7692239612911
-      ],
-      "size": [
-        367.59302446334505,
-        106
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "on_true",
-          "type": "STRING",
-          "widget": {
-            "name": "on_true"
-          },
-          "link": 596
-        },
-        {
-          "name": "on_false",
-          "type": "STRING",
-          "widget": {
-            "name": "on_false"
-          },
-          "link": 592
-        }
-      ],
-      "outputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "links": [
-            589
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "ComfyUI-Crystools",
-        "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
-        "Node name for S&R": "Switch string [Crystools]"
-      },
-      "widgets_values": [
-        "",
-        "",
-        false
-      ],
-      "widgets_values_named": {
-        "on_true": "",
-        "on_false": "",
-        "boolean": false
-      }
-    },
-    {
       "id": 200,
       "type": "EditableShowText",
       "pos": [
@@ -1652,6 +1595,64 @@
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 198,
+      "type": "Switch string [Crystools]",
+      "pos": [
+        1657.85502570184,
+        555.7692239612911
+      ],
+      "size": [
+        367.59302446334505,
+        106
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "widget": {
+            "name": "on_true"
+          },
+          "link": 596
+        },
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "widget": {
+            "name": "on_false"
+          },
+          "link": 592
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            589
+          ]
+        }
+      ],
+      "title": "Triggers edit (false for disable true for enable)",
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
+        "Node name for S&R": "Switch string [Crystools]"
+      },
+      "widgets_values": [
+        "",
+        "",
+        false
+      ],
+      "widgets_values_named": {
+        "on_true": "",
+        "on_false": "",
+        "boolean": false
+      }
     }
   ],
   "links": [
@@ -6480,8 +6481,8 @@
     "ds": {
       "scale": 1.1470731668987242,
       "offset": [
-        -650.1305343297521,
-        222.5877683274399
+        -1412.0697246282957,
+        -224.63740692412657
       ]
     }
   },
